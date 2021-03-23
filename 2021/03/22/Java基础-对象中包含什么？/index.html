@@ -20,15 +20,23 @@
     var CONFIG = {"hostname":"eniac286.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":-1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Eniac286">
-<meta property="og:url" content="https://eniac286.github.io/tags/%E5%9F%BA%E7%A1%80/index.html">
+  <meta name="description" content="Java是一门面向对象的高级语言，而类与对象是理解Java编程思想的两个重要要素。对象是对具体事物的抽象，而类是对对象的抽象。 在这里讲一个老套的笑话：  每个接触的对象都是别人实例化出来的，要想找到对象，你得自己new一个出来。 而我们想要的对象，都是同一类。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java基础--类与对象">
+<meta property="og:url" content="https://eniac286.github.io/2021/03/22/Java%E5%9F%BA%E7%A1%80-%E5%AF%B9%E8%B1%A1%E4%B8%AD%E5%8C%85%E5%90%AB%E4%BB%80%E4%B9%88%EF%BC%9F/index.html">
 <meta property="og:site_name" content="Eniac286">
+<meta property="og:description" content="Java是一门面向对象的高级语言，而类与对象是理解Java编程思想的两个重要要素。对象是对具体事物的抽象，而类是对对象的抽象。 在这里讲一个老套的笑话：  每个接触的对象都是别人实例化出来的，要想找到对象，你得自己new一个出来。 而我们想要的对象，都是同一类。">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20190902113938617.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3poYW9jdWl0,size_16,color_FFFFFF,t_70">
+<meta property="article:published_time" content="2021-03-22T14:53:54.000Z">
+<meta property="article:modified_time" content="2021-03-23T10:24:24.374Z">
 <meta property="article:author" content="Dara Yoon">
+<meta property="article:tag" content="Java">
+<meta property="article:tag" content="基础语法">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20190902113938617.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3poYW9jdWl0,size_16,color_FFFFFF,t_70">
 
-<link rel="canonical" href="https://eniac286.github.io/tags/%E5%9F%BA%E7%A1%80/">
+<link rel="canonical" href="https://eniac286.github.io/2021/03/22/Java%E5%9F%BA%E7%A1%80-%E5%AF%B9%E8%B1%A1%E4%B8%AD%E5%8C%85%E5%90%AB%E4%BB%80%E4%B9%88%EF%BC%9F/">
 
 
 <script id="page-configurations">
@@ -36,12 +44,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>标签: 基础 | Eniac286</title>
+  <title>Java基础--类与对象 | Eniac286</title>
   
 
 
@@ -177,51 +185,138 @@
         <div class="content-wrap">
           
 
-          <div class="content tag">
+          <div class="content post posts-expand">
             
 
+    
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <h2 class="collection-header">基础
-          <small>标签</small>
-        </h2>
-      </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://eniac286.github.io/2021/03/22/Java%E5%9F%BA%E7%A1%80-%E5%AF%B9%E8%B1%A1%E4%B8%AD%E5%8C%85%E5%90%AB%E4%BB%80%E4%B9%88%EF%BC%9F/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Dara Yoon">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Eniac286">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Java基础--类与对象
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-03-22 22:53:54" itemprop="dateCreated datePublished" datetime="2021-03-22T22:53:54+08:00">2021-03-22</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">学习</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0/Java/" itemprop="url" rel="index"><span itemprop="name">Java</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0/Java/%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/" itemprop="url" rel="index"><span itemprop="name">基础语法</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2021</span>
+        <p>Java是一门面向对象的高级语言，而类与对象是理解Java编程思想的两个重要要素。对象是对具体事物的抽象，而类是对对象的抽象。</p>
+<p>在这里讲一个老套的笑话：</p>
+<blockquote>
+<p>每个接触的对象都是别人实例化出来的，要想找到对象，你得自己new一个出来。</p>
+<p>而我们想要的对象，都是同一类。</p>
+</blockquote>
+<span id="more"></span>
+
+<h1 id="什么是类？"><a href="#什么是类？" class="headerlink" title="什么是类？"></a>什么是类？</h1><p>类是一个抽象的概念的集合，表示一类具有共同属性的事物，所以<strong>类当中应该包含属性和方法</strong>。属性，即事物的特征；方法，即事物能做什么。因此，我们在定义类的时候，以及编写类的成员变量以及类的方法。</p>
+<p>基于上述描述，类可以表达基本数据类型，如int、char等表达不了的数据信息。所以，类的特征之一是：<strong>类是对象的数据类型。</strong></p>
+<p>实例化对象的一般方法是：</p>
+<blockquote>
+<p>类 对象=new 类（）;</p>
+<p>对比参照：int[]  数组名=new int[]；</p>
+</blockquote>
+<p>不难看出，类跟数组一样，是一种特殊的数据类型。</p>
+<p>因此，从内存空间上来看，对象的具体信息与数组的具体信息一样，存储在堆内存当中，通过new关键字开辟。</p>
+<p>从作用域来看，类当中包含内部类和外部类。</p>
+<p>而类与类之间的关系，主要包含依赖、关联、聚合、组合、继承、实现。</p>
+<hr>
+<h1 id="什么是对象？"><a href="#什么是对象？" class="headerlink" title="什么是对象？"></a>什么是对象？</h1><p>对象是类的实体，也叫实例化，它具有具体的状态和行为。</p>
+<p>对象的组成如下：</p>
+<p><img src="https://img-blog.csdnimg.cn/20190902113938617.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3poYW9jdWl0,size_16,color_FFFFFF,t_70" alt="对象的组成"></p>
+<p>也就是说，对象包含主要包含：<strong>对象头、实例数据、对齐填充</strong>三部分。</p>
+<p>如图所示，对象头中前两行是Mark Word关键字，存储的是类的元数据；第三行是指针，指明类的存储位置。</p>
+<p>第四行是实例数据的对象属性，如果该实例数据是数组，还得指明数组长度；</p>
+<p>最后一行是对齐填充。</p>
+<p>简单来说，对象需要包含<strong>对象头（类名以及类的地址）</strong>、<strong>实例数据（默认值以及长度）</strong>、<strong>对其填充</strong>。</p>
+<p>调用对象的一般方式是：对象名.成员方法(   )     /   对象名.成员变量</p>
+<hr>
+<h1 id="封装"><a href="#封装" class="headerlink" title="封装"></a>封装</h1><p>使用private关键字进行封装，将类的某些信息隐藏在类的内部，不允许外界直接访问。封装的两大优点：提高代码复用性和安全性。</p>
+<p>其中，在进行封装时，若全局变量(成员变量)与局部变量重名，使用this关键字指明全局变量。</p>
+<p>同时，java提供了get方法和set方法，便于调用类中的成员变量。</p>
+<hr>
+<h1 id="构造方法"><a href="#构造方法" class="headerlink" title="构造方法"></a>构造方法</h1><p>所谓构造方法就是用来初始化对象的方法，与之相对应的成员方法，即规定对象的行为。</p>
+<p>其语法规则包含：方法名与类名一致、无返回值、可以不指定参数。</p>
+<p>构造方法的特征包含：提供默认的无参构造、可重载、不可继承、一旦自定义则不再提供默认方法。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">public 方法名( 非必要参数 )&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+    
+    
+    
 
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2021-03-22T13:20:48+08:00"
-              content="2021-03-22">
-          03-22
-        </time>
-      </div>
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/Java/" rel="tag"><i class="fa fa-tag"></i> Java</a>
+              <a href="/tags/%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/" rel="tag"><i class="fa fa-tag"></i> 基础语法</a>
+          </div>
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/03/22/Typora%E5%85%A5%E9%97%A8%E6%8A%80%E5%B7%A7/" itemprop="url">
-            <span itemprop="name">Typora入门技巧</span>
-          </a>
-      </div>
+        
 
-    </header>
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021/03/22/Typora%E5%85%A5%E9%97%A8%E6%8A%80%E5%B7%A7/" rel="prev" title="Typora入门技巧">
+      <i class="fa fa-chevron-left"></i> Typora入门技巧
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
   </article>
-
-    </div>
-  </div>
   
   
-  
-
   
 
 
@@ -274,6 +369,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E7%B1%BB%EF%BC%9F"><span class="nav-number">1.</span> <span class="nav-text">什么是类？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E5%AF%B9%E8%B1%A1%EF%BC%9F"><span class="nav-number">2.</span> <span class="nav-text">什么是对象？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B0%81%E8%A3%85"><span class="nav-number">3.</span> <span class="nav-text">封装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%9E%84%E9%80%A0%E6%96%B9%E6%B3%95"><span class="nav-number">4.</span> <span class="nav-text">构造方法</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
