@@ -208,4 +208,37 @@
         <tag>基础语法</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Linux常见命令</title>
+    <url>/2021/03/23/Linux%E5%B8%B8%E8%A7%81%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<h4 id="常见命令："><a href="#常见命令：" class="headerlink" title="常见命令："></a>常见命令：</h4><p>pwd ： 查看当前路径</p>
+<p>ls : 查看当前目录文件夹</p>
+<p>mkdir ：创建<strong>文件夹</strong></p>
+<p>rm：删除文件</p>
+<p>touch：创建<strong>文件</strong></p>
+]]></content>
+      <categories>
+        <category>学习</category>
+        <category>操作系统</category>
+      </categories>
+      <tags>
+        <tag>操作系统</tag>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>摘抄--3月24日</title>
+    <url>/2021/03/24/%E6%91%98%E6%8A%84--3%E6%9C%8824%E6%97%A5/</url>
+    <content><![CDATA[<p>过去的每一天都不曾消失，它们闪烁在未来的天幕上，成为个人的群星，构成属于你自己的浩瀚银河。</p>
+<p>然后，在某一刻，哗啦一声，向你奔涌而来。</p>
+<p>我相信，每个人心中，都存在对浩瀚的体验。</p>
+]]></content>
+      <categories>
+        <category>文学</category>
+        <category>摘抄</category>
+      </categories>
+      <tags>
+        <tag>摘抄</tag>
+      </tags>
+  </entry>
 </search>
