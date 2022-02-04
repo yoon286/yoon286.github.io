@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"eniac286.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":-1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="1.面向对象包括哪些特性，如何理解？01 了解数码相机第1节 数码相机机身简介单反相机工作时，光通过镜头进入机身，光线一分为二，一束光在反光镜上通过对焦机构进入五棱镜，之后再通过五棱镜到目镜里。通过光学取景器，可以取景、构图、对焦。另一束光传递到感应器，用于识别场景、测光和设定白平衡。按下快门时，反光镜抬起，快门帘打开，全部光线落在电子感光器上，被影像处理器处理后传输到储存卡中记录下来。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="摄影笔记">
+<meta property="og:url" content="https://eniac286.github.io/2022/02/04/%E6%91%84%E5%BD%B1%E7%AC%94%E8%AE%B0/index.html">
+<meta property="og:site_name" content="Eniac286">
+<meta property="og:description" content="1.面向对象包括哪些特性，如何理解？01 了解数码相机第1节 数码相机机身简介单反相机工作时，光通过镜头进入机身，光线一分为二，一束光在反光镜上通过对焦机构进入五棱镜，之后再通过五棱镜到目镜里。通过光学取景器，可以取景、构图、对焦。另一束光传递到感应器，用于识别场景、测光和设定白平衡。按下快门时，反光镜抬起，快门帘打开，全部光线落在电子感光器上，被影像处理器处理后传输到储存卡中记录下来。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202202050340856.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202202050342083.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202202050410367.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202202050428814.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202202050444659.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202202050446673.png">
+<meta property="og:image" content="c:/Users/Yoon/AppData/Roaming/Typora/typora-user-images/image-20220205045502246.png">
+<meta property="og:image" content="c:/Users/Yoon/AppData/Roaming/Typora/typora-user-images/image-20220205045429391.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202202050457311.png">
+<meta property="article:published_time" content="2022-02-04T15:27:31.000Z">
+<meta property="article:modified_time" content="2022-02-04T20:57:50.492Z">
+<meta property="article:author" content="Dara Yoon">
+<meta property="article:tag" content="读书笔记">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202202050340856.png">
+
+<link rel="canonical" href="https://eniac286.github.io/2022/02/04/%E6%91%84%E5%BD%B1%E7%AC%94%E8%AE%B0/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>摄影笔记 | Eniac286</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Eniac286</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">风物长宜放眼量</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-首页">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-分类">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-标签">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-时间轴">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>时间轴</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://eniac286.github.io/2022/02/04/%E6%91%84%E5%BD%B1%E7%AC%94%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Dara Yoon">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Eniac286">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          摄影笔记
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-02-04 23:27:31" itemprop="dateCreated datePublished" datetime="2022-02-04T23:27:31+08:00">2022-02-04</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%85%B4%E8%B6%A3/" itemprop="url" rel="index"><span itemprop="name">兴趣</span></a>
+                </span>
+                  >
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%85%B4%E8%B6%A3/%E8%AF%BB%E4%B9%A6/" itemprop="url" rel="index"><span itemprop="name">读书</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h3 id="1-面向对象包括哪些特性，如何理解？"><a href="#1-面向对象包括哪些特性，如何理解？" class="headerlink" title="1.面向对象包括哪些特性，如何理解？"></a>1.面向对象包括哪些特性，如何理解？</h3><h2 id="01-了解数码相机"><a href="#01-了解数码相机" class="headerlink" title="01 了解数码相机"></a>01 了解数码相机</h2><h3 id="第1节-数码相机机身简介"><a href="#第1节-数码相机机身简介" class="headerlink" title="第1节 数码相机机身简介"></a>第1节 数码相机机身简介</h3><p><strong>单反相机</strong>工作时，光通过镜头进入机身，光线一分为二，一束光在反光镜上通过对焦机构进入五棱镜，之后再通过五棱镜到目镜里。通过光学取景器，可以取景、构图、对焦。另一束光传递到感应器，用于识别场景、测光和设定白平衡。按下快门时，反光镜抬起，快门帘打开，全部光线落在电子感光器上，被影像处理器处理后传输到储存卡中记录下来。</p>
+<span id="more"></span>
+
+<img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202202050340856.png" alt="image-20220205034025473" style="zoom:50%;" />
+
+<p><strong>无反相机</strong>工作时，光线通过镜头落在电子感光元件上，被影像处理器处理后传输到储存卡中记录下来。与单反相机不同的是取景方式，无反相机没有反光镜，所以取景也是通过电子感光元件——传感器取景，图像最终呈现在电子取景器（EVF）或者液晶屏上，这一点就好像数码单反相机使用实时取景一样。</p>
+<img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202202050342083.png" alt="image-20220205034254951" style="zoom:50%;" />
+
+
+
+<p><strong>传感器尺寸</strong>，又被称为画幅。1934年，柯达公司引入了一次性的胶卷盒，称为135胶卷，1表示一次性，35表示采用了35mm电影胶片。在刚刚进入数码时代的时候，相机厂商们都想做拥有35mm胶片大小传感器的单反相机，这个尺寸被大家称为<strong>35mm全画幅</strong>。</p>
+<p>但是大家都遇到一个问题——贵！一旦采用，相机就没几个人能买得起了。从此单反相机中就有了两大传感器尺寸标准——全画幅和APS-C尺寸(23.5mm×15.6mm)。</p>
+<h3 id="第2节-镜头简介"><a href="#第2节-镜头简介" class="headerlink" title="第2节 镜头简介"></a>第2节 镜头简介</h3><blockquote>
+<p>佳能的EF 70-200mm f/2.8L IS USM II</p>
+</blockquote>
+<p>1．镜头种类</p>
+<p>EF表示EOS相机卡口的镜头。其他的还有EF-S只适用于佳能APS-C画幅EOS相机的镜头；MP-E放大倍率在1倍以上的微距摄影镜头；TS-E移轴镜头。</p>
+<p>2．焦距</p>
+<p>70-200mm表示这是一个广角端为70mm，长焦端为200mm的变焦镜头。如果只有一个数值那么就是定焦镜头。</p>
+<p>3．最大光圈</p>
+<p>f/2.8表示这支镜头全焦段的最大光圈是恒定的2.8。有的镜头会有两个数值，分别表示广角端和长焦端的最大光圈。最大光圈表示在这个焦距的时候你可以使用的光圈最大有多大，如果想缩小光圈，自然也是可以的。</p>
+<p>4．特性</p>
+<p>L表示佳能的专业级镜头，同时镜头前端也会有红圈。IS表示具有防抖功能。USM表示具有超声波马达。II表示这是这个镜头的第二代产品。</p>
+<p><strong>总结：光圈越大，单位时间内镜头的通光能力越强，这支镜头往往也越好</strong></p>
+<h2 id="02-焦距与取景"><a href="#02-焦距与取景" class="headerlink" title="02 焦距与取景"></a>02 焦距与取景</h2><p> <strong>鱼眼 &lt; 超广角（28mm以下）&lt; 广角 &lt; 微距 &lt; 长焦 &lt; 超长焦（300mm以上）</strong></p>
+<p><strong>24mm和28mm</strong></p>
+<p>这就是一个标准的广角焦距，主要就是用来拍摄风景。</p>
+<p><strong>35mm</strong></p>
+<p>有人说这是大师的焦距，也被称为人文眼。简单地说就是拍摄人文最好的焦距。拍摄人文照片的时候需要主体和背景环境的关系，所以小广角的35mm既能够将背景囊括进来，又能突出人与环境的关系，这是拍摄人文的关键</p>
+<p><strong>50mm</strong></p>
+<p>这被称为标准镜头，拍摄人文、人像都是很好的，也是大师的焦距。</p>
+<p><strong>85mm</strong></p>
+<p>这是一个拍摄人像的焦距。能有很好的背景虚化效果，很好的画面裁切能力，还能保持和模特之间适当的交流距离。主要用于模特大头照或者特写。</p>
+<p><strong>等效焦距</strong></p>
+<p>传感器有大有小，会对这些实际焦距取景范围有截取，造成拍摄的视角与实际焦距原本应该有的视角不相同。</p>
+<img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202202050410367.png" alt="image-20220205041015149" style="zoom:50%;" />
+
+
+
+<p>实际上每个不同尺寸的传感器都有一个系数与之相对应，这个系数乘以实际焦距之后，就是等效焦距了。这个系数就叫<strong>镜头转换系数。</strong></p>
+<p>全画幅：<strong>1.0</strong>x55mm=55mm</p>
+<p>APS-C：<strong>1.5</strong>x55mm=82.5mm</p>
+<h2 id="03-影调"><a href="#03-影调" class="headerlink" title="03 影调"></a>03 影调</h2><h3 id="第1节-什么是影调"><a href="#第1节-什么是影调" class="headerlink" title="第1节 什么是影调"></a>第1节 什么是影调</h3><p>那些本身就明亮的物体应该用高调表现；那些本身就黑的物体应该用低调表现。</p>
+<p>本身就是高调的物体：雪、白馒头、白衣服、白纸、棉花……</p>
+<p>本身就是低调的物体：煤炭、黑色皮鞋、黑色的衣服、夜晚的天空……</p>
+<p><strong>大多数照片都是中间调，少数场景需要用高调或者低调来表现。</strong></p>
+<h3 id="第2节-影调的量化"><a href="#第2节-影调的量化" class="headerlink" title="第2节 影调的量化"></a>第2节 影调的量化</h3><h4 id="曝光补偿-gt-gt-gt-gt"><a href="#曝光补偿-gt-gt-gt-gt" class="headerlink" title="曝光补偿&gt;&gt;&gt;&gt;"></a><strong>曝光补偿&gt;&gt;&gt;&gt;</strong></h4><p>其实在相机中有一个非常标准的量化体系——<strong>曝光补偿</strong>。</p>
+<p>曝光补偿的意思就是，相机给你的曝光就是中间调的，你拍的东西亮呢，就往亮了补偿补偿。你拍的东西暗呢，就往暗了补偿补偿。中间调就不补偿。</p>
+<h4 id="测光系统-gt-gt-gt-gt"><a href="#测光系统-gt-gt-gt-gt" class="headerlink" title="测光系统&gt;&gt;&gt;&gt;"></a><strong>测光系统&gt;&gt;&gt;&gt;</strong></h4><p>相机的测光系统主要可以分为三种：</p>
+<p><strong>智能测光</strong></p>
+<p>每个厂商叫的名称不同，但是一般都是默认项。推荐使用。</p>
+<p><strong>中心重点平均测光</strong></p>
+<p>就是重点考虑中心主体的曝光，然后加权其他背景的曝光。这曾经是很多人最常用的测光方式。但是后来的评价测光、矩阵测光、多重测光等更智能的方式出来之后，用的人逐渐少了。所以新手们，我觉得这个测光方式学不学都可以。</p>
+<p><strong>点测光</strong></p>
+<p>就是对画面中的一点测光，这个点一般很小，画面中1%～3%的面积，越高级的相机测光面积越小。在复杂光线环境的时候拍一个姑娘，最重要的就是保证姑娘脸是曝光正常的，所以对这姑娘的脸点测光，这个曝光参数就足够保证姑娘脸是好的。</p>
+<h2 id="04-曝光补偿三要素"><a href="#04-曝光补偿三要素" class="headerlink" title="04 曝光补偿三要素"></a>04 曝光补偿三要素</h2><p>照片的影调=光线强度×<strong>光圈×快门×感光度</strong></p>
+<img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202202050428814.png" alt="image-20220205042848707" style="zoom:50%;" />
+
+<p>如果快门速度不变，光圈开大1挡，同时感光度降低1挡得到的照片的明暗程度是相同的，反之亦然。这就是<strong>互易律</strong>。</p>
+<h2 id="05-相机模式"><a href="#05-相机模式" class="headerlink" title="05 相机模式"></a>05 相机模式</h2><p>一般来说摄影师的相机都有以下三种模式：</p>
+<p><strong>Av、A挡 光圈优先</strong></p>
+<p>摄影师设定影调（曝光补偿）和光圈，相机会自动选择合适的快门速度。</p>
+<p><strong>Tv、S挡 快门优先</strong></p>
+<p>摄影师设定影调（曝光补偿）和快门，相机会自动选择合适的光圈。</p>
+<p><strong>M手动（手动控制光圈、快门）</strong></p>
+<p>摄影师设定光圈、快门，相机告诉你影调将会是如何。</p>
+<p>使用M挡手动曝光情况都是你无法使用相机测光的时候，其实等于你放弃了相机测光。所以请记住，往往在你无法使用相机测光的时候，才用M挡。</p>
+<h2 id="06-光线"><a href="#06-光线" class="headerlink" title="06 光线"></a>06 光线</h2><h3 id="第1节-光线的特性"><a href="#第1节-光线的特性" class="headerlink" title="第1节 光线的特性"></a>第1节 光线的特性</h3><p><strong>顺光</strong></p>
+<p>其实顺光不应过多地运用在人像摄影中。因为正面直射的光会消除面部的一切影子，使得面部趋于平面化，所以又叫平光。</p>
+<p><strong>侧光</strong></p>
+<p>侧光一般用在人物摄影的造型上。相比顺光会将人物拍成“大白脸”，侧光能够让人物的面部呈现立体效果。</p>
+<p><strong>逆光</strong></p>
+<p>逆光是很多摄影师进行创作的用光。使用逆光拍摄的时候，往往会有雾蒙蒙的感觉，并形成暖色调。</p>
+<p><strong>色温</strong></p>
+<p>蓝色是冷色，但是色温高；红色是暖色，但是色温低。</p>
+<p>日光的色温大概是5500K。白纸放到日光下就是白色的。</p>
+<p><strong>白平衡</strong></p>
+<p>白平衡是相机机内处理的结果。说白了就是相机自己的后期。所以如果你拍摄RAW格式照片的话，可以在计算机中重新定义白平衡，重新调节。理论上是没有画质损失的（尽管实际可能有，但是也非常小，可忽略）。</p>
+<blockquote>
+<p>所以AWB+RAW拍摄，是一个既方便，又保险的组合。</p>
+</blockquote>
+<h3 id="第2节-布光方法"><a href="#第2节-布光方法" class="headerlink" title="第2节 布光方法"></a>第2节 布光方法</h3><img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202202050444659.png" alt="image-20220205044427503" style="zoom:50%;" />
+
+<p><strong>伦勃朗布光法</strong>有几个特点：</p>
+<p>1．四分之三面部对着相机。让人物面向相机，缓慢变换角度，直到看不到一侧的耳朵为止。</p>
+<p>2．架设主灯，强度要能使人面部正确曝光，方向为与人物面部方向同一侧45°左右。注意，要在人物面部形成三角形光区（以鼻子阴影、面颊阴影、下眼线为边长，围成的三角形亮区）。</p>
+<p>3．架设辅灯。将面部阴影处柔化，并表现出细节。一般会使用4:1或者3:1的光比。</p>
+<p>4．架设背景灯，打亮背景。如果有可能从人物斜后方放置一束比较集中的光，打在人物轮廓上，形成轮廓光。如下图所示：</p>
+<img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202202050446673.png" alt="image-20220205044609555" style="zoom:50%;" />
+
+
+
+<p>伦勃朗布光法是适用于男性的。那么再提供一个适用于女性摄影的布光法——<strong>蝶形布光法</strong>。</p>
+<p><strong>蝶形布光法</strong>的名字来源于布光法中的一个特点。类似于伦勃朗布光法中要找三角形光区，蝶形布光法就是要找这个蝶形。使用蝶形布光法的时候，主灯放置在人物正前方，但是处于比较高的位置。这与顶光不同。蝶形布光法的主灯是从上斜射下来的。这样在人物的鼻子下方就会形成一个阴影。随着主灯高度变化，阴影会在鼻子下面形成一个蝴蝶的形状。这时主灯的位置就可以确定了。</p>
+<h2 id="07-摄影中的虚实"><a href="#07-摄影中的虚实" class="headerlink" title="07 摄影中的虚实"></a>07 摄影中的虚实</h2><p><strong>前帘同步闪光</strong>就是：</p>
+<p>前帘开启之后（也是曝光的开始），就闪光，闪完了之后等曝光时间一到后帘关闭（曝光结束）。这样就是一辆车移动，你拍摄车。开启快门就闪光了，车被闪光灯定在了画面中，然后长曝光继续曝，车往前走拉车线。这样就变成了车在后面，车线在前面的奇葩照片。</p>
+<img src="C:/Users/Yoon/AppData/Roaming/Typora/typora-user-images/image-20220205045502246.png" alt="image-20220205045502246" style="zoom:25%;" />
+
+
+
+<p><strong>后帘同步闪光</strong>就是：</p>
+<p>前帘开启之后（也是曝光的开始），先踏踏实实曝着光。然后闪光灯闪了一下，定格画面，随即后帘关闭（曝光结束）。这样一辆车移动，你拍摄车。开启快门，先拉车线，然后马上快门关闭了，闪光灯突然把车定格住。就变成了车在前面，车线在后面的好画面了。</p>
+<img src="C:/Users/Yoon/AppData/Roaming/Typora/typora-user-images/image-20220205045429391.png" alt="image-20220205045429391" style="zoom:25%;" />
+
+<h2 id="08-构图"><a href="#08-构图" class="headerlink" title="08 构图"></a>08 构图</h2><p><strong>居中构图</strong></p>
+<p><strong>三分法构图</strong></p>
+<p><strong>重复法</strong></p>
+<p><strong>引导线</strong></p>
+<img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202202050457311.png" alt="image-20220205045729070" style="zoom:25%;" />
+
+<p><strong>三角构图</strong></p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" rel="tag"><i class="fa fa-tag"></i> 读书笔记</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/01/19/java%E5%85%AB%E8%82%A1%E6%96%87/" rel="prev" title="Java八股文">
+      <i class="fa fa-chevron-left"></i> Java八股文
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E5%8C%85%E6%8B%AC%E5%93%AA%E4%BA%9B%E7%89%B9%E6%80%A7%EF%BC%8C%E5%A6%82%E4%BD%95%E7%90%86%E8%A7%A3%EF%BC%9F"><span class="nav-number">1.</span> <span class="nav-text">1.面向对象包括哪些特性，如何理解？</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#01-%E4%BA%86%E8%A7%A3%E6%95%B0%E7%A0%81%E7%9B%B8%E6%9C%BA"><span class="nav-number"></span> <span class="nav-text">01 了解数码相机</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC1%E8%8A%82-%E6%95%B0%E7%A0%81%E7%9B%B8%E6%9C%BA%E6%9C%BA%E8%BA%AB%E7%AE%80%E4%BB%8B"><span class="nav-number">1.</span> <span class="nav-text">第1节 数码相机机身简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC2%E8%8A%82-%E9%95%9C%E5%A4%B4%E7%AE%80%E4%BB%8B"><span class="nav-number">2.</span> <span class="nav-text">第2节 镜头简介</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#02-%E7%84%A6%E8%B7%9D%E4%B8%8E%E5%8F%96%E6%99%AF"><span class="nav-number"></span> <span class="nav-text">02 焦距与取景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#03-%E5%BD%B1%E8%B0%83"><span class="nav-number"></span> <span class="nav-text">03 影调</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC1%E8%8A%82-%E4%BB%80%E4%B9%88%E6%98%AF%E5%BD%B1%E8%B0%83"><span class="nav-number">1.</span> <span class="nav-text">第1节 什么是影调</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC2%E8%8A%82-%E5%BD%B1%E8%B0%83%E7%9A%84%E9%87%8F%E5%8C%96"><span class="nav-number">2.</span> <span class="nav-text">第2节 影调的量化</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9B%9D%E5%85%89%E8%A1%A5%E5%81%BF-gt-gt-gt-gt"><span class="nav-number">2.1.</span> <span class="nav-text">曝光补偿&gt;&gt;&gt;&gt;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%B5%8B%E5%85%89%E7%B3%BB%E7%BB%9F-gt-gt-gt-gt"><span class="nav-number">2.2.</span> <span class="nav-text">测光系统&gt;&gt;&gt;&gt;</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#04-%E6%9B%9D%E5%85%89%E8%A1%A5%E5%81%BF%E4%B8%89%E8%A6%81%E7%B4%A0"><span class="nav-number"></span> <span class="nav-text">04 曝光补偿三要素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#05-%E7%9B%B8%E6%9C%BA%E6%A8%A1%E5%BC%8F"><span class="nav-number"></span> <span class="nav-text">05 相机模式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#06-%E5%85%89%E7%BA%BF"><span class="nav-number"></span> <span class="nav-text">06 光线</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC1%E8%8A%82-%E5%85%89%E7%BA%BF%E7%9A%84%E7%89%B9%E6%80%A7"><span class="nav-number">1.</span> <span class="nav-text">第1节 光线的特性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC2%E8%8A%82-%E5%B8%83%E5%85%89%E6%96%B9%E6%B3%95"><span class="nav-number">2.</span> <span class="nav-text">第2节 布光方法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#07-%E6%91%84%E5%BD%B1%E4%B8%AD%E7%9A%84%E8%99%9A%E5%AE%9E"><span class="nav-number"></span> <span class="nav-text">07 摄影中的虚实</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#08-%E6%9E%84%E5%9B%BE"><span class="nav-number"></span> <span class="nav-text">08 构图</span></a></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Dara Yoon"
+      src="/images/avatar.gif">
+  <p class="site-author-name" itemprop="name">Dara Yoon</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">10</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+        <span class="site-state-item-count">13</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+        <span class="site-state-item-count">13</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/Eniac286" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;Eniac286" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:yoondara6@gmail.com" title="E-Mail → mailto:yoondara6@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://weibo.com/user123456" title="Weibo → https:&#x2F;&#x2F;weibo.com&#x2F;user123456" rel="noopener" target="_blank"><i class="fab fa-weibo fa-fw"></i>Weibo</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="copyright">
+  
+  &copy; 2021 – 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Eniac286</span>
+</div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
