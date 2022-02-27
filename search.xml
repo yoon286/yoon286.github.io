@@ -132,8 +132,8 @@
         <category>java</category>
       </categories>
       <tags>
-        <tag>基础语法</tag>
         <tag>java</tag>
+        <tag>基础语法</tag>
       </tags>
   </entry>
   <entry>
@@ -175,8 +175,8 @@
         <category>java</category>
       </categories>
       <tags>
-        <tag>基础知识</tag>
         <tag>java</tag>
+        <tag>基础知识</tag>
       </tags>
   </entry>
   <entry>
@@ -230,8 +230,8 @@
         <category>基础语法</category>
       </categories>
       <tags>
-        <tag>基础语法</tag>
         <tag>java</tag>
+        <tag>基础语法</tag>
       </tags>
   </entry>
   <entry>
@@ -358,8 +358,8 @@
         <category>typora</category>
       </categories>
       <tags>
-        <tag>基础</tag>
         <tag>typora</tag>
+        <tag>基础</tag>
       </tags>
   </entry>
   <entry>
@@ -711,7 +711,7 @@
       </tags>
   </entry>
   <entry>
-    <title>Java面经</title>
+    <title>实习知识整理</title>
     <url>/2021/08/03/%E5%AE%9E%E4%B9%A0%E6%95%B4%E7%90%86/</url>
     <content><![CDATA[<h1 id="知识内容"><a href="#知识内容" class="headerlink" title="知识内容"></a>知识内容</h1><h2 id="WebServer"><a href="#WebServer" class="headerlink" title="WebServer"></a>WebServer</h2><h3 id="什么是HTTP请求头-响应头"><a href="#什么是HTTP请求头-响应头" class="headerlink" title="什么是HTTP请求头/响应头"></a>什么是HTTP请求头/响应头</h3><p>1)请求(客户端-&gt;服务端[request])<br>     GET(请求的方式)     /newcoder/hello.html(请求的目标资源) HTTP/1.1(请求采用                                        的协议和版本号)<br>     Accept: <em>/</em>(客户端能接收的资源类型)<br>     Accept-Language: en-us(客户端接收的语言类型)<br>     Connection: Keep-Alive(维护客户端和服务端的连接关系)<br>     Host: localhost:8080(连接的目标主机和端口号)<br>     Referer: <a href="http://localhost/links.asp(%E5%91%8A%E8%AF%89%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%88%91%E6%9D%A5%E8%87%AA%E4%BA%8E%E5%93%AA%E9%87%8C)">http://localhost/links.asp(告诉服务器我来自于哪里)</a><br>     User-Agent: Mozilla/4.0(客户端版本号的名字)<br>     Accept-Encoding: gzip, deflate(客户端能接收的压缩数据的类型)<br>     If-Modified-Since: Tue, 11 Jul     2000 18:23:51 GMT(缓存时间)<br>     Cookie(客户端暂存服务端的信息)<br>     Date: Tue, 11 Jul 2000     18:23:51 GMT(客户端请求服务端的时间)  </p>
 <span id="more"></span>
