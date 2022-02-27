@@ -129,11 +129,11 @@
 ]]></content>
       <categories>
         <category>学习</category>
-        <category>Java</category>
+        <category>java</category>
       </categories>
       <tags>
-        <tag>Java</tag>
         <tag>基础语法</tag>
+        <tag>java</tag>
       </tags>
   </entry>
   <entry>
@@ -172,11 +172,11 @@
 ]]></content>
       <categories>
         <category>学习</category>
-        <category>Java</category>
+        <category>java</category>
       </categories>
       <tags>
-        <tag>Java</tag>
         <tag>基础知识</tag>
+        <tag>java</tag>
       </tags>
   </entry>
   <entry>
@@ -226,12 +226,12 @@
 ]]></content>
       <categories>
         <category>学习</category>
-        <category>Java</category>
+        <category>java</category>
         <category>基础语法</category>
       </categories>
       <tags>
-        <tag>Java</tag>
         <tag>基础语法</tag>
+        <tag>java</tag>
       </tags>
   </entry>
   <entry>
@@ -249,40 +249,7 @@
       </categories>
       <tags>
         <tag>操作系统</tag>
-        <tag>Linux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Java面经</title>
-    <url>/2021/04/03/Java%E9%9D%A2%E7%BB%8F/</url>
-    <content><![CDATA[<p>最近接到了华东师范大学的复试通知，基于产教融合的模式，去面试了几家公司。</p>
-<span id="more"></span>
-
-<h5 id="1-上海软中信息技术有限公司"><a href="#1-上海软中信息技术有限公司" class="headerlink" title="1.上海软中信息技术有限公司"></a>1.上海软中信息技术有限公司</h5><p>考虑到跨专业的原因，没有过多的询问技术经验，一面主要问了各种竞赛经历和项目经历。</p>
-<p>Java技术，大概是知道我只恶补了基础部分。</p>
-<p>1、问了一下常规的封装、继承、多态等特性。</p>
-<p>2、一个算法题，解决思路比较简单：深度优先搜索。细问了回溯的具体实现。</p>
-<p>3、问了主要的内排序算法，大概回答梳理了一遍。以为面试官会挑比较难的希尔排序或是快排，没想到只是问了一下冒泡排序，心中狂喜：面试官也太友好了。最好时间复杂度、平均时间复杂度、稳定性，三大必问内容了。</p>
-<p>4、问了多线程和输入输出流，还算比较简单，基本没有深入考察。</p>
-<p>二面压力面：</p>
-<p>1、上来就问，接不接受加班、矛盾冲突怎么解决，好在大学玩过宝洁八大问，加上咸鱼心理，轻松过了。</p>
-<p>2、讨价还价，薪资问题，培养模式问题，还有就是要表现出对公司强烈的兴趣和好奇心啦：一个原则–主动主动主动！！！面试官一直设坑，还有什么想问的，并且引导我进行提问，简直变成了对方的提线木偶，被打压的惨不忍睹。</p>
-<h5 id="2、Hypers"><a href="#2、Hypers" class="headerlink" title="2、Hypers"></a>2、Hypers</h5><p>暂时只进行了一面，明天先去上海安顿好，6号进行二面：</p>
-<p>1、面试官小姐姐也太友好了，居然问返回值？？？以及JDK和JRE是什么？？？由于过于简单，直接把编译工具和运行工具也说了一遍。小姐姐还问了一下编译和运行的过程，好在这个早有准备。</p>
-<p>2、问反转字符串，提供了两种解决思路，即栈和循环，小姐姐又深入问了，如何用队列实现栈，勉勉强强算是回答出来了。不过总有种自己坑自己的感觉。</p>
-<p>3、后面逐渐加大难度，问了哈希冲突的解决办法以及时间复杂度，中南的初试集中在哈希表的ASL上，这个实在回答的不太好。不过后来还是绕回到同义词的冲突上了，还算扯了一部分。</p>
-<p>4、算法部分我给自己挖坑了，谈到了递归、位运算、STL、贪心算法以及动态规划，真的是好后悔呜呜呜。小姐姐直接问动态规划的应用场景！我弱弱地回答没归纳过，大概是类似于背包问题一样的问题？小姐姐狂笑。还好最后举了个爬楼梯的例子，说了一下大概的伪代码，以及解决思路，强行挽尊。</p>
-<p>5、最后小姐姐直接让我自己填坑，哪个地方没有回答上来，自己再好好补充。</p>
-<h5 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h5><p>问的问题都不难，入门级别，大概是知道我就是个菜鸡吧。也没有特意为难自己，不过Java部分是得好好看看。</p>
-<p>几轮下来，发现自己比较擅长的还是算法部分，用算法解决实际问题，这种思考题简直是我的最爱。但是各类算法的应用场景，没有好好归纳过，所以有的时候思考确实会慢很多。</p>
-]]></content>
-      <categories>
-        <category>工作</category>
-        <category>面经</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-        <tag>实习</tag>
+        <tag>linux</tag>
       </tags>
   </entry>
   <entry>
@@ -388,11 +355,11 @@
 ]]></content>
       <categories>
         <category>工具</category>
-        <category>Typora</category>
+        <category>typora</category>
       </categories>
       <tags>
-        <tag>Typora</tag>
         <tag>基础</tag>
+        <tag>typora</tag>
       </tags>
   </entry>
   <entry>
@@ -462,7 +429,7 @@
 ]]></content>
       <categories>
         <category>学习</category>
-        <category>Java</category>
+        <category>java</category>
       </categories>
       <tags>
         <tag>java</tag>
@@ -604,6 +571,370 @@
       </categories>
       <tags>
         <tag>读书笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>并发/幂等/数据一致性问题</title>
+    <url>/2022/02/27/%E6%95%B0%E6%8D%AE%E4%B8%80%E8%87%B4%E6%80%A7%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<h1 id="1、幂等性"><a href="#1、幂等性" class="headerlink" title="1、幂等性"></a>1、幂等性</h1><p>幂等性是数学上的概念：F(F(x))=F(x)，用在接口上就是：多次重复请求，产生效果一致。</p>
+<p>比较典型的场景：支付接口，重复支付会导致多次扣钱；订单接口，同一个订单可能会多次创建。如果没有接口幂等性，则会产生数据一致性问题。</p>
+<p>在数据库中，常见操作包括：</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span>： 天然幂等，重复操作产生效果一致;</span><br><span class="line"></span><br><span class="line"><span class="keyword">DELETE</span>： 删除也是幂等,删除同一个多次效果一样;</span><br><span class="line"></span><br><span class="line"><span class="keyword">INSERT</span>： 非幂等操作,每次新增一条;</span><br><span class="line"></span><br><span class="line">UPDATE： a.直接更新某个值的,幂等;</span><br><span class="line">      ： b.更新累加操作的,非幂等;</span><br></pre></td></tr></table></figure>
+
+<span id="more"></span>
+
+<h1 id="2、RestFul规范"><a href="#2、RestFul规范" class="headerlink" title="2、RestFul规范"></a>2、RestFul规范</h1><h3 id="Create-类型的幂等"><a href="#Create-类型的幂等" class="headerlink" title="Create 类型的幂等"></a>Create 类型的幂等</h3><p>创建类型的 API，为了实现幂等性，常见的做法是使用一个 client-side generated deduplication token（客户端生成的唯一ID），在反复重试时使用同一个Token，便于服务端识别重复，如果发现重复，应按创建成功返回。</p>
+<h3 id="Update-类型的幂等"><a href="#Update-类型的幂等" class="headerlink" title="Update 类型的幂等"></a>Update 类型的幂等</h3><p>更新类型的 API，通常有唯一ID对需要更新的资源进行标示，以此可以保证幂等。</p>
+<p>对于“Delta”语义的操作，有以下几类方式确保幂等性：</p>
+<ol>
+<li>IncrementBy：基于某个数值增加</li>
+<li>SetNewTotal：设置新的总量</li>
+<li>使用 Deduplication Token 保证幂等</li>
+</ol>
+<p>这几种方式各有优缺点，需要根据场景选择合适的方式。</p>
+<h3 id="Delete-类型的幂等"><a href="#Delete-类型的幂等" class="headerlink" title="Delete 类型的幂等"></a>Delete 类型的幂等</h3><p>Delete的幂等性问题，往往在于一个对象被删除后，再次试图删除可能会由于数据无法被发现导致出错。这个行为一般来说也没什么问题，虽然严格意义上不幂等，但是也无副作用。</p>
+<h3 id="长耗时请求异步化"><a href="#长耗时请求异步化" class="headerlink" title="*** 长耗时请求异步化 ***"></a>*** 长耗时请求异步化 ***</h3><p>如果某个 API 方法需要很长时间才能完成，可以通过：</p>
+<ol>
+<li>在服务端异步启动任务，并返回 GUID 标示 “长时间运行的操作”资源</li>
+<li>客户端通过定时轮询 <em>/polling/{guid}，</em> 获取任务进行的状态。</li>
+<li>当任务完成/失败时，客户端可以获取到处理的结果/失败原因。</li>
+</ol>
+<h1 id="3、Redis分布式锁"><a href="#3、Redis分布式锁" class="headerlink" title="3、Redis分布式锁"></a>3、Redis分布式锁</h1><h2 id="设计方案："><a href="#设计方案：" class="headerlink" title="设计方案："></a><strong>设计方案：</strong></h2><ul>
+<li><p>拦截注解 @RedisLock，获取必要的参数</p>
+</li>
+<li><p>加锁操作</p>
+</li>
+<li><p>续时操作</p>
+</li>
+<li><p>结束业务，释放锁</p>
+</li>
+</ul>
+<h2 id="实操"><a href="#实操" class="headerlink" title="实操"></a>实操</h2><h4 id="（1）业务属性枚举设定"><a href="#（1）业务属性枚举设定" class="headerlink" title="（1）业务属性枚举设定"></a>（1）业务属性枚举设定</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">enum</span> <span class="title">RedisLockTypeEnum</span> </span>&#123;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 自定义 key 前缀</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    ONE(<span class="string">&quot;Business1&quot;</span>, <span class="string">&quot;Test1&quot;</span>),</span><br><span class="line">    </span><br><span class="line">    TWO(<span class="string">&quot;Business2&quot;</span>, <span class="string">&quot;Test2&quot;</span>);</span><br><span class="line">    <span class="keyword">private</span> String code;</span><br><span class="line">    <span class="keyword">private</span> String desc;</span><br><span class="line">    RedisLockTypeEnum(String code, String desc) &#123;</span><br><span class="line">        <span class="keyword">this</span>.code = code;</span><br><span class="line">        <span class="keyword">this</span>.desc = desc;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">getCode</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> code;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">getDesc</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> desc;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">getUniqueKey</span><span class="params">(String key)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> String.format(<span class="string">&quot;%s:%s&quot;</span>, <span class="keyword">this</span>.getCode(), key);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h4 id="（2）任务队列保存参数"><a href="#（2）任务队列保存参数" class="headerlink" title="（2）任务队列保存参数"></a><strong>（2）任务队列保存参数</strong></h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">RedisLockDefinitionHolder</span> </span>&#123;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 业务唯一 key</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> String businessKey;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 加锁时间 (秒 s)</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> Long lockTime;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 上次更新时间（ms）</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> Long lastModifyTime;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 保存当前线程</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> Thread currentTread;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 总共尝试次数</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> tryCount;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 当前尝试次数</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> currentCount;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 更新的时间周期（毫秒）,公式 = 加锁时间（转成毫秒） / 3</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> Long modifyPeriod;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">RedisLockDefinitionHolder</span><span class="params">(String businessKey, Long lockTime, Long lastModifyTime, Thread currentTread, <span class="keyword">int</span> tryCount)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.businessKey = businessKey;</span><br><span class="line">        <span class="keyword">this</span>.lockTime = lockTime;</span><br><span class="line">        <span class="keyword">this</span>.lastModifyTime = lastModifyTime;</span><br><span class="line">        <span class="keyword">this</span>.currentTread = currentTread;</span><br><span class="line">        <span class="keyword">this</span>.tryCount = tryCount;</span><br><span class="line">        <span class="keyword">this</span>.modifyPeriod = lockTime * <span class="number">1000</span> / <span class="number">3</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h4 id="（3）设定被拦截的注解名字"><a href="#（3）设定被拦截的注解名字" class="headerlink" title="（3）设定被拦截的注解名字"></a><strong>（3）设定被拦截的注解名字</strong></h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Retention(RetentionPolicy.RUNTIME)</span></span><br><span class="line"><span class="meta">@Target(&#123;ElementType.METHOD, ElementType.TYPE&#125;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="meta">@interface</span> RedisLockAnnotation &#123;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 特定参数识别，默认取第 0 个下标</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">lockFiled</span><span class="params">()</span> <span class="keyword">default</span> 0</span>;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 超时重试次数</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">tryCount</span><span class="params">()</span> <span class="keyword">default</span> 3</span>;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 自定义加锁类型</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function">RedisLockTypeEnum <span class="title">typeEnum</span><span class="params">()</span></span>;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 释放时间，秒 s 单位</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">long</span> <span class="title">lockTime</span><span class="params">()</span> <span class="keyword">default</span> 30</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="（4）-核心切面拦截的操作"><a href="#（4）-核心切面拦截的操作" class="headerlink" title="（4） 核心切面拦截的操作"></a><strong>（4）</strong> <strong>核心切面拦截的操作</strong></h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@annotation</span> 中的路径表示拦截特定注解</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@Pointcut(&quot;@annotation(cn.sevenyuan.demo.aop.lock.RedisLockAnnotation)&quot;)</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">redisLockPC</span><span class="params">()</span> </span>&#123;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Around(value = &quot;redisLockPC()&quot;)</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> Object <span class="title">around</span><span class="params">(ProceedingJoinPoint pjp)</span> <span class="keyword">throws</span> Throwable </span>&#123;</span><br><span class="line">    <span class="comment">// 解析参数</span></span><br><span class="line">    Method method = resolveMethod(pjp);</span><br><span class="line">    RedisLockAnnotation annotation = method.getAnnotation(RedisLockAnnotation.class);</span><br><span class="line">    RedisLockTypeEnum typeEnum = annotation.typeEnum();</span><br><span class="line">    Object[] params = pjp.getArgs();</span><br><span class="line">    String ukString = params[annotation.lockFiled()].toString();</span><br><span class="line">    <span class="comment">// 省略很多参数校验和判空</span></span><br><span class="line">    String businessKey = typeEnum.getUniqueKey(ukString);</span><br><span class="line">    String uniqueValue = UUID.randomUUID().toString();</span><br><span class="line">    <span class="comment">// 加锁</span></span><br><span class="line">    Object result = <span class="keyword">null</span>;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="keyword">boolean</span> isSuccess = redisTemplate.opsForValue().setIfAbsent(businessKey, uniqueValue);</span><br><span class="line">        <span class="keyword">if</span> (!isSuccess) &#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> Exception(<span class="string">&quot;You can&#x27;t do it，because another has get the lock =-=&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        redisTemplate.expire(businessKey, annotation.lockTime(), TimeUnit.SECONDS);</span><br><span class="line">        Thread currentThread = Thread.currentThread();</span><br><span class="line">        <span class="comment">// 将本次 Task 信息加入「延时」队列中</span></span><br><span class="line">        holderList.add(<span class="keyword">new</span> RedisLockDefinitionHolder(businessKey, annotation.lockTime(), System.currentTimeMillis(),</span><br><span class="line">                currentThread, annotation.tryCount()));</span><br><span class="line">        <span class="comment">// 执行业务操作</span></span><br><span class="line">        result = pjp.proceed();</span><br><span class="line">        <span class="comment">// 线程被中断，抛出异常，中断此次请求</span></span><br><span class="line">        <span class="keyword">if</span> (currentThread.isInterrupted()) &#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> InterruptedException(<span class="string">&quot;You had been interrupted =-=&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125; <span class="keyword">catch</span> (InterruptedException e ) &#123;</span><br><span class="line">        log.error(<span class="string">&quot;Interrupt exception, rollback transaction&quot;</span>, e);</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> Exception(<span class="string">&quot;Interrupt exception, please send request again&quot;</span>);</span><br><span class="line">    &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">        log.error(<span class="string">&quot;has some error, please check again&quot;</span>, e);</span><br><span class="line">    &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">        <span class="comment">// 请求结束后，强制删掉 key，释放锁</span></span><br><span class="line">        redisTemplate.delete(businessKey);</span><br><span class="line">        log.info(<span class="string">&quot;release the lock, businessKey is [&quot;</span> + businessKey + <span class="string">&quot;]&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> result;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="（5）-延时操作"><a href="#（5）-延时操作" class="headerlink" title="（5） 延时操作"></a><strong>（5） 延时操作</strong></h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 扫描的任务队列</span></span><br><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> ConcurrentLinkedQueue&lt;RedisLockDefinitionHolder&gt; holderList = <span class="keyword">new</span> ConcurrentLinkedQueue();</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 线程池，维护keyAliveTime</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> ScheduledExecutorService SCHEDULER = <span class="keyword">new</span> ScheduledThreadPoolExecutor(<span class="number">1</span>,</span><br><span class="line">        <span class="keyword">new</span> BasicThreadFactory.Builder().namingPattern(<span class="string">&quot;redisLock-schedule-pool&quot;</span>).daemon(<span class="keyword">true</span>).build());</span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// 两秒执行一次「续时」操作</span></span><br><span class="line">    SCHEDULER.scheduleAtFixedRate(() -&gt; &#123;</span><br><span class="line">        <span class="comment">// 这里记得加 try-catch，否者报错后定时任务将不会再执行=-=</span></span><br><span class="line">        Iterator&lt;RedisLockDefinitionHolder&gt; iterator = holderList.iterator();</span><br><span class="line">        <span class="keyword">while</span> (iterator.hasNext()) &#123;</span><br><span class="line">            RedisLockDefinitionHolder holder = iterator.next();</span><br><span class="line">            <span class="comment">// 判空</span></span><br><span class="line">            <span class="keyword">if</span> (holder == <span class="keyword">null</span>) &#123;</span><br><span class="line">                iterator.remove();</span><br><span class="line">                <span class="keyword">continue</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">// 判断 key 是否还有效，无效的话进行移除</span></span><br><span class="line">            <span class="keyword">if</span> (redisTemplate.opsForValue().get(holder.getBusinessKey()) == <span class="keyword">null</span>) &#123;</span><br><span class="line">                iterator.remove();</span><br><span class="line">                <span class="keyword">continue</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">// 超时重试次数，超过时给线程设定中断</span></span><br><span class="line">            <span class="keyword">if</span> (holder.getCurrentCount() &gt; holder.getTryCount()) &#123;</span><br><span class="line">                holder.getCurrentTread().interrupt();</span><br><span class="line">                iterator.remove();</span><br><span class="line">                <span class="keyword">continue</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">// 判断是否进入最后三分之一时间</span></span><br><span class="line">            <span class="keyword">long</span> curTime = System.currentTimeMillis();</span><br><span class="line">            <span class="keyword">boolean</span> shouldExtend = (holder.getLastModifyTime() + holder.getModifyPeriod()) &lt;= curTime;</span><br><span class="line">            <span class="keyword">if</span> (shouldExtend) &#123;</span><br><span class="line">                holder.setLastModifyTime(curTime);</span><br><span class="line">                redisTemplate.expire(holder.getBusinessKey(), holder.getLockTime(), TimeUnit.SECONDS);</span><br><span class="line">                log.info(<span class="string">&quot;businessKey : [&quot;</span> + holder.getBusinessKey() + <span class="string">&quot;], try count : &quot;</span> + holder.getCurrentCount());</span><br><span class="line">                holder.setCurrentCount(holder.getCurrentCount() + <span class="number">1</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;, <span class="number">0</span>, <span class="number">2</span>, TimeUnit.SECONDS);</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="4、数据库乐观锁与悲观锁"><a href="#4、数据库乐观锁与悲观锁" class="headerlink" title="4、数据库乐观锁与悲观锁"></a>4、数据库乐观锁与悲观锁</h1><h4 id="悲观锁"><a href="#悲观锁" class="headerlink" title="悲观锁"></a>悲观锁</h4><p>总是假设最坏的情况，每次去拿数据的时候都认为别人会修改，所以每次在拿数据的时候都会上锁，这样别人想拿这个数据就会阻塞直到它拿到锁（<strong>共享资源每次只给一个线程使用，其它线程阻塞，用完后再把资源转让给其它线程</strong>）。传统的关系型数据库里边就用到了很多这种锁机制，比如行锁，表锁等，读锁，写锁等，都是在做操作之前先上锁。Java中<code>synchronized</code>和<code>ReentrantLock</code> <code>redis分布式锁</code>等独占锁就是悲观锁思想的实现。</p>
+<h4 id="乐观锁"><a href="#乐观锁" class="headerlink" title="乐观锁"></a>乐观锁</h4><p>总是假设最好的情况，每次去拿数据的时候都认为别人不会修改，所以不会上锁，但是在更新的时候会判断一下在此期间别人有没有去更新这个数据，可以使用版本号机制和CAS算法实现。<strong>乐观锁适用于多读的应用类型，这样可以提高吞吐量</strong>，像数据库提供的类似于<strong>write_condition机制</strong>，其实都是提供的乐观锁。在Java中<code>java.util.concurrent.atomic</code>包下面的原子变量类就是使用了乐观锁的一种实现方式<strong>CAS</strong>实现的。</p>
+<h3 id="乐观锁常见的两种实现方式"><a href="#乐观锁常见的两种实现方式" class="headerlink" title="乐观锁常见的两种实现方式"></a>乐观锁常见的两种实现方式</h3><blockquote>
+<p><strong>乐观锁一般会使用版本号机制或CAS算法实现。</strong></p>
+</blockquote>
+<h4 id="1-版本号机制"><a href="#1-版本号机制" class="headerlink" title="1. 版本号机制"></a>1. 版本号机制</h4><p>一般是在数据表中加上一个数据版本号version字段，表示数据被修改的次数，当数据被修改时，version值会加一。当线程A要更新数据值时，在读取数据的同时也会读取version值，在提交更新时，若刚才读取到的version值为当前数据库中的version值相等时才更新，否则重试更新操作，直到更新成功。</p>
+<p><strong>举一个简单的例子：</strong> 假设数据库中帐户信息表中有一个 version 字段，当前值为 1 ；而当前帐户余额字段（ balance ）为 $100 。</p>
+<ol>
+<li>操作员 A 此时将其读出（ version=1 ），并从其帐户余额中扣除 $50（ $100-$50 ）。</li>
+<li>在操作员 A 操作的过程中，操作员B 也读入此用户信息（ version=1 ），并从其帐户余额中扣除 $20 （ $100-$20 ）。</li>
+<li>操作员 A 完成了修改工作，将数据版本号加一（ version=2 ），连同帐户扣除后余额（ balance=$50 ），提交至数据库更新，此时由于提交数据版本大于数据库记录当前版本，数据被更新，数据库记录 version 更新为 2 。</li>
+<li>操作员 B 完成了操作，也将版本号加一（ version=2 ）试图向数据库提交数据（ balance=$80 ），但此时比对数据库记录版本时发现，操作员 B 提交的数据版本号为 2 ，数据库记录当前版本也为 2 ，不满足 “ 提交版本必须大于记录当前版本才能执行更新 “ 的乐观锁策略，因此，操作员 B 的提交被驳回。</li>
+</ol>
+<p>这样，就避免了操作员 B 用基于 version=1 的旧数据修改的结果覆盖操作员A 的操作结果的可能。</p>
+<h4 id="2-CAS算法"><a href="#2-CAS算法" class="headerlink" title="2. CAS算法"></a>2. CAS算法</h4><p>即<strong>compare and swap（比较与交换）</strong>，是一种有名的<strong>无锁算法</strong>。无锁编程，即不使用锁的情况下实现多线程之间的变量同步，也就是在没有线程被阻塞的情况下实现变量的同步，所以也叫非阻塞同步（Non-blocking Synchronization）。<strong>CAS算法</strong>涉及到三个操作数</p>
+<ul>
+<li>需要读写的内存值 V</li>
+<li>进行比较的值 A</li>
+<li>拟写入的新值 B</li>
+</ul>
+<p>当且仅当 V 的值等于 A时，CAS通过原子方式用新值B来更新V的值，否则不会执行任何操作（比较和替换是一个原子操作）。一般情况下是一个<strong>自旋操作</strong>，即<strong>不断的重试</strong>。</p>
+<h3 id="乐观锁的缺点"><a href="#乐观锁的缺点" class="headerlink" title="乐观锁的缺点"></a>乐观锁的缺点</h3><blockquote>
+<p>ABA 问题是乐观锁一个常见的问题</p>
+</blockquote>
+<h4 id="1-ABA-问题"><a href="#1-ABA-问题" class="headerlink" title="1 ABA 问题"></a>1 ABA 问题</h4><p>如果一个变量V初次读取的时候是A值，并且在准备赋值的时候检查到它仍然是A值，那我们就能说明它的值没有被其他线程修改过了吗？很明显是不能的，因为在这段时间它的值可能被改为其他值，然后又改回A，那CAS操作就会误认为它从来没有被修改过。这个问题被称为CAS操作的 <strong>“ABA”问题。</strong></p>
+<p>JDK 1.5 以后的 <code>AtomicStampedReference 类</code>就提供了此种能力，其中的 <code>compareAndSet 方法</code>就是首先检查当前引用是否等于预期引用，并且当前标志是否等于预期标志，如果全部相等，则以原子方式将该引用和该标志的值设置为给定的更新值。</p>
+<h4 id="2-循环时间长开销大"><a href="#2-循环时间长开销大" class="headerlink" title="2 循环时间长开销大"></a>2 循环时间长开销大</h4><p><strong>自旋CAS（也就是不成功就一直循环执行直到成功）如果长时间不成功，会给CPU带来非常大的执行开销。</strong> 如果JVM能支持处理器提供的pause指令那么效率会有一定的提升，pause指令有两个作用，第一它可以延迟流水线执行指令（de-pipeline）,使CPU不会消耗过多的执行资源，延迟的时间取决于具体实现的版本，在一些处理器上延迟时间是零。第二它可以避免在退出循环的时候因内存顺序冲突（memory order violation）而引起CPU流水线被清空（CPU pipeline flush），从而提高CPU的执行效率。</p>
+<h4 id="3-只能保证一个共享变量的原子操作"><a href="#3-只能保证一个共享变量的原子操作" class="headerlink" title="3 只能保证一个共享变量的原子操作"></a>3 只能保证一个共享变量的原子操作</h4><p>CAS 只对单个共享变量有效，当操作涉及跨多个共享变量时 CAS 无效。但是从 JDK 1.5开始，提供了<code>AtomicReference类</code>来保证引用对象之间的原子性，你可以把多个变量放在一个对象里来进行 CAS 操作.所以我们可以使用锁或者利用<code>AtomicReference类</code>把多个共享变量合并成一个共享变量来操作。</p>
+<h3 id="CAS与synchronized的使用情景"><a href="#CAS与synchronized的使用情景" class="headerlink" title="CAS与synchronized的使用情景"></a>CAS与synchronized的使用情景</h3><blockquote>
+<p><strong>简单的来说CAS适用于写比较少的情况下（多读场景，冲突一般较少），synchronized适用于写比较多的情况下（多写场景，冲突一般较多）</strong></p>
+</blockquote>
+<ol>
+<li>对于资源竞争较少（线程冲突较轻）的情况，使用synchronized同步锁进行线程阻塞和唤醒切换以及用户态内核态间的切换操作额外浪费消耗cpu资源；而CAS基于硬件实现，不需要进入内核，不需要切换线程，操作自旋几率较少，因此可以获得更高的性能。</li>
+<li>对于资源竞争严重（线程冲突严重）的情况，CAS自旋的概率会比较大，从而浪费更多的CPU资源，效率低于synchronized。</li>
+</ol>
+<p>补充： Java并发编程这个领域中synchronized关键字一直都是元老级的角色，很久之前很多人都会称它为 <strong>“重量级锁”</strong> 。但是，在JavaSE 1.6之后进行了主要包括为了减少获得锁和释放锁带来的性能消耗而引入的 <strong>偏向锁</strong> 和 <strong>轻量级锁</strong> 以及其它<strong>各种优化</strong>之后变得在某些情况下并不是那么重了。synchronized的底层实现主要依靠 <strong>Lock-Free</strong> 的队列，基本思路是 <strong>自旋后阻塞</strong>，<strong>竞争切换后继续竞争锁</strong>，<strong>稍微牺牲了公平性，但获得了高吞吐量</strong>。在线程冲突较少的情况下，可以获得和CAS类似的性能；而线程冲突严重的情况下，性能远高于CAS。</p>
+<h1 id="5-总结："><a href="#5-总结：" class="headerlink" title="5.总结："></a>5.总结：</h1><p>主要讨论了并发场景读写一致性问题，对于长耗时请求问题，还是不懂怎么解决。</p>
+]]></content>
+      <categories>
+        <category>学习</category>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>计算广告 - 计算广告基础</title>
+    <url>/2022/02/04/%E8%AE%A1%E7%AE%97%E5%B9%BF%E5%91%8A/</url>
+    <content><![CDATA[<h3 id="1-广告有效性模型"><a href="#1-广告有效性模型" class="headerlink" title="1.广告有效性模型"></a>1.广告有效性模型</h3><p><img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202202271103448.png" alt="image-20220227110314006"></p>
+<span id="more"></span>
+
+<p><strong>曝光</strong>：主要取决于广告位</p>
+<p><strong>关注</strong>：不要干扰打断用户行为、符合用户兴趣和需求</p>
+<p><strong>理解</strong>：在用户能理解的具体兴趣范围内</p>
+<p><strong>接受</strong>：表达信息恰当</p>
+<p><strong>保持</strong>：创意设计</p>
+<p><strong>决策</strong>：具体的广告策略或技术</p>
+<h3 id="2-计算广告核心挑战"><a href="#2-计算广告核心挑战" class="headerlink" title="2.计算广告核心挑战"></a>2.计算广告核心挑战</h3><ul>
+<li><p>计算广告的核心问题，是为一系列用户与环境的组合找到最合适的广告投放策略以优化整体广告活动的利润。</p>
+</li>
+<li><p>优化问题描述：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202202271111882.png" alt="image-20220227111138694"></p>
+<p>表达式中的 a、u、c 三个变量，分别代表广告、用户与环境。</p>
+</li>
+</ul>
+<h3 id="3-广告收入分解"><a href="#3-广告收入分解" class="headerlink" title="3.广告收入分解"></a>3.广告收入分解</h3><p><img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202202271119335.png" alt="image-20220227111957205"></p>
+<p>广告点击与广告展现的比率称为 <strong>点击率（Click Through Rate，CTR）</strong>；</p>
+<p>点击行为成功以后，将会打开广告主的 <strong>落地页（landing page）</strong>；</p>
+<p>落地页成功打开次数与点击次数的比例称为 <strong>到达率</strong>；</p>
+<p>如果用户从落地页开始，进一步完成下单等操作，则称为 <strong>转化</strong>；</p>
+<p>转化次数与到达次数的比例称为 <strong>转化率（Conversion Rate，CVR）</strong>；</p>
+<p><img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202202271121325.png" alt="image-20220227112106244"></p>
+<p>用 <strong>µ</strong> 表示点击率，用 <strong>ν</strong> 表示点击价值（clickvalue），即单次点击为广告产品带来的收益。而这两部分的乘积定量地表示了某次或若干次展示的期望 CPM 值，就是前面提到的 eCPM[4]。</p>
+<p>在对多个检索候选进行排序时，是根据 <strong>eCPM</strong> 还是<strong>CTR排序</strong>也是区别广告产品和用户产品的重要策略特征。</p>
+<h3 id="4-结算方式"><a href="#4-结算方式" class="headerlink" title="4.结算方式"></a>4.结算方式</h3><p>表 2-1 展示了以上几种结算方式概要的对比。综合来看可以认为，对于效果广告，CPC计费方式最有利于发挥供给方和需求方的长处，因而在市场上被广泛接受；对于品牌广告，由于效果和目的有时不便于直接衡量，可以考虑按照 CPM 的方式计费；而CPS 的计费方式只在一些特定的环境下才比较合理。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202202271125174.png" alt="image-20220227112520031"></p>
+<p>在 CPC 或 CPS 结算的广告交易中，由于计费的指标，即点击或转化在广告主的网站上产生，所以并不需要特别的监测服务。因此，可以认为广告监测主要服务的对象是品牌广告主。随着 CPM 广告定向方式越来越复杂，广告监测也从简单的展示和点击记数到频次、人口属性等信息的验证和计量。</p>
+]]></content>
+      <categories>
+        <category>学习</category>
+        <category>智慧营销</category>
+      </categories>
+      <tags>
+        <tag>智慧营销</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java面经</title>
+    <url>/2021/08/03/%E5%AE%9E%E4%B9%A0%E6%95%B4%E7%90%86/</url>
+    <content><![CDATA[<h1 id="知识内容"><a href="#知识内容" class="headerlink" title="知识内容"></a>知识内容</h1><h2 id="WebServer"><a href="#WebServer" class="headerlink" title="WebServer"></a>WebServer</h2><h3 id="什么是HTTP请求头-响应头"><a href="#什么是HTTP请求头-响应头" class="headerlink" title="什么是HTTP请求头/响应头"></a>什么是HTTP请求头/响应头</h3><p>1)请求(客户端-&gt;服务端[request])<br>     GET(请求的方式)     /newcoder/hello.html(请求的目标资源) HTTP/1.1(请求采用                                        的协议和版本号)<br>     Accept: <em>/</em>(客户端能接收的资源类型)<br>     Accept-Language: en-us(客户端接收的语言类型)<br>     Connection: Keep-Alive(维护客户端和服务端的连接关系)<br>     Host: localhost:8080(连接的目标主机和端口号)<br>     Referer: <a href="http://localhost/links.asp(%E5%91%8A%E8%AF%89%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%88%91%E6%9D%A5%E8%87%AA%E4%BA%8E%E5%93%AA%E9%87%8C)">http://localhost/links.asp(告诉服务器我来自于哪里)</a><br>     User-Agent: Mozilla/4.0(客户端版本号的名字)<br>     Accept-Encoding: gzip, deflate(客户端能接收的压缩数据的类型)<br>     If-Modified-Since: Tue, 11 Jul     2000 18:23:51 GMT(缓存时间)<br>     Cookie(客户端暂存服务端的信息)<br>     Date: Tue, 11 Jul 2000     18:23:51 GMT(客户端请求服务端的时间)  </p>
+<span id="more"></span>
+
+<p>2)响应(服务端-&gt;客户端[response])<br>​        HTTP/1.1(响应采用的协议和版本号) 200(状态码) OK(描述信息)<br>​     Location:     <a href="https://link.zhihu.com/?target=http://www.baidu.com">http://www.baidu.com</a>(服务端需要客户端访问的页面路径)<br>​     Server:apache     tomcat(服务端的Web服务端名)<br>​     Content-Encoding:     gzip(服务端能够发送压缩编码类型)<br>​     Content-Length: 80(服务端发送的压缩数据的长度)<br>​     Content-Language: zh-cn(服务端发送的语言类型)<br>​     Content-Type:     text/html; charset=GB2312(服务端发送的类型及采用的编码方式)<br>​     Last-Modified:     Tue, 11 Jul 2000 18:23:51 GMT(服务端对该资源最后修改的时间)<br>​     Refresh:     1;url=<a href="https://link.zhihu.com/?target=http://www.it315.org">http://www.it315.org</a>(服务端要求客户端1秒钟后，刷新，然后访问指定的页面路径)<br>​     Content-Disposition: attachment;     filename=aaa.zip(服务端要求客户端以下载文件的方式打开该文件)<br>​     Transfer-Encoding:     chunked(分块传递数据到客户端）<br>​     Set-Cookie:SS=Q0=5Lb_nQ;     path=/search(服务端发送到客户端的暂存数据)<br>​     Expires:     -1//3种(服务端禁止客户端缓存页面数据)<br>​     Cache-Control:     no-cache(服务端禁止客户端缓存页面数据)<br>​     Pragma: no-cache(服务端禁止客户端缓存页面数据)<br>​     Connection: close(1.0)/(1.1)Keep-Alive(维护客户端和服务端的连接关系)  </p>
+<h2 id="Lambda表达式"><a href="#Lambda表达式" class="headerlink" title="Lambda表达式"></a>Lambda表达式</h2><h3 id="1-匿名内部类"><a href="#1-匿名内部类" class="headerlink" title="1.匿名内部类"></a>1.匿名内部类</h3><p>匿名内部类也就是没有名字的内部类，正因为没有名字，所以匿名内部类只能使用一次，它通常用来简化代码编写</p>
+<p>但使用匿名内部类还有个前提条件：<strong>必须继承一个父类或实现一个接口</strong></p>
+<h4 id="实例1-不使用匿名内部类来实现抽象方法"><a href="#实例1-不使用匿名内部类来实现抽象方法" class="headerlink" title="实例1:不使用匿名内部类来实现抽象方法"></a>实例1:不使用匿名内部类来实现抽象方法</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">abstract</span> <span class="class"><span class="keyword">class</span> <span class="title">Person</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">eat</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Child</span> <span class="keyword">extends</span> <span class="title">Person</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">eat</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;eat something&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Demo</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Person p = <span class="keyword">new</span> Child();</span><br><span class="line">        p.eat();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>运行结果：</strong> eat something</p>
+<p>可以看到，我们用Child继承了Person类，然后实现了Child的一个实例，将其向上转型为Person类的引用</p>
+<p>但是，如果此处的Child类只使用一次，那么将其编写为独立的一个类岂不是很麻烦？</p>
+<p>这个时候就引入了匿名内部类</p>
+<h4 id="实例2：匿名内部类的基本实现"><a href="#实例2：匿名内部类的基本实现" class="headerlink" title="实例2：匿名内部类的基本实现"></a>实例2：匿名内部类的基本实现</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">abstract</span> <span class="class"><span class="keyword">class</span> <span class="title">Person</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">eat</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Demo</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Person p = <span class="keyword">new</span> Person() &#123;</span><br><span class="line">            <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">eat</span><span class="params">()</span> </span>&#123;</span><br><span class="line">                System.out.println(<span class="string">&quot;eat something&quot;</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;;</span><br><span class="line">        p.eat();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>运行结果：</strong> eat something</p>
+<p>可以看到，我们直接将抽象类Person中的方法在大括号中实现了</p>
+<p>这样便可以省略一个类的书写,并且，匿名内部类还能用于接口上</p>
+<h4 id="实例3：在接口上使用匿名内部类"><a href="#实例3：在接口上使用匿名内部类" class="headerlink" title="实例3：在接口上使用匿名内部类"></a>实例3：在接口上使用匿名内部类</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">interface</span> <span class="title">Person</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">eat</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Demo</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Person p = <span class="keyword">new</span> Person() &#123;</span><br><span class="line">            <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">eat</span><span class="params">()</span> </span>&#123;</span><br><span class="line">                System.out.println(<span class="string">&quot;eat something&quot;</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;;</span><br><span class="line">        p.eat();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>运行结果：</strong> eat something</p>
+<p>由上面的例子可以看出，<strong>只要一个类是抽象的或是一个接口</strong>，那么其子类中的方法都可以使用匿名内部类来实现</p>
+<h3 id="2-Lambda表达式"><a href="#2-Lambda表达式" class="headerlink" title="2.Lambda表达式"></a>2.Lambda表达式</h3><p>对于单方法接口，即一个接口只定义了一种方法，我们可以只写出方法定义：</p>
+<p>即简化匿名内部类的方式，<strong>其核心是一个接口实现类的覆盖重写，返回一个接口对象</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Person p = <span class="keyword">new</span> Person() &#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">eat</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;eat something&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line">p.eat();</span><br><span class="line"></span><br><span class="line"><span class="comment">//简化后</span></span><br><span class="line">Person p = ()-&gt;System.out.println(<span class="string">&quot;eat something&quot;</span>);</span><br><span class="line">p.eat();</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-联系与区别"><a href="#3-联系与区别" class="headerlink" title="3.联系与区别"></a>3.联系与区别</h3><ul>
+<li>匿名内部类可以为任意接口创建实例——不管接口包含多少个抽象方法，只要匿名内部类实现所有的抽象方法即可；但 Lambda 表达式只能为函数式接口创建实例。</li>
+<li>匿名内部类可以为抽象类甚至普通类创建实例；但 Lambda 表达式只能为函数式接口创建实例。</li>
+<li>匿名内部类实现的抽象方法的方法体允许调用接口中定义的默认方法；但 Lambda 表达式的代码块不允许调用接口中定义的默认方法。</li>
+</ul>
+<h2 id="MySQL"><a href="#MySQL" class="headerlink" title="MySQL"></a>MySQL</h2><h3 id="图谱"><a href="#图谱" class="headerlink" title="图谱"></a>图谱</h3><p><img src="https://img-blog.csdn.net/20131213145346421?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd3p5XzE5ODg=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt="img"></p>
+<h3 id="Data-Manipulation-Language"><a href="#Data-Manipulation-Language" class="headerlink" title="Data Manipulation Language"></a>Data Manipulation Language</h3><h4 id="连接词："><a href="#连接词：" class="headerlink" title="连接词："></a>连接词：</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> <span class="keyword">Table</span> <span class="keyword">where</span></span><br><span class="line"><span class="keyword">column</span> <span class="keyword">like</span> <span class="string">&#x27;name_%&#x27;</span></span><br><span class="line"><span class="keyword">column</span> <span class="keyword">between</span> <span class="string">&#x27;100&#x27;</span> <span class="keyword">and</span> <span class="string">&#x27;150&#x27;</span></span><br><span class="line"><span class="keyword">column</span> <span class="keyword">is</span> <span class="keyword">null</span></span><br><span class="line"><span class="keyword">in</span> (column1,column2...)</span><br></pre></td></tr></table></figure>
+
+<h4 id="通配符："><a href="#通配符：" class="headerlink" title="通配符："></a>通配符：</h4><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">%:任意字符</span></span><br><span class="line"><span class="string">_:任意单个字符</span></span><br><span class="line">[ ]<span class="string">:指定范围</span> <span class="string">([a-f])</span> <span class="string">或集合</span> <span class="string">([abcdef])</span> <span class="string">中的任何单个字符</span></span><br><span class="line">[<span class="string">^</span>]<span class="string">:不属于指定范围</span> <span class="string">([a-f])</span> <span class="string">或集合</span> <span class="string">([abcdef])</span> <span class="string">的任何单个字符</span></span><br><span class="line"><span class="string">escape</span> <span class="string">&#x27;\&#x27;：转义,select * from table where name like &#x27;</span><span class="string">user\_&#x27;</span> <span class="string">escape</span> <span class="string">&#x27;\&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="限定词"><a href="#限定词" class="headerlink" title="限定词:"></a>限定词:</h4><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">distinct:唯一值</span></span><br><span class="line"><span class="string">order</span> <span class="string">by：排序规则，desc/asc</span></span><br><span class="line"><span class="string">group</span> <span class="string">by:分组.having</span> <span class="string">group_conditon</span></span><br><span class="line"><span class="string">limit</span> <span class="string">nums:限制个数</span></span><br><span class="line"><span class="string">offset</span> <span class="string">nums:从第几个开始</span></span><br><span class="line"><span class="string">Is</span> <span class="string">Not/Is</span> <span class="literal">NULL</span><span class="string">:判空</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="多表查询："><a href="#多表查询：" class="headerlink" title="多表查询："></a>多表查询：</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">table</span> A </span><br><span class="line"><span class="keyword">inner</span><span class="operator">/</span><span class="keyword">left</span><span class="operator">/</span><span class="keyword">right</span><span class="operator">/</span><span class="keyword">full</span> </span><br><span class="line"><span class="keyword">outer</span> <span class="keyword">join</span> <span class="keyword">Table</span> B </span><br><span class="line"><span class="keyword">on</span> conditions</span><br></pre></td></tr></table></figure>
+
+<h4 id="函数："><a href="#函数：" class="headerlink" title="函数："></a>函数：</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">单行函数:</span><br><span class="line">    字符函数、数值函数、日期函数、转换函数、通用函数</span><br><span class="line">组合函数:</span><br><span class="line">     count、min、max、avg、sum</span><br></pre></td></tr></table></figure>
+
+<h3 id="Data-Define-Language"><a href="#Data-Define-Language" class="headerlink" title="Data Define Language"></a>Data Define Language</h3><h4 id="库的管理"><a href="#库的管理" class="headerlink" title="库的管理"></a>库的管理</h4><p>用于定义数据库的三级结构，包括外模式、概念模式、内模式及其相互之间的映像，定义数据的完整性、安全控制等约束</p>
+<h4 id="表的管理"><a href="#表的管理" class="headerlink" title="表的管理"></a>表的管理</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">create table if not exits MyTable&#123;</span><br><span class="line">    column1 DATATYPE TABLECONSTRAINT <span class="keyword">DEFAULT</span> default_value,</span><br><span class="line">    column2 DATATYPE TABLECONSTRAINT <span class="keyword">DEFAULT</span> default_value,</span><br><span class="line">&#125;</span><br><span class="line">DATATYPE:</span><br><span class="line">    <span class="type">Integer</span>,<span class="type">boolean</span></span><br><span class="line">TABLECONSTRAINT:</span><br><span class="line">    <span class="keyword">primary</span> keys,autoincrement,<span class="keyword">unique</span>,<span class="keyword">not</span> <span class="keyword">null</span>,<span class="keyword">check</span>,<span class="keyword">foreign</span>      key</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> MyTable</span><br><span class="line">① <span class="keyword">add</span> <span class="keyword">column</span> datatype tableconstraint <span class="keyword">default</span> default_value</span><br><span class="line">② <span class="keyword">drop</span> column_to_be_deleted</span><br><span class="line">③ rename <span class="keyword">to</span> new_table_name</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">drop</span> <span class="keyword">table</span> if <span class="keyword">exists</span> MyTable</span><br></pre></td></tr></table></figure>
+
+<h3 id="Data-Control-Language"><a href="#Data-Control-Language" class="headerlink" title="Data Control Language"></a>Data Control Language</h3><p>数据库控制语言：授权，角色控制等</p>
+<ul>
+<li><p>GRANT – 为用户赋予访问权限</p>
+</li>
+<li><p>REVOKE – 撤回授权权限</p>
+</li>
+</ul>
+<h3 id="Transaction-Control-Language"><a href="#Transaction-Control-Language" class="headerlink" title="Transaction Control Language"></a>Transaction Control Language</h3><p>事务的概念：要么全部执行，要么全部不执行。<br>​事务的acid属性：atomicity、consistency、isolation、durability<br>​事务的创建：隐式事务、显示事务。事务具有明显的开启和结束标记。</p>
+<h1 id="工具使用"><a href="#工具使用" class="headerlink" title="工具使用"></a>工具使用</h1><h2 id="1-GitFlow"><a href="#1-GitFlow" class="headerlink" title="1. GitFlow"></a>1. GitFlow</h2><p>可以在idea里面直接看到流程：<strong>提交需要反复确认，然后进行拉取</strong></p>
+<p><img src="assets/image-20210818173247374.png" alt="image-20210818173247374"></p>
+<table>
+<thead>
+<tr>
+<th align="left">name</th>
+<th align="left">Function</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>master</strong></td>
+<td align="left">存放随时可供生产环境中的部署的代码</td>
+</tr>
+<tr>
+<td align="left"><strong>develop</strong></td>
+<td align="left">存放当前最新开发成果的分支，当代码足够稳定时可以合并到master分支上去。</td>
+</tr>
+<tr>
+<td align="left"><strong>feature</strong></td>
+<td align="left">开发新功能使用，最终合并到develop分支或抛弃掉</td>
+</tr>
+<tr>
+<td align="left"><strong>release</strong></td>
+<td align="left">做小的缺陷修正、准备发布版本所需的各项说明信息</td>
+</tr>
+<tr>
+<td align="left"><strong>hotfix</strong></td>
+<td align="left">代码的紧急修复工作</td>
+</tr>
+</tbody></table>
+<p>查看Git工作区、暂存区的变更情况（可以知道哪些没有commit、哪些没有被Git追踪）：<code>git status</code></p>
+<p>拉取远程最新的变更到本地：<code>git fetch</code></p>
+<p>切换分支：<code>git checkout 分支名</code></p>
+<p>将代码还原到某个版本(包括工作目录)：<code>git reset --hard 版本号</code></p>
+<p>查看Git的提交(commit)记录：<code>git log</code></p>
+<p>将代码还原到某个版本后，后悔了，想重新回去，但在提交记录已经找不到了。<code>git reset --hard</code> 把<code>reset 之后的 commit</code>都给抹杀掉了。找到最近的执行Git命令：<code>git reflog</code></p>
+<p>还原到某个版本了，现在我为了稳健，不想再原来的分支上修改了，再<strong>新建一个分支</strong>吧（<code>-b</code> 参数把当前分支切换到了要创建的分支上）：<code>git checkout -b 分支名</code></p>
+<p>我们把上一次还是”相对稳健“的分支合并到我新建的分支上：<code>git merge 分支</code></p>
+<p>突然想看看现在有多少个分支：<code>git branch -a</code></p>
+<p>新增几个文件了，随手<code>git add</code>一下吧</p>
+<p>改得差不多了，随手<code>git commit -m</code>一下吧，最好还是<strong>写好备注</strong>，不然以后等改多了，你都不知道你改了什么啦。</p>
+<p>改完了，提交到远程吧：<code>git push</code></p>
+<p>想把远程分支最新的代码给拉下来，然后合并到本地上。我们可以用<code>git fetch</code>和<code>git merge</code>来实现，也可以通过<code>git pull</code>来实现。一般我用的都是<code>git fetch</code>+<code>git merge</code>，这样会更加<strong>可控</strong>一些</p>
+<p>有的时候，本地分支在master分支，然后忘了切其他的分支去修改，直接在master改了，然后也push到远程了。等你发现的时候，你会真的想骂自己。</p>
+<p>咋办？最简单的办法其实我们还是可以<code>git reset --hard</code>到对应的版本，然后将其修改或者复原，再强制提交到<code>master</code>分支：<code>git push -u origin/master -f</code></p>
+<h2 id="2-idea-插件"><a href="#2-idea-插件" class="headerlink" title="2. idea 插件"></a>2. idea 插件</h2><h3 id="2-1-RestfulToolkit—RESTful服务开发"><a href="#2-1-RestfulToolkit—RESTful服务开发" class="headerlink" title="2.1 RestfulToolkit—RESTful服务开发"></a>2.1 RestfulToolkit—RESTful服务开发</h3><ul>
+<li>2.1.1 根据 URL 直接跳转到对应的方法定义 ( Ctrl \ or Ctrl Alt N );</li>
+<li>2.1.2 提供了一个 Services tree 的显示窗口;</li>
+<li>2.1.3 一个简单的 http 请求工具;</li>
+<li>2.1.4 在请求方法上添加了有用功能: 复制生成 URL;复制方法参数…</li>
+<li>2.1.5 其他功能: java 类上添加 Convert to JSON 功能，格式化 json 数据 ( Windows: Ctrl + Enter; Mac: Command + Enter )。</li>
+</ul>
+<h3 id="2-2-快捷键"><a href="#2-2-快捷键" class="headerlink" title="2.2 快捷键"></a>2.2 快捷键</h3><p><code>Ctrl+Shift+Enter</code>   完善整条语句、分号、if语句等</p>
+<p><code>Ctrl+W</code>   扩大选取范围</p>
+<p><code>Ctrl+F8 </code>  打断点</p>
+<p><code>Shift+F9</code>   debug</p>
+<p><code>F7 F8 F9</code>   进入方法、下一步、下个断点</p>
+<p>ctrl+T 直接拉取git更新</p>
+<p>ctrl+alt+shift+C  copy reference</p>
+<h1 id="用户评级-项目"><a href="#用户评级-项目" class="headerlink" title="用户评级 项目"></a>用户评级 项目</h1><h2 id="PageInfo"><a href="#PageInfo" class="headerlink" title="PageInfo"></a>PageInfo</h2><figure class="highlight"><table><tr><td class="code"><pre><span class="line">Request URL: </span><br><span class="line">/api/audiences?orderColumn=createTime&amp;orderType=desc&amp;page=1&amp;pagesize=30&amp;readState=READ_SUCCESS</span><br></pre></td></tr></table></figure>
+
+<p>读取过程 : PageInterceptor.class</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">PageInfo page = <span class="keyword">new</span> PageInfo();</span><br><span class="line">            page.setCurrent(<span class="keyword">this</span>.getIntValue(request, <span class="string">&quot;page&quot;</span>, <span class="number">1</span>));</span><br><span class="line">            page.setPagesize(<span class="keyword">this</span>.getIntValue(request, <span class="string">&quot;pagesize&quot;</span>, annotation.size()));</span><br><span class="line">            String orderColumn = request.getParameter(<span class="string">&quot;orderColumn&quot;</span>);</span><br></pre></td></tr></table></figure>
+
+<h2 id="项目组件"><a href="#项目组件" class="headerlink" title="项目组件"></a>项目组件</h2><ul>
+<li><p>parent : crius</p>
+</li>
+<li><p>被dependencyManagement管理版本号的组件 :  </p>
+<p>opencv、log4j、reflections 、 lombok 、compress 、commons-jcs-core 、kryo 、httpclient 、mapstruct 、aws-java-sdk-s3 、com.amazonaws 、jmespath-java 、commons-collections 、spring-cloud-dependencies 、dependencies </p>
+</li>
+<li><p>har-manager模块组件：</p>
+<p>spring-cloud-starter-openfeign 、spring-cloud-starter-netflix-hystrix 、spring-boot-starter-cache 、ehcache、crius-spring-boot-starter 、mybatis 、crius-oss-amazon-s3-spring-boot-starter 、crius-oss-azure-storage-spring-boot-starter 、jmespath-java 、commons-collections、spring-boot-starter-actuator 、spring-boot-starter-rabbitmq 、spring-cloud-starter-alibaba-nacos-config</p>
+</li>
+</ul>
+<h2 id="Oauth授权"><a href="#Oauth授权" class="headerlink" title="Oauth授权"></a>Oauth授权</h2><p>1.网关拦截</p>
+<p>由devops平台上的网关决定redirect地址，Oauth进行授权鉴权，如没有权限，用户拿着token去访问第三方平台</p>
+<p>注：微服务技术解决方案下的，网关至少需要具备图示基本功能。</p>
+<ol>
+<li>网关作为单点入口，完成统一的请求管理</li>
+<li>免去客户端直接对接众多微服务的复杂性，采用单点入口，实现路由转发，从而实现服务调用</li>
+<li>服务对于整个系统来讲，是不稳定的，那么网关，需要进行限流熔断，保持系统的稳定与分区容错性</li>
+<li>对于服务调用的链路，网关有职责进行记录，日志监控，保证整个系统，在监控下工作</li>
+<li>系统可能不仅仅是由自有客户端调用，很多时候，系统开放能力API给外部，因此网关需要安全认证，来保证安全</li>
+</ol>
+<p>2.Security授权</p>
+<p>Security通过authLoginFilter同步hac用户信息</p>
+<h2 id="Maven依赖管理"><a href="#Maven依赖管理" class="headerlink" title="Maven依赖管理"></a>Maven依赖管理</h2><ul>
+<li><p>父pom需要添加<code>&lt;packaging&gt;pom&lt;/packaging&gt;</code>。</p>
+</li>
+<li><p>父pom需要用<code>&lt;modules&gt;&lt;module&gt;子module名&lt;/module&gt;&lt;/modules&gt;</code>注明子module有哪些。</p>
+</li>
+<li><p>父pom声明依赖时<code>&lt;dependencies&gt;</code>外要嵌套<code>&lt;dependencyManagement&gt;</code>才能被子pom继承到，我就是忘了这点。</p>
+</li>
+<li><p>子pom需要通过<code>&lt;parent&gt;&lt;/parent&gt;</code>指定父项目，声明依赖时就默认会用父pom中的版本了。</p>
+</li>
+</ul>
+<h2 id="项目创建顺序"><a href="#项目创建顺序" class="headerlink" title="项目创建顺序"></a>项目创建顺序</h2><p>业务  - &gt;  授权  - &gt;  性能优化</p>
+<h2 id="DDD"><a href="#DDD" class="headerlink" title="DDD"></a>DDD</h2><ul>
+<li>entity\dao\mapper\vo写在repository中</li>
+<li>service\特有的entity写在特定的module中</li>
+</ul>
+<h2 id="MyBatis枚举类映射"><a href="#MyBatis枚举类映射" class="headerlink" title="MyBatis枚举类映射"></a>MyBatis枚举类映射</h2><p><strong>mybatis默认的枚举类型处理器 :</strong></p>
+<ul>
+<li><p>EnumTypeHandler<br>mybatis的默认枚举类型处理器，将枚举类型的name持久化到数据库；</p>
+</li>
+<li><p>EnumOrdinalTypeHandler<br>mybatis原生支持的另一种枚举类型处理器，将枚举类型的索引序号持久化到数据库，需要全局配置或者在需要的字段上单独配置；</p>
+</li>
+</ul>
+<p><strong>mybatis配置全局默认枚举类型处理器 :  defaultEnumTypeHandler</strong></p>
+<ul>
+<li>mybatis在3.4.5及之后版本中，新增了一个指定全局默认枚举类型处理器的配置项 :  <strong>default-enum-type-handler</strong><br>在mybatis-config.xml中添加如下配置即可使自定义处理器全局生效，解决了之前新增枚举都需要单独配置的烦恼；</li>
+</ul>
+<p><img src="assets/image-20210910184840551.png" alt="image-20210910184840551"></p>
+<p><img src="assets/image-20210910184912954.png" alt="image-20210910184912954"></p>
+<h2 id="使用TypeHandler将List集合数据存入数据库"><a href="#使用TypeHandler将List集合数据存入数据库" class="headerlink" title="使用TypeHandler将List集合数据存入数据库"></a>使用TypeHandler将List集合数据存入数据库</h2><p><a href="https://www.dtmao.cc/news_show_785309.shtml">https://www.dtmao.cc/news_show_785309.shtml</a></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@MappedJdbcTypes(value=JdbcType.VARCHAR)</span></span><br><span class="line"><span class="meta">@MappedTypes(List.class)</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ListToVarchar</span> <span class="keyword">implements</span> <span class="title">TypeHandler</span>&lt;<span class="title">List</span>&lt;<span class="title">String</span>&gt;&gt; </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 遍历List类型的入参，转换为JSON格式，使用Statement对象插入数据库</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setParameter</span><span class="params">(PreparedStatement ps, <span class="keyword">int</span> i, List&lt;String&gt; objectList, JdbcType jdbcType)</span> <span class="keyword">throws</span> SQLException </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(objectList.isEmpty())&#123;</span><br><span class="line">            ps.setString(i,<span class="keyword">null</span>);</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        String s = JSON.toJSONString(objectList);</span><br><span class="line">        ps.setString(i,s);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 获取String类型的结果，使用parseObject将json对象转换为java对象</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> List&lt;String&gt; <span class="title">getResult</span><span class="params">(ResultSet resultSet, String s)</span> <span class="keyword">throws</span> SQLException </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> JSON.parseObject(resultSet.getString(s),<span class="keyword">new</span> TypeReference&lt;List&lt;String&gt;&gt;() &#123;&#125;);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 获取String类型的结果，使用parseObject将json对象转换为java对象</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> List&lt;String&gt; <span class="title">getResult</span><span class="params">(ResultSet resultSet, <span class="keyword">int</span> i)</span> <span class="keyword">throws</span> SQLException </span>&#123;</span><br><span class="line">        String s = resultSet.getString(i);</span><br><span class="line">        <span class="keyword">return</span>  JSON.parseObject(s,<span class="keyword">new</span> TypeReference&lt;List&lt;String&gt;&gt;() &#123;&#125;);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 获取String类型的结果，使用parseObject将json对象转换为java对象</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> List&lt;String&gt; <span class="title">getResult</span><span class="params">(CallableStatement callableStatement, <span class="keyword">int</span> i)</span> <span class="keyword">throws</span> SQLException </span>&#123;</span><br><span class="line">        String s = callableStatement.getString(i);</span><br><span class="line">        <span class="keyword">return</span> JSON.parseObject(s,<span class="keyword">new</span> TypeReference&lt;List&lt;String&gt;&gt;() &#123;&#125;);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="开发避坑"><a href="#开发避坑" class="headerlink" title="开发避坑"></a>开发避坑</h1><h2 id="1-判空"><a href="#1-判空" class="headerlink" title="1.判空"></a>1.判空</h2><ul>
+<li><p>Constant.equals(Variables);</p>
+</li>
+<li><p>Java中判断list为空(CollectionUtils.isEmpty)等同于 (list==null&amp;&amp;list.isEmpty())</p>
+</li>
+</ul>
+<h2 id="2-typeHandler匹配问题"><a href="#2-typeHandler匹配问题" class="headerlink" title="2.typeHandler匹配问题"></a>2.typeHandler匹配问题</h2><ul>
+<li>使用typeHandler去数据库中查询匹配时，注意序列化和反序列化的问题，需要二者hashcode完全一致，所以最好还是从数据库中找出json，映射为实体对象，在判断是否匹配</li>
+<li>错误示例： select语句中，即使数据库中json内容一致，但仍旧不能匹配</li>
+<li><img src="assets/image-20211116161549936.png" alt="image-20211116161549936"></li>
+</ul>
+<h1 id="隐私条款项目"><a href="#隐私条款项目" class="headerlink" title="隐私条款项目"></a>隐私条款项目</h1><h2 id="1-定时任务"><a href="#1-定时任务" class="headerlink" title="1.定时任务"></a>1.定时任务</h2><p><strong>- @SchedulerLock注解：为方法加上锁。</strong></p>
+<p>name属性（锁的名称）必须指定，每次只能执行一个具有相同名字的任务。</p>
+<p><strong>- lockAtMostFor属性，指定执行节点死亡时应该保留锁的时间。</strong></p>
+<p>设置锁的最大持有时间,为了解决如果持有锁的节点挂了,无法释放锁,其他节点无法进行下一次任务。设置了最大持有时间，当持有时间到了自动释放锁，不影响下一次执行。</p>
+<p><strong>- lockAtLeastFor属性，指定保留锁的最短时间。</strong></p>
+<p>主要目的是在任务非常短的且节点之间存在时钟差异的情况下防止多个节点执行。这个属性是锁的持有时间。设置了多少就一定会持有多长时间，在此期间，下一次任务执行时，其他节点包括它本身是不会执行任务的。</p>
+<h2 id="2-隐私条款模板"><a href="#2-隐私条款模板" class="headerlink" title="2.隐私条款模板"></a>2.隐私条款模板</h2><p>接口文档</p>
+<ul>
+<li>查看模板   GET     /api/templates</li>
+<li>新建模板   POST    /api/templates</li>
+<li>编辑模板  PATCH  /api/templates/{templateId}</li>
+<li>删除模板  DELETE    /api/templates/{templateId}</li>
+</ul>
+<h2 id="3-校验"><a href="#3-校验" class="headerlink" title="3.校验"></a>3.校验</h2><ul>
+<li>@Unique   name字段一致，表示绑定在一起校验<img src="assets/image-20211104145855450.png" alt="image-20211104145855450"></li>
+</ul>
+<h2 id="4-特殊用法"><a href="#4-特殊用法" class="headerlink" title="4.特殊用法"></a>4.特殊用法</h2><ul>
+<li>```java<br>/**<ul>
+<li>则在路径中悄悄接收projectIds</li>
+<li>/<br>@JsonIgnore<br>private List<Long> projectIds;<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">- 通过一系列Id查找</span><br><span class="line">  </span><br><span class="line">  &#96;&#96;&#96;xml</span><br><span class="line">  &lt;select id&#x3D;&quot;getClauses&quot; resultType&#x3D;&quot;long&quot;&gt;</span><br><span class="line">      select id from def_privacy_clause where project_id in</span><br><span class="line">      &lt;foreach collection&#x3D;&quot;list&quot; item&#x3D;&quot;id&quot; open&#x3D;&quot;(&quot; close&#x3D;&quot;)&quot; separator&#x3D;&quot;,&quot;&gt;</span><br><span class="line">          #&#123;id&#125;</span><br><span class="line">      &lt;&#x2F;foreach&gt;</span><br><span class="line">  &lt;&#x2F;select&gt;</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+<h2 id="3-部署踩坑"><a href="#3-部署踩坑" class="headerlink" title="3.部署踩坑"></a>3.部署踩坑</h2><h4 id="1-消息已发，计算端没有日志"><a href="#1-消息已发，计算端没有日志" class="headerlink" title="(1)消息已发，计算端没有日志"></a>(1)消息已发，计算端没有日志</h4><ul>
+<li><p>检查MQ配置</p>
+</li>
+<li><p>检查消费者</p>
+</li>
+<li><p>计算端磁盘已满</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>学习</category>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
       </tags>
   </entry>
 </search>

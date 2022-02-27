@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"eniac286.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":-1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="知识内容WebServer什么是HTTP请求头&#x2F;响应头1)请求(客户端-&gt;服务端[request])     GET(请求的方式)     &#x2F;newcoder&#x2F;hello.html(请求的目标资源) HTTP&#x2F;1.1(请求采用                                        的协议和版本号)     Accept: &#x2F;(客户端能接收的资源类型)     Acce">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java面经">
+<meta property="og:url" content="https://eniac286.github.io/2021/08/03/%E5%AE%9E%E4%B9%A0%E6%95%B4%E7%90%86/index.html">
+<meta property="og:site_name" content="Eniac286">
+<meta property="og:description" content="知识内容WebServer什么是HTTP请求头&#x2F;响应头1)请求(客户端-&gt;服务端[request])     GET(请求的方式)     &#x2F;newcoder&#x2F;hello.html(请求的目标资源) HTTP&#x2F;1.1(请求采用                                        的协议和版本号)     Accept: &#x2F;(客户端能接收的资源类型)     Acce">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://img-blog.csdn.net/20131213145346421?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd3p5XzE5ODg=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center">
+<meta property="og:image" content="https://eniac286.github.io/2021/08/03/%E5%AE%9E%E4%B9%A0%E6%95%B4%E7%90%86/assets/image-20210818173247374.png">
+<meta property="og:image" content="https://eniac286.github.io/2021/08/03/%E5%AE%9E%E4%B9%A0%E6%95%B4%E7%90%86/assets/image-20210910184840551.png">
+<meta property="og:image" content="https://eniac286.github.io/2021/08/03/%E5%AE%9E%E4%B9%A0%E6%95%B4%E7%90%86/assets/image-20210910184912954.png">
+<meta property="og:image" content="https://eniac286.github.io/2021/08/03/%E5%AE%9E%E4%B9%A0%E6%95%B4%E7%90%86/assets/image-20211116161549936.png">
+<meta property="og:image" content="https://eniac286.github.io/2021/08/03/%E5%AE%9E%E4%B9%A0%E6%95%B4%E7%90%86/assets/image-20211104145855450.png">
+<meta property="article:published_time" content="2021-08-03T09:58:05.000Z">
+<meta property="article:modified_time" content="2022-02-27T08:54:49.420Z">
+<meta property="article:author" content="Dara Yoon">
+<meta property="article:tag" content="java">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img-blog.csdn.net/20131213145346421?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd3p5XzE5ODg=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center">
+
+<link rel="canonical" href="https://eniac286.github.io/2021/08/03/%E5%AE%9E%E4%B9%A0%E6%95%B4%E7%90%86/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>Java面经 | Eniac286</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Eniac286</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">风物长宜放眼量</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-首页">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-分类">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-标签">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-时间轴">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>时间轴</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://eniac286.github.io/2021/08/03/%E5%AE%9E%E4%B9%A0%E6%95%B4%E7%90%86/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Dara Yoon">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Eniac286">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Java面经
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-08-03 17:58:05" itemprop="dateCreated datePublished" datetime="2021-08-03T17:58:05+08:00">2021-08-03</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">学习</span></a>
+                </span>
+                  >
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0/java/" itemprop="url" rel="index"><span itemprop="name">java</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="知识内容"><a href="#知识内容" class="headerlink" title="知识内容"></a>知识内容</h1><h2 id="WebServer"><a href="#WebServer" class="headerlink" title="WebServer"></a>WebServer</h2><h3 id="什么是HTTP请求头-响应头"><a href="#什么是HTTP请求头-响应头" class="headerlink" title="什么是HTTP请求头/响应头"></a>什么是HTTP请求头/响应头</h3><p>1)请求(客户端-&gt;服务端[request])<br>     GET(请求的方式)     /newcoder/hello.html(请求的目标资源) HTTP/1.1(请求采用                                        的协议和版本号)<br>     Accept: <em>/</em>(客户端能接收的资源类型)<br>     Accept-Language: en-us(客户端接收的语言类型)<br>     Connection: Keep-Alive(维护客户端和服务端的连接关系)<br>     Host: localhost:8080(连接的目标主机和端口号)<br>     Referer: <a target="_blank" rel="noopener" href="http://localhost/links.asp(%E5%91%8A%E8%AF%89%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%88%91%E6%9D%A5%E8%87%AA%E4%BA%8E%E5%93%AA%E9%87%8C)">http://localhost/links.asp(告诉服务器我来自于哪里)</a><br>     User-Agent: Mozilla/4.0(客户端版本号的名字)<br>     Accept-Encoding: gzip, deflate(客户端能接收的压缩数据的类型)<br>     If-Modified-Since: Tue, 11 Jul     2000 18:23:51 GMT(缓存时间)<br>     Cookie(客户端暂存服务端的信息)<br>     Date: Tue, 11 Jul 2000     18:23:51 GMT(客户端请求服务端的时间)  </p>
+<span id="more"></span>
+
+<p>2)响应(服务端-&gt;客户端[response])<br>​        HTTP/1.1(响应采用的协议和版本号) 200(状态码) OK(描述信息)<br>​     Location:     <a href="https://link.zhihu.com/?target=http://www.baidu.com">http://www.baidu.com</a>(服务端需要客户端访问的页面路径)<br>​     Server:apache     tomcat(服务端的Web服务端名)<br>​     Content-Encoding:     gzip(服务端能够发送压缩编码类型)<br>​     Content-Length: 80(服务端发送的压缩数据的长度)<br>​     Content-Language: zh-cn(服务端发送的语言类型)<br>​     Content-Type:     text/html; charset=GB2312(服务端发送的类型及采用的编码方式)<br>​     Last-Modified:     Tue, 11 Jul 2000 18:23:51 GMT(服务端对该资源最后修改的时间)<br>​     Refresh:     1;url=<a href="https://link.zhihu.com/?target=http://www.it315.org">http://www.it315.org</a>(服务端要求客户端1秒钟后，刷新，然后访问指定的页面路径)<br>​     Content-Disposition: attachment;     filename=aaa.zip(服务端要求客户端以下载文件的方式打开该文件)<br>​     Transfer-Encoding:     chunked(分块传递数据到客户端）<br>​     Set-Cookie:SS=Q0=5Lb_nQ;     path=/search(服务端发送到客户端的暂存数据)<br>​     Expires:     -1//3种(服务端禁止客户端缓存页面数据)<br>​     Cache-Control:     no-cache(服务端禁止客户端缓存页面数据)<br>​     Pragma: no-cache(服务端禁止客户端缓存页面数据)<br>​     Connection: close(1.0)/(1.1)Keep-Alive(维护客户端和服务端的连接关系)  </p>
+<h2 id="Lambda表达式"><a href="#Lambda表达式" class="headerlink" title="Lambda表达式"></a>Lambda表达式</h2><h3 id="1-匿名内部类"><a href="#1-匿名内部类" class="headerlink" title="1.匿名内部类"></a>1.匿名内部类</h3><p>匿名内部类也就是没有名字的内部类，正因为没有名字，所以匿名内部类只能使用一次，它通常用来简化代码编写</p>
+<p>但使用匿名内部类还有个前提条件：<strong>必须继承一个父类或实现一个接口</strong></p>
+<h4 id="实例1-不使用匿名内部类来实现抽象方法"><a href="#实例1-不使用匿名内部类来实现抽象方法" class="headerlink" title="实例1:不使用匿名内部类来实现抽象方法"></a>实例1:不使用匿名内部类来实现抽象方法</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">abstract</span> <span class="class"><span class="keyword">class</span> <span class="title">Person</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">eat</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Child</span> <span class="keyword">extends</span> <span class="title">Person</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">eat</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;eat something&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Demo</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Person p = <span class="keyword">new</span> Child();</span><br><span class="line">        p.eat();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>运行结果：</strong> eat something</p>
+<p>可以看到，我们用Child继承了Person类，然后实现了Child的一个实例，将其向上转型为Person类的引用</p>
+<p>但是，如果此处的Child类只使用一次，那么将其编写为独立的一个类岂不是很麻烦？</p>
+<p>这个时候就引入了匿名内部类</p>
+<h4 id="实例2：匿名内部类的基本实现"><a href="#实例2：匿名内部类的基本实现" class="headerlink" title="实例2：匿名内部类的基本实现"></a>实例2：匿名内部类的基本实现</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">abstract</span> <span class="class"><span class="keyword">class</span> <span class="title">Person</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">eat</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Demo</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Person p = <span class="keyword">new</span> Person() &#123;</span><br><span class="line">            <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">eat</span><span class="params">()</span> </span>&#123;</span><br><span class="line">                System.out.println(<span class="string">&quot;eat something&quot;</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;;</span><br><span class="line">        p.eat();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>运行结果：</strong> eat something</p>
+<p>可以看到，我们直接将抽象类Person中的方法在大括号中实现了</p>
+<p>这样便可以省略一个类的书写,并且，匿名内部类还能用于接口上</p>
+<h4 id="实例3：在接口上使用匿名内部类"><a href="#实例3：在接口上使用匿名内部类" class="headerlink" title="实例3：在接口上使用匿名内部类"></a>实例3：在接口上使用匿名内部类</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">interface</span> <span class="title">Person</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">eat</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Demo</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Person p = <span class="keyword">new</span> Person() &#123;</span><br><span class="line">            <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">eat</span><span class="params">()</span> </span>&#123;</span><br><span class="line">                System.out.println(<span class="string">&quot;eat something&quot;</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;;</span><br><span class="line">        p.eat();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>运行结果：</strong> eat something</p>
+<p>由上面的例子可以看出，<strong>只要一个类是抽象的或是一个接口</strong>，那么其子类中的方法都可以使用匿名内部类来实现</p>
+<h3 id="2-Lambda表达式"><a href="#2-Lambda表达式" class="headerlink" title="2.Lambda表达式"></a>2.Lambda表达式</h3><p>对于单方法接口，即一个接口只定义了一种方法，我们可以只写出方法定义：</p>
+<p>即简化匿名内部类的方式，<strong>其核心是一个接口实现类的覆盖重写，返回一个接口对象</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">Person p = <span class="keyword">new</span> Person() &#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">eat</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;eat something&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line">p.eat();</span><br><span class="line"></span><br><span class="line"><span class="comment">//简化后</span></span><br><span class="line">Person p = ()-&gt;System.out.println(<span class="string">&quot;eat something&quot;</span>);</span><br><span class="line">p.eat();</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-联系与区别"><a href="#3-联系与区别" class="headerlink" title="3.联系与区别"></a>3.联系与区别</h3><ul>
+<li>匿名内部类可以为任意接口创建实例——不管接口包含多少个抽象方法，只要匿名内部类实现所有的抽象方法即可；但 Lambda 表达式只能为函数式接口创建实例。</li>
+<li>匿名内部类可以为抽象类甚至普通类创建实例；但 Lambda 表达式只能为函数式接口创建实例。</li>
+<li>匿名内部类实现的抽象方法的方法体允许调用接口中定义的默认方法；但 Lambda 表达式的代码块不允许调用接口中定义的默认方法。</li>
+</ul>
+<h2 id="MySQL"><a href="#MySQL" class="headerlink" title="MySQL"></a>MySQL</h2><h3 id="图谱"><a href="#图谱" class="headerlink" title="图谱"></a>图谱</h3><p><img src="https://img-blog.csdn.net/20131213145346421?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd3p5XzE5ODg=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt="img"></p>
+<h3 id="Data-Manipulation-Language"><a href="#Data-Manipulation-Language" class="headerlink" title="Data Manipulation Language"></a>Data Manipulation Language</h3><h4 id="连接词："><a href="#连接词：" class="headerlink" title="连接词："></a>连接词：</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> <span class="keyword">Table</span> <span class="keyword">where</span></span><br><span class="line"><span class="keyword">column</span> <span class="keyword">like</span> <span class="string">&#x27;name_%&#x27;</span></span><br><span class="line"><span class="keyword">column</span> <span class="keyword">between</span> <span class="string">&#x27;100&#x27;</span> <span class="keyword">and</span> <span class="string">&#x27;150&#x27;</span></span><br><span class="line"><span class="keyword">column</span> <span class="keyword">is</span> <span class="keyword">null</span></span><br><span class="line"><span class="keyword">in</span> (column1,column2...)</span><br></pre></td></tr></table></figure>
+
+<h4 id="通配符："><a href="#通配符：" class="headerlink" title="通配符："></a>通配符：</h4><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">%:任意字符</span></span><br><span class="line"><span class="string">_:任意单个字符</span></span><br><span class="line">[ ]<span class="string">:指定范围</span> <span class="string">([a-f])</span> <span class="string">或集合</span> <span class="string">([abcdef])</span> <span class="string">中的任何单个字符</span></span><br><span class="line">[<span class="string">^</span>]<span class="string">:不属于指定范围</span> <span class="string">([a-f])</span> <span class="string">或集合</span> <span class="string">([abcdef])</span> <span class="string">的任何单个字符</span></span><br><span class="line"><span class="string">escape</span> <span class="string">&#x27;\&#x27;：转义,select * from table where name like &#x27;</span><span class="string">user\_&#x27;</span> <span class="string">escape</span> <span class="string">&#x27;\&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="限定词"><a href="#限定词" class="headerlink" title="限定词:"></a>限定词:</h4><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">distinct:唯一值</span></span><br><span class="line"><span class="string">order</span> <span class="string">by：排序规则，desc/asc</span></span><br><span class="line"><span class="string">group</span> <span class="string">by:分组.having</span> <span class="string">group_conditon</span></span><br><span class="line"><span class="string">limit</span> <span class="string">nums:限制个数</span></span><br><span class="line"><span class="string">offset</span> <span class="string">nums:从第几个开始</span></span><br><span class="line"><span class="string">Is</span> <span class="string">Not/Is</span> <span class="literal">NULL</span><span class="string">:判空</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="多表查询："><a href="#多表查询：" class="headerlink" title="多表查询："></a>多表查询：</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">table</span> A </span><br><span class="line"><span class="keyword">inner</span><span class="operator">/</span><span class="keyword">left</span><span class="operator">/</span><span class="keyword">right</span><span class="operator">/</span><span class="keyword">full</span> </span><br><span class="line"><span class="keyword">outer</span> <span class="keyword">join</span> <span class="keyword">Table</span> B </span><br><span class="line"><span class="keyword">on</span> conditions</span><br></pre></td></tr></table></figure>
+
+<h4 id="函数："><a href="#函数：" class="headerlink" title="函数："></a>函数：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">单行函数:</span><br><span class="line">    字符函数、数值函数、日期函数、转换函数、通用函数</span><br><span class="line">组合函数:</span><br><span class="line">     count、min、max、avg、sum</span><br></pre></td></tr></table></figure>
+
+<h3 id="Data-Define-Language"><a href="#Data-Define-Language" class="headerlink" title="Data Define Language"></a>Data Define Language</h3><h4 id="库的管理"><a href="#库的管理" class="headerlink" title="库的管理"></a>库的管理</h4><p>用于定义数据库的三级结构，包括外模式、概念模式、内模式及其相互之间的映像，定义数据的完整性、安全控制等约束</p>
+<h4 id="表的管理"><a href="#表的管理" class="headerlink" title="表的管理"></a>表的管理</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">create table if not exits MyTable&#123;</span><br><span class="line">    column1 DATATYPE TABLECONSTRAINT <span class="keyword">DEFAULT</span> default_value,</span><br><span class="line">    column2 DATATYPE TABLECONSTRAINT <span class="keyword">DEFAULT</span> default_value,</span><br><span class="line">&#125;</span><br><span class="line">DATATYPE:</span><br><span class="line">    <span class="type">Integer</span>,<span class="type">boolean</span></span><br><span class="line">TABLECONSTRAINT:</span><br><span class="line">    <span class="keyword">primary</span> keys,autoincrement,<span class="keyword">unique</span>,<span class="keyword">not</span> <span class="keyword">null</span>,<span class="keyword">check</span>,<span class="keyword">foreign</span>      key</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> MyTable</span><br><span class="line">① <span class="keyword">add</span> <span class="keyword">column</span> datatype tableconstraint <span class="keyword">default</span> default_value</span><br><span class="line">② <span class="keyword">drop</span> column_to_be_deleted</span><br><span class="line">③ rename <span class="keyword">to</span> new_table_name</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">drop</span> <span class="keyword">table</span> if <span class="keyword">exists</span> MyTable</span><br></pre></td></tr></table></figure>
+
+<h3 id="Data-Control-Language"><a href="#Data-Control-Language" class="headerlink" title="Data Control Language"></a>Data Control Language</h3><p>数据库控制语言：授权，角色控制等</p>
+<ul>
+<li><p>GRANT – 为用户赋予访问权限</p>
+</li>
+<li><p>REVOKE – 撤回授权权限</p>
+</li>
+</ul>
+<h3 id="Transaction-Control-Language"><a href="#Transaction-Control-Language" class="headerlink" title="Transaction Control Language"></a>Transaction Control Language</h3><p>事务的概念：要么全部执行，要么全部不执行。<br>​事务的acid属性：atomicity、consistency、isolation、durability<br>​事务的创建：隐式事务、显示事务。事务具有明显的开启和结束标记。</p>
+<h1 id="工具使用"><a href="#工具使用" class="headerlink" title="工具使用"></a>工具使用</h1><h2 id="1-GitFlow"><a href="#1-GitFlow" class="headerlink" title="1. GitFlow"></a>1. GitFlow</h2><p>可以在idea里面直接看到流程：<strong>提交需要反复确认，然后进行拉取</strong></p>
+<p><img src="assets/image-20210818173247374.png" alt="image-20210818173247374"></p>
+<table>
+<thead>
+<tr>
+<th align="left">name</th>
+<th align="left">Function</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>master</strong></td>
+<td align="left">存放随时可供生产环境中的部署的代码</td>
+</tr>
+<tr>
+<td align="left"><strong>develop</strong></td>
+<td align="left">存放当前最新开发成果的分支，当代码足够稳定时可以合并到master分支上去。</td>
+</tr>
+<tr>
+<td align="left"><strong>feature</strong></td>
+<td align="left">开发新功能使用，最终合并到develop分支或抛弃掉</td>
+</tr>
+<tr>
+<td align="left"><strong>release</strong></td>
+<td align="left">做小的缺陷修正、准备发布版本所需的各项说明信息</td>
+</tr>
+<tr>
+<td align="left"><strong>hotfix</strong></td>
+<td align="left">代码的紧急修复工作</td>
+</tr>
+</tbody></table>
+<p>查看Git工作区、暂存区的变更情况（可以知道哪些没有commit、哪些没有被Git追踪）：<code>git status</code></p>
+<p>拉取远程最新的变更到本地：<code>git fetch</code></p>
+<p>切换分支：<code>git checkout 分支名</code></p>
+<p>将代码还原到某个版本(包括工作目录)：<code>git reset --hard 版本号</code></p>
+<p>查看Git的提交(commit)记录：<code>git log</code></p>
+<p>将代码还原到某个版本后，后悔了，想重新回去，但在提交记录已经找不到了。<code>git reset --hard</code> 把<code>reset 之后的 commit</code>都给抹杀掉了。找到最近的执行Git命令：<code>git reflog</code></p>
+<p>还原到某个版本了，现在我为了稳健，不想再原来的分支上修改了，再<strong>新建一个分支</strong>吧（<code>-b</code> 参数把当前分支切换到了要创建的分支上）：<code>git checkout -b 分支名</code></p>
+<p>我们把上一次还是”相对稳健“的分支合并到我新建的分支上：<code>git merge 分支</code></p>
+<p>突然想看看现在有多少个分支：<code>git branch -a</code></p>
+<p>新增几个文件了，随手<code>git add</code>一下吧</p>
+<p>改得差不多了，随手<code>git commit -m</code>一下吧，最好还是<strong>写好备注</strong>，不然以后等改多了，你都不知道你改了什么啦。</p>
+<p>改完了，提交到远程吧：<code>git push</code></p>
+<p>想把远程分支最新的代码给拉下来，然后合并到本地上。我们可以用<code>git fetch</code>和<code>git merge</code>来实现，也可以通过<code>git pull</code>来实现。一般我用的都是<code>git fetch</code>+<code>git merge</code>，这样会更加<strong>可控</strong>一些</p>
+<p>有的时候，本地分支在master分支，然后忘了切其他的分支去修改，直接在master改了，然后也push到远程了。等你发现的时候，你会真的想骂自己。</p>
+<p>咋办？最简单的办法其实我们还是可以<code>git reset --hard</code>到对应的版本，然后将其修改或者复原，再强制提交到<code>master</code>分支：<code>git push -u origin/master -f</code></p>
+<h2 id="2-idea-插件"><a href="#2-idea-插件" class="headerlink" title="2. idea 插件"></a>2. idea 插件</h2><h3 id="2-1-RestfulToolkit—RESTful服务开发"><a href="#2-1-RestfulToolkit—RESTful服务开发" class="headerlink" title="2.1 RestfulToolkit—RESTful服务开发"></a>2.1 RestfulToolkit—RESTful服务开发</h3><ul>
+<li>2.1.1 根据 URL 直接跳转到对应的方法定义 ( Ctrl \ or Ctrl Alt N );</li>
+<li>2.1.2 提供了一个 Services tree 的显示窗口;</li>
+<li>2.1.3 一个简单的 http 请求工具;</li>
+<li>2.1.4 在请求方法上添加了有用功能: 复制生成 URL;复制方法参数…</li>
+<li>2.1.5 其他功能: java 类上添加 Convert to JSON 功能，格式化 json 数据 ( Windows: Ctrl + Enter; Mac: Command + Enter )。</li>
+</ul>
+<h3 id="2-2-快捷键"><a href="#2-2-快捷键" class="headerlink" title="2.2 快捷键"></a>2.2 快捷键</h3><p><code>Ctrl+Shift+Enter</code>   完善整条语句、分号、if语句等</p>
+<p><code>Ctrl+W</code>   扩大选取范围</p>
+<p><code>Ctrl+F8 </code>  打断点</p>
+<p><code>Shift+F9</code>   debug</p>
+<p><code>F7 F8 F9</code>   进入方法、下一步、下个断点</p>
+<p>ctrl+T 直接拉取git更新</p>
+<p>ctrl+alt+shift+C  copy reference</p>
+<h1 id="用户评级-项目"><a href="#用户评级-项目" class="headerlink" title="用户评级 项目"></a>用户评级 项目</h1><h2 id="PageInfo"><a href="#PageInfo" class="headerlink" title="PageInfo"></a>PageInfo</h2><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Request URL: </span><br><span class="line">/api/audiences?orderColumn=createTime&amp;orderType=desc&amp;page=1&amp;pagesize=30&amp;readState=READ_SUCCESS</span><br></pre></td></tr></table></figure>
+
+<p>读取过程 : PageInterceptor.class</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">PageInfo page = <span class="keyword">new</span> PageInfo();</span><br><span class="line">            page.setCurrent(<span class="keyword">this</span>.getIntValue(request, <span class="string">&quot;page&quot;</span>, <span class="number">1</span>));</span><br><span class="line">            page.setPagesize(<span class="keyword">this</span>.getIntValue(request, <span class="string">&quot;pagesize&quot;</span>, annotation.size()));</span><br><span class="line">            String orderColumn = request.getParameter(<span class="string">&quot;orderColumn&quot;</span>);</span><br></pre></td></tr></table></figure>
+
+<h2 id="项目组件"><a href="#项目组件" class="headerlink" title="项目组件"></a>项目组件</h2><ul>
+<li><p>parent : crius</p>
+</li>
+<li><p>被dependencyManagement管理版本号的组件 :  </p>
+<p>opencv、log4j、reflections 、 lombok 、compress 、commons-jcs-core 、kryo 、httpclient 、mapstruct 、aws-java-sdk-s3 、com.amazonaws 、jmespath-java 、commons-collections 、spring-cloud-dependencies 、dependencies </p>
+</li>
+<li><p>har-manager模块组件：</p>
+<p>spring-cloud-starter-openfeign 、spring-cloud-starter-netflix-hystrix 、spring-boot-starter-cache 、ehcache、crius-spring-boot-starter 、mybatis 、crius-oss-amazon-s3-spring-boot-starter 、crius-oss-azure-storage-spring-boot-starter 、jmespath-java 、commons-collections、spring-boot-starter-actuator 、spring-boot-starter-rabbitmq 、spring-cloud-starter-alibaba-nacos-config</p>
+</li>
+</ul>
+<h2 id="Oauth授权"><a href="#Oauth授权" class="headerlink" title="Oauth授权"></a>Oauth授权</h2><p>1.网关拦截</p>
+<p>由devops平台上的网关决定redirect地址，Oauth进行授权鉴权，如没有权限，用户拿着token去访问第三方平台</p>
+<p>注：微服务技术解决方案下的，网关至少需要具备图示基本功能。</p>
+<ol>
+<li>网关作为单点入口，完成统一的请求管理</li>
+<li>免去客户端直接对接众多微服务的复杂性，采用单点入口，实现路由转发，从而实现服务调用</li>
+<li>服务对于整个系统来讲，是不稳定的，那么网关，需要进行限流熔断，保持系统的稳定与分区容错性</li>
+<li>对于服务调用的链路，网关有职责进行记录，日志监控，保证整个系统，在监控下工作</li>
+<li>系统可能不仅仅是由自有客户端调用，很多时候，系统开放能力API给外部，因此网关需要安全认证，来保证安全</li>
+</ol>
+<p>2.Security授权</p>
+<p>Security通过authLoginFilter同步hac用户信息</p>
+<h2 id="Maven依赖管理"><a href="#Maven依赖管理" class="headerlink" title="Maven依赖管理"></a>Maven依赖管理</h2><ul>
+<li><p>父pom需要添加<code>&lt;packaging&gt;pom&lt;/packaging&gt;</code>。</p>
+</li>
+<li><p>父pom需要用<code>&lt;modules&gt;&lt;module&gt;子module名&lt;/module&gt;&lt;/modules&gt;</code>注明子module有哪些。</p>
+</li>
+<li><p>父pom声明依赖时<code>&lt;dependencies&gt;</code>外要嵌套<code>&lt;dependencyManagement&gt;</code>才能被子pom继承到，我就是忘了这点。</p>
+</li>
+<li><p>子pom需要通过<code>&lt;parent&gt;&lt;/parent&gt;</code>指定父项目，声明依赖时就默认会用父pom中的版本了。</p>
+</li>
+</ul>
+<h2 id="项目创建顺序"><a href="#项目创建顺序" class="headerlink" title="项目创建顺序"></a>项目创建顺序</h2><p>业务  - &gt;  授权  - &gt;  性能优化</p>
+<h2 id="DDD"><a href="#DDD" class="headerlink" title="DDD"></a>DDD</h2><ul>
+<li>entity\dao\mapper\vo写在repository中</li>
+<li>service\特有的entity写在特定的module中</li>
+</ul>
+<h2 id="MyBatis枚举类映射"><a href="#MyBatis枚举类映射" class="headerlink" title="MyBatis枚举类映射"></a>MyBatis枚举类映射</h2><p><strong>mybatis默认的枚举类型处理器 :</strong></p>
+<ul>
+<li><p>EnumTypeHandler<br>mybatis的默认枚举类型处理器，将枚举类型的name持久化到数据库；</p>
+</li>
+<li><p>EnumOrdinalTypeHandler<br>mybatis原生支持的另一种枚举类型处理器，将枚举类型的索引序号持久化到数据库，需要全局配置或者在需要的字段上单独配置；</p>
+</li>
+</ul>
+<p><strong>mybatis配置全局默认枚举类型处理器 :  defaultEnumTypeHandler</strong></p>
+<ul>
+<li>mybatis在3.4.5及之后版本中，新增了一个指定全局默认枚举类型处理器的配置项 :  <strong>default-enum-type-handler</strong><br>在mybatis-config.xml中添加如下配置即可使自定义处理器全局生效，解决了之前新增枚举都需要单独配置的烦恼；</li>
+</ul>
+<p><img src="assets/image-20210910184840551.png" alt="image-20210910184840551"></p>
+<p><img src="assets/image-20210910184912954.png" alt="image-20210910184912954"></p>
+<h2 id="使用TypeHandler将List集合数据存入数据库"><a href="#使用TypeHandler将List集合数据存入数据库" class="headerlink" title="使用TypeHandler将List集合数据存入数据库"></a>使用TypeHandler将List集合数据存入数据库</h2><p><a target="_blank" rel="noopener" href="https://www.dtmao.cc/news_show_785309.shtml">https://www.dtmao.cc/news_show_785309.shtml</a></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@MappedJdbcTypes(value=JdbcType.VARCHAR)</span></span><br><span class="line"><span class="meta">@MappedTypes(List.class)</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ListToVarchar</span> <span class="keyword">implements</span> <span class="title">TypeHandler</span>&lt;<span class="title">List</span>&lt;<span class="title">String</span>&gt;&gt; </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 遍历List类型的入参，转换为JSON格式，使用Statement对象插入数据库</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setParameter</span><span class="params">(PreparedStatement ps, <span class="keyword">int</span> i, List&lt;String&gt; objectList, JdbcType jdbcType)</span> <span class="keyword">throws</span> SQLException </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(objectList.isEmpty())&#123;</span><br><span class="line">            ps.setString(i,<span class="keyword">null</span>);</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        String s = JSON.toJSONString(objectList);</span><br><span class="line">        ps.setString(i,s);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 获取String类型的结果，使用parseObject将json对象转换为java对象</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> List&lt;String&gt; <span class="title">getResult</span><span class="params">(ResultSet resultSet, String s)</span> <span class="keyword">throws</span> SQLException </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> JSON.parseObject(resultSet.getString(s),<span class="keyword">new</span> TypeReference&lt;List&lt;String&gt;&gt;() &#123;&#125;);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 获取String类型的结果，使用parseObject将json对象转换为java对象</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> List&lt;String&gt; <span class="title">getResult</span><span class="params">(ResultSet resultSet, <span class="keyword">int</span> i)</span> <span class="keyword">throws</span> SQLException </span>&#123;</span><br><span class="line">        String s = resultSet.getString(i);</span><br><span class="line">        <span class="keyword">return</span>  JSON.parseObject(s,<span class="keyword">new</span> TypeReference&lt;List&lt;String&gt;&gt;() &#123;&#125;);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 获取String类型的结果，使用parseObject将json对象转换为java对象</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> List&lt;String&gt; <span class="title">getResult</span><span class="params">(CallableStatement callableStatement, <span class="keyword">int</span> i)</span> <span class="keyword">throws</span> SQLException </span>&#123;</span><br><span class="line">        String s = callableStatement.getString(i);</span><br><span class="line">        <span class="keyword">return</span> JSON.parseObject(s,<span class="keyword">new</span> TypeReference&lt;List&lt;String&gt;&gt;() &#123;&#125;);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="开发避坑"><a href="#开发避坑" class="headerlink" title="开发避坑"></a>开发避坑</h1><h2 id="1-判空"><a href="#1-判空" class="headerlink" title="1.判空"></a>1.判空</h2><ul>
+<li><p>Constant.equals(Variables);</p>
+</li>
+<li><p>Java中判断list为空(CollectionUtils.isEmpty)等同于 (list==null&amp;&amp;list.isEmpty())</p>
+</li>
+</ul>
+<h2 id="2-typeHandler匹配问题"><a href="#2-typeHandler匹配问题" class="headerlink" title="2.typeHandler匹配问题"></a>2.typeHandler匹配问题</h2><ul>
+<li>使用typeHandler去数据库中查询匹配时，注意序列化和反序列化的问题，需要二者hashcode完全一致，所以最好还是从数据库中找出json，映射为实体对象，在判断是否匹配</li>
+<li>错误示例： select语句中，即使数据库中json内容一致，但仍旧不能匹配</li>
+<li><img src="assets/image-20211116161549936.png" alt="image-20211116161549936"></li>
+</ul>
+<h1 id="隐私条款项目"><a href="#隐私条款项目" class="headerlink" title="隐私条款项目"></a>隐私条款项目</h1><h2 id="1-定时任务"><a href="#1-定时任务" class="headerlink" title="1.定时任务"></a>1.定时任务</h2><p><strong>- @SchedulerLock注解：为方法加上锁。</strong></p>
+<p>name属性（锁的名称）必须指定，每次只能执行一个具有相同名字的任务。</p>
+<p><strong>- lockAtMostFor属性，指定执行节点死亡时应该保留锁的时间。</strong></p>
+<p>设置锁的最大持有时间,为了解决如果持有锁的节点挂了,无法释放锁,其他节点无法进行下一次任务。设置了最大持有时间，当持有时间到了自动释放锁，不影响下一次执行。</p>
+<p><strong>- lockAtLeastFor属性，指定保留锁的最短时间。</strong></p>
+<p>主要目的是在任务非常短的且节点之间存在时钟差异的情况下防止多个节点执行。这个属性是锁的持有时间。设置了多少就一定会持有多长时间，在此期间，下一次任务执行时，其他节点包括它本身是不会执行任务的。</p>
+<h2 id="2-隐私条款模板"><a href="#2-隐私条款模板" class="headerlink" title="2.隐私条款模板"></a>2.隐私条款模板</h2><p>接口文档</p>
+<ul>
+<li>查看模板   GET     /api/templates</li>
+<li>新建模板   POST    /api/templates</li>
+<li>编辑模板  PATCH  /api/templates/{templateId}</li>
+<li>删除模板  DELETE    /api/templates/{templateId}</li>
+</ul>
+<h2 id="3-校验"><a href="#3-校验" class="headerlink" title="3.校验"></a>3.校验</h2><ul>
+<li>@Unique   name字段一致，表示绑定在一起校验<img src="assets/image-20211104145855450.png" alt="image-20211104145855450"></li>
+</ul>
+<h2 id="4-特殊用法"><a href="#4-特殊用法" class="headerlink" title="4.特殊用法"></a>4.特殊用法</h2><ul>
+<li>```java<br>/**<ul>
+<li>则在路径中悄悄接收projectIds</li>
+<li>/<br>@JsonIgnore<br>private List<Long> projectIds;<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- 通过一系列Id查找</span><br><span class="line">  </span><br><span class="line">  &#96;&#96;&#96;xml</span><br><span class="line">  &lt;select id&#x3D;&quot;getClauses&quot; resultType&#x3D;&quot;long&quot;&gt;</span><br><span class="line">      select id from def_privacy_clause where project_id in</span><br><span class="line">      &lt;foreach collection&#x3D;&quot;list&quot; item&#x3D;&quot;id&quot; open&#x3D;&quot;(&quot; close&#x3D;&quot;)&quot; separator&#x3D;&quot;,&quot;&gt;</span><br><span class="line">          #&#123;id&#125;</span><br><span class="line">      &lt;&#x2F;foreach&gt;</span><br><span class="line">  &lt;&#x2F;select&gt;</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+<h2 id="3-部署踩坑"><a href="#3-部署踩坑" class="headerlink" title="3.部署踩坑"></a>3.部署踩坑</h2><h4 id="1-消息已发，计算端没有日志"><a href="#1-消息已发，计算端没有日志" class="headerlink" title="(1)消息已发，计算端没有日志"></a>(1)消息已发，计算端没有日志</h4><ul>
+<li><p>检查MQ配置</p>
+</li>
+<li><p>检查消费者</p>
+</li>
+<li><p>计算端磁盘已满</p>
+</li>
+</ul>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/java/" rel="tag"><i class="fa fa-tag"></i> java</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021/04/14/JavaSE%E9%87%8D%E7%82%B9/" rel="prev" title="JavaSE重点">
+      <i class="fa fa-chevron-left"></i> JavaSE重点
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2022/01/19/java%E5%85%AB%E8%82%A1%E6%96%87/" rel="next" title="Java八股文">
+      Java八股文 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%9F%A5%E8%AF%86%E5%86%85%E5%AE%B9"><span class="nav-number">1.</span> <span class="nav-text">知识内容</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#WebServer"><span class="nav-number">1.1.</span> <span class="nav-text">WebServer</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AFHTTP%E8%AF%B7%E6%B1%82%E5%A4%B4-%E5%93%8D%E5%BA%94%E5%A4%B4"><span class="nav-number">1.1.1.</span> <span class="nav-text">什么是HTTP请求头&#x2F;响应头</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Lambda%E8%A1%A8%E8%BE%BE%E5%BC%8F"><span class="nav-number">1.2.</span> <span class="nav-text">Lambda表达式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E5%8C%BF%E5%90%8D%E5%86%85%E9%83%A8%E7%B1%BB"><span class="nav-number">1.2.1.</span> <span class="nav-text">1.匿名内部类</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%9E%E4%BE%8B1-%E4%B8%8D%E4%BD%BF%E7%94%A8%E5%8C%BF%E5%90%8D%E5%86%85%E9%83%A8%E7%B1%BB%E6%9D%A5%E5%AE%9E%E7%8E%B0%E6%8A%BD%E8%B1%A1%E6%96%B9%E6%B3%95"><span class="nav-number">1.2.1.1.</span> <span class="nav-text">实例1:不使用匿名内部类来实现抽象方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%9E%E4%BE%8B2%EF%BC%9A%E5%8C%BF%E5%90%8D%E5%86%85%E9%83%A8%E7%B1%BB%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%AE%9E%E7%8E%B0"><span class="nav-number">1.2.1.2.</span> <span class="nav-text">实例2：匿名内部类的基本实现</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%9E%E4%BE%8B3%EF%BC%9A%E5%9C%A8%E6%8E%A5%E5%8F%A3%E4%B8%8A%E4%BD%BF%E7%94%A8%E5%8C%BF%E5%90%8D%E5%86%85%E9%83%A8%E7%B1%BB"><span class="nav-number">1.2.1.3.</span> <span class="nav-text">实例3：在接口上使用匿名内部类</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-Lambda%E8%A1%A8%E8%BE%BE%E5%BC%8F"><span class="nav-number">1.2.2.</span> <span class="nav-text">2.Lambda表达式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E8%81%94%E7%B3%BB%E4%B8%8E%E5%8C%BA%E5%88%AB"><span class="nav-number">1.2.3.</span> <span class="nav-text">3.联系与区别</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MySQL"><span class="nav-number">1.3.</span> <span class="nav-text">MySQL</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9B%BE%E8%B0%B1"><span class="nav-number">1.3.1.</span> <span class="nav-text">图谱</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Data-Manipulation-Language"><span class="nav-number">1.3.2.</span> <span class="nav-text">Data Manipulation Language</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BF%9E%E6%8E%A5%E8%AF%8D%EF%BC%9A"><span class="nav-number">1.3.2.1.</span> <span class="nav-text">连接词：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%80%9A%E9%85%8D%E7%AC%A6%EF%BC%9A"><span class="nav-number">1.3.2.2.</span> <span class="nav-text">通配符：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%99%90%E5%AE%9A%E8%AF%8D"><span class="nav-number">1.3.2.3.</span> <span class="nav-text">限定词:</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%EF%BC%9A"><span class="nav-number">1.3.2.4.</span> <span class="nav-text">多表查询：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%87%BD%E6%95%B0%EF%BC%9A"><span class="nav-number">1.3.2.5.</span> <span class="nav-text">函数：</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Data-Define-Language"><span class="nav-number">1.3.3.</span> <span class="nav-text">Data Define Language</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%BA%93%E7%9A%84%E7%AE%A1%E7%90%86"><span class="nav-number">1.3.3.1.</span> <span class="nav-text">库的管理</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%A1%A8%E7%9A%84%E7%AE%A1%E7%90%86"><span class="nav-number">1.3.3.2.</span> <span class="nav-text">表的管理</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Data-Control-Language"><span class="nav-number">1.3.4.</span> <span class="nav-text">Data Control Language</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Transaction-Control-Language"><span class="nav-number">1.3.5.</span> <span class="nav-text">Transaction Control Language</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8"><span class="nav-number">2.</span> <span class="nav-text">工具使用</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-GitFlow"><span class="nav-number">2.1.</span> <span class="nav-text">1. GitFlow</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-idea-%E6%8F%92%E4%BB%B6"><span class="nav-number">2.2.</span> <span class="nav-text">2. idea 插件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-RestfulToolkit%E2%80%94RESTful%E6%9C%8D%E5%8A%A1%E5%BC%80%E5%8F%91"><span class="nav-number">2.2.1.</span> <span class="nav-text">2.1 RestfulToolkit—RESTful服务开发</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-%E5%BF%AB%E6%8D%B7%E9%94%AE"><span class="nav-number">2.2.2.</span> <span class="nav-text">2.2 快捷键</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%94%A8%E6%88%B7%E8%AF%84%E7%BA%A7-%E9%A1%B9%E7%9B%AE"><span class="nav-number">3.</span> <span class="nav-text">用户评级 项目</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#PageInfo"><span class="nav-number">3.1.</span> <span class="nav-text">PageInfo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A1%B9%E7%9B%AE%E7%BB%84%E4%BB%B6"><span class="nav-number">3.2.</span> <span class="nav-text">项目组件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Oauth%E6%8E%88%E6%9D%83"><span class="nav-number">3.3.</span> <span class="nav-text">Oauth授权</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Maven%E4%BE%9D%E8%B5%96%E7%AE%A1%E7%90%86"><span class="nav-number">3.4.</span> <span class="nav-text">Maven依赖管理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A1%B9%E7%9B%AE%E5%88%9B%E5%BB%BA%E9%A1%BA%E5%BA%8F"><span class="nav-number">3.5.</span> <span class="nav-text">项目创建顺序</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DDD"><span class="nav-number">3.6.</span> <span class="nav-text">DDD</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MyBatis%E6%9E%9A%E4%B8%BE%E7%B1%BB%E6%98%A0%E5%B0%84"><span class="nav-number">3.7.</span> <span class="nav-text">MyBatis枚举类映射</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8TypeHandler%E5%B0%86List%E9%9B%86%E5%90%88%E6%95%B0%E6%8D%AE%E5%AD%98%E5%85%A5%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="nav-number">3.8.</span> <span class="nav-text">使用TypeHandler将List集合数据存入数据库</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%BC%80%E5%8F%91%E9%81%BF%E5%9D%91"><span class="nav-number">4.</span> <span class="nav-text">开发避坑</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E5%88%A4%E7%A9%BA"><span class="nav-number">4.1.</span> <span class="nav-text">1.判空</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-typeHandler%E5%8C%B9%E9%85%8D%E9%97%AE%E9%A2%98"><span class="nav-number">4.2.</span> <span class="nav-text">2.typeHandler匹配问题</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%9A%90%E7%A7%81%E6%9D%A1%E6%AC%BE%E9%A1%B9%E7%9B%AE"><span class="nav-number">5.</span> <span class="nav-text">隐私条款项目</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1"><span class="nav-number">5.1.</span> <span class="nav-text">1.定时任务</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E9%9A%90%E7%A7%81%E6%9D%A1%E6%AC%BE%E6%A8%A1%E6%9D%BF"><span class="nav-number">5.2.</span> <span class="nav-text">2.隐私条款模板</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E6%A0%A1%E9%AA%8C"><span class="nav-number">5.3.</span> <span class="nav-text">3.校验</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E7%89%B9%E6%AE%8A%E7%94%A8%E6%B3%95"><span class="nav-number">5.4.</span> <span class="nav-text">4.特殊用法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E9%83%A8%E7%BD%B2%E8%B8%A9%E5%9D%91"><span class="nav-number">5.5.</span> <span class="nav-text">3.部署踩坑</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-%E6%B6%88%E6%81%AF%E5%B7%B2%E5%8F%91%EF%BC%8C%E8%AE%A1%E7%AE%97%E7%AB%AF%E6%B2%A1%E6%9C%89%E6%97%A5%E5%BF%97"><span class="nav-number">5.5.0.1.</span> <span class="nav-text">(1)消息已发，计算端没有日志</span></a></li></ol></li></ol></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Dara Yoon"
+      src="/images/avatar.gif">
+  <p class="site-author-name" itemprop="name">Dara Yoon</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">12</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/Eniac286" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;Eniac286" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:yoondara6@gmail.com" title="E-Mail → mailto:yoondara6@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://weibo.com/user123456" title="Weibo → https:&#x2F;&#x2F;weibo.com&#x2F;user123456" rel="noopener" target="_blank"><i class="fab fa-weibo fa-fw"></i>Weibo</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="copyright">
+  
+  &copy; 2021 – 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Eniac286</span>
+</div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
