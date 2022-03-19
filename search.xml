@@ -1,6 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>How to Read a Computer Science Research Paper</title>
+    <url>/2021/03/19/HowToReadCSPaper/</url>
+    <content><![CDATA[<h4 id="Publication-Venues"><a href="#Publication-Venues" class="headerlink" title="Publication Venues"></a>Publication Venues</h4><ul>
+<li>General : ACM , IEEE , AAAI , ACL</li>
+<li>Specifically Recommended By CCF : <strong><a href="https://www.ccf.org.cn/Academic_Evaluation/By_category/">https://www.ccf.org.cn/Academic_Evaluation/By_category/</a></strong></li>
+</ul>
+<blockquote>
+<p>中国计算机学会（China Computer Federation）</p>
+</blockquote>
+<h4 id="Different-Types-of-CS-Research-Paper"><a href="#Different-Types-of-CS-Research-Paper" class="headerlink" title="Different Types of CS Research Paper"></a>Different Types of CS Research Paper</h4><p>There are three basic types of CS research paper: <strong>theoretical</strong>, <strong>engineering</strong> and <strong>empirical</strong>.</p>
+<ul>
+<li>A theoretical paper describes a theory or algorithm or provides a mathematical proof for some hypothesis.</li>
+<li>An engineering paper describes an implementation of an algorithm, or part or all of a computer system or application. Engineering papers are now frequently required to include descriptions of system evaluation.</li>
+<li>An empirical paper describes an experiment designed to test some hypothesis.</li>
+</ul>
+<span id="more"></span>
+
+
+
+<h4 id="Taxonomy-of-Scientific-Papers"><a href="#Taxonomy-of-Scientific-Papers" class="headerlink" title="Taxonomy of Scientific Papers"></a>Taxonomy of Scientific Papers</h4><ul>
+<li><p>Conference Papers</p>
+<ul>
+<li><p>Review : YES , peer-reviewed , the threshold depends on the conference</p>
+</li>
+<li><p>Goal : Publish a finished work with possible forthcoming research</p>
+</li>
+<li><p>Size : 8 - 20 Pages</p>
+</li>
+</ul>
+</li>
+<li><p>Journal Papers</p>
+<ul>
+<li><p>Review : YES , peer-reviewed , more longer than Conference Papers</p>
+</li>
+<li><p>Goal : Publish a present completed work</p>
+</li>
+<li><p>Size : 15 Pages</p>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="How-call-I-tell-whether-a-research-paper-is-good-before-I-read-it"><a href="#How-call-I-tell-whether-a-research-paper-is-good-before-I-read-it" class="headerlink" title="How call I tell whether a research paper is good before I read it?"></a>How call I tell whether a research paper is good before I read it?</h4><p>Here are some indicators of a good research paper:</p>
+<ul>
+<li><ol>
+<li>The problem the paper addresses is clearly stated, both in the abstract and early on in the paper itself. The technical importance and broader impacts of the paper are described. </li>
+</ol>
+</li>
+<li><ol start="2">
+<li>The paper includes a clear description of the experiment, system or theory the problem addresses. This is usually the second section of the paper. </li>
+</ol>
+</li>
+<li><ol start="3">
+<li>The paper describes and analyzes the results of the work described (either experimental or evaluation results).</li>
+</ol>
+</li>
+<li><ol start="4">
+<li>The authors have some sound, non-trivial ideas for future work. This usually appears at the end of the paper. </li>
+</ol>
+</li>
+<li><ol start="5">
+<li>Related work is described and cited correctly. You can get an idea of this by looking at the list of references at the end of the paper. </li>
+</ol>
+</li>
+</ul>
+<p>If you know that a researcher has been working in an area for a while, that is usually an indicator that the research is sound; however, do not underestimate the contributions of people new to a field or the impact of politics on research.</p>
+]]></content>
+      <categories>
+        <category>兴趣</category>
+        <category>读书</category>
+      </categories>
+      <tags>
+        <tag>读书笔记</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>IDEA常用快捷键</title>
     <url>/2021/03/25/IDEA%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/</url>
     <content><![CDATA[<table>
@@ -574,6 +649,22 @@
       </tags>
   </entry>
   <entry>
+    <title>计算广告 - 在线广告概览</title>
+    <url>/2022/03/06/%E8%AE%A1%E7%AE%97%E5%B9%BF%E5%91%8A%20(2)/</url>
+    <content><![CDATA[<h3 id="1-模型"><a href="#1-模型" class="headerlink" title="1.模型"></a>1.模型</h3><p><img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202203061001702.png" alt="image-20220306100052375"></p>
+<span id="more"></span>
+
+<h3 id="11-3-1-在线分配问题"><a href="#11-3-1-在线分配问题" class="headerlink" title="11.3.1 在线分配问题"></a>11.3.1 在线分配问题</h3><p><img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202203061117646.png" alt="image-20220306111720187"></p>
+]]></content>
+      <categories>
+        <category>学习</category>
+        <category>智慧营销</category>
+      </categories>
+      <tags>
+        <tag>智慧营销</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>并发/幂等/数据一致性问题</title>
     <url>/2022/02/27/%E6%95%B0%E6%8D%AE%E4%B8%80%E8%87%B4%E6%80%A7%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<h1 id="1、幂等性"><a href="#1、幂等性" class="headerlink" title="1、幂等性"></a>1、幂等性</h1><p>幂等性是数学上的概念：F(F(x))=F(x)，用在接口上就是：多次重复请求，产生效果一致。</p>
@@ -670,22 +761,6 @@
       </tags>
   </entry>
   <entry>
-    <title>计算广告 - 在线广告概览</title>
-    <url>/2022/03/06/%E8%AE%A1%E7%AE%97%E5%B9%BF%E5%91%8A%20(2)/</url>
-    <content><![CDATA[<h3 id="1-模型"><a href="#1-模型" class="headerlink" title="1.模型"></a>1.模型</h3><p><img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202203061001702.png" alt="image-20220306100052375"></p>
-<span id="more"></span>
-
-<h3 id="11-3-1-在线分配问题"><a href="#11-3-1-在线分配问题" class="headerlink" title="11.3.1 在线分配问题"></a>11.3.1 在线分配问题</h3><p><img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202203061117646.png" alt="image-20220306111720187"></p>
-]]></content>
-      <categories>
-        <category>学习</category>
-        <category>智慧营销</category>
-      </categories>
-      <tags>
-        <tag>智慧营销</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>计算广告 - 计算广告基础</title>
     <url>/2022/03/06/%E8%AE%A1%E7%AE%97%E5%B9%BF%E5%91%8A/</url>
     <content><![CDATA[<h3 id="1-广告有效性模型"><a href="#1-广告有效性模型" class="headerlink" title="1.广告有效性模型"></a>1.广告有效性模型</h3><p><img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202202271103448.png" alt="image-20220227110314006"></p>
@@ -727,9 +802,9 @@
       </tags>
   </entry>
   <entry>
-    <title>实习知识整理</title>
+    <title>实践知识整理</title>
     <url>/2021/08/03/%E5%AE%9E%E4%B9%A0%E6%95%B4%E7%90%86/</url>
-    <content><![CDATA[<h1 id="知识内容"><a href="#知识内容" class="headerlink" title="知识内容"></a>知识内容</h1><h2 id="WebServer"><a href="#WebServer" class="headerlink" title="WebServer"></a>WebServer</h2><h3 id="什么是HTTP请求头-响应头"><a href="#什么是HTTP请求头-响应头" class="headerlink" title="什么是HTTP请求头/响应头"></a>什么是HTTP请求头/响应头</h3><p>1)请求(客户端-&gt;服务端[request])<br>     GET(请求的方式)     /newcoder/hello.html(请求的目标资源) HTTP/1.1(请求采用                                        的协议和版本号)<br>     Accept: <em>/</em>(客户端能接收的资源类型)<br>     Accept-Language: en-us(客户端接收的语言类型)<br>     Connection: Keep-Alive(维护客户端和服务端的连接关系)<br>     Host: localhost:8080(连接的目标主机和端口号)<br>     Referer: <a href="http://localhost/links.asp(%E5%91%8A%E8%AF%89%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%88%91%E6%9D%A5%E8%87%AA%E4%BA%8E%E5%93%AA%E9%87%8C)">http://localhost/links.asp(告诉服务器我来自于哪里)</a><br>     User-Agent: Mozilla/4.0(客户端版本号的名字)<br>     Accept-Encoding: gzip, deflate(客户端能接收的压缩数据的类型)<br>     If-Modified-Since: Tue, 11 Jul     2000 18:23:51 GMT(缓存时间)<br>     Cookie(客户端暂存服务端的信息)<br>     Date: Tue, 11 Jul 2000     18:23:51 GMT(客户端请求服务端的时间)  </p>
+    <content><![CDATA[<h1 id="知识内容"><a href="#知识内容" class="headerlink" title="知识内容"></a>知识内容</h1><h2 id="WebServer"><a href="#WebServer" class="headerlink" title="WebServer"></a>WebServer</h2><h3 id="什么是HTTP请求头-响应头"><a href="#什么是HTTP请求头-响应头" class="headerlink" title="什么是HTTP请求头/响应头"></a>什么是HTTP请求头/响应头</h3><p>1)请求(客户端-&gt;服务端[request])<br>     GET(请求的方式)     /newcoder/hello.html(请求的目标资源) HTTP/1.1(请求采用的协议和版本号)<br>     Accept: <em>/</em>(客户端能接收的资源类型)<br>     Accept-Language: en-us(客户端接收的语言类型)<br>     Connection: Keep-Alive(维护客户端和服务端的连接关系)<br>     Host: localhost:8080(连接的目标主机和端口号)<br>     Referer: <a href="http://localhost/links.asp(%E5%91%8A%E8%AF%89%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%88%91%E6%9D%A5%E8%87%AA%E4%BA%8E%E5%93%AA%E9%87%8C)">http://localhost/links.asp(告诉服务器我来自于哪里)</a><br>     User-Agent: Mozilla/4.0(客户端版本号的名字)<br>     Accept-Encoding: gzip, deflate(客户端能接收的压缩数据的类型)<br>     If-Modified-Since: Tue, 11 Jul     2000 18:23:51 GMT(缓存时间)<br>     Cookie(客户端暂存服务端的信息)<br>     Date: Tue, 11 Jul 2000     18:23:51 GMT(客户端请求服务端的时间)  </p>
 <span id="more"></span>
 
 <p>2)响应(服务端-&gt;客户端[response])<br>​        HTTP/1.1(响应采用的协议和版本号) 200(状态码) OK(描述信息)<br>​     Location:     <a href="https://link.zhihu.com/?target=http://www.baidu.com">http://www.baidu.com</a>(服务端需要客户端访问的页面路径)<br>​     Server:apache     tomcat(服务端的Web服务端名)<br>​     Content-Encoding:     gzip(服务端能够发送压缩编码类型)<br>​     Content-Length: 80(服务端发送的压缩数据的长度)<br>​     Content-Language: zh-cn(服务端发送的语言类型)<br>​     Content-Type:     text/html; charset=GB2312(服务端发送的类型及采用的编码方式)<br>​     Last-Modified:     Tue, 11 Jul 2000 18:23:51 GMT(服务端对该资源最后修改的时间)<br>​     Refresh:     1;url=<a href="https://link.zhihu.com/?target=http://www.it315.org">http://www.it315.org</a>(服务端要求客户端1秒钟后，刷新，然后访问指定的页面路径)<br>​     Content-Disposition: attachment;     filename=aaa.zip(服务端要求客户端以下载文件的方式打开该文件)<br>​     Transfer-Encoding:     chunked(分块传递数据到客户端）<br>​     Set-Cookie:SS=Q0=5Lb_nQ;     path=/search(服务端发送到客户端的暂存数据)<br>​     Expires:     -1//3种(服务端禁止客户端缓存页面数据)<br>​     Cache-Control:     no-cache(服务端禁止客户端缓存页面数据)<br>​     Pragma: no-cache(服务端禁止客户端缓存页面数据)<br>​     Connection: close(1.0)/(1.1)Keep-Alive(维护客户端和服务端的连接关系)  </p>
