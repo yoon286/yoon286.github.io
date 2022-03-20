@@ -76,6 +76,49 @@
       </tags>
   </entry>
   <entry>
+    <title>Java基础--为什么main方法要使用static关键字</title>
+    <url>/2021/03/20/Java%E5%9F%BA%E7%A1%80--%E4%B8%BA%E4%BB%80%E4%B9%88main%E6%96%B9%E6%B3%95%E8%A6%81%E4%BD%BF%E7%94%A8static%E5%85%B3%E9%94%AE%E5%AD%97/</url>
+    <content><![CDATA[<ul>
+<li>为什么 main 方法是静态的（static）？</li>
+<li>为什么main方法是公有的（public） ？</li>
+<li>为什么 main 方法没有返回值（Void）？</li>
+<li>总结</li>
+</ul>
+<span id="more"></span>
+
+<hr>
+<p>Main 方法是我们学习 Java 编程语言时知道的第一个方法，你是否曾经想过为什么 main 方法是 public、static、void 的。当然，很多人首先学的是 C 和 C++，但是在 Java 中 main 方法与前者有些细微的不同，它不会返回任何值，为什么 main 方式是 public、static、void，这篇文章尝试去找到一些答案。</p>
+<p>Main 方法是 Java 程序的入口，记住，我们这里不会讨论 Servlet、MIDlet 和其他任何容器管理的 java 程序，在 java 核心编程中，JVM 会查找类中的 public static void main(String[]args)，如果找不到该方法就抛出错误 NoSuchMethodError:main 程序终止。</p>
+<p>Main 方法必须严格遵循它的语法规则，方法签名必须是 public static void，参数是字符串数组类型，如果是 Java1.5 及以后的版本还可以使用可变参数：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">public static void main(String... args)</span><br></pre></td></tr></table></figure>
+
+<h1 id="为什么-main-方法是静态的（static）？"><a href="#为什么-main-方法是静态的（static）？" class="headerlink" title="为什么 main 方法是静态的（static）？"></a>为什么 main 方法是静态的（static）？</h1><p>1.正因为 main 方法是静态的，JVM 调用这个方法就不需要创建任何包含这个 main 方法的实例。</p>
+<p>2.因为 C 和 C++ 同样有类似的 main 方法作为程序执行的入口。</p>
+<p>3.如果 main 方法不声明为静态的，JVM 就必须创建 main 类的实例，因为构造器可以被重载，JVM 就没法确定调用哪个 main 方法。</p>
+<p>4.静态方法和静态数据加载到内存就可以直接调用而不需要像实例方法一样创建实例后才能调用，如果 main 方法是静态的，那么它就会被加载到 JVM 上下文中成为可执行的方法。</p>
+<h1 id="为什么main方法是公有的（public）-？"><a href="#为什么main方法是公有的（public）-？" class="headerlink" title="为什么main方法是公有的（public） ？"></a>为什么main方法是公有的（public） ？</h1><p>Java 指定了一些可访问的修饰符如：private、protected、public，任何方法或变量都可以声明为 public，Java 可以从该类之外的地方访问。因为 main 方法是公共的，JVM 就可以轻松的访问执行它。</p>
+<h1 id="为什么-main-方法没有返回值（Void）？"><a href="#为什么-main-方法没有返回值（Void）？" class="headerlink" title="为什么 main 方法没有返回值（Void）？"></a>为什么 main 方法没有返回值（Void）？</h1><p>因为 main 返回任何值对程序都没任何意义，所以设计成 void，意味着 main 不会有任何值返回。</p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>1.main 方法必须声明为 public、static、void，否则 JVM 没法运行程序 。</p>
+<p>2.如果 JVM 找不到 main 方法就抛出 NoSuchMethodError:main 异常，例如：如果你运行命令：java HelloWrold，JVM 就会在 HelloWorld.class 文件中搜索 public static void main (String[] args) 方法。</p>
+<p>3.main 方式是程序的入口，程序执行的开始处。</p>
+<p>4.main 方法被一个特定的线程 ”main” 运行，程序会一直运行直到 main 线程结束或者 non-daemon 线程终止。</p>
+<p>5.当你看到“Exception in Thread main”如：Excpetion in Thread main:Java.lang.NullPointedException，意味着异常来自于 main 线程。</p>
+<p>6.你可以声明 main 方法使用 java1.5 的可变参数的方式如：publicstaticvoid main(String… args)。</p>
+<p>7.除了 static、void、和 public，你可以使用 final，synchronized、和 strictfp 修饰符在 main 方法的签名中，如：publicstrictfpfinalsynchronizedstaticvoid main(String[] args)。</p>
+<p>8.main 方法在 Java 可以像其他方法一样被重载，但是 JVM 只会调用上面这种签名规范的 main 方法。</p>
+<p>9.你可以使用 throws 子句在方法签名中，可以抛出任何 checked 和 unchecked 异常。</p>
+<p>10.静态初始化块在 JVM 调用 main 方法前被执行，它们在类被 JVM 加载到内存的时候就被执行了。</p>
+]]></content>
+      <categories>
+        <category>学习</category>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+        <tag>基础知识</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>IDEA常用快捷键</title>
     <url>/2021/03/25/IDEA%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/</url>
     <content><![CDATA[<table>
@@ -126,6 +169,61 @@
       <tags>
         <tag>IDEA</tag>
         <tag>快捷键</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java基础--类与对象</title>
+    <url>/2021/03/22/Java%E5%9F%BA%E7%A1%80-%E5%AF%B9%E8%B1%A1%E4%B8%AD%E5%8C%85%E5%90%AB%E4%BB%80%E4%B9%88%EF%BC%9F/</url>
+    <content><![CDATA[<p>Java是一门面向对象的高级语言，而类与对象是理解Java编程思想的两个重要要素。对象是对具体事物的抽象，而类是对对象的抽象。</p>
+<p>在这里讲一个老套的笑话：</p>
+<blockquote>
+<p>每个接触的对象都是别人实例化出来的，要想找到对象，你得自己new一个出来。</p>
+<p>而我们想要的对象，都是同一类。</p>
+</blockquote>
+<span id="more"></span>
+
+<h1 id="什么是类？"><a href="#什么是类？" class="headerlink" title="什么是类？"></a>什么是类？</h1><p>类是一个抽象的概念的集合，表示一类具有共同属性的事物，所以<strong>类当中应该包含属性和方法</strong>。属性，即事物的特征；方法，即事物能做什么。因此，我们在定义类的时候，以及编写类的成员变量以及类的方法。</p>
+<p>基于上述描述，类可以表达基本数据类型，如int、char等表达不了的数据信息。所以，类的特征之一是：<strong>类是对象的数据类型。</strong></p>
+<p>实例化对象的一般方法是：</p>
+<blockquote>
+<p>类 对象=new 类（）;</p>
+<p>对比参照：int[]  数组名=new int[]；</p>
+</blockquote>
+<p>不难看出，类跟数组一样，是一种特殊的数据类型。</p>
+<p>因此，从内存空间上来看，对象的具体信息与数组的具体信息一样，存储在堆内存当中，通过new关键字开辟。</p>
+<p>从作用域来看，类当中包含内部类和外部类。</p>
+<p>而类与类之间的关系，主要包含依赖、关联、聚合、组合、继承、实现。</p>
+<hr>
+<h1 id="什么是对象？"><a href="#什么是对象？" class="headerlink" title="什么是对象？"></a>什么是对象？</h1><p>对象是类的实体，也叫实例化，它具有具体的状态和行为。</p>
+<p>对象的组成如下：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202202050321287.png" alt="对象的组成"></p>
+<p>也就是说，对象包含主要包含：<strong>对象头、实例数据、对齐填充</strong>三部分。</p>
+<p>如图所示，对象头中前两行是Mark Word关键字，存储的是类的元数据；第三行是指针，指明类的存储位置。</p>
+<p>第四行是实例数据的对象属性，如果该实例数据是数组，还得指明数组长度；</p>
+<p>最后一行是对齐填充。</p>
+<p>简单来说，对象需要包含<strong>对象头（类名以及类的地址）</strong>、<strong>实例数据（默认值以及长度）</strong>、<strong>对其填充</strong>。</p>
+<p>调用对象的一般方式是：对象名.成员方法(   )     /   对象名.成员变量</p>
+<hr>
+<h1 id="封装"><a href="#封装" class="headerlink" title="封装"></a>封装</h1><p>使用private关键字进行封装，将类的某些信息隐藏在类的内部，不允许外界直接访问。封装的两大优点：提高代码复用性和安全性。</p>
+<p>其中，在进行封装时，若全局变量(成员变量)与局部变量重名，使用this关键字指明全局变量。</p>
+<p>同时，java提供了get方法和set方法，便于调用类中的成员变量。</p>
+<hr>
+<h1 id="构造方法"><a href="#构造方法" class="headerlink" title="构造方法"></a>构造方法</h1><p>所谓构造方法就是用来初始化对象的方法，与之相对应的成员方法，即规定对象的行为。</p>
+<p>其语法规则包含：方法名与类名一致、无返回值、可以不指定参数。</p>
+<p>构造方法的特征包含：提供默认的无参构造、可重载、不可继承、一旦自定义则不再提供默认方法。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">public 方法名( 非必要参数 )&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+]]></content>
+      <categories>
+        <category>学习</category>
+        <category>java</category>
+        <category>基础语法</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+        <tag>基础语法</tag>
       </tags>
   </entry>
   <entry>
@@ -212,38 +310,98 @@
       </tags>
   </entry>
   <entry>
-    <title>Java基础--为什么main方法要使用static关键字</title>
-    <url>/2021/03/20/Java%E5%9F%BA%E7%A1%80--%E4%B8%BA%E4%BB%80%E4%B9%88main%E6%96%B9%E6%B3%95%E8%A6%81%E4%BD%BF%E7%94%A8static%E5%85%B3%E9%94%AE%E5%AD%97/</url>
-    <content><![CDATA[<ul>
-<li>为什么 main 方法是静态的（static）？</li>
-<li>为什么main方法是公有的（public） ？</li>
-<li>为什么 main 方法没有返回值（Void）？</li>
-<li>总结</li>
+    <title>Java八股文</title>
+    <url>/2022/01/19/java%E5%85%AB%E8%82%A1%E6%96%87/</url>
+    <content><![CDATA[<h2 id="一、基础语法"><a href="#一、基础语法" class="headerlink" title="一、基础语法"></a>一、基础语法</h2><h3 id="1-面向对象包括哪些特性，如何理解？"><a href="#1-面向对象包括哪些特性，如何理解？" class="headerlink" title="1.面向对象包括哪些特性，如何理解？"></a>1.面向对象包括哪些特性，如何理解？</h3><ul>
+<li><p>封装。通过private关键字，将对象的属性和方法封装起来。隐藏一切可隐藏的东西，只对外界提供最简单的编程接口，同时保护了数据。</p>
+</li>
+<li><p>继承。父类引用指向子类对象，Animal animal = new Cat( ) 即声明的是父类，实际指向的是子类的一个对象。 继承是为了重用父类代码，子类继承父类就拥有了父类的成员。</p>
+</li>
+<li><p>多态。同一个行为具有不同的表现形式。实现多态需要做两件事：</p>
+<p>第一：方法重写（子类继承父类并重写父类中已有的或抽象的方法）</p>
+<p>第二：对象造型（用父类引用指向子类对象，这样同样的引用调用同样的方法就会根据子类对象的不同而表现出不同的行为）。</p>
+<span id="more"></span></li>
 </ul>
-<span id="more"></span>
+<h3 id="2-重载和重写的区别"><a href="#2-重载和重写的区别" class="headerlink" title="2.重载和重写的区别"></a>2.重载和重写的区别</h3><p><strong>重载</strong> : 发生在同一个类中。方法名一样，方法参数类型、个数、顺序不一样。返回值类型和访问权限可以不一致。</p>
+<p><strong>重写</strong> ：发生在父子类中，子类重写父类方法。方法名一样，方法返回值小于等于父类，方法访问权限大于等于父类。当父类中方法使用private修饰时，子类不能重写父类中的方法。</p>
+<h3 id="3-String、StringBuffer、StingBuilder的区别"><a href="#3-String、StringBuffer、StingBuilder的区别" class="headerlink" title="3.String、StringBuffer、StingBuilder的区别"></a>3.String、StringBuffer、StingBuilder的区别</h3><ul>
+<li><p><strong>可变性</strong></p>
+<p>String类中使用final关键字字符数组保存字符串，所以String是不可变字符串。</p>
+<p>StringBuilder和StringBuffer都继承自AbstractStringBuilder，因此两者都是可变字符串</p>
+</li>
+<li><p><strong>线程安全性</strong></p>
+<p>String可以理解为字符串常量，因此是线程安全的。</p>
+<p>StringBuffer对方法或者调用的方法加了同步锁，因此也是线程安全的。</p>
+<p>StringBuilder并没有对方法加同步锁，所以是非线程安全的。</p>
+</li>
+<li><p><strong>性能</strong></p>
+<p>String每次都会创建一个新的对象，并将指针指向这个新对象。</p>
+<p>StringBuffer每次都是对对象本身进行操作，相同情况下，StringBuilder比StringBuffer的性能提升10%-15%，却要承担线程不安全的风险</p>
+</li>
+<li><p>使用总结：</p>
+<p>对字符串进行少量修改：使用String</p>
+<p>多线程操作字符串缓冲区下操作大量数据：StringBuffer</p>
+<p>单线程操作字符串缓冲区下操作大量数据：StringBuilder</p>
+</li>
+</ul>
+<h3 id="4-自动装箱与自动拆箱"><a href="#4-自动装箱与自动拆箱" class="headerlink" title="4.自动装箱与自动拆箱"></a>4.自动装箱与自动拆箱</h3><p>自动装箱：将基本数据类型用他们对应的包装数据类型包装起来</p>
+<p>自动拆箱：将包装数据类型转化为基本数据类型</p>
+<blockquote>
+<p>在通过valueOf方法创建Integer对象的时候，如果数值在[-128,127]之间，便返回指向IntegerCache.cache中已经存在的对象的引用；否则创建一个新的Integer对象。</p>
+</blockquote>
+<h3 id="5-关于final关键字的总结"><a href="#5-关于final关键字的总结" class="headerlink" title="5.关于final关键字的总结"></a>5.关于final关键字的总结</h3><p>final关键字主要用在三个地方：类、方法、变量。</p>
+<ul>
+<li>当final修饰变量时，一旦变量被初始化，就不可以被随意更改。</li>
+<li>当final修饰方法时，这个方法不可以被覆盖重写。</li>
+<li>当final修饰类时，该类不可以被继承，类中的方法被隐式地申明为final方法。</li>
+</ul>
+<p>使用final类的好处如下：第一是把方法锁住，防止继承类修改它的含义；第二是提升性能，在早期的Java版本中，final方法会转化为嵌入方法，不过现在的Java版本已经不靠final来提升方法性能了。</p>
+<h3 id="6-Object类的常用方法总结"><a href="#6-Object类的常用方法总结" class="headerlink" title="6.Object类的常用方法总结"></a>6.Object类的常用方法总结</h3><p>Object类是一个特殊的类，它是所有类的父类，主要提供了以下几个方法：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">- toString() </span><br><span class="line">    </span><br><span class="line">- hashCode()</span><br><span class="line">    </span><br><span class="line">- getClass() <span class="comment">//native方法，用于返回当前运行时对象的Class对象，使用了final关键字修饰，故不允许子类重写。</span></span><br><span class="line">    </span><br><span class="line">- equals() <span class="comment">//用于比较2个对象的内存地址是否相等，String类对该方法进行了重写用户比较字符串的值是否相等。</span></span><br><span class="line">    </span><br><span class="line">- clone() <span class="comment">//naitive方法，用于创建并返回当前对象的一份拷贝。一般情况下，对于任何对象 x，表达式 x.clone() != x 为true，x.clone().getClass()== x.getClass() 为true。Object本身没有实现Cloneable接口，所以不重写clone方法并且进行调用的话会发生CloneNotSupportedException异常。</span></span><br><span class="line">    </span><br><span class="line">- notify() <span class="comment">//native方法，并且不能重写。唤醒一个在此对象监视器上等待的线程(监视器相当于就是锁的概念)。如果有多个线程在等待只会任意唤醒一个。</span></span><br><span class="line"></span><br><span class="line">- notifyAll() <span class="comment">//native方法，并且不能重写。跟notify一样，唯一的区别就是会唤醒在此对象监视器上等待的所有线程，而不是一个线程。</span></span><br><span class="line"></span><br><span class="line">- wait() <span class="comment">//native方法，并且不能重写。暂停线程的执行。注意：sleep方法没有释放锁，而wait方法释放了锁 。timeout是等待时间。</span></span><br><span class="line"></span><br><span class="line">- finalize() <span class="comment">//实例被垃圾回收器回收的时候触发的操作     </span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<hr>
-<p>Main 方法是我们学习 Java 编程语言时知道的第一个方法，你是否曾经想过为什么 main 方法是 public、static、void 的。当然，很多人首先学的是 C 和 C++，但是在 Java 中 main 方法与前者有些细微的不同，它不会返回任何值，为什么 main 方式是 public、static、void，这篇文章尝试去找到一些答案。</p>
-<p>Main 方法是 Java 程序的入口，记住，我们这里不会讨论 Servlet、MIDlet 和其他任何容器管理的 java 程序，在 java 核心编程中，JVM 会查找类中的 public static void main(String[]args)，如果找不到该方法就抛出错误 NoSuchMethodError:main 程序终止。</p>
-<p>Main 方法必须严格遵循它的语法规则，方法签名必须是 public static void，参数是字符串数组类型，如果是 Java1.5 及以后的版本还可以使用可变参数：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">public static void main(String... args)</span><br></pre></td></tr></table></figure>
 
-<h1 id="为什么-main-方法是静态的（static）？"><a href="#为什么-main-方法是静态的（static）？" class="headerlink" title="为什么 main 方法是静态的（static）？"></a>为什么 main 方法是静态的（static）？</h1><p>1.正因为 main 方法是静态的，JVM 调用这个方法就不需要创建任何包含这个 main 方法的实例。</p>
-<p>2.因为 C 和 C++ 同样有类似的 main 方法作为程序执行的入口。</p>
-<p>3.如果 main 方法不声明为静态的，JVM 就必须创建 main 类的实例，因为构造器可以被重载，JVM 就没法确定调用哪个 main 方法。</p>
-<p>4.静态方法和静态数据加载到内存就可以直接调用而不需要像实例方法一样创建实例后才能调用，如果 main 方法是静态的，那么它就会被加载到 JVM 上下文中成为可执行的方法。</p>
-<h1 id="为什么main方法是公有的（public）-？"><a href="#为什么main方法是公有的（public）-？" class="headerlink" title="为什么main方法是公有的（public） ？"></a>为什么main方法是公有的（public） ？</h1><p>Java 指定了一些可访问的修饰符如：private、protected、public，任何方法或变量都可以声明为 public，Java 可以从该类之外的地方访问。因为 main 方法是公共的，JVM 就可以轻松的访问执行它。</p>
-<h1 id="为什么-main-方法没有返回值（Void）？"><a href="#为什么-main-方法没有返回值（Void）？" class="headerlink" title="为什么 main 方法没有返回值（Void）？"></a>为什么 main 方法没有返回值（Void）？</h1><p>因为 main 返回任何值对程序都没任何意义，所以设计成 void，意味着 main 不会有任何值返回。</p>
-<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>1.main 方法必须声明为 public、static、void，否则 JVM 没法运行程序 。</p>
-<p>2.如果 JVM 找不到 main 方法就抛出 NoSuchMethodError:main 异常，例如：如果你运行命令：java HelloWrold，JVM 就会在 HelloWorld.class 文件中搜索 public static void main (String[] args) 方法。</p>
-<p>3.main 方式是程序的入口，程序执行的开始处。</p>
-<p>4.main 方法被一个特定的线程 ”main” 运行，程序会一直运行直到 main 线程结束或者 non-daemon 线程终止。</p>
-<p>5.当你看到“Exception in Thread main”如：Excpetion in Thread main:Java.lang.NullPointedException，意味着异常来自于 main 线程。</p>
-<p>6.你可以声明 main 方法使用 java1.5 的可变参数的方式如：publicstaticvoid main(String… args)。</p>
-<p>7.除了 static、void、和 public，你可以使用 final，synchronized、和 strictfp 修饰符在 main 方法的签名中，如：publicstrictfpfinalsynchronizedstaticvoid main(String[] args)。</p>
-<p>8.main 方法在 Java 可以像其他方法一样被重载，但是 JVM 只会调用上面这种签名规范的 main 方法。</p>
-<p>9.你可以使用 throws 子句在方法签名中，可以抛出任何 checked 和 unchecked 异常。</p>
-<p>10.静态初始化块在 JVM 调用 main 方法前被执行，它们在类被 JVM 加载到内存的时候就被执行了。</p>
+
+<h3 id="7-Java中的异常处理"><a href="#7-Java中的异常处理" class="headerlink" title="7.Java中的异常处理"></a>7.Java中的异常处理</h3><p>在Java中所有的异常都有一个共同的父类<strong>Throwable</strong>类，Throwable类有两个重要的子类：**Error **和 <strong>Exception</strong>。</p>
+<p>Error是程序无法处理的异常，Exception是程序可以处理的异常。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202203192311254.png" alt="image-20220319231142003"></p>
+<h3 id="8-接口和抽象类的区别是什么"><a href="#8-接口和抽象类的区别是什么" class="headerlink" title="8.接口和抽象类的区别是什么"></a>8.接口和抽象类的区别是什么</h3><h2 id="二、Spring"><a href="#二、Spring" class="headerlink" title="二、Spring"></a>二、Spring</h2><h3 id="1-SpringMVC的工作原理？"><a href="#1-SpringMVC的工作原理？" class="headerlink" title="1.SpringMVC的工作原理？"></a>1.SpringMVC的工作原理？</h3><ul>
+<li>用户向服务器发送请求，通过server.xml文件，请求被前端控制器DispatchServlet捕获；</li>
+<li>DispatchServlet对URL进行解析，得到请求资源标识符（URI），通过HandlerMapping找到合适的处理器HandlerExcutionChain;</li>
+<li>根据得到的处理器，DispatchServlet选择合适的适配器handlerAdapter处理请求；</li>
+<li>handler处理完请求后，返回一个ModelAndView对象给DispatchServlet；</li>
+<li>DispatchServlet将此对象通过ViewResolver进行处理，并得到渲染视图；</li>
+<li>最后将Model中的参数进行解析，最终呈现出完整的视图返回给客户端；</li>
+</ul>
+<h3 id="2-常用注解有哪些？"><a href="#2-常用注解有哪些？" class="headerlink" title="2.常用注解有哪些？"></a>2.常用注解有哪些？</h3><h3 id="3-谈谈你对Spring的理解"><a href="#3-谈谈你对Spring的理解" class="headerlink" title="3.谈谈你对Spring的理解"></a>3.谈谈你对Spring的理解</h3><p>Spring是一个开源框架，为简化企业级应用开发而生，Spring是一个IOC和AOP容器框架</p>
+<h3 id="4-Spring容器的主要核心是："><a href="#4-Spring容器的主要核心是：" class="headerlink" title="4.Spring容器的主要核心是："></a>4.Spring容器的主要核心是：</h3><h3 id="5-Bean的生命周期"><a href="#5-Bean的生命周期" class="headerlink" title="5.Bean的生命周期"></a>5.Bean的生命周期</h3><p><img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202202050318374.png" alt="Spring的设计模式"></p>
+<h2 id="三、SQL"><a href="#三、SQL" class="headerlink" title="三、SQL"></a>三、SQL</h2><h3 id="1-sql注入是什么？-和-的区别是什么"><a href="#1-sql注入是什么？-和-的区别是什么" class="headerlink" title="1.sql注入是什么？#{}和${}的区别是什么?"></a>1.sql注入是什么？#{}和${}的区别是什么?</h3><p>sql注入是指通过web表单输入恶意sql语句，激发数据库漏洞，而不是按设计者意图去执行sql语句。举例：select * from def_user where username=” <u>admin “  or  “a”=”a</u> “恒成立；</p>
+<p>#{}是通过预编译处理，如select * from user where username=?,sql语义不会发生改变，在很大程度上可以防止sql注入</p>
+<p>${}是字符串替换。在处理时，将 它替换成变量的值，不安全。</p>
+<h3 id="2-MySQL性能优化有哪些？"><a href="#2-MySQL性能优化有哪些？" class="headerlink" title="2.MySQL性能优化有哪些？"></a>2.MySQL性能优化有哪些？</h3><ul>
+<li>使用limit1</li>
+<li>选择正确的数据库引擎</li>
+<li>用not exists代替not in</li>
+<li>对操作符进行优化，尽量不采用索引的操作符</li>
+</ul>
+<h2 id="四、Mybatis"><a href="#四、Mybatis" class="headerlink" title="四、Mybatis"></a>四、Mybatis</h2><h3 id="1、什么是-Mybatis？"><a href="#1、什么是-Mybatis？" class="headerlink" title="1、什么是 Mybatis？"></a>1、什么是 Mybatis？</h3><p>（1） Mybatis 是一个半 ORM（对象关系映射）框架，它内部封装了 JDBC，开<br>发时只需要关注 SQL 语句本身，不需要花费精力去处理加载驱动、创建连接、<br>创建 statement 等繁杂的过程。程序员直接编写原生态 sql，可以严格控制<br>sql 执行性能，灵活度高。<br>（2） MyBatis 可以使用 XML 或注解来配置和映射原生信息，将 POJO 映射成<br>数据库中的记录，避免了几乎所有的 JDBC 代码和手动设置参数以及获取结果<br>集。<br>（3） 通过 xml 文件或注解的方式将要执行的各种 statement 配置起来，并通<br>过 java 对象和 statement 中 sql 的动态参数进行映射生成最终执行的 sql<br>语句，最后由 mybatis 框架执行 sql 并将结果映射为 java 对象并返回。<br>（从执行 sql 到返回 result 的过程）。</p>
+<h2 id="五、Redis"><a href="#五、Redis" class="headerlink" title="五、Redis"></a>五、Redis</h2><p><img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202202050319649.png"></p>
+<h2 id="六、RabbitMQ"><a href="#六、RabbitMQ" class="headerlink" title="六、RabbitMQ"></a>六、RabbitMQ</h2><h3 id="1、什么是rabbitmq？"><a href="#1、什么是rabbitmq？" class="headerlink" title="1、什么是rabbitmq？"></a>1、什么是rabbitmq？</h3><p><strong>答：</strong></p>
+<p>采用AMQP高级消息队列协议的一种消息队列技术,最大的特点就是消费并不需要确保提供方存在,实现了服务之间的高度解耦。</p>
+<h3 id="2、为什么要使用rabbitmq？"><a href="#2、为什么要使用rabbitmq？" class="headerlink" title="2、为什么要使用rabbitmq？"></a>2、为什么要使用rabbitmq？</h3><p><strong>答：</strong> 1、在分布式系统下具备异步,削峰,负载均衡等一系列高级功能；</p>
+<p>2、拥有持久化的机制，进程消息，队列中的信息也可以保存下来。</p>
+<p>3、实现消费者和生产者之间的解耦。</p>
+<p>4、对于高并发场景下，利用消息队列可以使得同步访问变为串行访问达到一定量的限流，利于数据库的操作。</p>
+<p>5、可以使用消息队列达到异步下单的效果，排队中，后台进行逻辑下单。</p>
+<h3 id="4、如何确保消息正确地发送至RabbitMQ？如何确保消息接收方消费了消息？"><a href="#4、如何确保消息正确地发送至RabbitMQ？如何确保消息接收方消费了消息？" class="headerlink" title="4、如何确保消息正确地发送至RabbitMQ？如何确保消息接收方消费了消息？"></a>4、如何确保消息正确地发送至RabbitMQ？如何确保消息接收方消费了消息？</h3><p>答：<br>发送方确认模式<br>1.将信道设置成confirm模式（发送方确认模式），则所有在信道上发布的消息都会被指派一个唯一的ID。<br>2.一旦消息被投递到目的队列后，或者消息被写入磁盘后（可持久化的消息），信道会发送一个确认给生产者（包含消息唯一 ID）。<br>3.如果 RabbitMQ发生内部错误从而导致消息丢失，会发送一条nack（notacknowledged，未确认）消息。发送方确认模式是异步的，生产者应用程序在等待确认的同时，可以继续发送消息。当确认消息到达生产者应用程序，生产者应用程序的回调方法就会被触发来处理确认消息。<br>接收方确认机制<br>接收方消息确认机制<br>消费者接收每一条消息后都必须进行确认（消息接收和消息确认是两个不同操作）。只有消费者确认了消息，RabbitMQ才能安全地把消息从队列中删除。这里并没有用到超时机制，RabbitMQ仅通过Consumer的连接中断来确认是否需要重新发送消息。也就是说，只要连接不中断，RabbitMQ给了Consumer足够长的时间来处理消息。保证数据的最终一致性；</p>
+<h3 id="5-如何避免消息重复投递或重复消费？"><a href="#5-如何避免消息重复投递或重复消费？" class="headerlink" title="5.如何避免消息重复投递或重复消费？"></a>5.如何避免消息重复投递或重复消费？</h3><p><strong>答：</strong></p>
+<p>在消息生产时，MQ内部针对每条生产者发送的消息生成一个inner-msg-id，作为去重的依据（消息投递失败并重传），避免重复的消息进入队列；</p>
+<p>在消息消费时，要求消息体中必须要有一个 bizId（对于同一业务全局唯一，如支付ID、订单ID、帖子ID 等）作为去重的依据，避免同一条消息被重复消费。</p>
+<h3 id="6-死信队列"><a href="#6-死信队列" class="headerlink" title="6.死信队列"></a>6.死信队列</h3><p>一个消息是有死亡状态的，它会被发送到一个指定的队列中，这个队列是一个普通的队列，根据他的功能，我们叫他死信队列。</p>
+<h3 id="8、消息怎么路由？"><a href="#8、消息怎么路由？" class="headerlink" title="8、消息怎么路由？"></a>8、消息怎么路由？</h3><p>答：<br>消息提供方-&gt;路由-&gt;一至多个队列<br>消息发布到交换器时，消息将拥有一个路由键（routing key），在消息创建时设定。<br>通过队列路由键，可以把队列绑定到交换器上。<br>消息到达交换器后，RabbitMQ 会将消息的路由键与队列的路由键进行匹配（针对不同的交换器有不同的路由规则）；<br>常用的交换器主要分为一下三种<br>1.fanout：如果交换器收到消息，将会广播到所有绑定的队列上<br>2.direct：如果路由键完全匹配，消息就被投递到相应的队列<br>3.topic：可以使来自不同源头的消息能够到达同一个队列。 使用topic交换器时，可以使用通配符</p>
+<h3 id="七、ehcache"><a href="#七、ehcache" class="headerlink" title="七、ehcache"></a>七、ehcache</h3><p>ehcache直接在jvm虚拟机中缓存，速度快，效率高；但是缓存共享麻烦，集群分布式应用不方便。</p>
+<p>Spring Cache 是 Spring 提供的一整套的缓存解决方案。虽然它本身并没有提供缓存的实现，但是它提供了一整套的接口和代码规范、配置、注解等，这样它就可以整合各种缓存方案了，比如 Redis、Ehcache，我们也就不用关心操作缓存的细节。</p>
+<p>Spring 提供了四个注解来声明缓存规则。@Cacheable，@CachePut，@CacheEvict，@Caching。</p>
+<h3 id="八、简历说明"><a href="#八、简历说明" class="headerlink" title="八、简历说明"></a>八、简历说明</h3><p>独立的模块设计+使用count判断是否存在，改为limit 1</p>
 ]]></content>
       <categories>
         <category>学习</category>
@@ -251,80 +409,6 @@
       </categories>
       <tags>
         <tag>java</tag>
-        <tag>基础知识</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Java基础--类与对象</title>
-    <url>/2021/03/22/Java%E5%9F%BA%E7%A1%80-%E5%AF%B9%E8%B1%A1%E4%B8%AD%E5%8C%85%E5%90%AB%E4%BB%80%E4%B9%88%EF%BC%9F/</url>
-    <content><![CDATA[<p>Java是一门面向对象的高级语言，而类与对象是理解Java编程思想的两个重要要素。对象是对具体事物的抽象，而类是对对象的抽象。</p>
-<p>在这里讲一个老套的笑话：</p>
-<blockquote>
-<p>每个接触的对象都是别人实例化出来的，要想找到对象，你得自己new一个出来。</p>
-<p>而我们想要的对象，都是同一类。</p>
-</blockquote>
-<span id="more"></span>
-
-<h1 id="什么是类？"><a href="#什么是类？" class="headerlink" title="什么是类？"></a>什么是类？</h1><p>类是一个抽象的概念的集合，表示一类具有共同属性的事物，所以<strong>类当中应该包含属性和方法</strong>。属性，即事物的特征；方法，即事物能做什么。因此，我们在定义类的时候，以及编写类的成员变量以及类的方法。</p>
-<p>基于上述描述，类可以表达基本数据类型，如int、char等表达不了的数据信息。所以，类的特征之一是：<strong>类是对象的数据类型。</strong></p>
-<p>实例化对象的一般方法是：</p>
-<blockquote>
-<p>类 对象=new 类（）;</p>
-<p>对比参照：int[]  数组名=new int[]；</p>
-</blockquote>
-<p>不难看出，类跟数组一样，是一种特殊的数据类型。</p>
-<p>因此，从内存空间上来看，对象的具体信息与数组的具体信息一样，存储在堆内存当中，通过new关键字开辟。</p>
-<p>从作用域来看，类当中包含内部类和外部类。</p>
-<p>而类与类之间的关系，主要包含依赖、关联、聚合、组合、继承、实现。</p>
-<hr>
-<h1 id="什么是对象？"><a href="#什么是对象？" class="headerlink" title="什么是对象？"></a>什么是对象？</h1><p>对象是类的实体，也叫实例化，它具有具体的状态和行为。</p>
-<p>对象的组成如下：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202202050321287.png" alt="对象的组成"></p>
-<p>也就是说，对象包含主要包含：<strong>对象头、实例数据、对齐填充</strong>三部分。</p>
-<p>如图所示，对象头中前两行是Mark Word关键字，存储的是类的元数据；第三行是指针，指明类的存储位置。</p>
-<p>第四行是实例数据的对象属性，如果该实例数据是数组，还得指明数组长度；</p>
-<p>最后一行是对齐填充。</p>
-<p>简单来说，对象需要包含<strong>对象头（类名以及类的地址）</strong>、<strong>实例数据（默认值以及长度）</strong>、<strong>对其填充</strong>。</p>
-<p>调用对象的一般方式是：对象名.成员方法(   )     /   对象名.成员变量</p>
-<hr>
-<h1 id="封装"><a href="#封装" class="headerlink" title="封装"></a>封装</h1><p>使用private关键字进行封装，将类的某些信息隐藏在类的内部，不允许外界直接访问。封装的两大优点：提高代码复用性和安全性。</p>
-<p>其中，在进行封装时，若全局变量(成员变量)与局部变量重名，使用this关键字指明全局变量。</p>
-<p>同时，java提供了get方法和set方法，便于调用类中的成员变量。</p>
-<hr>
-<h1 id="构造方法"><a href="#构造方法" class="headerlink" title="构造方法"></a>构造方法</h1><p>所谓构造方法就是用来初始化对象的方法，与之相对应的成员方法，即规定对象的行为。</p>
-<p>其语法规则包含：方法名与类名一致、无返回值、可以不指定参数。</p>
-<p>构造方法的特征包含：提供默认的无参构造、可重载、不可继承、一旦自定义则不再提供默认方法。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">public 方法名( 非必要参数 )&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-]]></content>
-      <categories>
-        <category>学习</category>
-        <category>java</category>
-        <category>基础语法</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-        <tag>基础语法</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Linux常见命令</title>
-    <url>/2021/03/23/Linux%E5%B8%B8%E8%A7%81%E5%91%BD%E4%BB%A4/</url>
-    <content><![CDATA[<h4 id="常见命令："><a href="#常见命令：" class="headerlink" title="常见命令："></a>常见命令：</h4><p>pwd ： 查看当前路径</p>
-<p>ls : 查看当前目录文件夹</p>
-<p>mkdir ：创建<strong>文件夹</strong></p>
-<p>rm：删除文件</p>
-<p>touch：创建<strong>文件</strong></p>
-]]></content>
-      <categories>
-        <category>学习</category>
-        <category>操作系统</category>
-      </categories>
-      <tags>
-        <tag>操作系统</tag>
-        <tag>linux</tag>
       </tags>
   </entry>
   <entry>
@@ -438,76 +522,21 @@
       </tags>
   </entry>
   <entry>
-    <title>Java八股文</title>
-    <url>/2022/01/19/java%E5%85%AB%E8%82%A1%E6%96%87/</url>
-    <content><![CDATA[<h2 id="一、基础语法"><a href="#一、基础语法" class="headerlink" title="一、基础语法"></a>一、基础语法</h2><h3 id="1-面向对象包括哪些特性，如何理解？"><a href="#1-面向对象包括哪些特性，如何理解？" class="headerlink" title="1.面向对象包括哪些特性，如何理解？"></a>1.面向对象包括哪些特性，如何理解？</h3><ul>
-<li><p>封装。通过private关键字，将对象的属性和方法封装起来。隐藏一切可隐藏的东西，只对外界提供最简单的编程接口，同时保护了数据。</p>
-</li>
-<li><p>继承。父类引用指向子类对象，Animal animal = new Cat( ) 即声明的是父类，实际指向的是子类的一个对象。 继承是为了重用父类代码，子类继承父类就拥有了父类的成员。</p>
-</li>
-<li><p>多态。同一个行为具有不同的表现形式。实现多态需要做两件事：</p>
-<p>第一：方法重写（子类继承父类并重写父类中已有的或抽象的方法）</p>
-<p>第二：对象造型（用父类引用指向子类对象，这样同样的引用调用同样的方法就会根据子类对象的不同而表现出不同的行为）。</p>
-<span id="more"></span></li>
-</ul>
-<h3 id="2-Java中异常分为哪些？"><a href="#2-Java中异常分为哪些？" class="headerlink" title="2.Java中异常分为哪些？"></a>2.Java中异常分为哪些？</h3><p>编译异常和运行时异常。</p>
-<h3 id="3-error和exception的区别"><a href="#3-error和exception的区别" class="headerlink" title="3.error和exception的区别"></a>3.error和exception的区别</h3><p>父类都是Throwable类，他们的区别如下：</p>
-<ul>
-<li>Error一般都是指与虚拟机相关的问题，如系统崩溃、虚拟机错误、内存空间不足、方法调用栈溢出等、</li>
-<li>Exception表示程序可以处理的异常，可以捕获且可能恢复。</li>
-</ul>
-<h3 id="4-请问ArrayList、HashSet、HashMap是线程安全的吗？如果不是，怎么获取安全的集合。"><a href="#4-请问ArrayList、HashSet、HashMap是线程安全的吗？如果不是，怎么获取安全的集合。" class="headerlink" title="4.请问ArrayList、HashSet、HashMap是线程安全的吗？如果不是，怎么获取安全的集合。"></a>4.请问ArrayList、HashSet、HashMap是线程安全的吗？如果不是，怎么获取安全的集合。</h3><p>通过源码进行分析，每个方法都没有加锁，显然都是非线程安全的。在集合中Vector和HashTable是安全的，是因为其核心方法都加上synchronized关键字。Collections工具类中提供上述3个相关的API接口，可以让这些不安全的集合变成安全的。</p>
-<h3 id="5-什么是多线程"><a href="#5-什么是多线程" class="headerlink" title="5.什么是多线程?"></a>5.什么是多线程?</h3><p>进程：资源调度和计算的最小单位</p>
-<p>线程：资源计算的最小单位</p>
-<p>串行：</p>
-<p>并发：</p>
-<p>并行：</p>
-<p>资源往往少于线程数量，需要并发。</p>
-<h2 id="二、Spring"><a href="#二、Spring" class="headerlink" title="二、Spring"></a>二、Spring</h2><h3 id="1-SpringMVC的工作原理？"><a href="#1-SpringMVC的工作原理？" class="headerlink" title="1.SpringMVC的工作原理？"></a>1.SpringMVC的工作原理？</h3><ul>
-<li>用户向服务器发送请求，通过server.xml文件，请求被前端控制器DispatchServlet捕获；</li>
-<li>DispatchServlet对URL进行解析，得到请求资源标识符（URI），通过HandlerMapping找到合适的处理器HandlerExcutionChain;</li>
-<li>根据得到的处理器，DispatchServlet选择合适的适配器handlerAdapter处理请求；</li>
-<li>handler处理完请求后，返回一个ModelAndView对象给DispatchServlet；</li>
-<li>DispatchServlet将此对象通过ViewResolver进行处理，并得到渲染视图；</li>
-<li>最后将Model中的参数进行解析，最终呈现出完整的视图返回给客户端；</li>
-</ul>
-<h3 id="2-常用注解有哪些？"><a href="#2-常用注解有哪些？" class="headerlink" title="2.常用注解有哪些？"></a>2.常用注解有哪些？</h3><h3 id="3-谈谈你对Spring的理解"><a href="#3-谈谈你对Spring的理解" class="headerlink" title="3.谈谈你对Spring的理解"></a>3.谈谈你对Spring的理解</h3><p>Spring是一个开源框架，为简化企业级应用开发而生，Spring是一个IOC和AOP容器框架</p>
-<h3 id="4-Spring容器的主要核心是："><a href="#4-Spring容器的主要核心是：" class="headerlink" title="4.Spring容器的主要核心是："></a>4.Spring容器的主要核心是：</h3><h3 id="5-Bean的生命周期"><a href="#5-Bean的生命周期" class="headerlink" title="5.Bean的生命周期"></a>5.Bean的生命周期</h3><p><img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202202050318374.png" alt="Spring的设计模式"></p>
-<h2 id="三、SQL"><a href="#三、SQL" class="headerlink" title="三、SQL"></a>三、SQL</h2><h3 id="1-sql注入是什么？-和-的区别是什么"><a href="#1-sql注入是什么？-和-的区别是什么" class="headerlink" title="1.sql注入是什么？#{}和${}的区别是什么?"></a>1.sql注入是什么？#{}和${}的区别是什么?</h3><p>sql注入是指通过web表单输入恶意sql语句，激发数据库漏洞，而不是按设计者意图去执行sql语句。举例：select * from def_user where username=” <u>admin “  or  “a”=”a</u> “恒成立；</p>
-<p>#{}是通过预编译处理，如select * from user where username=?,sql语义不会发生改变，在很大程度上可以防止sql注入</p>
-<p>${}是字符串替换。在处理时，将 它替换成变量的值，不安全。</p>
-<h3 id="2-MySQL性能优化有哪些？"><a href="#2-MySQL性能优化有哪些？" class="headerlink" title="2.MySQL性能优化有哪些？"></a>2.MySQL性能优化有哪些？</h3><ul>
-<li>使用limit1</li>
-<li>选择正确的数据库引擎</li>
-<li>用not exists代替not in</li>
-<li>对操作符进行优化，尽量不采用索引的操作符</li>
-</ul>
-<h2 id="四、Mybatis"><a href="#四、Mybatis" class="headerlink" title="四、Mybatis"></a>四、Mybatis</h2><h3 id="1、什么是-Mybatis？"><a href="#1、什么是-Mybatis？" class="headerlink" title="1、什么是 Mybatis？"></a>1、什么是 Mybatis？</h3><p>（1） Mybatis 是一个半 ORM（对象关系映射）框架，它内部封装了 JDBC，开<br>发时只需要关注 SQL 语句本身，不需要花费精力去处理加载驱动、创建连接、<br>创建 statement 等繁杂的过程。程序员直接编写原生态 sql，可以严格控制<br>sql 执行性能，灵活度高。<br>（2） MyBatis 可以使用 XML 或注解来配置和映射原生信息，将 POJO 映射成<br>数据库中的记录，避免了几乎所有的 JDBC 代码和手动设置参数以及获取结果<br>集。<br>（3） 通过 xml 文件或注解的方式将要执行的各种 statement 配置起来，并通<br>过 java 对象和 statement 中 sql 的动态参数进行映射生成最终执行的 sql<br>语句，最后由 mybatis 框架执行 sql 并将结果映射为 java 对象并返回。<br>（从执行 sql 到返回 result 的过程）。</p>
-<h2 id="五、Redis"><a href="#五、Redis" class="headerlink" title="五、Redis"></a>五、Redis</h2><p><img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202202050319649.png"></p>
-<h2 id="六、RabbitMQ"><a href="#六、RabbitMQ" class="headerlink" title="六、RabbitMQ"></a>六、RabbitMQ</h2><h3 id="1、什么是rabbitmq？"><a href="#1、什么是rabbitmq？" class="headerlink" title="1、什么是rabbitmq？"></a>1、什么是rabbitmq？</h3><p><strong>答：</strong></p>
-<p>采用AMQP高级消息队列协议的一种消息队列技术,最大的特点就是消费并不需要确保提供方存在,实现了服务之间的高度解耦。</p>
-<h3 id="2、为什么要使用rabbitmq？"><a href="#2、为什么要使用rabbitmq？" class="headerlink" title="2、为什么要使用rabbitmq？"></a>2、为什么要使用rabbitmq？</h3><p><strong>答：</strong> 1、在分布式系统下具备异步,削峰,负载均衡等一系列高级功能；</p>
-<p>2、拥有持久化的机制，进程消息，队列中的信息也可以保存下来。</p>
-<p>3、实现消费者和生产者之间的解耦。</p>
-<p>4、对于高并发场景下，利用消息队列可以使得同步访问变为串行访问达到一定量的限流，利于数据库的操作。</p>
-<p>5、可以使用消息队列达到异步下单的效果，排队中，后台进行逻辑下单。</p>
-<h3 id="4、如何确保消息正确地发送至RabbitMQ？如何确保消息接收方消费了消息？"><a href="#4、如何确保消息正确地发送至RabbitMQ？如何确保消息接收方消费了消息？" class="headerlink" title="4、如何确保消息正确地发送至RabbitMQ？如何确保消息接收方消费了消息？"></a>4、如何确保消息正确地发送至RabbitMQ？如何确保消息接收方消费了消息？</h3><p>答：<br>发送方确认模式<br>1.将信道设置成confirm模式（发送方确认模式），则所有在信道上发布的消息都会被指派一个唯一的ID。<br>2.一旦消息被投递到目的队列后，或者消息被写入磁盘后（可持久化的消息），信道会发送一个确认给生产者（包含消息唯一 ID）。<br>3.如果 RabbitMQ发生内部错误从而导致消息丢失，会发送一条nack（notacknowledged，未确认）消息。发送方确认模式是异步的，生产者应用程序在等待确认的同时，可以继续发送消息。当确认消息到达生产者应用程序，生产者应用程序的回调方法就会被触发来处理确认消息。<br>接收方确认机制<br>接收方消息确认机制<br>消费者接收每一条消息后都必须进行确认（消息接收和消息确认是两个不同操作）。只有消费者确认了消息，RabbitMQ才能安全地把消息从队列中删除。这里并没有用到超时机制，RabbitMQ仅通过Consumer的连接中断来确认是否需要重新发送消息。也就是说，只要连接不中断，RabbitMQ给了Consumer足够长的时间来处理消息。保证数据的最终一致性；</p>
-<h3 id="5-如何避免消息重复投递或重复消费？"><a href="#5-如何避免消息重复投递或重复消费？" class="headerlink" title="5.如何避免消息重复投递或重复消费？"></a>5.如何避免消息重复投递或重复消费？</h3><p><strong>答：</strong></p>
-<p>在消息生产时，MQ内部针对每条生产者发送的消息生成一个inner-msg-id，作为去重的依据（消息投递失败并重传），避免重复的消息进入队列；</p>
-<p>在消息消费时，要求消息体中必须要有一个 bizId（对于同一业务全局唯一，如支付ID、订单ID、帖子ID 等）作为去重的依据，避免同一条消息被重复消费。</p>
-<h3 id="6-死信队列"><a href="#6-死信队列" class="headerlink" title="6.死信队列"></a>6.死信队列</h3><p>一个消息是有死亡状态的，它会被发送到一个指定的队列中，这个队列是一个普通的队列，根据他的功能，我们叫他死信队列。</p>
-<h3 id="8、消息怎么路由？"><a href="#8、消息怎么路由？" class="headerlink" title="8、消息怎么路由？"></a>8、消息怎么路由？</h3><p>答：<br>消息提供方-&gt;路由-&gt;一至多个队列<br>消息发布到交换器时，消息将拥有一个路由键（routing key），在消息创建时设定。<br>通过队列路由键，可以把队列绑定到交换器上。<br>消息到达交换器后，RabbitMQ 会将消息的路由键与队列的路由键进行匹配（针对不同的交换器有不同的路由规则）；<br>常用的交换器主要分为一下三种<br>1.fanout：如果交换器收到消息，将会广播到所有绑定的队列上<br>2.direct：如果路由键完全匹配，消息就被投递到相应的队列<br>3.topic：可以使来自不同源头的消息能够到达同一个队列。 使用topic交换器时，可以使用通配符</p>
-<h3 id="七、ehcache"><a href="#七、ehcache" class="headerlink" title="七、ehcache"></a>七、ehcache</h3><p>ehcache直接在jvm虚拟机中缓存，速度快，效率高；但是缓存共享麻烦，集群分布式应用不方便。</p>
-<p>Spring Cache 是 Spring 提供的一整套的缓存解决方案。虽然它本身并没有提供缓存的实现，但是它提供了一整套的接口和代码规范、配置、注解等，这样它就可以整合各种缓存方案了，比如 Redis、Ehcache，我们也就不用关心操作缓存的细节。</p>
-<p>Spring 提供了四个注解来声明缓存规则。@Cacheable，@CachePut，@CacheEvict，@Caching。</p>
-<h3 id="八、简历说明"><a href="#八、简历说明" class="headerlink" title="八、简历说明"></a>八、简历说明</h3><p>独立的模块设计+使用count判断是否存在，改为limit 1</p>
+    <title>Linux常见命令</title>
+    <url>/2021/03/23/Linux%E5%B8%B8%E8%A7%81%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<h4 id="常见命令："><a href="#常见命令：" class="headerlink" title="常见命令："></a>常见命令：</h4><p>pwd ： 查看当前路径</p>
+<p>ls : 查看当前目录文件夹</p>
+<p>mkdir ：创建<strong>文件夹</strong></p>
+<p>rm：删除文件</p>
+<p>touch：创建<strong>文件</strong></p>
 ]]></content>
       <categories>
         <category>学习</category>
-        <category>java</category>
+        <category>操作系统</category>
       </categories>
       <tags>
-        <tag>java</tag>
+        <tag>操作系统</tag>
+        <tag>linux</tag>
       </tags>
   </entry>
   <entry>
@@ -751,6 +780,41 @@
 <span id="more"></span>
 
 <h3 id="11-3-1-在线分配问题"><a href="#11-3-1-在线分配问题" class="headerlink" title="11.3.1 在线分配问题"></a>11.3.1 在线分配问题</h3><p><img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202203061117646.png" alt="image-20220306111720187"></p>
+]]></content>
+      <categories>
+        <category>学习</category>
+        <category>智慧营销</category>
+      </categories>
+      <tags>
+        <tag>智慧营销</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>计算广告 - 定价机制</title>
+    <url>/2022/03/20/%E8%AE%A1%E7%AE%97%E5%B9%BF%E5%91%8A%20(3)/</url>
+    <content><![CDATA[<p>在进行广告位拍卖时，广告主会不停地试探广告费用下限，从而影响媒体收益。要想理解市场如何达到稳定状态，需要理解三个概念：纳什均衡、广义第二高价、VCG（Vickrey-Clarke-Groves）定价策略。</p>
+<h4 id="1-纳什均衡"><a href="#1-纳什均衡" class="headerlink" title="1.纳什均衡"></a>1.纳什均衡</h4><p>即每个广告主都通过出价得到了最符合自己利益的位置。对某一次位置竞价来说，其对称纳什均衡（symmetric Nashequilibrium）状态可以表示为下式：</p>
+<img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202203202316893.png" alt="image-20220320231605798" style="zoom: 67%;" />
+
+<p>注意这里的下标意义有所调整，这里的 νs 指的是排在 s 位置上的广告的点击价值，并非 s 位置带来的点击价值，而 qs 指的是市场向排在 s 位置上的广告收取的费用，即定价，也就是广告主的单次投入。这一均衡状态的意义很容易理解：对于最终位置排名竞价结果中的每一条广告，其收益都比排在其他位置上要高。显然，在这样的状态下，每个广告主都达到了自己最优的状态，整个系统也就随之稳定下来。</p>
+<span id="more"></span>
+
+<h4 id="2-广义第二高价"><a href="#2-广义第二高价" class="headerlink" title="2.广义第二高价"></a>2.广义第二高价</h4><p><strong>第二高价</strong>：指的是在只有一个位置的拍卖中，向赢得该位置的广告主收取其下一位广告主的出价。</p>
+<p><strong>广义第二高价</strong>：在搜索广告这种有多个位置的拍卖过程中，对赢得每一个位置的广告主，都按照他下一位的广告位置出价来收取费用。 </p>
+<p>实际上，第二高价是单位置拍卖时的最优定价策略，然而广义第二高价却不是多位置拍卖时的最优定价策略（最优策略是下面要介绍的 VCG 定价）。虽然并非理论上最优，广义第二高价却有着实现简单、容易向广告主解释等诸多操作中的优点，因此在实际的竞价广告系统中是<strong>最主流的定价策略</strong>。</p>
+<h3 id="1-机制设计–定价"><a href="#1-机制设计–定价" class="headerlink" title="1.机制设计–定价"></a>1.机制设计–定价</h3><h4 id="3-VCG-定价"><a href="#3-VCG-定价" class="headerlink" title="3.VCG 定价"></a>3.VCG 定价</h4><p>是 Vickrey、Clarke 和 Groves 在研究竞价系统均衡状态时得到的一种理论上较为优越的定价策略。其基本思想是：对于赢得了某个位置的广告主，其所付出的成本应该等于他占据这个位置给其他市场参与者带来的价值损害。在这一原则下，VCG的定价策略可以表示为公式 5.3。</p>
+<img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202203202325229.png" alt="image-20220320232531146" style="zoom:67%;" />
+
+<p>理论分析表明，VCG 定价策略的优越性体现在如下几个方面：</p>
+<p>首先，在这种定价策略的稳定状态下，整个市场是truth-telling的。所谓 truth-telling，可以理解为每个广告主都找到了自己的最优状态。</p>
+<p>其次，相对于其他的定价策略，这种定价向广告主收取的费用是最少的。在单广告位拍卖的情形下，VCG定价策略就退化为第二高价策略。</p>
+<p>虽然有以上诸多的优点，VCG 定价在竞价广告中却并不是一种主流的方式。这主要是由于：</p>
+<ul>
+<li><p>逻辑过于复杂，比较难以向广告主解释清楚；</p>
+</li>
+<li><p>另外在广告主和媒体存在博弈关系的情形下，媒体是否正确地计算了“给其他市场参与者带来的价值损害”也很难验证。</p>
+</li>
+</ul>
 ]]></content>
       <categories>
         <category>学习</category>
