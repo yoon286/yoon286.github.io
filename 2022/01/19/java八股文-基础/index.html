@@ -17,14 +17,14 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"eniac286.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":-1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"yoon286.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":-1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta name="description" content="一、基础语法1.面向对象包括哪些特性，如何理解？ 封装。通过private关键字，将对象的属性和方法封装起来。隐藏一切可隐藏的东西，只对外界提供最简单的编程接口，同时保护了数据。  继承。父类引用指向子类对象，Animal animal &#x3D; new Cat( ) 即声明的是父类，实际指向的是子类的一个对象。 继承是为了重用父类代码，子类继承父类就拥有了父类的成员。  多态。同一个行为具有不同的表现">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java八股文--Java基础">
-<meta property="og:url" content="https://eniac286.github.io/2022/01/19/java%E5%85%AB%E8%82%A1%E6%96%87-%E5%9F%BA%E7%A1%80/index.html">
-<meta property="og:site_name" content="Eniac286">
+<meta property="og:url" content="https://yoon286.github.io/2022/01/19/java%E5%85%AB%E8%82%A1%E6%96%87-%E5%9F%BA%E7%A1%80/index.html">
+<meta property="og:site_name" content="yoon">
 <meta property="og:description" content="一、基础语法1.面向对象包括哪些特性，如何理解？ 封装。通过private关键字，将对象的属性和方法封装起来。隐藏一切可隐藏的东西，只对外界提供最简单的编程接口，同时保护了数据。  继承。父类引用指向子类对象，Animal animal &#x3D; new Cat( ) 即声明的是父类，实际指向的是子类的一个对象。 继承是为了重用父类代码，子类继承父类就拥有了父类的成员。  多态。同一个行为具有不同的表现">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202203192311254.png">
@@ -32,12 +32,12 @@
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202202050319649.png">
 <meta property="article:published_time" content="2022-01-19T15:27:31.000Z">
 <meta property="article:modified_time" content="2022-03-25T15:55:42.680Z">
-<meta property="article:author" content="Dara Yoon">
+<meta property="article:author" content="尹 丹">
 <meta property="article:tag" content="java">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202203192311254.png">
 
-<link rel="canonical" href="https://eniac286.github.io/2022/01/19/java%E5%85%AB%E8%82%A1%E6%96%87-%E5%9F%BA%E7%A1%80/">
+<link rel="canonical" href="https://yoon286.github.io/2022/01/19/java%E5%85%AB%E8%82%A1%E6%96%87-%E5%9F%BA%E7%A1%80/">
 
 
 <script id="page-configurations">
@@ -50,7 +50,7 @@
   };
 </script>
 
-  <title>Java八股文--Java基础 | Eniac286</title>
+  <title>Java八股文--Java基础 | yoon</title>
   
 
 
@@ -100,7 +100,7 @@
 
     <a href="/" class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">Eniac286</h1>
+      <h1 class="site-title">yoon</h1>
       <span class="logo-line-after"><i></i></span>
     </a>
       <p class="site-subtitle" itemprop="description">风物长宜放眼量</p>
@@ -193,16 +193,16 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://eniac286.github.io/2022/01/19/java%E5%85%AB%E8%82%A1%E6%96%87-%E5%9F%BA%E7%A1%80/">
+    <link itemprop="mainEntityOfPage" href="https://yoon286.github.io/2022/01/19/java%E5%85%AB%E8%82%A1%E6%96%87-%E5%9F%BA%E7%A1%80/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Dara Yoon">
+      <meta itemprop="name" content="尹 丹">
       <meta itemprop="description" content="">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Eniac286">
+      <meta itemprop="name" content="yoon">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
@@ -527,9 +527,9 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="Dara Yoon"
+    <img class="site-author-image" itemprop="image" alt="尹 丹"
       src="/images/avatar.gif">
-  <p class="site-author-name" itemprop="name">Dara Yoon</p>
+  <p class="site-author-name" itemprop="name">尹 丹</p>
   <div class="site-description" itemprop="description"></div>
 </div>
 <div class="site-state-wrap motion-element">
