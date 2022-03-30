@@ -1,6 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>How to Read a Computer Science Research Paper</title>
+    <url>/2022/03/19/HowToReadCSPaper/</url>
+    <content><![CDATA[<h4 id="Publication-Venues"><a href="#Publication-Venues" class="headerlink" title="Publication Venues"></a>Publication Venues</h4><ul>
+<li>General : ACM , IEEE , AAAI , ACL</li>
+<li>Specifically Recommended By CCF : <strong><a href="https://www.ccf.org.cn/Academic_Evaluation/By_category/">https://www.ccf.org.cn/Academic_Evaluation/By_category/</a></strong></li>
+</ul>
+<blockquote>
+<p>中国计算机学会（China Computer Federation）</p>
+</blockquote>
+<h4 id="Different-Types-of-CS-Research-Paper"><a href="#Different-Types-of-CS-Research-Paper" class="headerlink" title="Different Types of CS Research Paper"></a>Different Types of CS Research Paper</h4><p>There are three basic types of CS research paper: <strong>theoretical</strong>, <strong>engineering</strong> and <strong>empirical</strong>.</p>
+<ul>
+<li>A theoretical paper describes a theory or algorithm or provides a mathematical proof for some hypothesis.</li>
+<li>An engineering paper describes an implementation of an algorithm, or part or all of a computer system or application. Engineering papers are now frequently required to include descriptions of system evaluation.</li>
+<li>An empirical paper describes an experiment designed to test some hypothesis.</li>
+</ul>
+<span id="more"></span>
+
+
+
+<h4 id="Taxonomy-of-Scientific-Papers"><a href="#Taxonomy-of-Scientific-Papers" class="headerlink" title="Taxonomy of Scientific Papers"></a>Taxonomy of Scientific Papers</h4><ul>
+<li><p>Conference Papers</p>
+<ul>
+<li><p>Review : YES , peer-reviewed , the threshold depends on the conference</p>
+</li>
+<li><p>Goal : Publish a finished work with possible forthcoming research</p>
+</li>
+<li><p>Size : 8 - 20 Pages</p>
+</li>
+</ul>
+</li>
+<li><p>Journal Papers</p>
+<ul>
+<li><p>Review : YES , peer-reviewed , more longer than Conference Papers</p>
+</li>
+<li><p>Goal : Publish a present completed work</p>
+</li>
+<li><p>Size : 15 Pages</p>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="How-call-I-tell-whether-a-research-paper-is-good-before-I-read-it"><a href="#How-call-I-tell-whether-a-research-paper-is-good-before-I-read-it" class="headerlink" title="How call I tell whether a research paper is good before I read it?"></a>How call I tell whether a research paper is good before I read it?</h4><p>Here are some indicators of a good research paper:</p>
+<ul>
+<li><ol>
+<li>The problem the paper addresses is clearly stated, both in the abstract and early on in the paper itself. The technical importance and broader impacts of the paper are described. </li>
+</ol>
+</li>
+<li><ol start="2">
+<li>The paper includes a clear description of the experiment, system or theory the problem addresses. This is usually the second section of the paper. </li>
+</ol>
+</li>
+<li><ol start="3">
+<li>The paper describes and analyzes the results of the work described (either experimental or evaluation results).</li>
+</ol>
+</li>
+<li><ol start="4">
+<li>The authors have some sound, non-trivial ideas for future work. This usually appears at the end of the paper. </li>
+</ol>
+</li>
+<li><ol start="5">
+<li>Related work is described and cited correctly. You can get an idea of this by looking at the list of references at the end of the paper. </li>
+</ol>
+</li>
+</ul>
+<p>If you know that a researcher has been working in an area for a while, that is usually an indicator that the research is sound; however, do not underestimate the contributions of people new to a field or the impact of politics on research.</p>
+]]></content>
+      <categories>
+        <category>兴趣</category>
+        <category>读书</category>
+      </categories>
+      <tags>
+        <tag>读书笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>IDEA常用快捷键</title>
+    <url>/2021/03/25/IDEA%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Alt+Enter</td>
+<td>导入包，错误修复</td>
+</tr>
+<tr>
+<td>Ctrl+Y</td>
+<td>删除当前行</td>
+</tr>
+<tr>
+<td>Ctrl+D</td>
+<td>复制当前行</td>
+</tr>
+<tr>
+<td>Ctrl+Alt+L（自定义：Alt+F）</td>
+<td>格式化代码</td>
+</tr>
+<tr>
+<td>Ctrl+/</td>
+<td>单行注释</td>
+</tr>
+<tr>
+<td>Ctrl+Shift+/</td>
+<td>多行注释</td>
+</tr>
+<tr>
+<td>Alt+Insert</td>
+<td>自动生成代码，get，set方法</td>
+</tr>
+<tr>
+<td>ALt+Shift+上下箭头</td>
+<td>移动当前代码行</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>学习</category>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>IDEA</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>JavaSE重点</title>
     <url>/2021/04/14/JavaSE%E9%87%8D%E7%82%B9/</url>
     <content><![CDATA[<h5 id="1-error-和-exception-有啥区别"><a href="#1-error-和-exception-有啥区别" class="headerlink" title="1.error 和 exception 有啥区别"></a>1.error 和 exception 有啥区别</h5><h5 id="2-hash-扩容"><a href="#2-hash-扩容" class="headerlink" title="2.hash 扩容"></a>2.hash 扩容</h5><span id="more"></span>
@@ -84,58 +211,6 @@
       </tags>
   </entry>
   <entry>
-    <title>IDEA常用快捷键</title>
-    <url>/2021/03/25/IDEA%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/</url>
-    <content><![CDATA[<table>
-<thead>
-<tr>
-<th>快捷键</th>
-<th>功能</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Alt+Enter</td>
-<td>导入包，错误修复</td>
-</tr>
-<tr>
-<td>Ctrl+Y</td>
-<td>删除当前行</td>
-</tr>
-<tr>
-<td>Ctrl+D</td>
-<td>复制当前行</td>
-</tr>
-<tr>
-<td>Ctrl+Alt+L（自定义：Alt+F）</td>
-<td>格式化代码</td>
-</tr>
-<tr>
-<td>Ctrl+/</td>
-<td>单行注释</td>
-</tr>
-<tr>
-<td>Ctrl+Shift+/</td>
-<td>多行注释</td>
-</tr>
-<tr>
-<td>Alt+Insert</td>
-<td>自动生成代码，get，set方法</td>
-</tr>
-<tr>
-<td>ALt+Shift+上下箭头</td>
-<td>移动当前代码行</td>
-</tr>
-</tbody></table>
-]]></content>
-      <categories>
-        <category>学习</category>
-        <category>工具</category>
-      </categories>
-      <tags>
-        <tag>IDEA</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Linux常见命令</title>
     <url>/2021/03/23/Linux%E5%B8%B8%E8%A7%81%E5%91%BD%E4%BB%A4/</url>
     <content><![CDATA[<h4 id="常见命令："><a href="#常见命令：" class="headerlink" title="常见命令："></a>常见命令：</h4><p>pwd ： 查看当前路径</p>
@@ -151,81 +226,6 @@
       <tags>
         <tag>操作系统</tag>
         <tag>Linux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>How to Read a Computer Science Research Paper</title>
-    <url>/2022/03/19/HowToReadCSPaper/</url>
-    <content><![CDATA[<h4 id="Publication-Venues"><a href="#Publication-Venues" class="headerlink" title="Publication Venues"></a>Publication Venues</h4><ul>
-<li>General : ACM , IEEE , AAAI , ACL</li>
-<li>Specifically Recommended By CCF : <strong><a href="https://www.ccf.org.cn/Academic_Evaluation/By_category/">https://www.ccf.org.cn/Academic_Evaluation/By_category/</a></strong></li>
-</ul>
-<blockquote>
-<p>中国计算机学会（China Computer Federation）</p>
-</blockquote>
-<h4 id="Different-Types-of-CS-Research-Paper"><a href="#Different-Types-of-CS-Research-Paper" class="headerlink" title="Different Types of CS Research Paper"></a>Different Types of CS Research Paper</h4><p>There are three basic types of CS research paper: <strong>theoretical</strong>, <strong>engineering</strong> and <strong>empirical</strong>.</p>
-<ul>
-<li>A theoretical paper describes a theory or algorithm or provides a mathematical proof for some hypothesis.</li>
-<li>An engineering paper describes an implementation of an algorithm, or part or all of a computer system or application. Engineering papers are now frequently required to include descriptions of system evaluation.</li>
-<li>An empirical paper describes an experiment designed to test some hypothesis.</li>
-</ul>
-<span id="more"></span>
-
-
-
-<h4 id="Taxonomy-of-Scientific-Papers"><a href="#Taxonomy-of-Scientific-Papers" class="headerlink" title="Taxonomy of Scientific Papers"></a>Taxonomy of Scientific Papers</h4><ul>
-<li><p>Conference Papers</p>
-<ul>
-<li><p>Review : YES , peer-reviewed , the threshold depends on the conference</p>
-</li>
-<li><p>Goal : Publish a finished work with possible forthcoming research</p>
-</li>
-<li><p>Size : 8 - 20 Pages</p>
-</li>
-</ul>
-</li>
-<li><p>Journal Papers</p>
-<ul>
-<li><p>Review : YES , peer-reviewed , more longer than Conference Papers</p>
-</li>
-<li><p>Goal : Publish a present completed work</p>
-</li>
-<li><p>Size : 15 Pages</p>
-</li>
-</ul>
-</li>
-</ul>
-<h4 id="How-call-I-tell-whether-a-research-paper-is-good-before-I-read-it"><a href="#How-call-I-tell-whether-a-research-paper-is-good-before-I-read-it" class="headerlink" title="How call I tell whether a research paper is good before I read it?"></a>How call I tell whether a research paper is good before I read it?</h4><p>Here are some indicators of a good research paper:</p>
-<ul>
-<li><ol>
-<li>The problem the paper addresses is clearly stated, both in the abstract and early on in the paper itself. The technical importance and broader impacts of the paper are described. </li>
-</ol>
-</li>
-<li><ol start="2">
-<li>The paper includes a clear description of the experiment, system or theory the problem addresses. This is usually the second section of the paper. </li>
-</ol>
-</li>
-<li><ol start="3">
-<li>The paper describes and analyzes the results of the work described (either experimental or evaluation results).</li>
-</ol>
-</li>
-<li><ol start="4">
-<li>The authors have some sound, non-trivial ideas for future work. This usually appears at the end of the paper. </li>
-</ol>
-</li>
-<li><ol start="5">
-<li>Related work is described and cited correctly. You can get an idea of this by looking at the list of references at the end of the paper. </li>
-</ol>
-</li>
-</ul>
-<p>If you know that a researcher has been working in an area for a while, that is usually an indicator that the research is sound; however, do not underestimate the contributions of people new to a field or the impact of politics on research.</p>
-]]></content>
-      <categories>
-        <category>兴趣</category>
-        <category>读书</category>
-      </categories>
-      <tags>
-        <tag>读书笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -409,21 +409,6 @@
       </tags>
   </entry>
   <entry>
-    <title>摘抄--3月24日</title>
-    <url>/2021/03/24/%E6%91%98%E6%8A%84--3%E6%9C%8824%E6%97%A5/</url>
-    <content><![CDATA[<p>过去的每一天都不曾消失，它们闪烁在未来的天幕上，成为个人的群星，构成属于你自己的浩瀚银河。</p>
-<p>然后，在某一刻，哗啦一声，向你奔涌而来。</p>
-<p>我相信，每个人心中，都存在对浩瀚的体验。</p>
-]]></content>
-      <categories>
-        <category>兴趣</category>
-        <category>读书</category>
-      </categories>
-      <tags>
-        <tag>读书笔记</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>摄影笔记</title>
     <url>/2022/02/04/%E6%91%84%E5%BD%B1%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<h2 id="01-了解数码相机"><a href="#01-了解数码相机" class="headerlink" title="01 了解数码相机"></a>01 了解数码相机</h2><h3 id="第1节-数码相机机身简介"><a href="#第1节-数码相机机身简介" class="headerlink" title="第1节 数码相机机身简介"></a>第1节 数码相机机身简介</h3><p><strong>单反相机</strong>工作时，光通过镜头进入机身，光线一分为二，一束光在反光镜上通过对焦机构进入五棱镜，之后再通过五棱镜到目镜里。通过光学取景器，可以取景、构图、对焦。另一束光传递到感应器，用于识别场景、测光和设定白平衡。按下快门时，反光镜抬起，快门帘打开，全部光线落在电子感光器上，被影像处理器处理后传输到储存卡中记录下来。</p>
@@ -547,19 +532,18 @@
       </tags>
   </entry>
   <entry>
-    <title>计算广告 - 在线广告概览</title>
-    <url>/2022/03/06/%E8%AE%A1%E7%AE%97%E5%B9%BF%E5%91%8A%20(2)/</url>
-    <content><![CDATA[<h3 id="1-模型"><a href="#1-模型" class="headerlink" title="1.模型"></a>1.模型</h3><p><img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202203061001702.png" alt="image-20220306100052375"></p>
-<span id="more"></span>
-
-<h3 id="11-3-1-在线分配问题"><a href="#11-3-1-在线分配问题" class="headerlink" title="11.3.1 在线分配问题"></a>11.3.1 在线分配问题</h3><p><img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202203061117646.png" alt="image-20220306111720187"></p>
+    <title>摘抄--3月24日</title>
+    <url>/2021/03/24/%E6%91%98%E6%8A%84--3%E6%9C%8824%E6%97%A5/</url>
+    <content><![CDATA[<p>过去的每一天都不曾消失，它们闪烁在未来的天幕上，成为个人的群星，构成属于你自己的浩瀚银河。</p>
+<p>然后，在某一刻，哗啦一声，向你奔涌而来。</p>
+<p>我相信，每个人心中，都存在对浩瀚的体验。</p>
 ]]></content>
       <categories>
-        <category>学习</category>
-        <category>智慧营销</category>
+        <category>兴趣</category>
+        <category>读书</category>
       </categories>
       <tags>
-        <tag>智慧营销</tag>
+        <tag>读书笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -659,37 +643,12 @@
       </tags>
   </entry>
   <entry>
-    <title>计算广告 - 计算广告基础</title>
-    <url>/2022/03/06/%E8%AE%A1%E7%AE%97%E5%B9%BF%E5%91%8A/</url>
-    <content><![CDATA[<h3 id="1-广告有效性模型"><a href="#1-广告有效性模型" class="headerlink" title="1.广告有效性模型"></a>1.广告有效性模型</h3><p><img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202202271103448.png" alt="image-20220227110314006"></p>
+    <title>计算广告 - 在线广告概览</title>
+    <url>/2022/03/06/%E8%AE%A1%E7%AE%97%E5%B9%BF%E5%91%8A%20(2)/</url>
+    <content><![CDATA[<h3 id="1-模型"><a href="#1-模型" class="headerlink" title="1.模型"></a>1.模型</h3><p><img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202203061001702.png" alt="image-20220306100052375"></p>
 <span id="more"></span>
 
-<p><strong>曝光</strong>：主要取决于广告位</p>
-<p><strong>关注</strong>：不要干扰打断用户行为、符合用户兴趣和需求</p>
-<p><strong>理解</strong>：在用户能理解的具体兴趣范围内</p>
-<p><strong>接受</strong>：表达信息恰当</p>
-<p><strong>保持</strong>：创意设计</p>
-<p><strong>决策</strong>：具体的广告策略或技术</p>
-<h3 id="2-计算广告核心挑战"><a href="#2-计算广告核心挑战" class="headerlink" title="2.计算广告核心挑战"></a>2.计算广告核心挑战</h3><ul>
-<li><p>计算广告的核心问题，是为一系列用户与环境的组合找到最合适的广告投放策略以优化整体广告活动的利润。</p>
-</li>
-<li><p>优化问题描述：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202202271111882.png" alt="image-20220227111138694"></p>
-<p>表达式中的 a、u、c 三个变量，分别代表广告、用户与环境。</p>
-</li>
-</ul>
-<h3 id="3-广告收入分解"><a href="#3-广告收入分解" class="headerlink" title="3.广告收入分解"></a>3.广告收入分解</h3><p><img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202202271119335.png" alt="image-20220227111957205"></p>
-<p>广告点击与广告展现的比率称为 <strong>点击率（Click Through Rate，CTR）</strong>；</p>
-<p>点击行为成功以后，将会打开广告主的 <strong>落地页（landing page）</strong>；</p>
-<p>落地页成功打开次数与点击次数的比例称为 <strong>到达率</strong>；</p>
-<p>如果用户从落地页开始，进一步完成下单等操作，则称为 <strong>转化</strong>；</p>
-<p>转化次数与到达次数的比例称为 <strong>转化率（Conversion Rate，CVR）</strong>；</p>
-<p><img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202202271121325.png" alt="image-20220227112106244"></p>
-<p>用 <strong>µ</strong> 表示点击率，用 <strong>ν</strong> 表示点击价值（clickvalue），即单次点击为广告产品带来的收益。而这两部分的乘积定量地表示了某次或若干次展示的期望 CPM 值，就是前面提到的 eCPM[4]。</p>
-<p>在对多个检索候选进行排序时，是根据 <strong>eCPM</strong> 还是<strong>CTR排序</strong>也是区别广告产品和用户产品的重要策略特征。</p>
-<h3 id="4-结算方式"><a href="#4-结算方式" class="headerlink" title="4.结算方式"></a>4.结算方式</h3><p>表 2-1 展示了以上几种结算方式概要的对比。综合来看可以认为，对于效果广告，CPC计费方式最有利于发挥供给方和需求方的长处，因而在市场上被广泛接受；对于品牌广告，由于效果和目的有时不便于直接衡量，可以考虑按照 CPM 的方式计费；而CPS 的计费方式只在一些特定的环境下才比较合理。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202202271125174.png" alt="image-20220227112520031"></p>
-<p>在 CPC 或 CPS 结算的广告交易中，由于计费的指标，即点击或转化在广告主的网站上产生，所以并不需要特别的监测服务。因此，可以认为广告监测主要服务的对象是品牌广告主。随着 CPM 广告定向方式越来越复杂，广告监测也从简单的展示和点击记数到频次、人口属性等信息的验证和计量。</p>
+<h3 id="11-3-1-在线分配问题"><a href="#11-3-1-在线分配问题" class="headerlink" title="11.3.1 在线分配问题"></a>11.3.1 在线分配问题</h3><p><img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202203061117646.png" alt="image-20220306111720187"></p>
 ]]></content>
       <categories>
         <category>学习</category>
@@ -735,10 +694,51 @@
       </tags>
   </entry>
   <entry>
+    <title>计算广告 - 计算广告基础</title>
+    <url>/2022/03/06/%E8%AE%A1%E7%AE%97%E5%B9%BF%E5%91%8A/</url>
+    <content><![CDATA[<h3 id="1-广告有效性模型"><a href="#1-广告有效性模型" class="headerlink" title="1.广告有效性模型"></a>1.广告有效性模型</h3><p><img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202202271103448.png" alt="image-20220227110314006"></p>
+<span id="more"></span>
+
+<p><strong>曝光</strong>：主要取决于广告位</p>
+<p><strong>关注</strong>：不要干扰打断用户行为、符合用户兴趣和需求</p>
+<p><strong>理解</strong>：在用户能理解的具体兴趣范围内</p>
+<p><strong>接受</strong>：表达信息恰当</p>
+<p><strong>保持</strong>：创意设计</p>
+<p><strong>决策</strong>：具体的广告策略或技术</p>
+<h3 id="2-计算广告核心挑战"><a href="#2-计算广告核心挑战" class="headerlink" title="2.计算广告核心挑战"></a>2.计算广告核心挑战</h3><ul>
+<li><p>计算广告的核心问题，是为一系列用户与环境的组合找到最合适的广告投放策略以优化整体广告活动的利润。</p>
+</li>
+<li><p>优化问题描述：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202202271111882.png" alt="image-20220227111138694"></p>
+<p>表达式中的 a、u、c 三个变量，分别代表广告、用户与环境。</p>
+</li>
+</ul>
+<h3 id="3-广告收入分解"><a href="#3-广告收入分解" class="headerlink" title="3.广告收入分解"></a>3.广告收入分解</h3><p><img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202202271119335.png" alt="image-20220227111957205"></p>
+<p>广告点击与广告展现的比率称为 <strong>点击率（Click Through Rate，CTR）</strong>；</p>
+<p>点击行为成功以后，将会打开广告主的 <strong>落地页（landing page）</strong>；</p>
+<p>落地页成功打开次数与点击次数的比例称为 <strong>到达率</strong>；</p>
+<p>如果用户从落地页开始，进一步完成下单等操作，则称为 <strong>转化</strong>；</p>
+<p>转化次数与到达次数的比例称为 <strong>转化率（Conversion Rate，CVR）</strong>；</p>
+<p><img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202202271121325.png" alt="image-20220227112106244"></p>
+<p>用 <strong>µ</strong> 表示点击率，用 <strong>ν</strong> 表示点击价值（clickvalue），即单次点击为广告产品带来的收益。而这两部分的乘积定量地表示了某次或若干次展示的期望 CPM 值，就是前面提到的 eCPM[4]。</p>
+<p>在对多个检索候选进行排序时，是根据 <strong>eCPM</strong> 还是<strong>CTR排序</strong>也是区别广告产品和用户产品的重要策略特征。</p>
+<h3 id="4-结算方式"><a href="#4-结算方式" class="headerlink" title="4.结算方式"></a>4.结算方式</h3><p>表 2-1 展示了以上几种结算方式概要的对比。综合来看可以认为，对于效果广告，CPC计费方式最有利于发挥供给方和需求方的长处，因而在市场上被广泛接受；对于品牌广告，由于效果和目的有时不便于直接衡量，可以考虑按照 CPM 的方式计费；而CPS 的计费方式只在一些特定的环境下才比较合理。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202202271125174.png" alt="image-20220227112520031"></p>
+<p>在 CPC 或 CPS 结算的广告交易中，由于计费的指标，即点击或转化在广告主的网站上产生，所以并不需要特别的监测服务。因此，可以认为广告监测主要服务的对象是品牌广告主。随着 CPM 广告定向方式越来越复杂，广告监测也从简单的展示和点击记数到频次、人口属性等信息的验证和计量。</p>
+]]></content>
+      <categories>
+        <category>学习</category>
+        <category>智慧营销</category>
+      </categories>
+      <tags>
+        <tag>智慧营销</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>中间件</title>
     <url>/2022/01/18/%E9%9D%A2%E8%AF%95/</url>
     <content><![CDATA[<h3 id="主要使用到的技术包括："><a href="#主要使用到的技术包括：" class="headerlink" title="主要使用到的技术包括："></a>主要使用到的技术包括：</h3><h4 id="springboot-spring-cloud-mybatis-redis-ehcache-rabbit-mq-AWS-S3-mysql"><a href="#springboot-spring-cloud-mybatis-redis-ehcache-rabbit-mq-AWS-S3-mysql" class="headerlink" title="springboot + spring cloud + mybatis + redis + ehcache + rabbit mq + AWS S3 + mysql"></a>springboot + spring cloud + mybatis + redis + ehcache + rabbit mq + AWS S3 + mysql</h4><h3 id="ehcache"><a href="#ehcache" class="headerlink" title="ehcache"></a><strong>ehcache</strong></h3><p>EhCache直接在JVM中进行缓存，速度快，效率高。与Redis相比，操作简单、易用、高效，虽然EhCache也提供有缓存共享的方案，但对分布式集群的支持不太好，缓存共享实现麻烦。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">@Cacheable(value &#x3D; &quot;hacCache&quot;, key &#x3D; &quot;targetClass+methodName+#p0&quot;)</span><br><span class="line">@CachePut 用于新增</span><br><span class="line">@CacheEvict 用于删除</span><br><span class="line">@Caching 用于组合条件</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">@Cacheable(value &#x3D; &quot;serviceNameCache&quot;, key &#x3D; &quot;targetClass+methodName+#p0&quot;)</span><br><span class="line">@CachePut 用于新增</span><br><span class="line">@CacheEvict 用于删除</span><br><span class="line">@Caching 用于组合条件</span><br></pre></td></tr></table></figure>
 
 
 
@@ -762,7 +762,7 @@
 
 
 
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@EnableWebSecurity</span></span><br><span class="line"><span class="meta">@Configuration</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">WebSecurityConfig</span> <span class="keyword">extends</span> <span class="title">WebSecurityConfigurerAdapter</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">        System.arraycopy(baseUrls, <span class="number">0</span>, urls, excludeUrls.size(), baseUrls.length);</span><br><span class="line">        http.csrf().disable()</span><br><span class="line">            .authorizeRequests()</span><br><span class="line">            .antMatchers(urls).permitAll()</span><br><span class="line">            .antMatchers(<span class="string">&quot;/api/admin/users&quot;</span>, <span class="string">&quot;/api/admin/groups&quot;</span>).hasAnyRole(<span class="string">&quot;ADMIN&quot;</span>)</span><br><span class="line">            .anyRequest()</span><br><span class="line">            .authenticated();</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 登录和权限校验失败处理</span></span><br><span class="line">        http.exceptionHandling()</span><br><span class="line">            .authenticationEntryPoint((request, response, authException)</span><br><span class="line">                -&gt; &#123;</span><br><span class="line">                Map&lt;String, String&gt; message = <span class="keyword">new</span> HashMap&lt;&gt;(<span class="number">4</span>);</span><br><span class="line">                message.put(<span class="string">&quot;message&quot;</span>, I18nContext.getMessage(<span class="string">&quot;AUTH_ERROR_403_17&quot;</span>));</span><br><span class="line">                message.put(<span class="string">&quot;url&quot;</span>, ContextConfig.getConf(<span class="string">&quot;WEB_OAUTH_LOGIN_URL&quot;</span>));</span><br><span class="line">                response.setStatus(HttpStatus.UNAUTHORIZED.value());</span><br><span class="line">                MessageUtils.respMsg(response, message);</span><br><span class="line">            &#125;)</span><br><span class="line">            .accessDeniedHandler((request, response, accessDeniedException)</span><br><span class="line">                -&gt; MessageUtils.respStringMsg(HttpStatus.FORBIDDEN));</span><br><span class="line"></span><br><span class="line">        <span class="comment">//add filter</span></span><br><span class="line">        http.addFilterBefore(<span class="keyword">new</span> OauthLoginFilter(sysUserService),</span><br><span class="line">            UsernamePasswordAuthenticationFilter.class);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@EnableWebSecurity</span></span><br><span class="line"><span class="meta">@Configuration</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">WebSecurityConfig</span> <span class="keyword">extends</span> <span class="title">WebSecurityConfigurerAdapter</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">        System.arraycopy(baseUrls, <span class="number">0</span>, urls, excludeUrls.size(), baseUrls.length);</span><br><span class="line">        http.csrf().disable()</span><br><span class="line">            .authorizeRequests()</span><br><span class="line">            .antMatchers(urls).permitAll()</span><br><span class="line">            .antMatchers(<span class="string">&quot;/api/admin/users&quot;</span>).hasAnyRole(<span class="string">&quot;ADMIN&quot;</span>)</span><br><span class="line">            .anyRequest()</span><br><span class="line">            .authenticated();</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 登录和权限校验失败处理</span></span><br><span class="line">        http.exceptionHandling()</span><br><span class="line">            .authenticationEntryPoint((request, response, authException)</span><br><span class="line">                -&gt; &#123;</span><br><span class="line">                Map&lt;String, String&gt; message = <span class="keyword">new</span> HashMap&lt;&gt;(<span class="number">4</span>);</span><br><span class="line">                message.put(<span class="string">&quot;message&quot;</span>, I18nContext.getMessage(<span class="string">&quot;AUTH_ERROR_403&quot;</span>));</span><br><span class="line">                message.put(<span class="string">&quot;url&quot;</span>, ContextConfig.getConf(<span class="string">&quot;WEB_OAUTH_LOGIN_URL&quot;</span>));</span><br><span class="line">                response.setStatus(HttpStatus.UNAUTHORIZED.value());</span><br><span class="line">                MessageUtils.respMsg(response, message);</span><br><span class="line">            &#125;)</span><br><span class="line">            .accessDeniedHandler((request, response, accessDeniedException)</span><br><span class="line">                -&gt; MessageUtils.respStringMsg(HttpStatus.FORBIDDEN));</span><br><span class="line"></span><br><span class="line">        <span class="comment">//add filter</span></span><br><span class="line">        http.addFilterBefore(<span class="keyword">new</span> OauthLoginFilter(sysUserService),</span><br><span class="line">            UsernamePasswordAuthenticationFilter.class);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 
 
@@ -770,11 +770,7 @@
 
 
 
-<h3 id="rabbit-mq"><a href="#rabbit-mq" class="headerlink" title="rabbit-mq"></a>rabbit-mq</h3><p>{      service:</p>
-<p>​        resource:</p>
-<p>​        taskId:</p>
-<p>​        status:    }</p>
-<p>模式</p>
+<h3 id="rabbit-mq"><a href="#rabbit-mq" class="headerlink" title="rabbit-mq"></a>rabbit-mq</h3><p>模式</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Direct exchange:routingkey完全匹配</span><br><span class="line">Fanout exchange：订阅模式，exchange绑定的所有队列</span><br><span class="line">Topic exchange：routingkey通配</span><br><span class="line">Headers exchange：不通过routingkey,通过请求头信息</span><br></pre></td></tr></table></figure>
 
 
@@ -790,11 +786,11 @@
 
 
 
-<h3 id="定时任务"><a href="#定时任务" class="headerlink" title="定时任务"></a>定时任务</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Scheduled(cron = &quot;$&#123;app.monitor.task.day&#125;&quot;)</span></span><br><span class="line"><span class="meta">@SchedulerLock(name = &quot;HCM_SUBSCRIPTION_DAY&quot;, lockAtLeastFor = 30000, lockAtMostFor = 60000)</span></span><br></pre></td></tr></table></figure>
+<h3 id="定时任务"><a href="#定时任务" class="headerlink" title="定时任务"></a>定时任务</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Scheduled(cron = &quot;$&#123;app.monitor.task.day&#125;&quot;)</span></span><br><span class="line"><span class="meta">@SchedulerLock(name = &quot;SERVICENAME_SUBSCRIPTION_DAY&quot;, lockAtLeastFor = 30000, lockAtMostFor = 60000)</span></span><br></pre></td></tr></table></figure>
 
 
 
-<h3 id="k8s"><a href="#k8s" class="headerlink" title="k8s"></a>k8s</h3><h3 id="openfeign"><a href="#openfeign" class="headerlink" title="openfeign"></a>openfeign</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> *  <span class="doctag">@FeignClient</span>:</span></span><br><span class="line"><span class="comment"> *  name/value属性: 这两个的作用是一样的,指定的是调用服务的微服务名称</span></span><br><span class="line"><span class="comment"> *  url : 指定调用服务的全路径,经常用于本地测试</span></span><br><span class="line"><span class="comment"> *  如果同时指定name和url属性: 则以url属性为准,name属性指定的值便当做客户端的名称</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@date</span> 2020/6/3 1:56 下午</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line"><span class="meta">@FeignClient(name = &quot;$&#123;openfeign.hac.accountClient&#125;&quot;, url = &quot;$&#123;openfeign.hac.accountDomain&#125;&quot;,</span></span><br><span class="line"><span class="meta">        fallbackFactory = FeignHacBackService.class, configuration = FeignConfiguration.class)</span></span><br><span class="line"><span class="meta">@Service</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">FeignHacService</span> </span>&#123;</span><br><span class="line">    <span class="meta">@RequestMapping(value = &quot;$&#123;openfeign.hac.userApi&#125;&quot;, method = RequestMethod.GET)</span></span><br><span class="line">    <span class="function">HacMessage&lt;HacUser&gt; <span class="title">syncUsers</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br><span class="line">             </span><br></pre></td></tr></table></figure>
+<h3 id="k8s"><a href="#k8s" class="headerlink" title="k8s"></a>k8s</h3><h3 id="openfeign"><a href="#openfeign" class="headerlink" title="openfeign"></a>openfeign</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> *  <span class="doctag">@FeignClient</span>:</span></span><br><span class="line"><span class="comment"> *  name/value属性: 这两个的作用是一样的,指定的是调用服务的微服务名称</span></span><br><span class="line"><span class="comment"> *  url : 指定调用服务的全路径,经常用于本地测试</span></span><br><span class="line"><span class="comment"> *  如果同时指定name和url属性: 则以url属性为准,name属性指定的值便当做客户端的名称</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line"><span class="meta">@FeignClient(name = &quot;$&#123;openfeign.serviceName.accountClient&#125;&quot;, url = &quot;$&#123;openfeign.serviceName.accountDomain&#125;&quot;,</span></span><br><span class="line"><span class="meta">        fallbackFactory = FeignHacBackService.class, configuration = FeignConfiguration.class)</span></span><br><span class="line"><span class="meta">@Service</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">FeignHacService</span> </span>&#123;</span><br><span class="line">    <span class="meta">@RequestMapping(value = &quot;$&#123;openfeign.serviceName.userApi&#125;&quot;, method = RequestMethod.GET)</span></span><br><span class="line">    <span class="function">HacMessage&lt;HacUser&gt; <span class="title">syncUsers</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br><span class="line">             </span><br></pre></td></tr></table></figure>
 
 <h3 id="spring-cloud"><a href="#spring-cloud" class="headerlink" title="spring cloud"></a>spring cloud</h3>]]></content>
       <categories>
