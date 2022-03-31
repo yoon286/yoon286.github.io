@@ -338,12 +338,12 @@
       </tags>
   </entry>
   <entry>
-    <title>设计模式二三事</title>
+    <title></title>
     <url>/2022/03/26/java%E5%85%AB%E8%82%A1%E6%96%87-%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</url>
     <content><![CDATA[<h2 id="一、理解设计模式"><a href="#一、理解设计模式" class="headerlink" title="一、理解设计模式"></a>一、理解设计模式</h2><h3 id="理解设计模式"><a href="#理解设计模式" class="headerlink" title="理解设计模式"></a>理解设计模式</h3><p>设计模式是软件开发人员经过长时间试错和应用总结出来的，解决特定问题的一系列方法。可以迅速提高代码的<strong>可读性、健壮性、扩展性。</strong></p>
 <p>参考链接：<a href="https://tech.meituan.com/2022/03/10/interesting-talk-about-design-patterns.html">https://tech.meituan.com/2022/03/10/interesting-talk-about-design-patterns.html</a></p>
 <blockquote>
-<p><strong>策略模式</strong>定义了一系列的算法，并将每一个算法封装起来，使它们可以相互替换。策略模式通常包含以下角色：</p>
+<p><strong>策略模式</strong>定义了一系列的算法，并将每一个算法封装起来，使它们可以相互替换。策略模式通常包含以下角色：1</p>
 <ul>
 <li>抽象策略（Strategy）类：定义了一个公共接口，各种不同的算法以不同的方式实现这个接口，环境角色使用这个接口调用不同的算法，一般使用接口或抽象类实现。</li>
 <li>具体策略（Concrete Strategy）类：实现了抽象策略定义的接口，提供具体的算法实现。</li>
@@ -400,6 +400,28 @@
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Singleton</span></span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">volatile</span> <span class="keyword">static</span> instance;</span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">Singleton</span><span class="params">()</span></span>&#123;&#125;;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Singleton <span class="title">getInstance</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(instance == <span class="keyword">null</span>)&#123;</span><br><span class="line">            synchronize(Singleton.class)&#123;</span><br><span class="line">                instance = <span class="keyword">new</span> Singleton();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> instance;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h3 id="2-代理模式"><a href="#2-代理模式" class="headerlink" title="2.代理模式"></a>2.代理模式</h3><h3 id="3-观察者模式"><a href="#3-观察者模式" class="headerlink" title="3.观察者模式"></a>3.观察者模式</h3><h3 id="4-工厂模式"><a href="#4-工厂模式" class="headerlink" title="4.工厂模式"></a>4.工厂模式</h3><span id="more"></span>]]></content>
+      <categories>
+        <category>学习</category>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java-多线程练习</title>
+    <url>/2021/03/19/%E5%B0%8F%E7%BB%83%E4%B9%A0/</url>
+    <content><![CDATA[<p>两个10G的csv文件（t1.csv, t2.csv），两个csv文件里面表头为：id，name，grade</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">id：      String类型</span><br><span class="line">name：    String类型</span><br><span class="line">grade：   String类型</span><br></pre></td></tr></table></figure>
+
+<p>服务器内存只有1G，找出grade不为空，且grade数字大于90的数据，输出到当前目录下t3.csv文件中。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.io.BufferedReader;</span><br><span class="line"><span class="keyword">import</span> java.io.BufferedWriter;</span><br><span class="line"><span class="keyword">import</span> java.io.File;</span><br><span class="line"><span class="keyword">import</span> java.io.FileReader;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span>: 尹丹</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@createDate</span>: 2022/3/31</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@version</span>: 1.0</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@AllArgsConstructor</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Reader</span> <span class="keyword">extends</span> <span class="title">Thread</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">final</span> String path;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">final</span> BufferedWriter writer;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        File inputFile = <span class="keyword">new</span> File(path);</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            BufferedReader reader = <span class="keyword">new</span> BufferedReader(<span class="keyword">new</span> FileReader(inputFile));</span><br><span class="line">            <span class="comment">//跳过表头所在的行</span></span><br><span class="line">            reader.readLine();</span><br><span class="line">            <span class="comment">//按行读取文件</span></span><br><span class="line">            <span class="keyword">while</span> (reader.ready()) &#123;</span><br><span class="line">                String line = reader.readLine();</span><br><span class="line">                String[] splitline = line.split(<span class="string">&quot;,&quot;</span>);</span><br><span class="line">                <span class="keyword">double</span> temp = Double.parseDouble(splitline[<span class="number">2</span>]);</span><br><span class="line">                <span class="keyword">if</span> (temp &gt; <span class="number">90</span>) &#123;</span><br><span class="line">                    writer.write(line);</span><br><span class="line">                    writer.newLine();</span><br><span class="line">                    writer.flush();</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            reader.close();</span><br><span class="line">        &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.io.BufferedWriter;</span><br><span class="line"><span class="keyword">import</span> java.io.File;</span><br><span class="line"><span class="keyword">import</span> java.io.FileWriter;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span>: 尹丹</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@createDate</span>: 2022/3/31</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@version</span>: 1.0</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DataFilter</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        File outputFile = <span class="keyword">new</span> File(<span class="string">&quot;C:\\Users\\Yoon\\Desktop\\t3.csv&quot;</span>);</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            BufferedWriter bufferedWriter = <span class="keyword">new</span> BufferedWriter(<span class="keyword">new</span> FileWriter(outputFile));</span><br><span class="line">            Thread t1 = <span class="keyword">new</span> Reader(<span class="string">&quot;C:\\Users\\Yoon\\Desktop\\t1.csv&quot;</span>, bufferedWriter);</span><br><span class="line">            Thread t2 = <span class="keyword">new</span> Reader(<span class="string">&quot;C:\\Users\\Yoon\\Desktop\\t2.csv&quot;</span>, bufferedWriter);</span><br><span class="line">            t1.start();</span><br><span class="line">            t2.start();</span><br><span class="line">        &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+]]></content>
       <categories>
         <category>学习</category>
         <category>Java</category>
@@ -966,19 +988,21 @@
 <p>　　（1）扩容一定是放入新值的时候，该新值不是替换以前位置的情况下（说明：put（“name”,”zhangsan”），而map里面原有数据&lt;”name”,”lisi”&gt;，则该存放过程就是替换一个原有值，而不是新增值，则不会扩容）</p>
 <p>　　（2）扩容发生在存放后，即是数据存放后（先存放后扩容），判断当前存入对象的个数，如果大于阈值则进行扩容。</p>
 <h2 id="三、多线程"><a href="#三、多线程" class="headerlink" title="三、多线程"></a>三、多线程</h2><h4 id="1-多线程的创建方式"><a href="#1-多线程的创建方式" class="headerlink" title="1.多线程的创建方式"></a>1.多线程的创建方式</h4><ul>
-<li><p>继承 Thread 类</p>
-</li>
-<li><p>实现 runnable 、callable 接口</p>
-</li>
-<li><p>创建线程池</p>
-</li>
+<li>继承 Thread 类</li>
+<li>实现 runnable 、callable 接口</li>
+<li>创建线程池</li>
 </ul>
 <h4 id="2-线程池的创建方式"><a href="#2-线程池的创建方式" class="headerlink" title="2.线程池的创建方式"></a>2.线程池的创建方式</h4><ul>
-<li>通过 ExcutorService 创建</li>
-<li>通过 Excutors 创建</li>
+<li><p>通过 ExcutorService 创建</p>
+</li>
+<li><p>通过 Excutors 创建</p>
+</li>
 </ul>
 <p>两种方式的异同：</p>
-<h3 id=""><a href="#" class="headerlink" title=""></a></h3><h2 id="二、Spring"><a href="#二、Spring" class="headerlink" title="二、Spring"></a>二、Spring</h2><h3 id="1-SpringMVC的工作原理？"><a href="#1-SpringMVC的工作原理？" class="headerlink" title="1.SpringMVC的工作原理？"></a>1.SpringMVC的工作原理？</h3><ul>
+<h3 id=""><a href="#" class="headerlink" title=""></a></h3><h3 id="指令重排序："><a href="#指令重排序：" class="headerlink" title="指令重排序："></a>指令重排序：</h3><p><strong>简单来说，就是指你在程序中写的代码，在执行时并不一定按照写的顺序。</strong></p>
+<p>在Java中，JVM能够根据处理器特性（CPU多级缓存系统、多核处理器等）适当对机器指令进行重排序，最大限度发挥机器性能。</p>
+<p>参考链接： <a href="https://zhuanlan.zhihu.com/p/138819184">https://zhuanlan.zhihu.com/p/138819184</a></p>
+<h2 id="二、Spring"><a href="#二、Spring" class="headerlink" title="二、Spring"></a>二、Spring</h2><h3 id="1-SpringMVC的工作原理？"><a href="#1-SpringMVC的工作原理？" class="headerlink" title="1.SpringMVC的工作原理？"></a>1.SpringMVC的工作原理？</h3><ul>
 <li>用户向服务器发送请求，通过server.xml文件，请求被前端控制器DispatchServlet捕获；</li>
 <li>DispatchServlet对URL进行解析，得到请求资源标识符（URI），通过HandlerMapping找到合适的处理器HandlerExcutionChain;</li>
 <li>根据得到的处理器，DispatchServlet选择合适的适配器handlerAdapter处理请求；</li>
