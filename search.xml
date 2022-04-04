@@ -3,14 +3,14 @@
   <entry>
     <title>How to Read a Computer Science Research Paper</title>
     <url>/2022/03/19/HowToReadCSPaper/</url>
-    <content><![CDATA[<h4 id="Publication-Venues"><a href="#Publication-Venues" class="headerlink" title="Publication Venues"></a>Publication Venues</h4><ul>
+    <content><![CDATA[<h3 id="Publication-Venues"><a href="#Publication-Venues" class="headerlink" title="Publication Venues"></a>Publication Venues</h3><ul>
 <li>General : ACM , IEEE , AAAI , ACL</li>
 <li>Specifically Recommended By CCF : <strong><a href="https://www.ccf.org.cn/Academic_Evaluation/By_category/">https://www.ccf.org.cn/Academic_Evaluation/By_category/</a></strong></li>
 </ul>
 <blockquote>
 <p>中国计算机学会（China Computer Federation）</p>
 </blockquote>
-<h4 id="Different-Types-of-CS-Research-Paper"><a href="#Different-Types-of-CS-Research-Paper" class="headerlink" title="Different Types of CS Research Paper"></a>Different Types of CS Research Paper</h4><p>There are three basic types of CS research paper: <strong>theoretical</strong>, <strong>engineering</strong> and <strong>empirical</strong>.</p>
+<h3 id="Different-Types-of-CS-Research-Paper"><a href="#Different-Types-of-CS-Research-Paper" class="headerlink" title="Different Types of CS Research Paper"></a>Different Types of CS Research Paper</h3><p>There are three basic types of CS research paper: <strong>theoretical</strong>, <strong>engineering</strong> and <strong>empirical</strong>.</p>
 <ul>
 <li>A theoretical paper describes a theory or algorithm or provides a mathematical proof for some hypothesis.</li>
 <li>An engineering paper describes an implementation of an algorithm, or part or all of a computer system or application. Engineering papers are now frequently required to include descriptions of system evaluation.</li>
@@ -20,7 +20,7 @@
 
 
 
-<h4 id="Taxonomy-of-Scientific-Papers"><a href="#Taxonomy-of-Scientific-Papers" class="headerlink" title="Taxonomy of Scientific Papers"></a>Taxonomy of Scientific Papers</h4><ul>
+<h3 id="Taxonomy-of-Scientific-Papers"><a href="#Taxonomy-of-Scientific-Papers" class="headerlink" title="Taxonomy of Scientific Papers"></a>Taxonomy of Scientific Papers</h3><ul>
 <li><p>Conference Papers</p>
 <ul>
 <li><p>Review : YES , peer-reviewed , the threshold depends on the conference</p>
@@ -42,7 +42,7 @@
 </ul>
 </li>
 </ul>
-<h4 id="How-call-I-tell-whether-a-research-paper-is-good-before-I-read-it"><a href="#How-call-I-tell-whether-a-research-paper-is-good-before-I-read-it" class="headerlink" title="How call I tell whether a research paper is good before I read it?"></a>How call I tell whether a research paper is good before I read it?</h4><p>Here are some indicators of a good research paper:</p>
+<h3 id="How-call-I-tell-whether-a-research-paper-is-good-before-I-read-it"><a href="#How-call-I-tell-whether-a-research-paper-is-good-before-I-read-it" class="headerlink" title="How call I tell whether a research paper is good before I read it?"></a>How call I tell whether a research paper is good before I read it?</h3><p>Here are some indicators of a good research paper:</p>
 <ul>
 <li><ol>
 <li>The problem the paper addresses is clearly stated, both in the abstract and early on in the paper itself. The technical importance and broader impacts of the paper are described. </li>
@@ -66,6 +66,26 @@
 </li>
 </ul>
 <p>If you know that a researcher has been working in an area for a while, that is usually an indicator that the research is sound; however, do not underestimate the contributions of people new to a field or the impact of politics on research.</p>
+<h3 id="Read-with-“three-pass”-method"><a href="#Read-with-“three-pass”-method" class="headerlink" title="Read with “three-pass” method"></a>Read with “three-pass” method</h3><p>The key idea is that you should read the paper in up to three passes, instead of starting at the beginning and plowing your way to the end. Each pass accomplishes specific goals and builds upon the previous pass:</p>
+<ul>
+<li>The first pass gives you a <strong>general idea</strong> about the paper.</li>
+<li>The second pass lets you <strong>grasp the paper’s content</strong>, but not its details. </li>
+<li>The third pass helps you <strong>understand the paper in depth</strong>.　</li>
+</ul>
+<h4 id="THE-FIRST-PASS"><a href="#THE-FIRST-PASS" class="headerlink" title="THE FIRST PASS"></a>THE FIRST PASS</h4><p>This pass should take about five to ten minutes and consists of the following steps:</p>
+<ol>
+<li> Carefully read the <strong>title</strong>, <strong>abstract</strong>, and <strong>introduction</strong> </li>
+<li> Read the section and sub-section <strong>headings</strong>, but ignore everything else </li>
+<li> Read the <strong>conclusions</strong></li>
+<li> Glance over the <strong>references</strong>, mentally ticking off the ones you’ve already read</li>
+</ol>
+<h4 id="THE-SECOND-PASS"><a href="#THE-SECOND-PASS" class="headerlink" title="THE SECOND PASS"></a>THE SECOND PASS</h4><ol>
+<li><strong>Look carefully at the figures, diagrams and other illustrations in the paper</strong>. Pay special attention to graphs. Are the axes properly labeled? Are results shown with error bars, so that conclusions are statistically significant? Common mistakes like these will separate rushed, shoddy work from the truly excellent. </li>
+<li><strong>Remember to mark relevant unread references for further reading</strong> (this is a good way to learn more about the background of the paper).</li>
+</ol>
+<p>The second pass should take up to an hour.</p>
+<h4 id="THE-THIRD-PASS"><a href="#THE-THIRD-PASS" class="headerlink" title="THE THIRD PASS"></a>THE THIRD PASS</h4><p>This pass requires great attention to detail. <strong>You should identify and challenge every assumption in every statement.</strong> Moreover, you should think about how you yourself would present a particular idea. This comparison of the actual with the virtual lends a sharp insight into the proof and presentation techniques in the paper and you can very likely add this to your repertoire of tools. During this pass, you should also jot down ideas for future work.</p>
+<p>This pass can take about four or five hours for beginners, and about an hour for an experienced reader.</p>
 ]]></content>
       <categories>
         <category>兴趣</category>
@@ -73,6 +93,58 @@
       </categories>
       <tags>
         <tag>读书笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>IDEA常用快捷键</title>
+    <url>/2021/03/25/IDEA%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Alt+Enter</td>
+<td>导入包，错误修复</td>
+</tr>
+<tr>
+<td>Ctrl+Y</td>
+<td>删除当前行</td>
+</tr>
+<tr>
+<td>Ctrl+D</td>
+<td>复制当前行</td>
+</tr>
+<tr>
+<td>Ctrl+Alt+L（自定义：Alt+F）</td>
+<td>格式化代码</td>
+</tr>
+<tr>
+<td>Ctrl+/</td>
+<td>单行注释</td>
+</tr>
+<tr>
+<td>Ctrl+Shift+/</td>
+<td>多行注释</td>
+</tr>
+<tr>
+<td>Alt+Insert</td>
+<td>自动生成代码，get，set方法</td>
+</tr>
+<tr>
+<td>ALt+Shift+上下箭头</td>
+<td>移动当前代码行</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>学习</category>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>IDEA</tag>
       </tags>
   </entry>
   <entry>
@@ -156,6 +228,24 @@
       <tags>
         <tag>Java</tag>
         <tag>基础语法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Linux常见命令</title>
+    <url>/2021/03/23/Linux%E5%B8%B8%E8%A7%81%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<h4 id="常见命令："><a href="#常见命令：" class="headerlink" title="常见命令："></a>常见命令：</h4><p>pwd ： 查看当前路径</p>
+<p>ls : 查看当前目录文件夹</p>
+<p>mkdir ：创建<strong>文件夹</strong></p>
+<p>rm：删除文件</p>
+<p>touch：创建<strong>文件</strong></p>
+]]></content>
+      <categories>
+        <category>学习</category>
+        <category>操作系统</category>
+      </categories>
+      <tags>
+        <tag>操作系统</tag>
+        <tag>Linux</tag>
       </tags>
   </entry>
   <entry>
@@ -268,76 +358,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Linux常见命令</title>
-    <url>/2021/03/23/Linux%E5%B8%B8%E8%A7%81%E5%91%BD%E4%BB%A4/</url>
-    <content><![CDATA[<h4 id="常见命令："><a href="#常见命令：" class="headerlink" title="常见命令："></a>常见命令：</h4><p>pwd ： 查看当前路径</p>
-<p>ls : 查看当前目录文件夹</p>
-<p>mkdir ：创建<strong>文件夹</strong></p>
-<p>rm：删除文件</p>
-<p>touch：创建<strong>文件</strong></p>
-]]></content>
-      <categories>
-        <category>学习</category>
-        <category>操作系统</category>
-      </categories>
-      <tags>
-        <tag>操作系统</tag>
-        <tag>Linux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>IDEA常用快捷键</title>
-    <url>/2021/03/25/IDEA%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/</url>
-    <content><![CDATA[<table>
-<thead>
-<tr>
-<th>快捷键</th>
-<th>功能</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Alt+Enter</td>
-<td>导入包，错误修复</td>
-</tr>
-<tr>
-<td>Ctrl+Y</td>
-<td>删除当前行</td>
-</tr>
-<tr>
-<td>Ctrl+D</td>
-<td>复制当前行</td>
-</tr>
-<tr>
-<td>Ctrl+Alt+L（自定义：Alt+F）</td>
-<td>格式化代码</td>
-</tr>
-<tr>
-<td>Ctrl+/</td>
-<td>单行注释</td>
-</tr>
-<tr>
-<td>Ctrl+Shift+/</td>
-<td>多行注释</td>
-</tr>
-<tr>
-<td>Alt+Insert</td>
-<td>自动生成代码，get，set方法</td>
-</tr>
-<tr>
-<td>ALt+Shift+上下箭头</td>
-<td>移动当前代码行</td>
-</tr>
-</tbody></table>
-]]></content>
-      <categories>
-        <category>学习</category>
-        <category>工具</category>
-      </categories>
-      <tags>
-        <tag>IDEA</tag>
-      </tags>
-  </entry>
-  <entry>
     <title></title>
     <url>/2022/03/26/java%E5%85%AB%E8%82%A1%E6%96%87-%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</url>
     <content><![CDATA[<h2 id="一、理解设计模式"><a href="#一、理解设计模式" class="headerlink" title="一、理解设计模式"></a>一、理解设计模式</h2><h3 id="理解设计模式"><a href="#理解设计模式" class="headerlink" title="理解设计模式"></a>理解设计模式</h3><p>设计模式是软件开发人员经过长时间试错和应用总结出来的，解决特定问题的一系列方法。可以迅速提高代码的<strong>可读性、健壮性、扩展性。</strong></p>
@@ -409,21 +429,6 @@
       </tags>
   </entry>
   <entry>
-    <title>摘抄--3月24日</title>
-    <url>/2021/03/24/%E6%91%98%E6%8A%84--3%E6%9C%8824%E6%97%A5/</url>
-    <content><![CDATA[<p>过去的每一天都不曾消失，它们闪烁在未来的天幕上，成为个人的群星，构成属于你自己的浩瀚银河。</p>
-<p>然后，在某一刻，哗啦一声，向你奔涌而来。</p>
-<p>我相信，每个人心中，都存在对浩瀚的体验。</p>
-]]></content>
-      <categories>
-        <category>兴趣</category>
-        <category>读书</category>
-      </categories>
-      <tags>
-        <tag>读书笔记</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Java-多线程练习</title>
     <url>/2021/03/19/%E5%B0%8F%E7%BB%83%E4%B9%A0/</url>
     <content><![CDATA[<p>两个10G的csv文件（t1.csv, t2.csv），两个csv文件里面表头为：id，name，grade</p>
@@ -436,102 +441,6 @@
 
 
 
-]]></content>
-      <categories>
-        <category>学习</category>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>并发/幂等/数据一致性问题</title>
-    <url>/2022/02/27/%E6%95%B0%E6%8D%AE%E4%B8%80%E8%87%B4%E6%80%A7%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<h1 id="1、幂等性"><a href="#1、幂等性" class="headerlink" title="1、幂等性"></a>1、幂等性</h1><p>幂等性是数学上的概念：F(F(x))=F(x)，用在接口上就是：多次重复请求，产生效果一致。</p>
-<p>比较典型的场景：支付接口，重复支付会导致多次扣钱；订单接口，同一个订单可能会多次创建。如果没有接口幂等性，则会产生数据一致性问题。</p>
-<p>在数据库中，常见操作包括：</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span>： 天然幂等，重复操作产生效果一致;</span><br><span class="line"></span><br><span class="line"><span class="keyword">DELETE</span>： 删除也是幂等,删除同一个多次效果一样;</span><br><span class="line"></span><br><span class="line"><span class="keyword">INSERT</span>： 非幂等操作,每次新增一条;</span><br><span class="line"></span><br><span class="line">UPDATE： a.直接更新某个值的,幂等;</span><br><span class="line">      ： b.更新累加操作的,非幂等;</span><br></pre></td></tr></table></figure>
-
-<span id="more"></span>
-
-<h1 id="2、RestFul规范"><a href="#2、RestFul规范" class="headerlink" title="2、RestFul规范"></a>2、RestFul规范</h1><h3 id="Create-类型的幂等"><a href="#Create-类型的幂等" class="headerlink" title="Create 类型的幂等"></a>Create 类型的幂等</h3><p>创建类型的 API，为了实现幂等性，常见的做法是使用一个 client-side generated deduplication token（客户端生成的唯一ID），在反复重试时使用同一个Token，便于服务端识别重复，如果发现重复，应按创建成功返回。</p>
-<h3 id="Update-类型的幂等"><a href="#Update-类型的幂等" class="headerlink" title="Update 类型的幂等"></a>Update 类型的幂等</h3><p>更新类型的 API，通常有唯一ID对需要更新的资源进行标示，以此可以保证幂等。</p>
-<p>对于“Delta”语义的操作，有以下几类方式确保幂等性：</p>
-<ol>
-<li>IncrementBy：基于某个数值增加</li>
-<li>SetNewTotal：设置新的总量</li>
-<li>使用 Deduplication Token 保证幂等</li>
-</ol>
-<p>这几种方式各有优缺点，需要根据场景选择合适的方式。</p>
-<h3 id="Delete-类型的幂等"><a href="#Delete-类型的幂等" class="headerlink" title="Delete 类型的幂等"></a>Delete 类型的幂等</h3><p>Delete的幂等性问题，往往在于一个对象被删除后，再次试图删除可能会由于数据无法被发现导致出错。这个行为一般来说也没什么问题，虽然严格意义上不幂等，但是也无副作用。</p>
-<h3 id="长耗时请求异步化"><a href="#长耗时请求异步化" class="headerlink" title="*** 长耗时请求异步化 ***"></a>*** 长耗时请求异步化 ***</h3><p>如果某个 API 方法需要很长时间才能完成，可以通过：</p>
-<ol>
-<li>在服务端异步启动任务，并返回 GUID 标示 “长时间运行的操作”资源</li>
-<li>客户端通过定时轮询 <em>/polling/{guid}，</em> 获取任务进行的状态。</li>
-<li>当任务完成/失败时，客户端可以获取到处理的结果/失败原因。</li>
-</ol>
-<h1 id="3、Redis分布式锁"><a href="#3、Redis分布式锁" class="headerlink" title="3、Redis分布式锁"></a>3、Redis分布式锁</h1><h2 id="设计方案："><a href="#设计方案：" class="headerlink" title="设计方案："></a><strong>设计方案：</strong></h2><ul>
-<li><p>拦截注解 @RedisLock，获取必要的参数</p>
-</li>
-<li><p>加锁操作</p>
-</li>
-<li><p>续时操作</p>
-</li>
-<li><p>结束业务，释放锁</p>
-</li>
-</ul>
-<h2 id="实操"><a href="#实操" class="headerlink" title="实操"></a>实操</h2><h4 id="（1）业务属性枚举设定"><a href="#（1）业务属性枚举设定" class="headerlink" title="（1）业务属性枚举设定"></a>（1）业务属性枚举设定</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">enum</span> <span class="title">RedisLockTypeEnum</span> </span>&#123;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 自定义 key 前缀</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    ONE(<span class="string">&quot;Business1&quot;</span>, <span class="string">&quot;Test1&quot;</span>),</span><br><span class="line">    </span><br><span class="line">    TWO(<span class="string">&quot;Business2&quot;</span>, <span class="string">&quot;Test2&quot;</span>);</span><br><span class="line">    <span class="keyword">private</span> String code;</span><br><span class="line">    <span class="keyword">private</span> String desc;</span><br><span class="line">    RedisLockTypeEnum(String code, String desc) &#123;</span><br><span class="line">        <span class="keyword">this</span>.code = code;</span><br><span class="line">        <span class="keyword">this</span>.desc = desc;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">getCode</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> code;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">getDesc</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> desc;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">getUniqueKey</span><span class="params">(String key)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> String.format(<span class="string">&quot;%s:%s&quot;</span>, <span class="keyword">this</span>.getCode(), key);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h4 id="（2）任务队列保存参数"><a href="#（2）任务队列保存参数" class="headerlink" title="（2）任务队列保存参数"></a><strong>（2）任务队列保存参数</strong></h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">RedisLockDefinitionHolder</span> </span>&#123;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 业务唯一 key</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> String businessKey;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 加锁时间 (秒 s)</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> Long lockTime;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 上次更新时间（ms）</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> Long lastModifyTime;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 保存当前线程</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> Thread currentTread;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 总共尝试次数</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> tryCount;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 当前尝试次数</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> currentCount;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 更新的时间周期（毫秒）,公式 = 加锁时间（转成毫秒） / 3</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> Long modifyPeriod;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">RedisLockDefinitionHolder</span><span class="params">(String businessKey, Long lockTime, Long lastModifyTime, Thread currentTread, <span class="keyword">int</span> tryCount)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.businessKey = businessKey;</span><br><span class="line">        <span class="keyword">this</span>.lockTime = lockTime;</span><br><span class="line">        <span class="keyword">this</span>.lastModifyTime = lastModifyTime;</span><br><span class="line">        <span class="keyword">this</span>.currentTread = currentTread;</span><br><span class="line">        <span class="keyword">this</span>.tryCount = tryCount;</span><br><span class="line">        <span class="keyword">this</span>.modifyPeriod = lockTime * <span class="number">1000</span> / <span class="number">3</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h4 id="（3）设定被拦截的注解名字"><a href="#（3）设定被拦截的注解名字" class="headerlink" title="（3）设定被拦截的注解名字"></a><strong>（3）设定被拦截的注解名字</strong></h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Retention(RetentionPolicy.RUNTIME)</span></span><br><span class="line"><span class="meta">@Target(&#123;ElementType.METHOD, ElementType.TYPE&#125;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="meta">@interface</span> RedisLockAnnotation &#123;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 特定参数识别，默认取第 0 个下标</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">lockFiled</span><span class="params">()</span> <span class="keyword">default</span> 0</span>;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 超时重试次数</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">tryCount</span><span class="params">()</span> <span class="keyword">default</span> 3</span>;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 自定义加锁类型</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function">RedisLockTypeEnum <span class="title">typeEnum</span><span class="params">()</span></span>;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 释放时间，秒 s 单位</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">long</span> <span class="title">lockTime</span><span class="params">()</span> <span class="keyword">default</span> 30</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="（4）-核心切面拦截的操作"><a href="#（4）-核心切面拦截的操作" class="headerlink" title="（4） 核心切面拦截的操作"></a><strong>（4）</strong> <strong>核心切面拦截的操作</strong></h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@annotation</span> 中的路径表示拦截特定注解</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@Pointcut(&quot;@annotation(cn.sevenyuan.demo.aop.lock.RedisLockAnnotation)&quot;)</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">redisLockPC</span><span class="params">()</span> </span>&#123;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Around(value = &quot;redisLockPC()&quot;)</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> Object <span class="title">around</span><span class="params">(ProceedingJoinPoint pjp)</span> <span class="keyword">throws</span> Throwable </span>&#123;</span><br><span class="line">    <span class="comment">// 解析参数</span></span><br><span class="line">    Method method = resolveMethod(pjp);</span><br><span class="line">    RedisLockAnnotation annotation = method.getAnnotation(RedisLockAnnotation.class);</span><br><span class="line">    RedisLockTypeEnum typeEnum = annotation.typeEnum();</span><br><span class="line">    Object[] params = pjp.getArgs();</span><br><span class="line">    String ukString = params[annotation.lockFiled()].toString();</span><br><span class="line">    <span class="comment">// 省略很多参数校验和判空</span></span><br><span class="line">    String businessKey = typeEnum.getUniqueKey(ukString);</span><br><span class="line">    String uniqueValue = UUID.randomUUID().toString();</span><br><span class="line">    <span class="comment">// 加锁</span></span><br><span class="line">    Object result = <span class="keyword">null</span>;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="keyword">boolean</span> isSuccess = redisTemplate.opsForValue().setIfAbsent(businessKey, uniqueValue);</span><br><span class="line">        <span class="keyword">if</span> (!isSuccess) &#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> Exception(<span class="string">&quot;You can&#x27;t do it，because another has get the lock =-=&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        redisTemplate.expire(businessKey, annotation.lockTime(), TimeUnit.SECONDS);</span><br><span class="line">        Thread currentThread = Thread.currentThread();</span><br><span class="line">        <span class="comment">// 将本次 Task 信息加入「延时」队列中</span></span><br><span class="line">        holderList.add(<span class="keyword">new</span> RedisLockDefinitionHolder(businessKey, annotation.lockTime(), System.currentTimeMillis(),</span><br><span class="line">                currentThread, annotation.tryCount()));</span><br><span class="line">        <span class="comment">// 执行业务操作</span></span><br><span class="line">        result = pjp.proceed();</span><br><span class="line">        <span class="comment">// 线程被中断，抛出异常，中断此次请求</span></span><br><span class="line">        <span class="keyword">if</span> (currentThread.isInterrupted()) &#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> InterruptedException(<span class="string">&quot;You had been interrupted =-=&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125; <span class="keyword">catch</span> (InterruptedException e ) &#123;</span><br><span class="line">        log.error(<span class="string">&quot;Interrupt exception, rollback transaction&quot;</span>, e);</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> Exception(<span class="string">&quot;Interrupt exception, please send request again&quot;</span>);</span><br><span class="line">    &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">        log.error(<span class="string">&quot;has some error, please check again&quot;</span>, e);</span><br><span class="line">    &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">        <span class="comment">// 请求结束后，强制删掉 key，释放锁</span></span><br><span class="line">        redisTemplate.delete(businessKey);</span><br><span class="line">        log.info(<span class="string">&quot;release the lock, businessKey is [&quot;</span> + businessKey + <span class="string">&quot;]&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> result;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-
-<h4 id="（5）-延时操作"><a href="#（5）-延时操作" class="headerlink" title="（5） 延时操作"></a><strong>（5） 延时操作</strong></h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 扫描的任务队列</span></span><br><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> ConcurrentLinkedQueue&lt;RedisLockDefinitionHolder&gt; holderList = <span class="keyword">new</span> ConcurrentLinkedQueue();</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 线程池，维护keyAliveTime</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> ScheduledExecutorService SCHEDULER = <span class="keyword">new</span> ScheduledThreadPoolExecutor(<span class="number">1</span>,</span><br><span class="line">        <span class="keyword">new</span> BasicThreadFactory.Builder().namingPattern(<span class="string">&quot;redisLock-schedule-pool&quot;</span>).daemon(<span class="keyword">true</span>).build());</span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// 两秒执行一次「续时」操作</span></span><br><span class="line">    SCHEDULER.scheduleAtFixedRate(() -&gt; &#123;</span><br><span class="line">        <span class="comment">// 这里记得加 try-catch，否者报错后定时任务将不会再执行=-=</span></span><br><span class="line">        Iterator&lt;RedisLockDefinitionHolder&gt; iterator = holderList.iterator();</span><br><span class="line">        <span class="keyword">while</span> (iterator.hasNext()) &#123;</span><br><span class="line">            RedisLockDefinitionHolder holder = iterator.next();</span><br><span class="line">            <span class="comment">// 判空</span></span><br><span class="line">            <span class="keyword">if</span> (holder == <span class="keyword">null</span>) &#123;</span><br><span class="line">                iterator.remove();</span><br><span class="line">                <span class="keyword">continue</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">// 判断 key 是否还有效，无效的话进行移除</span></span><br><span class="line">            <span class="keyword">if</span> (redisTemplate.opsForValue().get(holder.getBusinessKey()) == <span class="keyword">null</span>) &#123;</span><br><span class="line">                iterator.remove();</span><br><span class="line">                <span class="keyword">continue</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">// 超时重试次数，超过时给线程设定中断</span></span><br><span class="line">            <span class="keyword">if</span> (holder.getCurrentCount() &gt; holder.getTryCount()) &#123;</span><br><span class="line">                holder.getCurrentTread().interrupt();</span><br><span class="line">                iterator.remove();</span><br><span class="line">                <span class="keyword">continue</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">// 判断是否进入最后三分之一时间</span></span><br><span class="line">            <span class="keyword">long</span> curTime = System.currentTimeMillis();</span><br><span class="line">            <span class="keyword">boolean</span> shouldExtend = (holder.getLastModifyTime() + holder.getModifyPeriod()) &lt;= curTime;</span><br><span class="line">            <span class="keyword">if</span> (shouldExtend) &#123;</span><br><span class="line">                holder.setLastModifyTime(curTime);</span><br><span class="line">                redisTemplate.expire(holder.getBusinessKey(), holder.getLockTime(), TimeUnit.SECONDS);</span><br><span class="line">                log.info(<span class="string">&quot;businessKey : [&quot;</span> + holder.getBusinessKey() + <span class="string">&quot;], try count : &quot;</span> + holder.getCurrentCount());</span><br><span class="line">                holder.setCurrentCount(holder.getCurrentCount() + <span class="number">1</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;, <span class="number">0</span>, <span class="number">2</span>, TimeUnit.SECONDS);</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-
-<h1 id="4、数据库乐观锁与悲观锁"><a href="#4、数据库乐观锁与悲观锁" class="headerlink" title="4、数据库乐观锁与悲观锁"></a>4、数据库乐观锁与悲观锁</h1><h4 id="悲观锁"><a href="#悲观锁" class="headerlink" title="悲观锁"></a>悲观锁</h4><p>总是假设最坏的情况，每次去拿数据的时候都认为别人会修改，所以每次在拿数据的时候都会上锁，这样别人想拿这个数据就会阻塞直到它拿到锁（<strong>共享资源每次只给一个线程使用，其它线程阻塞，用完后再把资源转让给其它线程</strong>）。传统的关系型数据库里边就用到了很多这种锁机制，比如行锁，表锁等，读锁，写锁等，都是在做操作之前先上锁。Java中<code>synchronized</code>和<code>ReentrantLock</code> <code>redis分布式锁</code>等独占锁就是悲观锁思想的实现。</p>
-<h4 id="乐观锁"><a href="#乐观锁" class="headerlink" title="乐观锁"></a>乐观锁</h4><p>总是假设最好的情况，每次去拿数据的时候都认为别人不会修改，所以不会上锁，但是在更新的时候会判断一下在此期间别人有没有去更新这个数据，可以使用版本号机制和CAS算法实现。<strong>乐观锁适用于多读的应用类型，这样可以提高吞吐量</strong>，像数据库提供的类似于<strong>write_condition机制</strong>，其实都是提供的乐观锁。在Java中<code>java.util.concurrent.atomic</code>包下面的原子变量类就是使用了乐观锁的一种实现方式<strong>CAS</strong>实现的。</p>
-<h3 id="乐观锁常见的两种实现方式"><a href="#乐观锁常见的两种实现方式" class="headerlink" title="乐观锁常见的两种实现方式"></a>乐观锁常见的两种实现方式</h3><blockquote>
-<p><strong>乐观锁一般会使用版本号机制或CAS算法实现。</strong></p>
-</blockquote>
-<h4 id="1-版本号机制"><a href="#1-版本号机制" class="headerlink" title="1. 版本号机制"></a>1. 版本号机制</h4><p>一般是在数据表中加上一个数据版本号version字段，表示数据被修改的次数，当数据被修改时，version值会加一。当线程A要更新数据值时，在读取数据的同时也会读取version值，在提交更新时，若刚才读取到的version值为当前数据库中的version值相等时才更新，否则重试更新操作，直到更新成功。</p>
-<p><strong>举一个简单的例子：</strong> 假设数据库中帐户信息表中有一个 version 字段，当前值为 1 ；而当前帐户余额字段（ balance ）为 $100 。</p>
-<ol>
-<li>操作员 A 此时将其读出（ version=1 ），并从其帐户余额中扣除 $50（ $100-$50 ）。</li>
-<li>在操作员 A 操作的过程中，操作员B 也读入此用户信息（ version=1 ），并从其帐户余额中扣除 $20 （ $100-$20 ）。</li>
-<li>操作员 A 完成了修改工作，将数据版本号加一（ version=2 ），连同帐户扣除后余额（ balance=$50 ），提交至数据库更新，此时由于提交数据版本大于数据库记录当前版本，数据被更新，数据库记录 version 更新为 2 。</li>
-<li>操作员 B 完成了操作，也将版本号加一（ version=2 ）试图向数据库提交数据（ balance=$80 ），但此时比对数据库记录版本时发现，操作员 B 提交的数据版本号为 2 ，数据库记录当前版本也为 2 ，不满足 “ 提交版本必须大于记录当前版本才能执行更新 “ 的乐观锁策略，因此，操作员 B 的提交被驳回。</li>
-</ol>
-<p>这样，就避免了操作员 B 用基于 version=1 的旧数据修改的结果覆盖操作员A 的操作结果的可能。</p>
-<h4 id="2-CAS算法"><a href="#2-CAS算法" class="headerlink" title="2. CAS算法"></a>2. CAS算法</h4><p>即<strong>compare and swap（比较与交换）</strong>，是一种有名的<strong>无锁算法</strong>。无锁编程，即不使用锁的情况下实现多线程之间的变量同步，也就是在没有线程被阻塞的情况下实现变量的同步，所以也叫非阻塞同步（Non-blocking Synchronization）。<strong>CAS算法</strong>涉及到三个操作数</p>
-<ul>
-<li>需要读写的内存值 V</li>
-<li>进行比较的值 A</li>
-<li>拟写入的新值 B</li>
-</ul>
-<p>当且仅当 V 的值等于 A时，CAS通过原子方式用新值B来更新V的值，否则不会执行任何操作（比较和替换是一个原子操作）。一般情况下是一个<strong>自旋操作</strong>，即<strong>不断的重试</strong>。</p>
-<h3 id="乐观锁的缺点"><a href="#乐观锁的缺点" class="headerlink" title="乐观锁的缺点"></a>乐观锁的缺点</h3><blockquote>
-<p>ABA 问题是乐观锁一个常见的问题</p>
-</blockquote>
-<h4 id="1-ABA-问题"><a href="#1-ABA-问题" class="headerlink" title="1 ABA 问题"></a>1 ABA 问题</h4><p>如果一个变量V初次读取的时候是A值，并且在准备赋值的时候检查到它仍然是A值，那我们就能说明它的值没有被其他线程修改过了吗？很明显是不能的，因为在这段时间它的值可能被改为其他值，然后又改回A，那CAS操作就会误认为它从来没有被修改过。这个问题被称为CAS操作的 <strong>“ABA”问题。</strong></p>
-<p>JDK 1.5 以后的 <code>AtomicStampedReference 类</code>就提供了此种能力，其中的 <code>compareAndSet 方法</code>就是首先检查当前引用是否等于预期引用，并且当前标志是否等于预期标志，如果全部相等，则以原子方式将该引用和该标志的值设置为给定的更新值。</p>
-<h4 id="2-循环时间长开销大"><a href="#2-循环时间长开销大" class="headerlink" title="2 循环时间长开销大"></a>2 循环时间长开销大</h4><p><strong>自旋CAS（也就是不成功就一直循环执行直到成功）如果长时间不成功，会给CPU带来非常大的执行开销。</strong> 如果JVM能支持处理器提供的pause指令那么效率会有一定的提升，pause指令有两个作用，第一它可以延迟流水线执行指令（de-pipeline）,使CPU不会消耗过多的执行资源，延迟的时间取决于具体实现的版本，在一些处理器上延迟时间是零。第二它可以避免在退出循环的时候因内存顺序冲突（memory order violation）而引起CPU流水线被清空（CPU pipeline flush），从而提高CPU的执行效率。</p>
-<h4 id="3-只能保证一个共享变量的原子操作"><a href="#3-只能保证一个共享变量的原子操作" class="headerlink" title="3 只能保证一个共享变量的原子操作"></a>3 只能保证一个共享变量的原子操作</h4><p>CAS 只对单个共享变量有效，当操作涉及跨多个共享变量时 CAS 无效。但是从 JDK 1.5开始，提供了<code>AtomicReference类</code>来保证引用对象之间的原子性，你可以把多个变量放在一个对象里来进行 CAS 操作.所以我们可以使用锁或者利用<code>AtomicReference类</code>把多个共享变量合并成一个共享变量来操作。</p>
-<h3 id="CAS与synchronized的使用情景"><a href="#CAS与synchronized的使用情景" class="headerlink" title="CAS与synchronized的使用情景"></a>CAS与synchronized的使用情景</h3><blockquote>
-<p><strong>简单的来说CAS适用于写比较少的情况下（多读场景，冲突一般较少），synchronized适用于写比较多的情况下（多写场景，冲突一般较多）</strong></p>
-</blockquote>
-<ol>
-<li>对于资源竞争较少（线程冲突较轻）的情况，使用synchronized同步锁进行线程阻塞和唤醒切换以及用户态内核态间的切换操作额外浪费消耗cpu资源；而CAS基于硬件实现，不需要进入内核，不需要切换线程，操作自旋几率较少，因此可以获得更高的性能。</li>
-<li>对于资源竞争严重（线程冲突严重）的情况，CAS自旋的概率会比较大，从而浪费更多的CPU资源，效率低于synchronized。</li>
-</ol>
-<p>补充： Java并发编程这个领域中synchronized关键字一直都是元老级的角色，很久之前很多人都会称它为 <strong>“重量级锁”</strong> 。但是，在JavaSE 1.6之后进行了主要包括为了减少获得锁和释放锁带来的性能消耗而引入的 <strong>偏向锁</strong> 和 <strong>轻量级锁</strong> 以及其它<strong>各种优化</strong>之后变得在某些情况下并不是那么重了。synchronized的底层实现主要依靠 <strong>Lock-Free</strong> 的队列，基本思路是 <strong>自旋后阻塞</strong>，<strong>竞争切换后继续竞争锁</strong>，<strong>稍微牺牲了公平性，但获得了高吞吐量</strong>。在线程冲突较少的情况下，可以获得和CAS类似的性能；而线程冲突严重的情况下，性能远高于CAS。</p>
-<h1 id="5-总结："><a href="#5-总结：" class="headerlink" title="5.总结："></a>5.总结：</h1><p>主要讨论了并发场景读写一致性问题，对于长耗时请求问题，还是不懂怎么解决。</p>
 ]]></content>
       <categories>
         <category>学习</category>
@@ -665,19 +574,18 @@
       </tags>
   </entry>
   <entry>
-    <title>计算广告 - 在线广告概览</title>
-    <url>/2022/03/06/%E8%AE%A1%E7%AE%97%E5%B9%BF%E5%91%8A%20(2)/</url>
-    <content><![CDATA[<h3 id="1-模型"><a href="#1-模型" class="headerlink" title="1.模型"></a>1.模型</h3><p><img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202203061001702.png" alt="image-20220306100052375"></p>
-<span id="more"></span>
-
-<h3 id="11-3-1-在线分配问题"><a href="#11-3-1-在线分配问题" class="headerlink" title="11.3.1 在线分配问题"></a>11.3.1 在线分配问题</h3><p><img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202203061117646.png" alt="image-20220306111720187"></p>
+    <title>摘抄--3月24日</title>
+    <url>/2021/03/24/%E6%91%98%E6%8A%84--3%E6%9C%8824%E6%97%A5/</url>
+    <content><![CDATA[<p>过去的每一天都不曾消失，它们闪烁在未来的天幕上，成为个人的群星，构成属于你自己的浩瀚银河。</p>
+<p>然后，在某一刻，哗啦一声，向你奔涌而来。</p>
+<p>我相信，每个人心中，都存在对浩瀚的体验。</p>
 ]]></content>
       <categories>
-        <category>学习</category>
-        <category>智慧营销</category>
+        <category>兴趣</category>
+        <category>读书</category>
       </categories>
       <tags>
-        <tag>智慧营销</tag>
+        <tag>读书笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -718,11 +626,22 @@
   <entry>
     <title>计算广告 - 点击率模型</title>
     <url>/2022/04/03/%E8%AE%A1%E7%AE%97%E5%B9%BF%E5%91%8A%20(4)%20/</url>
-    <content><![CDATA[<h3 id="1-点击率模型的必要性"><a href="#1-点击率模型的必要性" class="headerlink" title="1.点击率模型的必要性"></a>1.点击率模型的必要性</h3><p>不考虑时间、位置等一系列因素，绝对的点击率没有意义。</p>
+    <content><![CDATA[<h3 id="点击率模型的必要性"><a href="#点击率模型的必要性" class="headerlink" title="点击率模型的必要性"></a>点击率模型的必要性</h3><p>不考虑时间、位置等一系列因素，绝对的点击率没有意义。</p>
 <p>那能不能再换一个思路，找到一些影响点击率的一些关健因素，对这些因素分别统计？这实际上已经产生了“特征”这样的建模思路了。</p>
 <p>比如说，广告位是一个因素，广告本身是一个因素，用户的性别是一个因素，在每个因素上分别统计点击率，从数据充分性上是可行的。</p>
 <p>不过这又产生了一个新的问题：我知道了男性用户的平均点击率、广告位S平均点击率、某广告A的平均点击率，那么如何评估某男性用户在广告位S上看到广告A的点击率呢？直觉的方法，是求上面三个点击率的几何平均。不过这里面有一个隐含的假设：<strong>即这三个因素是相互独立的</strong>。然而当特征多起来以后，这样的<strong>独立性假设是很难保证的。</strong></p>
-<h3 id="2-怎样建立点击率模型"><a href="#2-怎样建立点击率模型" class="headerlink" title="2.怎样建立点击率模型"></a>2.怎样建立点击率模型</h3>]]></content>
+<h3 id="怎样建立点击率模型"><a href="#怎样建立点击率模型" class="headerlink" title="怎样建立点击率模型"></a>怎样建立点击率模型</h3><p>我们把点击事件 h 看成一个二元取值的随机变量，那么其取值为真（h=1）的概率就是点击率。</p>
+<p>因此，点击事件的分布可以写成以点击率 µ为参数的二项分布（binomial distribution）：</p>
+<img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202204041125269.png" alt="image-20220404112540712" style="zoom:67%;" />
+
+<p> 而点击率预测模型的作用是在（a，u，c）组合与点击的概率µ之间建立函数关系，这可以表示成对µ（a，u，c）=p（h=1|a，u，c）的概率建模问题。</p>
+<h4 id="逻辑回归模型-特征工程"><a href="#逻辑回归模型-特征工程" class="headerlink" title="逻辑回归模型+特征工程"></a>逻辑回归模型+特征工程</h4><p>对µ（a，u，c）=p（h=1|a，u，c）的概率建模问题，可以很自然地想到的基础模型是逻辑回归（Logistic Regression，LR）</p>
+<p><img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202204041210773.png" alt="image-20220404121004573"></p>
+<p>其中 x 表示（a，u，c）组合上的特征矢量，即前面介绍过的受众定向的输出及其派生的其他特征；w 为各特征的加权系数，也就是此模型需要优化的参数；从方法上看，LR是利用线性函数来解决非线性目标，也属于广义线性模型。</p>
+<h4 id="FM-GBDT融合"><a href="#FM-GBDT融合" class="headerlink" title="FM+GBDT融合"></a>FM+GBDT融合</h4><p>第一步当然也是基于大规模稀疏特征LR。</p>
+<p>第二步，为了更好的刻画长尾，自动发现组合特征，采用了FM。在同样的训练时间下，AUC提升，模型泛化性能可控。</p>
+<p>第三步：为了更好的fine tuning头部和提升时效性，采用了用gbdt加动态特征的模型。最后呢，把这两个模型简单的做线性融合，由于俩个模型的特征和模型差异性较大，融合后auc也有显著的提升。</p>
+]]></content>
       <categories>
         <category>学习</category>
         <category>智慧营销</category>
@@ -837,6 +756,118 @@
       </categories>
       <tags>
         <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>并发/幂等/数据一致性问题</title>
+    <url>/2022/02/27/%E6%95%B0%E6%8D%AE%E4%B8%80%E8%87%B4%E6%80%A7%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<h1 id="1、幂等性"><a href="#1、幂等性" class="headerlink" title="1、幂等性"></a>1、幂等性</h1><p>幂等性是数学上的概念：F(F(x))=F(x)，用在接口上就是：多次重复请求，产生效果一致。</p>
+<p>比较典型的场景：支付接口，重复支付会导致多次扣钱；订单接口，同一个订单可能会多次创建。如果没有接口幂等性，则会产生数据一致性问题。</p>
+<p>在数据库中，常见操作包括：</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span>： 天然幂等，重复操作产生效果一致;</span><br><span class="line"></span><br><span class="line"><span class="keyword">DELETE</span>： 删除也是幂等,删除同一个多次效果一样;</span><br><span class="line"></span><br><span class="line"><span class="keyword">INSERT</span>： 非幂等操作,每次新增一条;</span><br><span class="line"></span><br><span class="line">UPDATE： a.直接更新某个值的,幂等;</span><br><span class="line">      ： b.更新累加操作的,非幂等;</span><br></pre></td></tr></table></figure>
+
+<span id="more"></span>
+
+<h1 id="2、RestFul规范"><a href="#2、RestFul规范" class="headerlink" title="2、RestFul规范"></a>2、RestFul规范</h1><h3 id="Create-类型的幂等"><a href="#Create-类型的幂等" class="headerlink" title="Create 类型的幂等"></a>Create 类型的幂等</h3><p>创建类型的 API，为了实现幂等性，常见的做法是使用一个 client-side generated deduplication token（客户端生成的唯一ID），在反复重试时使用同一个Token，便于服务端识别重复，如果发现重复，应按创建成功返回。</p>
+<h3 id="Update-类型的幂等"><a href="#Update-类型的幂等" class="headerlink" title="Update 类型的幂等"></a>Update 类型的幂等</h3><p>更新类型的 API，通常有唯一ID对需要更新的资源进行标示，以此可以保证幂等。</p>
+<p>对于“Delta”语义的操作，有以下几类方式确保幂等性：</p>
+<ol>
+<li>IncrementBy：基于某个数值增加</li>
+<li>SetNewTotal：设置新的总量</li>
+<li>使用 Deduplication Token 保证幂等</li>
+</ol>
+<p>这几种方式各有优缺点，需要根据场景选择合适的方式。</p>
+<h3 id="Delete-类型的幂等"><a href="#Delete-类型的幂等" class="headerlink" title="Delete 类型的幂等"></a>Delete 类型的幂等</h3><p>Delete的幂等性问题，往往在于一个对象被删除后，再次试图删除可能会由于数据无法被发现导致出错。这个行为一般来说也没什么问题，虽然严格意义上不幂等，但是也无副作用。</p>
+<h3 id="长耗时请求异步化"><a href="#长耗时请求异步化" class="headerlink" title="*** 长耗时请求异步化 ***"></a>*** 长耗时请求异步化 ***</h3><p>如果某个 API 方法需要很长时间才能完成，可以通过：</p>
+<ol>
+<li>在服务端异步启动任务，并返回 GUID 标示 “长时间运行的操作”资源</li>
+<li>客户端通过定时轮询 <em>/polling/{guid}，</em> 获取任务进行的状态。</li>
+<li>当任务完成/失败时，客户端可以获取到处理的结果/失败原因。</li>
+</ol>
+<h1 id="3、Redis分布式锁"><a href="#3、Redis分布式锁" class="headerlink" title="3、Redis分布式锁"></a>3、Redis分布式锁</h1><h2 id="设计方案："><a href="#设计方案：" class="headerlink" title="设计方案："></a><strong>设计方案：</strong></h2><ul>
+<li><p>拦截注解 @RedisLock，获取必要的参数</p>
+</li>
+<li><p>加锁操作</p>
+</li>
+<li><p>续时操作</p>
+</li>
+<li><p>结束业务，释放锁</p>
+</li>
+</ul>
+<h2 id="实操"><a href="#实操" class="headerlink" title="实操"></a>实操</h2><h4 id="（1）业务属性枚举设定"><a href="#（1）业务属性枚举设定" class="headerlink" title="（1）业务属性枚举设定"></a>（1）业务属性枚举设定</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">enum</span> <span class="title">RedisLockTypeEnum</span> </span>&#123;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 自定义 key 前缀</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    ONE(<span class="string">&quot;Business1&quot;</span>, <span class="string">&quot;Test1&quot;</span>),</span><br><span class="line">    </span><br><span class="line">    TWO(<span class="string">&quot;Business2&quot;</span>, <span class="string">&quot;Test2&quot;</span>);</span><br><span class="line">    <span class="keyword">private</span> String code;</span><br><span class="line">    <span class="keyword">private</span> String desc;</span><br><span class="line">    RedisLockTypeEnum(String code, String desc) &#123;</span><br><span class="line">        <span class="keyword">this</span>.code = code;</span><br><span class="line">        <span class="keyword">this</span>.desc = desc;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">getCode</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> code;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">getDesc</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> desc;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">getUniqueKey</span><span class="params">(String key)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> String.format(<span class="string">&quot;%s:%s&quot;</span>, <span class="keyword">this</span>.getCode(), key);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h4 id="（2）任务队列保存参数"><a href="#（2）任务队列保存参数" class="headerlink" title="（2）任务队列保存参数"></a><strong>（2）任务队列保存参数</strong></h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">RedisLockDefinitionHolder</span> </span>&#123;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 业务唯一 key</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> String businessKey;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 加锁时间 (秒 s)</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> Long lockTime;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 上次更新时间（ms）</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> Long lastModifyTime;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 保存当前线程</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> Thread currentTread;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 总共尝试次数</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> tryCount;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 当前尝试次数</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> currentCount;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 更新的时间周期（毫秒）,公式 = 加锁时间（转成毫秒） / 3</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> Long modifyPeriod;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">RedisLockDefinitionHolder</span><span class="params">(String businessKey, Long lockTime, Long lastModifyTime, Thread currentTread, <span class="keyword">int</span> tryCount)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.businessKey = businessKey;</span><br><span class="line">        <span class="keyword">this</span>.lockTime = lockTime;</span><br><span class="line">        <span class="keyword">this</span>.lastModifyTime = lastModifyTime;</span><br><span class="line">        <span class="keyword">this</span>.currentTread = currentTread;</span><br><span class="line">        <span class="keyword">this</span>.tryCount = tryCount;</span><br><span class="line">        <span class="keyword">this</span>.modifyPeriod = lockTime * <span class="number">1000</span> / <span class="number">3</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h4 id="（3）设定被拦截的注解名字"><a href="#（3）设定被拦截的注解名字" class="headerlink" title="（3）设定被拦截的注解名字"></a><strong>（3）设定被拦截的注解名字</strong></h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Retention(RetentionPolicy.RUNTIME)</span></span><br><span class="line"><span class="meta">@Target(&#123;ElementType.METHOD, ElementType.TYPE&#125;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="meta">@interface</span> RedisLockAnnotation &#123;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 特定参数识别，默认取第 0 个下标</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">lockFiled</span><span class="params">()</span> <span class="keyword">default</span> 0</span>;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 超时重试次数</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">tryCount</span><span class="params">()</span> <span class="keyword">default</span> 3</span>;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 自定义加锁类型</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function">RedisLockTypeEnum <span class="title">typeEnum</span><span class="params">()</span></span>;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 释放时间，秒 s 单位</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">long</span> <span class="title">lockTime</span><span class="params">()</span> <span class="keyword">default</span> 30</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="（4）-核心切面拦截的操作"><a href="#（4）-核心切面拦截的操作" class="headerlink" title="（4） 核心切面拦截的操作"></a><strong>（4）</strong> <strong>核心切面拦截的操作</strong></h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@annotation</span> 中的路径表示拦截特定注解</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@Pointcut(&quot;@annotation(cn.sevenyuan.demo.aop.lock.RedisLockAnnotation)&quot;)</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">redisLockPC</span><span class="params">()</span> </span>&#123;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Around(value = &quot;redisLockPC()&quot;)</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> Object <span class="title">around</span><span class="params">(ProceedingJoinPoint pjp)</span> <span class="keyword">throws</span> Throwable </span>&#123;</span><br><span class="line">    <span class="comment">// 解析参数</span></span><br><span class="line">    Method method = resolveMethod(pjp);</span><br><span class="line">    RedisLockAnnotation annotation = method.getAnnotation(RedisLockAnnotation.class);</span><br><span class="line">    RedisLockTypeEnum typeEnum = annotation.typeEnum();</span><br><span class="line">    Object[] params = pjp.getArgs();</span><br><span class="line">    String ukString = params[annotation.lockFiled()].toString();</span><br><span class="line">    <span class="comment">// 省略很多参数校验和判空</span></span><br><span class="line">    String businessKey = typeEnum.getUniqueKey(ukString);</span><br><span class="line">    String uniqueValue = UUID.randomUUID().toString();</span><br><span class="line">    <span class="comment">// 加锁</span></span><br><span class="line">    Object result = <span class="keyword">null</span>;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="keyword">boolean</span> isSuccess = redisTemplate.opsForValue().setIfAbsent(businessKey, uniqueValue);</span><br><span class="line">        <span class="keyword">if</span> (!isSuccess) &#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> Exception(<span class="string">&quot;You can&#x27;t do it，because another has get the lock =-=&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        redisTemplate.expire(businessKey, annotation.lockTime(), TimeUnit.SECONDS);</span><br><span class="line">        Thread currentThread = Thread.currentThread();</span><br><span class="line">        <span class="comment">// 将本次 Task 信息加入「延时」队列中</span></span><br><span class="line">        holderList.add(<span class="keyword">new</span> RedisLockDefinitionHolder(businessKey, annotation.lockTime(), System.currentTimeMillis(),</span><br><span class="line">                currentThread, annotation.tryCount()));</span><br><span class="line">        <span class="comment">// 执行业务操作</span></span><br><span class="line">        result = pjp.proceed();</span><br><span class="line">        <span class="comment">// 线程被中断，抛出异常，中断此次请求</span></span><br><span class="line">        <span class="keyword">if</span> (currentThread.isInterrupted()) &#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> InterruptedException(<span class="string">&quot;You had been interrupted =-=&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125; <span class="keyword">catch</span> (InterruptedException e ) &#123;</span><br><span class="line">        log.error(<span class="string">&quot;Interrupt exception, rollback transaction&quot;</span>, e);</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> Exception(<span class="string">&quot;Interrupt exception, please send request again&quot;</span>);</span><br><span class="line">    &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">        log.error(<span class="string">&quot;has some error, please check again&quot;</span>, e);</span><br><span class="line">    &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">        <span class="comment">// 请求结束后，强制删掉 key，释放锁</span></span><br><span class="line">        redisTemplate.delete(businessKey);</span><br><span class="line">        log.info(<span class="string">&quot;release the lock, businessKey is [&quot;</span> + businessKey + <span class="string">&quot;]&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> result;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="（5）-延时操作"><a href="#（5）-延时操作" class="headerlink" title="（5） 延时操作"></a><strong>（5） 延时操作</strong></h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 扫描的任务队列</span></span><br><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> ConcurrentLinkedQueue&lt;RedisLockDefinitionHolder&gt; holderList = <span class="keyword">new</span> ConcurrentLinkedQueue();</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 线程池，维护keyAliveTime</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> ScheduledExecutorService SCHEDULER = <span class="keyword">new</span> ScheduledThreadPoolExecutor(<span class="number">1</span>,</span><br><span class="line">        <span class="keyword">new</span> BasicThreadFactory.Builder().namingPattern(<span class="string">&quot;redisLock-schedule-pool&quot;</span>).daemon(<span class="keyword">true</span>).build());</span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// 两秒执行一次「续时」操作</span></span><br><span class="line">    SCHEDULER.scheduleAtFixedRate(() -&gt; &#123;</span><br><span class="line">        <span class="comment">// 这里记得加 try-catch，否者报错后定时任务将不会再执行=-=</span></span><br><span class="line">        Iterator&lt;RedisLockDefinitionHolder&gt; iterator = holderList.iterator();</span><br><span class="line">        <span class="keyword">while</span> (iterator.hasNext()) &#123;</span><br><span class="line">            RedisLockDefinitionHolder holder = iterator.next();</span><br><span class="line">            <span class="comment">// 判空</span></span><br><span class="line">            <span class="keyword">if</span> (holder == <span class="keyword">null</span>) &#123;</span><br><span class="line">                iterator.remove();</span><br><span class="line">                <span class="keyword">continue</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">// 判断 key 是否还有效，无效的话进行移除</span></span><br><span class="line">            <span class="keyword">if</span> (redisTemplate.opsForValue().get(holder.getBusinessKey()) == <span class="keyword">null</span>) &#123;</span><br><span class="line">                iterator.remove();</span><br><span class="line">                <span class="keyword">continue</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">// 超时重试次数，超过时给线程设定中断</span></span><br><span class="line">            <span class="keyword">if</span> (holder.getCurrentCount() &gt; holder.getTryCount()) &#123;</span><br><span class="line">                holder.getCurrentTread().interrupt();</span><br><span class="line">                iterator.remove();</span><br><span class="line">                <span class="keyword">continue</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">// 判断是否进入最后三分之一时间</span></span><br><span class="line">            <span class="keyword">long</span> curTime = System.currentTimeMillis();</span><br><span class="line">            <span class="keyword">boolean</span> shouldExtend = (holder.getLastModifyTime() + holder.getModifyPeriod()) &lt;= curTime;</span><br><span class="line">            <span class="keyword">if</span> (shouldExtend) &#123;</span><br><span class="line">                holder.setLastModifyTime(curTime);</span><br><span class="line">                redisTemplate.expire(holder.getBusinessKey(), holder.getLockTime(), TimeUnit.SECONDS);</span><br><span class="line">                log.info(<span class="string">&quot;businessKey : [&quot;</span> + holder.getBusinessKey() + <span class="string">&quot;], try count : &quot;</span> + holder.getCurrentCount());</span><br><span class="line">                holder.setCurrentCount(holder.getCurrentCount() + <span class="number">1</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;, <span class="number">0</span>, <span class="number">2</span>, TimeUnit.SECONDS);</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="4、数据库乐观锁与悲观锁"><a href="#4、数据库乐观锁与悲观锁" class="headerlink" title="4、数据库乐观锁与悲观锁"></a>4、数据库乐观锁与悲观锁</h1><h4 id="悲观锁"><a href="#悲观锁" class="headerlink" title="悲观锁"></a>悲观锁</h4><p>总是假设最坏的情况，每次去拿数据的时候都认为别人会修改，所以每次在拿数据的时候都会上锁，这样别人想拿这个数据就会阻塞直到它拿到锁（<strong>共享资源每次只给一个线程使用，其它线程阻塞，用完后再把资源转让给其它线程</strong>）。传统的关系型数据库里边就用到了很多这种锁机制，比如行锁，表锁等，读锁，写锁等，都是在做操作之前先上锁。Java中<code>synchronized</code>和<code>ReentrantLock</code> <code>redis分布式锁</code>等独占锁就是悲观锁思想的实现。</p>
+<h4 id="乐观锁"><a href="#乐观锁" class="headerlink" title="乐观锁"></a>乐观锁</h4><p>总是假设最好的情况，每次去拿数据的时候都认为别人不会修改，所以不会上锁，但是在更新的时候会判断一下在此期间别人有没有去更新这个数据，可以使用版本号机制和CAS算法实现。<strong>乐观锁适用于多读的应用类型，这样可以提高吞吐量</strong>，像数据库提供的类似于<strong>write_condition机制</strong>，其实都是提供的乐观锁。在Java中<code>java.util.concurrent.atomic</code>包下面的原子变量类就是使用了乐观锁的一种实现方式<strong>CAS</strong>实现的。</p>
+<h3 id="乐观锁常见的两种实现方式"><a href="#乐观锁常见的两种实现方式" class="headerlink" title="乐观锁常见的两种实现方式"></a>乐观锁常见的两种实现方式</h3><blockquote>
+<p><strong>乐观锁一般会使用版本号机制或CAS算法实现。</strong></p>
+</blockquote>
+<h4 id="1-版本号机制"><a href="#1-版本号机制" class="headerlink" title="1. 版本号机制"></a>1. 版本号机制</h4><p>一般是在数据表中加上一个数据版本号version字段，表示数据被修改的次数，当数据被修改时，version值会加一。当线程A要更新数据值时，在读取数据的同时也会读取version值，在提交更新时，若刚才读取到的version值为当前数据库中的version值相等时才更新，否则重试更新操作，直到更新成功。</p>
+<p><strong>举一个简单的例子：</strong> 假设数据库中帐户信息表中有一个 version 字段，当前值为 1 ；而当前帐户余额字段（ balance ）为 $100 。</p>
+<ol>
+<li>操作员 A 此时将其读出（ version=1 ），并从其帐户余额中扣除 $50（ $100-$50 ）。</li>
+<li>在操作员 A 操作的过程中，操作员B 也读入此用户信息（ version=1 ），并从其帐户余额中扣除 $20 （ $100-$20 ）。</li>
+<li>操作员 A 完成了修改工作，将数据版本号加一（ version=2 ），连同帐户扣除后余额（ balance=$50 ），提交至数据库更新，此时由于提交数据版本大于数据库记录当前版本，数据被更新，数据库记录 version 更新为 2 。</li>
+<li>操作员 B 完成了操作，也将版本号加一（ version=2 ）试图向数据库提交数据（ balance=$80 ），但此时比对数据库记录版本时发现，操作员 B 提交的数据版本号为 2 ，数据库记录当前版本也为 2 ，不满足 “ 提交版本必须大于记录当前版本才能执行更新 “ 的乐观锁策略，因此，操作员 B 的提交被驳回。</li>
+</ol>
+<p>这样，就避免了操作员 B 用基于 version=1 的旧数据修改的结果覆盖操作员A 的操作结果的可能。</p>
+<h4 id="2-CAS算法"><a href="#2-CAS算法" class="headerlink" title="2. CAS算法"></a>2. CAS算法</h4><p>即<strong>compare and swap（比较与交换）</strong>，是一种有名的<strong>无锁算法</strong>。无锁编程，即不使用锁的情况下实现多线程之间的变量同步，也就是在没有线程被阻塞的情况下实现变量的同步，所以也叫非阻塞同步（Non-blocking Synchronization）。<strong>CAS算法</strong>涉及到三个操作数</p>
+<ul>
+<li>需要读写的内存值 V</li>
+<li>进行比较的值 A</li>
+<li>拟写入的新值 B</li>
+</ul>
+<p>当且仅当 V 的值等于 A时，CAS通过原子方式用新值B来更新V的值，否则不会执行任何操作（比较和替换是一个原子操作）。一般情况下是一个<strong>自旋操作</strong>，即<strong>不断的重试</strong>。</p>
+<h3 id="乐观锁的缺点"><a href="#乐观锁的缺点" class="headerlink" title="乐观锁的缺点"></a>乐观锁的缺点</h3><blockquote>
+<p>ABA 问题是乐观锁一个常见的问题</p>
+</blockquote>
+<h4 id="1-ABA-问题"><a href="#1-ABA-问题" class="headerlink" title="1 ABA 问题"></a>1 ABA 问题</h4><p>如果一个变量V初次读取的时候是A值，并且在准备赋值的时候检查到它仍然是A值，那我们就能说明它的值没有被其他线程修改过了吗？很明显是不能的，因为在这段时间它的值可能被改为其他值，然后又改回A，那CAS操作就会误认为它从来没有被修改过。这个问题被称为CAS操作的 <strong>“ABA”问题。</strong></p>
+<p>JDK 1.5 以后的 <code>AtomicStampedReference 类</code>就提供了此种能力，其中的 <code>compareAndSet 方法</code>就是首先检查当前引用是否等于预期引用，并且当前标志是否等于预期标志，如果全部相等，则以原子方式将该引用和该标志的值设置为给定的更新值。</p>
+<h4 id="2-循环时间长开销大"><a href="#2-循环时间长开销大" class="headerlink" title="2 循环时间长开销大"></a>2 循环时间长开销大</h4><p><strong>自旋CAS（也就是不成功就一直循环执行直到成功）如果长时间不成功，会给CPU带来非常大的执行开销。</strong> 如果JVM能支持处理器提供的pause指令那么效率会有一定的提升，pause指令有两个作用，第一它可以延迟流水线执行指令（de-pipeline）,使CPU不会消耗过多的执行资源，延迟的时间取决于具体实现的版本，在一些处理器上延迟时间是零。第二它可以避免在退出循环的时候因内存顺序冲突（memory order violation）而引起CPU流水线被清空（CPU pipeline flush），从而提高CPU的执行效率。</p>
+<h4 id="3-只能保证一个共享变量的原子操作"><a href="#3-只能保证一个共享变量的原子操作" class="headerlink" title="3 只能保证一个共享变量的原子操作"></a>3 只能保证一个共享变量的原子操作</h4><p>CAS 只对单个共享变量有效，当操作涉及跨多个共享变量时 CAS 无效。但是从 JDK 1.5开始，提供了<code>AtomicReference类</code>来保证引用对象之间的原子性，你可以把多个变量放在一个对象里来进行 CAS 操作.所以我们可以使用锁或者利用<code>AtomicReference类</code>把多个共享变量合并成一个共享变量来操作。</p>
+<h3 id="CAS与synchronized的使用情景"><a href="#CAS与synchronized的使用情景" class="headerlink" title="CAS与synchronized的使用情景"></a>CAS与synchronized的使用情景</h3><blockquote>
+<p><strong>简单的来说CAS适用于写比较少的情况下（多读场景，冲突一般较少），synchronized适用于写比较多的情况下（多写场景，冲突一般较多）</strong></p>
+</blockquote>
+<ol>
+<li>对于资源竞争较少（线程冲突较轻）的情况，使用synchronized同步锁进行线程阻塞和唤醒切换以及用户态内核态间的切换操作额外浪费消耗cpu资源；而CAS基于硬件实现，不需要进入内核，不需要切换线程，操作自旋几率较少，因此可以获得更高的性能。</li>
+<li>对于资源竞争严重（线程冲突严重）的情况，CAS自旋的概率会比较大，从而浪费更多的CPU资源，效率低于synchronized。</li>
+</ol>
+<p>补充： Java并发编程这个领域中synchronized关键字一直都是元老级的角色，很久之前很多人都会称它为 <strong>“重量级锁”</strong> 。但是，在JavaSE 1.6之后进行了主要包括为了减少获得锁和释放锁带来的性能消耗而引入的 <strong>偏向锁</strong> 和 <strong>轻量级锁</strong> 以及其它<strong>各种优化</strong>之后变得在某些情况下并不是那么重了。synchronized的底层实现主要依靠 <strong>Lock-Free</strong> 的队列，基本思路是 <strong>自旋后阻塞</strong>，<strong>竞争切换后继续竞争锁</strong>，<strong>稍微牺牲了公平性，但获得了高吞吐量</strong>。在线程冲突较少的情况下，可以获得和CAS类似的性能；而线程冲突严重的情况下，性能远高于CAS。</p>
+<h1 id="5-总结："><a href="#5-总结：" class="headerlink" title="5.总结："></a>5.总结：</h1><p>主要讨论了并发场景读写一致性问题，对于长耗时请求问题，还是不懂怎么解决。</p>
+]]></content>
+      <categories>
+        <category>学习</category>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>计算广告 - 在线广告概览</title>
+    <url>/2022/03/06/%E8%AE%A1%E7%AE%97%E5%B9%BF%E5%91%8A%20(2)/</url>
+    <content><![CDATA[<h3 id="1-模型"><a href="#1-模型" class="headerlink" title="1.模型"></a>1.模型</h3><p><img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202203061001702.png" alt="image-20220306100052375"></p>
+<span id="more"></span>
+
+<h3 id="11-3-1-在线分配问题"><a href="#11-3-1-在线分配问题" class="headerlink" title="11.3.1 在线分配问题"></a>11.3.1 在线分配问题</h3><p><img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202203061117646.png" alt="image-20220306111720187"></p>
+]]></content>
+      <categories>
+        <category>学习</category>
+        <category>智慧营销</category>
+      </categories>
+      <tags>
+        <tag>智慧营销</tag>
       </tags>
   </entry>
   <entry>

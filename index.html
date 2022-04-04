@@ -234,11 +234,22 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h3 id="1-点击率模型的必要性"><a href="#1-点击率模型的必要性" class="headerlink" title="1.点击率模型的必要性"></a>1.点击率模型的必要性</h3><p>不考虑时间、位置等一系列因素，绝对的点击率没有意义。</p>
+          <h3 id="点击率模型的必要性"><a href="#点击率模型的必要性" class="headerlink" title="点击率模型的必要性"></a>点击率模型的必要性</h3><p>不考虑时间、位置等一系列因素，绝对的点击率没有意义。</p>
 <p>那能不能再换一个思路，找到一些影响点击率的一些关健因素，对这些因素分别统计？这实际上已经产生了“特征”这样的建模思路了。</p>
 <p>比如说，广告位是一个因素，广告本身是一个因素，用户的性别是一个因素，在每个因素上分别统计点击率，从数据充分性上是可行的。</p>
 <p>不过这又产生了一个新的问题：我知道了男性用户的平均点击率、广告位S平均点击率、某广告A的平均点击率，那么如何评估某男性用户在广告位S上看到广告A的点击率呢？直觉的方法，是求上面三个点击率的几何平均。不过这里面有一个隐含的假设：<strong>即这三个因素是相互独立的</strong>。然而当特征多起来以后，这样的<strong>独立性假设是很难保证的。</strong></p>
-<h3 id="2-怎样建立点击率模型"><a href="#2-怎样建立点击率模型" class="headerlink" title="2.怎样建立点击率模型"></a>2.怎样建立点击率模型</h3>
+<h3 id="怎样建立点击率模型"><a href="#怎样建立点击率模型" class="headerlink" title="怎样建立点击率模型"></a>怎样建立点击率模型</h3><p>我们把点击事件 h 看成一个二元取值的随机变量，那么其取值为真（h=1）的概率就是点击率。</p>
+<p>因此，点击事件的分布可以写成以点击率 µ为参数的二项分布（binomial distribution）：</p>
+<img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202204041125269.png" alt="image-20220404112540712" style="zoom:67%;" />
+
+<p> 而点击率预测模型的作用是在（a，u，c）组合与点击的概率µ之间建立函数关系，这可以表示成对µ（a，u，c）=p（h=1|a，u，c）的概率建模问题。</p>
+<h4 id="逻辑回归模型-特征工程"><a href="#逻辑回归模型-特征工程" class="headerlink" title="逻辑回归模型+特征工程"></a>逻辑回归模型+特征工程</h4><p>对µ（a，u，c）=p（h=1|a，u，c）的概率建模问题，可以很自然地想到的基础模型是逻辑回归（Logistic Regression，LR）</p>
+<p><img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202204041210773.png" alt="image-20220404121004573"></p>
+<p>其中 x 表示（a，u，c）组合上的特征矢量，即前面介绍过的受众定向的输出及其派生的其他特征；w 为各特征的加权系数，也就是此模型需要优化的参数；从方法上看，LR是利用线性函数来解决非线性目标，也属于广义线性模型。</p>
+<h4 id="FM-GBDT融合"><a href="#FM-GBDT融合" class="headerlink" title="FM+GBDT融合"></a>FM+GBDT融合</h4><p>第一步当然也是基于大规模稀疏特征LR。</p>
+<p>第二步，为了更好的刻画长尾，自动发现组合特征，采用了FM。在同样的训练时间下，AUC提升，模型泛化性能可控。</p>
+<p>第三步：为了更好的fine tuning头部和提升时效性，采用了用gbdt加动态特征的模型。最后呢，把这两个模型简单的做线性融合，由于俩个模型的特征和模型差异性较大，融合后auc也有显著的提升。</p>
+
       
     </div>
 
@@ -527,14 +538,14 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h4 id="Publication-Venues"><a href="#Publication-Venues" class="headerlink" title="Publication Venues"></a>Publication Venues</h4><ul>
+          <h3 id="Publication-Venues"><a href="#Publication-Venues" class="headerlink" title="Publication Venues"></a>Publication Venues</h3><ul>
 <li>General : ACM , IEEE , AAAI , ACL</li>
 <li>Specifically Recommended By CCF : <strong><a target="_blank" rel="noopener" href="https://www.ccf.org.cn/Academic_Evaluation/By_category/">https://www.ccf.org.cn/Academic_Evaluation/By_category/</a></strong></li>
 </ul>
 <blockquote>
 <p>中国计算机学会（China Computer Federation）</p>
 </blockquote>
-<h4 id="Different-Types-of-CS-Research-Paper"><a href="#Different-Types-of-CS-Research-Paper" class="headerlink" title="Different Types of CS Research Paper"></a>Different Types of CS Research Paper</h4><p>There are three basic types of CS research paper: <strong>theoretical</strong>, <strong>engineering</strong> and <strong>empirical</strong>.</p>
+<h3 id="Different-Types-of-CS-Research-Paper"><a href="#Different-Types-of-CS-Research-Paper" class="headerlink" title="Different Types of CS Research Paper"></a>Different Types of CS Research Paper</h3><p>There are three basic types of CS research paper: <strong>theoretical</strong>, <strong>engineering</strong> and <strong>empirical</strong>.</p>
 <ul>
 <li>A theoretical paper describes a theory or algorithm or provides a mathematical proof for some hypothesis.</li>
 <li>An engineering paper describes an implementation of an algorithm, or part or all of a computer system or application. Engineering papers are now frequently required to include descriptions of system evaluation.</li>
@@ -543,84 +554,6 @@
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2022/03/19/HowToReadCSPaper/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://yoon286.github.io/2022/03/06/%E8%AE%A1%E7%AE%97%E5%B9%BF%E5%91%8A%20(2)/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="尹 丹">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="yoon">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/03/06/%E8%AE%A1%E7%AE%97%E5%B9%BF%E5%91%8A%20(2)/" class="post-title-link" itemprop="url">计算广告 - 在线广告概览</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2022-03-06 23:27:31" itemprop="dateCreated datePublished" datetime="2022-03-06T23:27:31+08:00">2022-03-06</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">学习</span></a>
-                </span>
-                  >
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%AD%A6%E4%B9%A0/%E6%99%BA%E6%85%A7%E8%90%A5%E9%94%80/" itemprop="url" rel="index"><span itemprop="name">智慧营销</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h3 id="1-模型"><a href="#1-模型" class="headerlink" title="1.模型"></a>1.模型</h3><p><img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202203061001702.png" alt="image-20220306100052375"></p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2022/03/06/%E8%AE%A1%E7%AE%97%E5%B9%BF%E5%91%8A%20(2)/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -699,6 +632,84 @@
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2022/03/06/%E8%AE%A1%E7%AE%97%E5%B9%BF%E5%91%8A/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://yoon286.github.io/2022/03/06/%E8%AE%A1%E7%AE%97%E5%B9%BF%E5%91%8A%20(2)/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="尹 丹">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="yoon">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/03/06/%E8%AE%A1%E7%AE%97%E5%B9%BF%E5%91%8A%20(2)/" class="post-title-link" itemprop="url">计算广告 - 在线广告概览</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-03-06 23:27:31" itemprop="dateCreated datePublished" datetime="2022-03-06T23:27:31+08:00">2022-03-06</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">学习</span></a>
+                </span>
+                  >
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0/%E6%99%BA%E6%85%A7%E8%90%A5%E9%94%80/" itemprop="url" rel="index"><span itemprop="name">智慧营销</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="1-模型"><a href="#1-模型" class="headerlink" title="1.模型"></a>1.模型</h3><p><img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202203061001702.png" alt="image-20220306100052375"></p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2022/03/06/%E8%AE%A1%E7%AE%97%E5%B9%BF%E5%91%8A%20(2)/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
