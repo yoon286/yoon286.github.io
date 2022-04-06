@@ -451,129 +451,6 @@
       </tags>
   </entry>
   <entry>
-    <title>摄影笔记</title>
-    <url>/2022/02/04/%E6%91%84%E5%BD%B1%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<h2 id="01-了解数码相机"><a href="#01-了解数码相机" class="headerlink" title="01 了解数码相机"></a>01 了解数码相机</h2><h3 id="第1节-数码相机机身简介"><a href="#第1节-数码相机机身简介" class="headerlink" title="第1节 数码相机机身简介"></a>第1节 数码相机机身简介</h3><p><strong>单反相机</strong>工作时，光通过镜头进入机身，光线一分为二，一束光在反光镜上通过对焦机构进入五棱镜，之后再通过五棱镜到目镜里。通过光学取景器，可以取景、构图、对焦。另一束光传递到感应器，用于识别场景、测光和设定白平衡。按下快门时，反光镜抬起，快门帘打开，全部光线落在电子感光器上，被影像处理器处理后传输到储存卡中记录下来。</p>
-<span id="more"></span>
-
-<img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202202050340856.png" alt="image-20220205034025473" style="zoom:50%;" />
-
-<p><strong>无反相机</strong>工作时，光线通过镜头落在电子感光元件上，被影像处理器处理后传输到储存卡中记录下来。与单反相机不同的是取景方式，无反相机没有反光镜，所以取景也是通过电子感光元件——传感器取景，图像最终呈现在电子取景器（EVF）或者液晶屏上，这一点就好像数码单反相机使用实时取景一样。</p>
-<img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202202050342083.png" alt="image-20220205034254951" style="zoom:50%;" />
-
-
-
-<p><strong>传感器尺寸</strong>，又被称为画幅。1934年，柯达公司引入了一次性的胶卷盒，称为135胶卷，1表示一次性，35表示采用了35mm电影胶片。在刚刚进入数码时代的时候，相机厂商们都想做拥有35mm胶片大小传感器的单反相机，这个尺寸被大家称为<strong>35mm全画幅</strong>。</p>
-<p>但是大家都遇到一个问题——贵！一旦采用，相机就没几个人能买得起了。从此单反相机中就有了两大传感器尺寸标准——全画幅和APS-C尺寸(23.5mm×15.6mm)。</p>
-<h3 id="第2节-镜头简介"><a href="#第2节-镜头简介" class="headerlink" title="第2节 镜头简介"></a>第2节 镜头简介</h3><blockquote>
-<p>佳能的EF 70-200mm f/2.8L IS USM II</p>
-</blockquote>
-<p>1．镜头种类</p>
-<p>EF表示EOS相机卡口的镜头。其他的还有EF-S只适用于佳能APS-C画幅EOS相机的镜头；MP-E放大倍率在1倍以上的微距摄影镜头；TS-E移轴镜头。</p>
-<p>2．焦距</p>
-<p>70-200mm表示这是一个广角端为70mm，长焦端为200mm的变焦镜头。如果只有一个数值那么就是定焦镜头。</p>
-<p>3．最大光圈</p>
-<p>f/2.8表示这支镜头全焦段的最大光圈是恒定的2.8。有的镜头会有两个数值，分别表示广角端和长焦端的最大光圈。最大光圈表示在这个焦距的时候你可以使用的光圈最大有多大，如果想缩小光圈，自然也是可以的。</p>
-<p>4．特性</p>
-<p>L表示佳能的专业级镜头，同时镜头前端也会有红圈。IS表示具有防抖功能。USM表示具有超声波马达。II表示这是这个镜头的第二代产品。</p>
-<p><strong>总结：光圈越大，单位时间内镜头的通光能力越强，这支镜头往往也越好</strong></p>
-<h2 id="02-焦距与取景"><a href="#02-焦距与取景" class="headerlink" title="02 焦距与取景"></a>02 焦距与取景</h2><p> <strong>鱼眼 &lt; 超广角（28mm以下）&lt; 广角 &lt; 微距 &lt; 长焦 &lt; 超长焦（300mm以上）</strong></p>
-<p><strong>24mm和28mm</strong></p>
-<p>这就是一个标准的广角焦距，主要就是用来拍摄风景。</p>
-<p><strong>35mm</strong></p>
-<p>有人说这是大师的焦距，也被称为人文眼。简单地说就是拍摄人文最好的焦距。拍摄人文照片的时候需要主体和背景环境的关系，所以小广角的35mm既能够将背景囊括进来，又能突出人与环境的关系，这是拍摄人文的关键</p>
-<p><strong>50mm</strong></p>
-<p>这被称为标准镜头，拍摄人文、人像都是很好的，也是大师的焦距。</p>
-<p><strong>85mm</strong></p>
-<p>这是一个拍摄人像的焦距。能有很好的背景虚化效果，很好的画面裁切能力，还能保持和模特之间适当的交流距离。主要用于模特大头照或者特写。</p>
-<p><strong>等效焦距</strong></p>
-<p>传感器有大有小，会对这些实际焦距取景范围有截取，造成拍摄的视角与实际焦距原本应该有的视角不相同。</p>
-<img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202202050410367.png" alt="image-20220205041015149" style="zoom:50%;" />
-
-
-
-<p>实际上每个不同尺寸的传感器都有一个系数与之相对应，这个系数乘以实际焦距之后，就是等效焦距了。这个系数就叫<strong>镜头转换系数。</strong></p>
-<p>全画幅：<strong>1.0</strong>x55mm=55mm</p>
-<p>APS-C：<strong>1.5</strong>x55mm=82.5mm</p>
-<h2 id="03-影调"><a href="#03-影调" class="headerlink" title="03 影调"></a>03 影调</h2><h3 id="第1节-什么是影调"><a href="#第1节-什么是影调" class="headerlink" title="第1节 什么是影调"></a>第1节 什么是影调</h3><p>那些本身就明亮的物体应该用高调表现；那些本身就黑的物体应该用低调表现。</p>
-<p>本身就是高调的物体：雪、白馒头、白衣服、白纸、棉花……</p>
-<p>本身就是低调的物体：煤炭、黑色皮鞋、黑色的衣服、夜晚的天空……</p>
-<p><strong>大多数照片都是中间调，少数场景需要用高调或者低调来表现。</strong></p>
-<h3 id="第2节-影调的量化"><a href="#第2节-影调的量化" class="headerlink" title="第2节 影调的量化"></a>第2节 影调的量化</h3><h4 id="曝光补偿-gt-gt-gt-gt"><a href="#曝光补偿-gt-gt-gt-gt" class="headerlink" title="曝光补偿&gt;&gt;&gt;&gt;"></a><strong>曝光补偿&gt;&gt;&gt;&gt;</strong></h4><p>其实在相机中有一个非常标准的量化体系——<strong>曝光补偿</strong>。</p>
-<p>曝光补偿的意思就是，相机给你的曝光就是中间调的，你拍的东西亮呢，就往亮了补偿补偿。你拍的东西暗呢，就往暗了补偿补偿。中间调就不补偿。</p>
-<h4 id="测光系统-gt-gt-gt-gt"><a href="#测光系统-gt-gt-gt-gt" class="headerlink" title="测光系统&gt;&gt;&gt;&gt;"></a><strong>测光系统&gt;&gt;&gt;&gt;</strong></h4><p>相机的测光系统主要可以分为三种：</p>
-<p><strong>智能测光</strong></p>
-<p>每个厂商叫的名称不同，但是一般都是默认项。推荐使用。</p>
-<p><strong>中心重点平均测光</strong></p>
-<p>就是重点考虑中心主体的曝光，然后加权其他背景的曝光。这曾经是很多人最常用的测光方式。但是后来的评价测光、矩阵测光、多重测光等更智能的方式出来之后，用的人逐渐少了。所以新手们，我觉得这个测光方式学不学都可以。</p>
-<p><strong>点测光</strong></p>
-<p>就是对画面中的一点测光，这个点一般很小，画面中1%～3%的面积，越高级的相机测光面积越小。在复杂光线环境的时候拍一个姑娘，最重要的就是保证姑娘脸是曝光正常的，所以对这姑娘的脸点测光，这个曝光参数就足够保证姑娘脸是好的。</p>
-<h2 id="04-曝光补偿三要素"><a href="#04-曝光补偿三要素" class="headerlink" title="04 曝光补偿三要素"></a>04 曝光补偿三要素</h2><p>照片的影调=光线强度×<strong>光圈×快门×感光度</strong></p>
-<img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202202050428814.png" alt="image-20220205042848707" style="zoom:50%;" />
-
-<p>如果快门速度不变，光圈开大1挡，同时感光度降低1挡得到的照片的明暗程度是相同的，反之亦然。这就是<strong>互易律</strong>。</p>
-<h2 id="05-相机模式"><a href="#05-相机模式" class="headerlink" title="05 相机模式"></a>05 相机模式</h2><p>一般来说摄影师的相机都有以下三种模式：</p>
-<p><strong>Av、A挡 光圈优先</strong></p>
-<p>摄影师设定影调（曝光补偿）和光圈，相机会自动选择合适的快门速度。</p>
-<p><strong>Tv、S挡 快门优先</strong></p>
-<p>摄影师设定影调（曝光补偿）和快门，相机会自动选择合适的光圈。</p>
-<p><strong>M手动（手动控制光圈、快门）</strong></p>
-<p>摄影师设定光圈、快门，相机告诉你影调将会是如何。</p>
-<p>使用M挡手动曝光情况都是你无法使用相机测光的时候，其实等于你放弃了相机测光。所以请记住，往往在你无法使用相机测光的时候，才用M挡。</p>
-<h2 id="06-光线"><a href="#06-光线" class="headerlink" title="06 光线"></a>06 光线</h2><h3 id="第1节-光线的特性"><a href="#第1节-光线的特性" class="headerlink" title="第1节 光线的特性"></a>第1节 光线的特性</h3><p><strong>顺光</strong></p>
-<p>其实顺光不应过多地运用在人像摄影中。因为正面直射的光会消除面部的一切影子，使得面部趋于平面化，所以又叫平光。</p>
-<p><strong>侧光</strong></p>
-<p>侧光一般用在人物摄影的造型上。相比顺光会将人物拍成“大白脸”，侧光能够让人物的面部呈现立体效果。</p>
-<p><strong>逆光</strong></p>
-<p>逆光是很多摄影师进行创作的用光。使用逆光拍摄的时候，往往会有雾蒙蒙的感觉，并形成暖色调。</p>
-<p><strong>色温</strong></p>
-<p>蓝色是冷色，但是色温高；红色是暖色，但是色温低。</p>
-<p>日光的色温大概是5500K。白纸放到日光下就是白色的。</p>
-<p><strong>白平衡</strong></p>
-<p>白平衡是相机机内处理的结果。说白了就是相机自己的后期。所以如果你拍摄RAW格式照片的话，可以在计算机中重新定义白平衡，重新调节。理论上是没有画质损失的（尽管实际可能有，但是也非常小，可忽略）。</p>
-<blockquote>
-<p>所以AWB+RAW拍摄，是一个既方便，又保险的组合。</p>
-</blockquote>
-<h3 id="第2节-布光方法"><a href="#第2节-布光方法" class="headerlink" title="第2节 布光方法"></a>第2节 布光方法</h3><img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202202050444659.png" alt="image-20220205044427503" style="zoom:50%;" />
-
-<p><strong>伦勃朗布光法</strong>有几个特点：</p>
-<p>1．四分之三面部对着相机。让人物面向相机，缓慢变换角度，直到看不到一侧的耳朵为止。</p>
-<p>2．架设主灯，强度要能使人面部正确曝光，方向为与人物面部方向同一侧45°左右。注意，要在人物面部形成三角形光区（以鼻子阴影、面颊阴影、下眼线为边长，围成的三角形亮区）。</p>
-<p>3．架设辅灯。将面部阴影处柔化，并表现出细节。一般会使用4:1或者3:1的光比。</p>
-<p>4．架设背景灯，打亮背景。如果有可能从人物斜后方放置一束比较集中的光，打在人物轮廓上，形成轮廓光。如下图所示：</p>
-<img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202202050446673.png" alt="image-20220205044609555" style="zoom:50%;" />
-
-
-
-<p>伦勃朗布光法是适用于男性的。那么再提供一个适用于女性摄影的布光法——<strong>蝶形布光法</strong>。</p>
-<p><strong>蝶形布光法</strong>的名字来源于布光法中的一个特点。类似于伦勃朗布光法中要找三角形光区，蝶形布光法就是要找这个蝶形。使用蝶形布光法的时候，主灯放置在人物正前方，但是处于比较高的位置。这与顶光不同。蝶形布光法的主灯是从上斜射下来的。这样在人物的鼻子下方就会形成一个阴影。随着主灯高度变化，阴影会在鼻子下面形成一个蝴蝶的形状。这时主灯的位置就可以确定了。</p>
-<h2 id="07-摄影中的虚实"><a href="#07-摄影中的虚实" class="headerlink" title="07 摄影中的虚实"></a>07 摄影中的虚实</h2><p><strong>前帘同步闪光</strong>就是：</p>
-<p>前帘开启之后（也是曝光的开始），就闪光，闪完了之后等曝光时间一到后帘关闭（曝光结束）。这样就是一辆车移动，你拍摄车。开启快门就闪光了，车被闪光灯定在了画面中，然后长曝光继续曝，车往前走拉车线。这样就变成了车在后面，车线在前面的奇葩照片。</p>
-<img src="C:/Users/Yoon/AppData/Roaming/Typora/typora-user-images/image-20220205045502246.png" alt="image-20220205045502246" style="zoom:25%;" />
-
-
-
-<p><strong>后帘同步闪光</strong>就是：</p>
-<p>前帘开启之后（也是曝光的开始），先踏踏实实曝着光。然后闪光灯闪了一下，定格画面，随即后帘关闭（曝光结束）。这样一辆车移动，你拍摄车。开启快门，先拉车线，然后马上快门关闭了，闪光灯突然把车定格住。就变成了车在前面，车线在后面的好画面了。</p>
-<img src="C:/Users/Yoon/AppData/Roaming/Typora/typora-user-images/image-20220205045429391.png" alt="image-20220205045429391" style="zoom:25%;" />
-
-<h2 id="08-构图"><a href="#08-构图" class="headerlink" title="08 构图"></a>08 构图</h2><p><strong>居中构图</strong></p>
-<p><strong>三分法构图</strong></p>
-<p><strong>重复法</strong></p>
-<p><strong>引导线</strong></p>
-<img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202202050457311.png" alt="image-20220205045729070" style="zoom:25%;" />
-
-<p><strong>三角构图</strong></p>
-]]></content>
-      <categories>
-        <category>兴趣</category>
-        <category>读书</category>
-      </categories>
-      <tags>
-        <tag>读书笔记</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>摘抄--3月24日</title>
     <url>/2021/03/24/%E6%91%98%E6%8A%84--3%E6%9C%8824%E6%97%A5/</url>
     <content><![CDATA[<p>过去的每一天都不曾消失，它们闪烁在未来的天幕上，成为个人的群星，构成属于你自己的浩瀚银河。</p>
@@ -586,6 +463,118 @@
       </categories>
       <tags>
         <tag>读书笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>并发/幂等/数据一致性问题</title>
+    <url>/2022/02/27/%E6%95%B0%E6%8D%AE%E4%B8%80%E8%87%B4%E6%80%A7%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<h1 id="1、幂等性"><a href="#1、幂等性" class="headerlink" title="1、幂等性"></a>1、幂等性</h1><p>幂等性是数学上的概念：F(F(x))=F(x)，用在接口上就是：多次重复请求，产生效果一致。</p>
+<p>比较典型的场景：支付接口，重复支付会导致多次扣钱；订单接口，同一个订单可能会多次创建。如果没有接口幂等性，则会产生数据一致性问题。</p>
+<p>在数据库中，常见操作包括：</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span>： 天然幂等，重复操作产生效果一致;</span><br><span class="line"></span><br><span class="line"><span class="keyword">DELETE</span>： 删除也是幂等,删除同一个多次效果一样;</span><br><span class="line"></span><br><span class="line"><span class="keyword">INSERT</span>： 非幂等操作,每次新增一条;</span><br><span class="line"></span><br><span class="line">UPDATE： a.直接更新某个值的,幂等;</span><br><span class="line">      ： b.更新累加操作的,非幂等;</span><br></pre></td></tr></table></figure>
+
+<span id="more"></span>
+
+<h1 id="2、RestFul规范"><a href="#2、RestFul规范" class="headerlink" title="2、RestFul规范"></a>2、RestFul规范</h1><h3 id="Create-类型的幂等"><a href="#Create-类型的幂等" class="headerlink" title="Create 类型的幂等"></a>Create 类型的幂等</h3><p>创建类型的 API，为了实现幂等性，常见的做法是使用一个 client-side generated deduplication token（客户端生成的唯一ID），在反复重试时使用同一个Token，便于服务端识别重复，如果发现重复，应按创建成功返回。</p>
+<h3 id="Update-类型的幂等"><a href="#Update-类型的幂等" class="headerlink" title="Update 类型的幂等"></a>Update 类型的幂等</h3><p>更新类型的 API，通常有唯一ID对需要更新的资源进行标示，以此可以保证幂等。</p>
+<p>对于“Delta”语义的操作，有以下几类方式确保幂等性：</p>
+<ol>
+<li>IncrementBy：基于某个数值增加</li>
+<li>SetNewTotal：设置新的总量</li>
+<li>使用 Deduplication Token 保证幂等</li>
+</ol>
+<p>这几种方式各有优缺点，需要根据场景选择合适的方式。</p>
+<h3 id="Delete-类型的幂等"><a href="#Delete-类型的幂等" class="headerlink" title="Delete 类型的幂等"></a>Delete 类型的幂等</h3><p>Delete的幂等性问题，往往在于一个对象被删除后，再次试图删除可能会由于数据无法被发现导致出错。这个行为一般来说也没什么问题，虽然严格意义上不幂等，但是也无副作用。</p>
+<h3 id="长耗时请求异步化"><a href="#长耗时请求异步化" class="headerlink" title="*** 长耗时请求异步化 ***"></a>*** 长耗时请求异步化 ***</h3><p>如果某个 API 方法需要很长时间才能完成，可以通过：</p>
+<ol>
+<li>在服务端异步启动任务，并返回 GUID 标示 “长时间运行的操作”资源</li>
+<li>客户端通过定时轮询 <em>/polling/{guid}，</em> 获取任务进行的状态。</li>
+<li>当任务完成/失败时，客户端可以获取到处理的结果/失败原因。</li>
+</ol>
+<h1 id="3、Redis分布式锁"><a href="#3、Redis分布式锁" class="headerlink" title="3、Redis分布式锁"></a>3、Redis分布式锁</h1><h2 id="设计方案："><a href="#设计方案：" class="headerlink" title="设计方案："></a><strong>设计方案：</strong></h2><ul>
+<li><p>拦截注解 @RedisLock，获取必要的参数</p>
+</li>
+<li><p>加锁操作</p>
+</li>
+<li><p>续时操作</p>
+</li>
+<li><p>结束业务，释放锁</p>
+</li>
+</ul>
+<h2 id="实操"><a href="#实操" class="headerlink" title="实操"></a>实操</h2><h4 id="（1）业务属性枚举设定"><a href="#（1）业务属性枚举设定" class="headerlink" title="（1）业务属性枚举设定"></a>（1）业务属性枚举设定</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">enum</span> <span class="title">RedisLockTypeEnum</span> </span>&#123;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 自定义 key 前缀</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    ONE(<span class="string">&quot;Business1&quot;</span>, <span class="string">&quot;Test1&quot;</span>),</span><br><span class="line">    </span><br><span class="line">    TWO(<span class="string">&quot;Business2&quot;</span>, <span class="string">&quot;Test2&quot;</span>);</span><br><span class="line">    <span class="keyword">private</span> String code;</span><br><span class="line">    <span class="keyword">private</span> String desc;</span><br><span class="line">    RedisLockTypeEnum(String code, String desc) &#123;</span><br><span class="line">        <span class="keyword">this</span>.code = code;</span><br><span class="line">        <span class="keyword">this</span>.desc = desc;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">getCode</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> code;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">getDesc</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> desc;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">getUniqueKey</span><span class="params">(String key)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> String.format(<span class="string">&quot;%s:%s&quot;</span>, <span class="keyword">this</span>.getCode(), key);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h4 id="（2）任务队列保存参数"><a href="#（2）任务队列保存参数" class="headerlink" title="（2）任务队列保存参数"></a><strong>（2）任务队列保存参数</strong></h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">RedisLockDefinitionHolder</span> </span>&#123;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 业务唯一 key</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> String businessKey;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 加锁时间 (秒 s)</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> Long lockTime;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 上次更新时间（ms）</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> Long lastModifyTime;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 保存当前线程</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> Thread currentTread;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 总共尝试次数</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> tryCount;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 当前尝试次数</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> currentCount;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 更新的时间周期（毫秒）,公式 = 加锁时间（转成毫秒） / 3</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> Long modifyPeriod;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">RedisLockDefinitionHolder</span><span class="params">(String businessKey, Long lockTime, Long lastModifyTime, Thread currentTread, <span class="keyword">int</span> tryCount)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.businessKey = businessKey;</span><br><span class="line">        <span class="keyword">this</span>.lockTime = lockTime;</span><br><span class="line">        <span class="keyword">this</span>.lastModifyTime = lastModifyTime;</span><br><span class="line">        <span class="keyword">this</span>.currentTread = currentTread;</span><br><span class="line">        <span class="keyword">this</span>.tryCount = tryCount;</span><br><span class="line">        <span class="keyword">this</span>.modifyPeriod = lockTime * <span class="number">1000</span> / <span class="number">3</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h4 id="（3）设定被拦截的注解名字"><a href="#（3）设定被拦截的注解名字" class="headerlink" title="（3）设定被拦截的注解名字"></a><strong>（3）设定被拦截的注解名字</strong></h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Retention(RetentionPolicy.RUNTIME)</span></span><br><span class="line"><span class="meta">@Target(&#123;ElementType.METHOD, ElementType.TYPE&#125;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="meta">@interface</span> RedisLockAnnotation &#123;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 特定参数识别，默认取第 0 个下标</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">lockFiled</span><span class="params">()</span> <span class="keyword">default</span> 0</span>;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 超时重试次数</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">tryCount</span><span class="params">()</span> <span class="keyword">default</span> 3</span>;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 自定义加锁类型</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function">RedisLockTypeEnum <span class="title">typeEnum</span><span class="params">()</span></span>;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 释放时间，秒 s 单位</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">long</span> <span class="title">lockTime</span><span class="params">()</span> <span class="keyword">default</span> 30</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="（4）-核心切面拦截的操作"><a href="#（4）-核心切面拦截的操作" class="headerlink" title="（4） 核心切面拦截的操作"></a><strong>（4）</strong> <strong>核心切面拦截的操作</strong></h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@annotation</span> 中的路径表示拦截特定注解</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@Pointcut(&quot;@annotation(cn.sevenyuan.demo.aop.lock.RedisLockAnnotation)&quot;)</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">redisLockPC</span><span class="params">()</span> </span>&#123;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Around(value = &quot;redisLockPC()&quot;)</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> Object <span class="title">around</span><span class="params">(ProceedingJoinPoint pjp)</span> <span class="keyword">throws</span> Throwable </span>&#123;</span><br><span class="line">    <span class="comment">// 解析参数</span></span><br><span class="line">    Method method = resolveMethod(pjp);</span><br><span class="line">    RedisLockAnnotation annotation = method.getAnnotation(RedisLockAnnotation.class);</span><br><span class="line">    RedisLockTypeEnum typeEnum = annotation.typeEnum();</span><br><span class="line">    Object[] params = pjp.getArgs();</span><br><span class="line">    String ukString = params[annotation.lockFiled()].toString();</span><br><span class="line">    <span class="comment">// 省略很多参数校验和判空</span></span><br><span class="line">    String businessKey = typeEnum.getUniqueKey(ukString);</span><br><span class="line">    String uniqueValue = UUID.randomUUID().toString();</span><br><span class="line">    <span class="comment">// 加锁</span></span><br><span class="line">    Object result = <span class="keyword">null</span>;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="keyword">boolean</span> isSuccess = redisTemplate.opsForValue().setIfAbsent(businessKey, uniqueValue);</span><br><span class="line">        <span class="keyword">if</span> (!isSuccess) &#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> Exception(<span class="string">&quot;You can&#x27;t do it，because another has get the lock =-=&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        redisTemplate.expire(businessKey, annotation.lockTime(), TimeUnit.SECONDS);</span><br><span class="line">        Thread currentThread = Thread.currentThread();</span><br><span class="line">        <span class="comment">// 将本次 Task 信息加入「延时」队列中</span></span><br><span class="line">        holderList.add(<span class="keyword">new</span> RedisLockDefinitionHolder(businessKey, annotation.lockTime(), System.currentTimeMillis(),</span><br><span class="line">                currentThread, annotation.tryCount()));</span><br><span class="line">        <span class="comment">// 执行业务操作</span></span><br><span class="line">        result = pjp.proceed();</span><br><span class="line">        <span class="comment">// 线程被中断，抛出异常，中断此次请求</span></span><br><span class="line">        <span class="keyword">if</span> (currentThread.isInterrupted()) &#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> InterruptedException(<span class="string">&quot;You had been interrupted =-=&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125; <span class="keyword">catch</span> (InterruptedException e ) &#123;</span><br><span class="line">        log.error(<span class="string">&quot;Interrupt exception, rollback transaction&quot;</span>, e);</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> Exception(<span class="string">&quot;Interrupt exception, please send request again&quot;</span>);</span><br><span class="line">    &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">        log.error(<span class="string">&quot;has some error, please check again&quot;</span>, e);</span><br><span class="line">    &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">        <span class="comment">// 请求结束后，强制删掉 key，释放锁</span></span><br><span class="line">        redisTemplate.delete(businessKey);</span><br><span class="line">        log.info(<span class="string">&quot;release the lock, businessKey is [&quot;</span> + businessKey + <span class="string">&quot;]&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> result;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="（5）-延时操作"><a href="#（5）-延时操作" class="headerlink" title="（5） 延时操作"></a><strong>（5） 延时操作</strong></h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 扫描的任务队列</span></span><br><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> ConcurrentLinkedQueue&lt;RedisLockDefinitionHolder&gt; holderList = <span class="keyword">new</span> ConcurrentLinkedQueue();</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 线程池，维护keyAliveTime</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> ScheduledExecutorService SCHEDULER = <span class="keyword">new</span> ScheduledThreadPoolExecutor(<span class="number">1</span>,</span><br><span class="line">        <span class="keyword">new</span> BasicThreadFactory.Builder().namingPattern(<span class="string">&quot;redisLock-schedule-pool&quot;</span>).daemon(<span class="keyword">true</span>).build());</span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// 两秒执行一次「续时」操作</span></span><br><span class="line">    SCHEDULER.scheduleAtFixedRate(() -&gt; &#123;</span><br><span class="line">        <span class="comment">// 这里记得加 try-catch，否者报错后定时任务将不会再执行=-=</span></span><br><span class="line">        Iterator&lt;RedisLockDefinitionHolder&gt; iterator = holderList.iterator();</span><br><span class="line">        <span class="keyword">while</span> (iterator.hasNext()) &#123;</span><br><span class="line">            RedisLockDefinitionHolder holder = iterator.next();</span><br><span class="line">            <span class="comment">// 判空</span></span><br><span class="line">            <span class="keyword">if</span> (holder == <span class="keyword">null</span>) &#123;</span><br><span class="line">                iterator.remove();</span><br><span class="line">                <span class="keyword">continue</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">// 判断 key 是否还有效，无效的话进行移除</span></span><br><span class="line">            <span class="keyword">if</span> (redisTemplate.opsForValue().get(holder.getBusinessKey()) == <span class="keyword">null</span>) &#123;</span><br><span class="line">                iterator.remove();</span><br><span class="line">                <span class="keyword">continue</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">// 超时重试次数，超过时给线程设定中断</span></span><br><span class="line">            <span class="keyword">if</span> (holder.getCurrentCount() &gt; holder.getTryCount()) &#123;</span><br><span class="line">                holder.getCurrentTread().interrupt();</span><br><span class="line">                iterator.remove();</span><br><span class="line">                <span class="keyword">continue</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">// 判断是否进入最后三分之一时间</span></span><br><span class="line">            <span class="keyword">long</span> curTime = System.currentTimeMillis();</span><br><span class="line">            <span class="keyword">boolean</span> shouldExtend = (holder.getLastModifyTime() + holder.getModifyPeriod()) &lt;= curTime;</span><br><span class="line">            <span class="keyword">if</span> (shouldExtend) &#123;</span><br><span class="line">                holder.setLastModifyTime(curTime);</span><br><span class="line">                redisTemplate.expire(holder.getBusinessKey(), holder.getLockTime(), TimeUnit.SECONDS);</span><br><span class="line">                log.info(<span class="string">&quot;businessKey : [&quot;</span> + holder.getBusinessKey() + <span class="string">&quot;], try count : &quot;</span> + holder.getCurrentCount());</span><br><span class="line">                holder.setCurrentCount(holder.getCurrentCount() + <span class="number">1</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;, <span class="number">0</span>, <span class="number">2</span>, TimeUnit.SECONDS);</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="4、数据库乐观锁与悲观锁"><a href="#4、数据库乐观锁与悲观锁" class="headerlink" title="4、数据库乐观锁与悲观锁"></a>4、数据库乐观锁与悲观锁</h1><h4 id="悲观锁"><a href="#悲观锁" class="headerlink" title="悲观锁"></a>悲观锁</h4><p>总是假设最坏的情况，每次去拿数据的时候都认为别人会修改，所以每次在拿数据的时候都会上锁，这样别人想拿这个数据就会阻塞直到它拿到锁（<strong>共享资源每次只给一个线程使用，其它线程阻塞，用完后再把资源转让给其它线程</strong>）。传统的关系型数据库里边就用到了很多这种锁机制，比如行锁，表锁等，读锁，写锁等，都是在做操作之前先上锁。Java中<code>synchronized</code>和<code>ReentrantLock</code> <code>redis分布式锁</code>等独占锁就是悲观锁思想的实现。</p>
+<h4 id="乐观锁"><a href="#乐观锁" class="headerlink" title="乐观锁"></a>乐观锁</h4><p>总是假设最好的情况，每次去拿数据的时候都认为别人不会修改，所以不会上锁，但是在更新的时候会判断一下在此期间别人有没有去更新这个数据，可以使用版本号机制和CAS算法实现。<strong>乐观锁适用于多读的应用类型，这样可以提高吞吐量</strong>，像数据库提供的类似于<strong>write_condition机制</strong>，其实都是提供的乐观锁。在Java中<code>java.util.concurrent.atomic</code>包下面的原子变量类就是使用了乐观锁的一种实现方式<strong>CAS</strong>实现的。</p>
+<h3 id="乐观锁常见的两种实现方式"><a href="#乐观锁常见的两种实现方式" class="headerlink" title="乐观锁常见的两种实现方式"></a>乐观锁常见的两种实现方式</h3><blockquote>
+<p><strong>乐观锁一般会使用版本号机制或CAS算法实现。</strong></p>
+</blockquote>
+<h4 id="1-版本号机制"><a href="#1-版本号机制" class="headerlink" title="1. 版本号机制"></a>1. 版本号机制</h4><p>一般是在数据表中加上一个数据版本号version字段，表示数据被修改的次数，当数据被修改时，version值会加一。当线程A要更新数据值时，在读取数据的同时也会读取version值，在提交更新时，若刚才读取到的version值为当前数据库中的version值相等时才更新，否则重试更新操作，直到更新成功。</p>
+<p><strong>举一个简单的例子：</strong> 假设数据库中帐户信息表中有一个 version 字段，当前值为 1 ；而当前帐户余额字段（ balance ）为 $100 。</p>
+<ol>
+<li>操作员 A 此时将其读出（ version=1 ），并从其帐户余额中扣除 $50（ $100-$50 ）。</li>
+<li>在操作员 A 操作的过程中，操作员B 也读入此用户信息（ version=1 ），并从其帐户余额中扣除 $20 （ $100-$20 ）。</li>
+<li>操作员 A 完成了修改工作，将数据版本号加一（ version=2 ），连同帐户扣除后余额（ balance=$50 ），提交至数据库更新，此时由于提交数据版本大于数据库记录当前版本，数据被更新，数据库记录 version 更新为 2 。</li>
+<li>操作员 B 完成了操作，也将版本号加一（ version=2 ）试图向数据库提交数据（ balance=$80 ），但此时比对数据库记录版本时发现，操作员 B 提交的数据版本号为 2 ，数据库记录当前版本也为 2 ，不满足 “ 提交版本必须大于记录当前版本才能执行更新 “ 的乐观锁策略，因此，操作员 B 的提交被驳回。</li>
+</ol>
+<p>这样，就避免了操作员 B 用基于 version=1 的旧数据修改的结果覆盖操作员A 的操作结果的可能。</p>
+<h4 id="2-CAS算法"><a href="#2-CAS算法" class="headerlink" title="2. CAS算法"></a>2. CAS算法</h4><p>即<strong>compare and swap（比较与交换）</strong>，是一种有名的<strong>无锁算法</strong>。无锁编程，即不使用锁的情况下实现多线程之间的变量同步，也就是在没有线程被阻塞的情况下实现变量的同步，所以也叫非阻塞同步（Non-blocking Synchronization）。<strong>CAS算法</strong>涉及到三个操作数</p>
+<ul>
+<li>需要读写的内存值 V</li>
+<li>进行比较的值 A</li>
+<li>拟写入的新值 B</li>
+</ul>
+<p>当且仅当 V 的值等于 A时，CAS通过原子方式用新值B来更新V的值，否则不会执行任何操作（比较和替换是一个原子操作）。一般情况下是一个<strong>自旋操作</strong>，即<strong>不断的重试</strong>。</p>
+<h3 id="乐观锁的缺点"><a href="#乐观锁的缺点" class="headerlink" title="乐观锁的缺点"></a>乐观锁的缺点</h3><blockquote>
+<p>ABA 问题是乐观锁一个常见的问题</p>
+</blockquote>
+<h4 id="1-ABA-问题"><a href="#1-ABA-问题" class="headerlink" title="1 ABA 问题"></a>1 ABA 问题</h4><p>如果一个变量V初次读取的时候是A值，并且在准备赋值的时候检查到它仍然是A值，那我们就能说明它的值没有被其他线程修改过了吗？很明显是不能的，因为在这段时间它的值可能被改为其他值，然后又改回A，那CAS操作就会误认为它从来没有被修改过。这个问题被称为CAS操作的 <strong>“ABA”问题。</strong></p>
+<p>JDK 1.5 以后的 <code>AtomicStampedReference 类</code>就提供了此种能力，其中的 <code>compareAndSet 方法</code>就是首先检查当前引用是否等于预期引用，并且当前标志是否等于预期标志，如果全部相等，则以原子方式将该引用和该标志的值设置为给定的更新值。</p>
+<h4 id="2-循环时间长开销大"><a href="#2-循环时间长开销大" class="headerlink" title="2 循环时间长开销大"></a>2 循环时间长开销大</h4><p><strong>自旋CAS（也就是不成功就一直循环执行直到成功）如果长时间不成功，会给CPU带来非常大的执行开销。</strong> 如果JVM能支持处理器提供的pause指令那么效率会有一定的提升，pause指令有两个作用，第一它可以延迟流水线执行指令（de-pipeline）,使CPU不会消耗过多的执行资源，延迟的时间取决于具体实现的版本，在一些处理器上延迟时间是零。第二它可以避免在退出循环的时候因内存顺序冲突（memory order violation）而引起CPU流水线被清空（CPU pipeline flush），从而提高CPU的执行效率。</p>
+<h4 id="3-只能保证一个共享变量的原子操作"><a href="#3-只能保证一个共享变量的原子操作" class="headerlink" title="3 只能保证一个共享变量的原子操作"></a>3 只能保证一个共享变量的原子操作</h4><p>CAS 只对单个共享变量有效，当操作涉及跨多个共享变量时 CAS 无效。但是从 JDK 1.5开始，提供了<code>AtomicReference类</code>来保证引用对象之间的原子性，你可以把多个变量放在一个对象里来进行 CAS 操作.所以我们可以使用锁或者利用<code>AtomicReference类</code>把多个共享变量合并成一个共享变量来操作。</p>
+<h3 id="CAS与synchronized的使用情景"><a href="#CAS与synchronized的使用情景" class="headerlink" title="CAS与synchronized的使用情景"></a>CAS与synchronized的使用情景</h3><blockquote>
+<p><strong>简单的来说CAS适用于写比较少的情况下（多读场景，冲突一般较少），synchronized适用于写比较多的情况下（多写场景，冲突一般较多）</strong></p>
+</blockquote>
+<ol>
+<li>对于资源竞争较少（线程冲突较轻）的情况，使用synchronized同步锁进行线程阻塞和唤醒切换以及用户态内核态间的切换操作额外浪费消耗cpu资源；而CAS基于硬件实现，不需要进入内核，不需要切换线程，操作自旋几率较少，因此可以获得更高的性能。</li>
+<li>对于资源竞争严重（线程冲突严重）的情况，CAS自旋的概率会比较大，从而浪费更多的CPU资源，效率低于synchronized。</li>
+</ol>
+<p>补充： Java并发编程这个领域中synchronized关键字一直都是元老级的角色，很久之前很多人都会称它为 <strong>“重量级锁”</strong> 。但是，在JavaSE 1.6之后进行了主要包括为了减少获得锁和释放锁带来的性能消耗而引入的 <strong>偏向锁</strong> 和 <strong>轻量级锁</strong> 以及其它<strong>各种优化</strong>之后变得在某些情况下并不是那么重了。synchronized的底层实现主要依靠 <strong>Lock-Free</strong> 的队列，基本思路是 <strong>自旋后阻塞</strong>，<strong>竞争切换后继续竞争锁</strong>，<strong>稍微牺牲了公平性，但获得了高吞吐量</strong>。在线程冲突较少的情况下，可以获得和CAS类似的性能；而线程冲突严重的情况下，性能远高于CAS。</p>
+<h1 id="5-总结："><a href="#5-总结：" class="headerlink" title="5.总结："></a>5.总结：</h1><p>主要讨论了并发场景读写一致性问题，对于长耗时请求问题，还是不懂怎么解决。</p>
+]]></content>
+      <categories>
+        <category>学习</category>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>计算广告 - 在线广告概览</title>
+    <url>/2022/03/06/%E8%AE%A1%E7%AE%97%E5%B9%BF%E5%91%8A%20(2)/</url>
+    <content><![CDATA[<h3 id="1-模型"><a href="#1-模型" class="headerlink" title="1.模型"></a>1.模型</h3><p><img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202203061001702.png" alt="image-20220306100052375"></p>
+<span id="more"></span>
+
+<h3 id="11-3-1-在线分配问题"><a href="#11-3-1-在线分配问题" class="headerlink" title="11.3.1 在线分配问题"></a>11.3.1 在线分配问题</h3><p><img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202203061117646.png" alt="image-20220306111720187"></p>
+]]></content>
+      <categories>
+        <category>学习</category>
+        <category>智慧营销</category>
+      </categories>
+      <tags>
+        <tag>智慧营销</tag>
       </tags>
   </entry>
   <entry>
@@ -759,115 +748,126 @@
       </tags>
   </entry>
   <entry>
-    <title>并发/幂等/数据一致性问题</title>
-    <url>/2022/02/27/%E6%95%B0%E6%8D%AE%E4%B8%80%E8%87%B4%E6%80%A7%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<h1 id="1、幂等性"><a href="#1、幂等性" class="headerlink" title="1、幂等性"></a>1、幂等性</h1><p>幂等性是数学上的概念：F(F(x))=F(x)，用在接口上就是：多次重复请求，产生效果一致。</p>
-<p>比较典型的场景：支付接口，重复支付会导致多次扣钱；订单接口，同一个订单可能会多次创建。如果没有接口幂等性，则会产生数据一致性问题。</p>
-<p>在数据库中，常见操作包括：</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span>： 天然幂等，重复操作产生效果一致;</span><br><span class="line"></span><br><span class="line"><span class="keyword">DELETE</span>： 删除也是幂等,删除同一个多次效果一样;</span><br><span class="line"></span><br><span class="line"><span class="keyword">INSERT</span>： 非幂等操作,每次新增一条;</span><br><span class="line"></span><br><span class="line">UPDATE： a.直接更新某个值的,幂等;</span><br><span class="line">      ： b.更新累加操作的,非幂等;</span><br></pre></td></tr></table></figure>
-
+    <title>摄影笔记</title>
+    <url>/2022/02/04/%E6%91%84%E5%BD%B1%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<h2 id="01-了解数码相机"><a href="#01-了解数码相机" class="headerlink" title="01 了解数码相机"></a>01 了解数码相机</h2><h3 id="第1节-数码相机机身简介"><a href="#第1节-数码相机机身简介" class="headerlink" title="第1节 数码相机机身简介"></a>第1节 数码相机机身简介</h3><p><strong>单反相机</strong>工作时，光通过镜头进入机身，光线一分为二，一束光在反光镜上通过对焦机构进入五棱镜，之后再通过五棱镜到目镜里。通过光学取景器，可以取景、构图、对焦。另一束光传递到感应器，用于识别场景、测光和设定白平衡。按下快门时，反光镜抬起，快门帘打开，全部光线落在电子感光器上，被影像处理器处理后传输到储存卡中记录下来。</p>
 <span id="more"></span>
 
-<h1 id="2、RestFul规范"><a href="#2、RestFul规范" class="headerlink" title="2、RestFul规范"></a>2、RestFul规范</h1><h3 id="Create-类型的幂等"><a href="#Create-类型的幂等" class="headerlink" title="Create 类型的幂等"></a>Create 类型的幂等</h3><p>创建类型的 API，为了实现幂等性，常见的做法是使用一个 client-side generated deduplication token（客户端生成的唯一ID），在反复重试时使用同一个Token，便于服务端识别重复，如果发现重复，应按创建成功返回。</p>
-<h3 id="Update-类型的幂等"><a href="#Update-类型的幂等" class="headerlink" title="Update 类型的幂等"></a>Update 类型的幂等</h3><p>更新类型的 API，通常有唯一ID对需要更新的资源进行标示，以此可以保证幂等。</p>
-<p>对于“Delta”语义的操作，有以下几类方式确保幂等性：</p>
-<ol>
-<li>IncrementBy：基于某个数值增加</li>
-<li>SetNewTotal：设置新的总量</li>
-<li>使用 Deduplication Token 保证幂等</li>
-</ol>
-<p>这几种方式各有优缺点，需要根据场景选择合适的方式。</p>
-<h3 id="Delete-类型的幂等"><a href="#Delete-类型的幂等" class="headerlink" title="Delete 类型的幂等"></a>Delete 类型的幂等</h3><p>Delete的幂等性问题，往往在于一个对象被删除后，再次试图删除可能会由于数据无法被发现导致出错。这个行为一般来说也没什么问题，虽然严格意义上不幂等，但是也无副作用。</p>
-<h3 id="长耗时请求异步化"><a href="#长耗时请求异步化" class="headerlink" title="*** 长耗时请求异步化 ***"></a>*** 长耗时请求异步化 ***</h3><p>如果某个 API 方法需要很长时间才能完成，可以通过：</p>
-<ol>
-<li>在服务端异步启动任务，并返回 GUID 标示 “长时间运行的操作”资源</li>
-<li>客户端通过定时轮询 <em>/polling/{guid}，</em> 获取任务进行的状态。</li>
-<li>当任务完成/失败时，客户端可以获取到处理的结果/失败原因。</li>
-</ol>
-<h1 id="3、Redis分布式锁"><a href="#3、Redis分布式锁" class="headerlink" title="3、Redis分布式锁"></a>3、Redis分布式锁</h1><h2 id="设计方案："><a href="#设计方案：" class="headerlink" title="设计方案："></a><strong>设计方案：</strong></h2><ul>
-<li><p>拦截注解 @RedisLock，获取必要的参数</p>
-</li>
-<li><p>加锁操作</p>
-</li>
-<li><p>续时操作</p>
-</li>
-<li><p>结束业务，释放锁</p>
-</li>
-</ul>
-<h2 id="实操"><a href="#实操" class="headerlink" title="实操"></a>实操</h2><h4 id="（1）业务属性枚举设定"><a href="#（1）业务属性枚举设定" class="headerlink" title="（1）业务属性枚举设定"></a>（1）业务属性枚举设定</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">enum</span> <span class="title">RedisLockTypeEnum</span> </span>&#123;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 自定义 key 前缀</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    ONE(<span class="string">&quot;Business1&quot;</span>, <span class="string">&quot;Test1&quot;</span>),</span><br><span class="line">    </span><br><span class="line">    TWO(<span class="string">&quot;Business2&quot;</span>, <span class="string">&quot;Test2&quot;</span>);</span><br><span class="line">    <span class="keyword">private</span> String code;</span><br><span class="line">    <span class="keyword">private</span> String desc;</span><br><span class="line">    RedisLockTypeEnum(String code, String desc) &#123;</span><br><span class="line">        <span class="keyword">this</span>.code = code;</span><br><span class="line">        <span class="keyword">this</span>.desc = desc;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">getCode</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> code;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">getDesc</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> desc;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">getUniqueKey</span><span class="params">(String key)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> String.format(<span class="string">&quot;%s:%s&quot;</span>, <span class="keyword">this</span>.getCode(), key);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202202050340856.png" alt="image-20220205034025473" style="zoom:50%;" />
 
-<h4 id="（2）任务队列保存参数"><a href="#（2）任务队列保存参数" class="headerlink" title="（2）任务队列保存参数"></a><strong>（2）任务队列保存参数</strong></h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">RedisLockDefinitionHolder</span> </span>&#123;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 业务唯一 key</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> String businessKey;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 加锁时间 (秒 s)</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> Long lockTime;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 上次更新时间（ms）</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> Long lastModifyTime;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 保存当前线程</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> Thread currentTread;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 总共尝试次数</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> tryCount;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 当前尝试次数</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> currentCount;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 更新的时间周期（毫秒）,公式 = 加锁时间（转成毫秒） / 3</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> Long modifyPeriod;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">RedisLockDefinitionHolder</span><span class="params">(String businessKey, Long lockTime, Long lastModifyTime, Thread currentTread, <span class="keyword">int</span> tryCount)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.businessKey = businessKey;</span><br><span class="line">        <span class="keyword">this</span>.lockTime = lockTime;</span><br><span class="line">        <span class="keyword">this</span>.lastModifyTime = lastModifyTime;</span><br><span class="line">        <span class="keyword">this</span>.currentTread = currentTread;</span><br><span class="line">        <span class="keyword">this</span>.tryCount = tryCount;</span><br><span class="line">        <span class="keyword">this</span>.modifyPeriod = lockTime * <span class="number">1000</span> / <span class="number">3</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h4 id="（3）设定被拦截的注解名字"><a href="#（3）设定被拦截的注解名字" class="headerlink" title="（3）设定被拦截的注解名字"></a><strong>（3）设定被拦截的注解名字</strong></h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Retention(RetentionPolicy.RUNTIME)</span></span><br><span class="line"><span class="meta">@Target(&#123;ElementType.METHOD, ElementType.TYPE&#125;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="meta">@interface</span> RedisLockAnnotation &#123;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 特定参数识别，默认取第 0 个下标</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">lockFiled</span><span class="params">()</span> <span class="keyword">default</span> 0</span>;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 超时重试次数</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">tryCount</span><span class="params">()</span> <span class="keyword">default</span> 3</span>;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 自定义加锁类型</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function">RedisLockTypeEnum <span class="title">typeEnum</span><span class="params">()</span></span>;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 释放时间，秒 s 单位</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">long</span> <span class="title">lockTime</span><span class="params">()</span> <span class="keyword">default</span> 30</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="（4）-核心切面拦截的操作"><a href="#（4）-核心切面拦截的操作" class="headerlink" title="（4） 核心切面拦截的操作"></a><strong>（4）</strong> <strong>核心切面拦截的操作</strong></h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@annotation</span> 中的路径表示拦截特定注解</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@Pointcut(&quot;@annotation(cn.sevenyuan.demo.aop.lock.RedisLockAnnotation)&quot;)</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">redisLockPC</span><span class="params">()</span> </span>&#123;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Around(value = &quot;redisLockPC()&quot;)</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> Object <span class="title">around</span><span class="params">(ProceedingJoinPoint pjp)</span> <span class="keyword">throws</span> Throwable </span>&#123;</span><br><span class="line">    <span class="comment">// 解析参数</span></span><br><span class="line">    Method method = resolveMethod(pjp);</span><br><span class="line">    RedisLockAnnotation annotation = method.getAnnotation(RedisLockAnnotation.class);</span><br><span class="line">    RedisLockTypeEnum typeEnum = annotation.typeEnum();</span><br><span class="line">    Object[] params = pjp.getArgs();</span><br><span class="line">    String ukString = params[annotation.lockFiled()].toString();</span><br><span class="line">    <span class="comment">// 省略很多参数校验和判空</span></span><br><span class="line">    String businessKey = typeEnum.getUniqueKey(ukString);</span><br><span class="line">    String uniqueValue = UUID.randomUUID().toString();</span><br><span class="line">    <span class="comment">// 加锁</span></span><br><span class="line">    Object result = <span class="keyword">null</span>;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="keyword">boolean</span> isSuccess = redisTemplate.opsForValue().setIfAbsent(businessKey, uniqueValue);</span><br><span class="line">        <span class="keyword">if</span> (!isSuccess) &#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> Exception(<span class="string">&quot;You can&#x27;t do it，because another has get the lock =-=&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        redisTemplate.expire(businessKey, annotation.lockTime(), TimeUnit.SECONDS);</span><br><span class="line">        Thread currentThread = Thread.currentThread();</span><br><span class="line">        <span class="comment">// 将本次 Task 信息加入「延时」队列中</span></span><br><span class="line">        holderList.add(<span class="keyword">new</span> RedisLockDefinitionHolder(businessKey, annotation.lockTime(), System.currentTimeMillis(),</span><br><span class="line">                currentThread, annotation.tryCount()));</span><br><span class="line">        <span class="comment">// 执行业务操作</span></span><br><span class="line">        result = pjp.proceed();</span><br><span class="line">        <span class="comment">// 线程被中断，抛出异常，中断此次请求</span></span><br><span class="line">        <span class="keyword">if</span> (currentThread.isInterrupted()) &#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> InterruptedException(<span class="string">&quot;You had been interrupted =-=&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125; <span class="keyword">catch</span> (InterruptedException e ) &#123;</span><br><span class="line">        log.error(<span class="string">&quot;Interrupt exception, rollback transaction&quot;</span>, e);</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> Exception(<span class="string">&quot;Interrupt exception, please send request again&quot;</span>);</span><br><span class="line">    &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">        log.error(<span class="string">&quot;has some error, please check again&quot;</span>, e);</span><br><span class="line">    &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">        <span class="comment">// 请求结束后，强制删掉 key，释放锁</span></span><br><span class="line">        redisTemplate.delete(businessKey);</span><br><span class="line">        log.info(<span class="string">&quot;release the lock, businessKey is [&quot;</span> + businessKey + <span class="string">&quot;]&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> result;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p><strong>无反相机</strong>工作时，光线通过镜头落在电子感光元件上，被影像处理器处理后传输到储存卡中记录下来。与单反相机不同的是取景方式，无反相机没有反光镜，所以取景也是通过电子感光元件——传感器取景，图像最终呈现在电子取景器（EVF）或者液晶屏上，这一点就好像数码单反相机使用实时取景一样。</p>
+<img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202202050342083.png" alt="image-20220205034254951" style="zoom:50%;" />
 
 
 
-<h4 id="（5）-延时操作"><a href="#（5）-延时操作" class="headerlink" title="（5） 延时操作"></a><strong>（5） 延时操作</strong></h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 扫描的任务队列</span></span><br><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> ConcurrentLinkedQueue&lt;RedisLockDefinitionHolder&gt; holderList = <span class="keyword">new</span> ConcurrentLinkedQueue();</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 线程池，维护keyAliveTime</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> ScheduledExecutorService SCHEDULER = <span class="keyword">new</span> ScheduledThreadPoolExecutor(<span class="number">1</span>,</span><br><span class="line">        <span class="keyword">new</span> BasicThreadFactory.Builder().namingPattern(<span class="string">&quot;redisLock-schedule-pool&quot;</span>).daemon(<span class="keyword">true</span>).build());</span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// 两秒执行一次「续时」操作</span></span><br><span class="line">    SCHEDULER.scheduleAtFixedRate(() -&gt; &#123;</span><br><span class="line">        <span class="comment">// 这里记得加 try-catch，否者报错后定时任务将不会再执行=-=</span></span><br><span class="line">        Iterator&lt;RedisLockDefinitionHolder&gt; iterator = holderList.iterator();</span><br><span class="line">        <span class="keyword">while</span> (iterator.hasNext()) &#123;</span><br><span class="line">            RedisLockDefinitionHolder holder = iterator.next();</span><br><span class="line">            <span class="comment">// 判空</span></span><br><span class="line">            <span class="keyword">if</span> (holder == <span class="keyword">null</span>) &#123;</span><br><span class="line">                iterator.remove();</span><br><span class="line">                <span class="keyword">continue</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">// 判断 key 是否还有效，无效的话进行移除</span></span><br><span class="line">            <span class="keyword">if</span> (redisTemplate.opsForValue().get(holder.getBusinessKey()) == <span class="keyword">null</span>) &#123;</span><br><span class="line">                iterator.remove();</span><br><span class="line">                <span class="keyword">continue</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">// 超时重试次数，超过时给线程设定中断</span></span><br><span class="line">            <span class="keyword">if</span> (holder.getCurrentCount() &gt; holder.getTryCount()) &#123;</span><br><span class="line">                holder.getCurrentTread().interrupt();</span><br><span class="line">                iterator.remove();</span><br><span class="line">                <span class="keyword">continue</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">// 判断是否进入最后三分之一时间</span></span><br><span class="line">            <span class="keyword">long</span> curTime = System.currentTimeMillis();</span><br><span class="line">            <span class="keyword">boolean</span> shouldExtend = (holder.getLastModifyTime() + holder.getModifyPeriod()) &lt;= curTime;</span><br><span class="line">            <span class="keyword">if</span> (shouldExtend) &#123;</span><br><span class="line">                holder.setLastModifyTime(curTime);</span><br><span class="line">                redisTemplate.expire(holder.getBusinessKey(), holder.getLockTime(), TimeUnit.SECONDS);</span><br><span class="line">                log.info(<span class="string">&quot;businessKey : [&quot;</span> + holder.getBusinessKey() + <span class="string">&quot;], try count : &quot;</span> + holder.getCurrentCount());</span><br><span class="line">                holder.setCurrentCount(holder.getCurrentCount() + <span class="number">1</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;, <span class="number">0</span>, <span class="number">2</span>, TimeUnit.SECONDS);</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-
-<h1 id="4、数据库乐观锁与悲观锁"><a href="#4、数据库乐观锁与悲观锁" class="headerlink" title="4、数据库乐观锁与悲观锁"></a>4、数据库乐观锁与悲观锁</h1><h4 id="悲观锁"><a href="#悲观锁" class="headerlink" title="悲观锁"></a>悲观锁</h4><p>总是假设最坏的情况，每次去拿数据的时候都认为别人会修改，所以每次在拿数据的时候都会上锁，这样别人想拿这个数据就会阻塞直到它拿到锁（<strong>共享资源每次只给一个线程使用，其它线程阻塞，用完后再把资源转让给其它线程</strong>）。传统的关系型数据库里边就用到了很多这种锁机制，比如行锁，表锁等，读锁，写锁等，都是在做操作之前先上锁。Java中<code>synchronized</code>和<code>ReentrantLock</code> <code>redis分布式锁</code>等独占锁就是悲观锁思想的实现。</p>
-<h4 id="乐观锁"><a href="#乐观锁" class="headerlink" title="乐观锁"></a>乐观锁</h4><p>总是假设最好的情况，每次去拿数据的时候都认为别人不会修改，所以不会上锁，但是在更新的时候会判断一下在此期间别人有没有去更新这个数据，可以使用版本号机制和CAS算法实现。<strong>乐观锁适用于多读的应用类型，这样可以提高吞吐量</strong>，像数据库提供的类似于<strong>write_condition机制</strong>，其实都是提供的乐观锁。在Java中<code>java.util.concurrent.atomic</code>包下面的原子变量类就是使用了乐观锁的一种实现方式<strong>CAS</strong>实现的。</p>
-<h3 id="乐观锁常见的两种实现方式"><a href="#乐观锁常见的两种实现方式" class="headerlink" title="乐观锁常见的两种实现方式"></a>乐观锁常见的两种实现方式</h3><blockquote>
-<p><strong>乐观锁一般会使用版本号机制或CAS算法实现。</strong></p>
+<p><strong>传感器尺寸</strong>，又被称为画幅。1934年，柯达公司引入了一次性的胶卷盒，称为135胶卷，1表示一次性，35表示采用了35mm电影胶片。在刚刚进入数码时代的时候，相机厂商们都想做拥有35mm胶片大小传感器的单反相机，这个尺寸被大家称为<strong>35mm全画幅</strong>。</p>
+<p>但是大家都遇到一个问题——贵！一旦采用，相机就没几个人能买得起了。从此单反相机中就有了两大传感器尺寸标准——全画幅和APS-C尺寸(23.5mm×15.6mm)。</p>
+<h3 id="第2节-镜头简介"><a href="#第2节-镜头简介" class="headerlink" title="第2节 镜头简介"></a>第2节 镜头简介</h3><blockquote>
+<p>佳能的EF 70-200mm f/2.8L IS USM II</p>
 </blockquote>
-<h4 id="1-版本号机制"><a href="#1-版本号机制" class="headerlink" title="1. 版本号机制"></a>1. 版本号机制</h4><p>一般是在数据表中加上一个数据版本号version字段，表示数据被修改的次数，当数据被修改时，version值会加一。当线程A要更新数据值时，在读取数据的同时也会读取version值，在提交更新时，若刚才读取到的version值为当前数据库中的version值相等时才更新，否则重试更新操作，直到更新成功。</p>
-<p><strong>举一个简单的例子：</strong> 假设数据库中帐户信息表中有一个 version 字段，当前值为 1 ；而当前帐户余额字段（ balance ）为 $100 。</p>
-<ol>
-<li>操作员 A 此时将其读出（ version=1 ），并从其帐户余额中扣除 $50（ $100-$50 ）。</li>
-<li>在操作员 A 操作的过程中，操作员B 也读入此用户信息（ version=1 ），并从其帐户余额中扣除 $20 （ $100-$20 ）。</li>
-<li>操作员 A 完成了修改工作，将数据版本号加一（ version=2 ），连同帐户扣除后余额（ balance=$50 ），提交至数据库更新，此时由于提交数据版本大于数据库记录当前版本，数据被更新，数据库记录 version 更新为 2 。</li>
-<li>操作员 B 完成了操作，也将版本号加一（ version=2 ）试图向数据库提交数据（ balance=$80 ），但此时比对数据库记录版本时发现，操作员 B 提交的数据版本号为 2 ，数据库记录当前版本也为 2 ，不满足 “ 提交版本必须大于记录当前版本才能执行更新 “ 的乐观锁策略，因此，操作员 B 的提交被驳回。</li>
-</ol>
-<p>这样，就避免了操作员 B 用基于 version=1 的旧数据修改的结果覆盖操作员A 的操作结果的可能。</p>
-<h4 id="2-CAS算法"><a href="#2-CAS算法" class="headerlink" title="2. CAS算法"></a>2. CAS算法</h4><p>即<strong>compare and swap（比较与交换）</strong>，是一种有名的<strong>无锁算法</strong>。无锁编程，即不使用锁的情况下实现多线程之间的变量同步，也就是在没有线程被阻塞的情况下实现变量的同步，所以也叫非阻塞同步（Non-blocking Synchronization）。<strong>CAS算法</strong>涉及到三个操作数</p>
-<ul>
-<li>需要读写的内存值 V</li>
-<li>进行比较的值 A</li>
-<li>拟写入的新值 B</li>
-</ul>
-<p>当且仅当 V 的值等于 A时，CAS通过原子方式用新值B来更新V的值，否则不会执行任何操作（比较和替换是一个原子操作）。一般情况下是一个<strong>自旋操作</strong>，即<strong>不断的重试</strong>。</p>
-<h3 id="乐观锁的缺点"><a href="#乐观锁的缺点" class="headerlink" title="乐观锁的缺点"></a>乐观锁的缺点</h3><blockquote>
-<p>ABA 问题是乐观锁一个常见的问题</p>
+<p>1．镜头种类</p>
+<p>EF表示EOS相机卡口的镜头。其他的还有EF-S只适用于佳能APS-C画幅EOS相机的镜头；MP-E放大倍率在1倍以上的微距摄影镜头；TS-E移轴镜头。</p>
+<p>2．焦距</p>
+<p>70-200mm表示这是一个广角端为70mm，长焦端为200mm的变焦镜头。如果只有一个数值那么就是定焦镜头。</p>
+<p>3．最大光圈</p>
+<p>f/2.8表示这支镜头全焦段的最大光圈是恒定的2.8。有的镜头会有两个数值，分别表示广角端和长焦端的最大光圈。最大光圈表示在这个焦距的时候你可以使用的光圈最大有多大，如果想缩小光圈，自然也是可以的。</p>
+<p>4．特性</p>
+<p>L表示佳能的专业级镜头，同时镜头前端也会有红圈。IS表示具有防抖功能。USM表示具有超声波马达。II表示这是这个镜头的第二代产品。</p>
+<p><strong>总结：光圈越大，单位时间内镜头的通光能力越强，这支镜头往往也越好</strong></p>
+<h2 id="02-焦距与取景"><a href="#02-焦距与取景" class="headerlink" title="02 焦距与取景"></a>02 焦距与取景</h2><p> <strong>鱼眼 &lt; 超广角（28mm以下）&lt; 广角 &lt; 微距 &lt; 长焦 &lt; 超长焦（300mm以上）</strong></p>
+<p><strong>24mm和28mm</strong></p>
+<p>这就是一个标准的广角焦距，主要就是用来拍摄风景。</p>
+<p><strong>35mm</strong></p>
+<p>有人说这是大师的焦距，也被称为人文眼。简单地说就是拍摄人文最好的焦距。拍摄人文照片的时候需要主体和背景环境的关系，所以小广角的35mm既能够将背景囊括进来，又能突出人与环境的关系，这是拍摄人文的关键</p>
+<p><strong>50mm</strong></p>
+<p>这被称为标准镜头，拍摄人文、人像都是很好的，也是大师的焦距。</p>
+<p><strong>85mm</strong></p>
+<p>这是一个拍摄人像的焦距。能有很好的背景虚化效果，很好的画面裁切能力，还能保持和模特之间适当的交流距离。主要用于模特大头照或者特写。</p>
+<p><strong>等效焦距</strong></p>
+<p>传感器有大有小，会对这些实际焦距取景范围有截取，造成拍摄的视角与实际焦距原本应该有的视角不相同。</p>
+<img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202202050410367.png" alt="image-20220205041015149" style="zoom:50%;" />
+
+
+
+<p>实际上每个不同尺寸的传感器都有一个系数与之相对应，这个系数乘以实际焦距之后，就是等效焦距了。这个系数就叫<strong>镜头转换系数。</strong></p>
+<p>全画幅：<strong>1.0</strong>x55mm=55mm</p>
+<p>APS-C：<strong>1.5</strong>x55mm=82.5mm</p>
+<h2 id="03-影调"><a href="#03-影调" class="headerlink" title="03 影调"></a>03 影调</h2><h3 id="第1节-什么是影调"><a href="#第1节-什么是影调" class="headerlink" title="第1节 什么是影调"></a>第1节 什么是影调</h3><p>那些本身就明亮的物体应该用高调表现；那些本身就黑的物体应该用低调表现。</p>
+<p>本身就是高调的物体：雪、白馒头、白衣服、白纸、棉花……</p>
+<p>本身就是低调的物体：煤炭、黑色皮鞋、黑色的衣服、夜晚的天空……</p>
+<p><strong>大多数照片都是中间调，少数场景需要用高调或者低调来表现。</strong></p>
+<h3 id="第2节-影调的量化"><a href="#第2节-影调的量化" class="headerlink" title="第2节 影调的量化"></a>第2节 影调的量化</h3><h4 id="曝光补偿-gt-gt-gt-gt"><a href="#曝光补偿-gt-gt-gt-gt" class="headerlink" title="曝光补偿&gt;&gt;&gt;&gt;"></a><strong>曝光补偿&gt;&gt;&gt;&gt;</strong></h4><p>其实在相机中有一个非常标准的量化体系——<strong>曝光补偿</strong>。</p>
+<p>曝光补偿的意思就是，相机给你的曝光就是中间调的，你拍的东西亮呢，就往亮了补偿补偿。你拍的东西暗呢，就往暗了补偿补偿。中间调就不补偿。</p>
+<h4 id="测光系统-gt-gt-gt-gt"><a href="#测光系统-gt-gt-gt-gt" class="headerlink" title="测光系统&gt;&gt;&gt;&gt;"></a><strong>测光系统&gt;&gt;&gt;&gt;</strong></h4><p>相机的测光系统主要可以分为三种：</p>
+<p><strong>智能测光</strong></p>
+<p>每个厂商叫的名称不同，但是一般都是默认项。推荐使用。</p>
+<p><strong>中心重点平均测光</strong></p>
+<p>就是重点考虑中心主体的曝光，然后加权其他背景的曝光。这曾经是很多人最常用的测光方式。但是后来的评价测光、矩阵测光、多重测光等更智能的方式出来之后，用的人逐渐少了。所以新手们，我觉得这个测光方式学不学都可以。</p>
+<p><strong>点测光</strong></p>
+<p>就是对画面中的一点测光，这个点一般很小，画面中1%～3%的面积，越高级的相机测光面积越小。在复杂光线环境的时候拍一个姑娘，最重要的就是保证姑娘脸是曝光正常的，所以对这姑娘的脸点测光，这个曝光参数就足够保证姑娘脸是好的。</p>
+<h2 id="04-曝光补偿三要素"><a href="#04-曝光补偿三要素" class="headerlink" title="04 曝光补偿三要素"></a>04 曝光补偿三要素</h2><p>照片的影调=光线强度×<strong>光圈×快门×感光度</strong></p>
+<img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202202050428814.png" alt="image-20220205042848707" style="zoom:50%;" />
+
+<p>如果快门速度不变，光圈开大1挡，同时感光度降低1挡得到的照片的明暗程度是相同的，反之亦然。这就是<strong>互易律</strong>。</p>
+<h2 id="05-相机模式"><a href="#05-相机模式" class="headerlink" title="05 相机模式"></a>05 相机模式</h2><p>一般来说摄影师的相机都有以下三种模式：</p>
+<p><strong>Av、A挡 光圈优先</strong></p>
+<p>摄影师设定影调（曝光补偿）和光圈，相机会自动选择合适的快门速度。</p>
+<p><strong>Tv、S挡 快门优先</strong></p>
+<p>摄影师设定影调（曝光补偿）和快门，相机会自动选择合适的光圈。</p>
+<p><strong>M手动（手动控制光圈、快门）</strong></p>
+<p>摄影师设定光圈、快门，相机告诉你影调将会是如何。</p>
+<p>使用M挡手动曝光情况都是你无法使用相机测光的时候，其实等于你放弃了相机测光。所以请记住，往往在你无法使用相机测光的时候，才用M挡。</p>
+<h2 id="06-光线"><a href="#06-光线" class="headerlink" title="06 光线"></a>06 光线</h2><h3 id="第1节-光线的特性"><a href="#第1节-光线的特性" class="headerlink" title="第1节 光线的特性"></a>第1节 光线的特性</h3><p><strong>顺光</strong></p>
+<p>其实顺光不应过多地运用在人像摄影中。因为正面直射的光会消除面部的一切影子，使得面部趋于平面化，所以又叫平光。</p>
+<p><strong>侧光</strong></p>
+<p>侧光一般用在人物摄影的造型上。相比顺光会将人物拍成“大白脸”，侧光能够让人物的面部呈现立体效果。</p>
+<p><strong>逆光</strong></p>
+<p>逆光是很多摄影师进行创作的用光。使用逆光拍摄的时候，往往会有雾蒙蒙的感觉，并形成暖色调。</p>
+<p><strong>色温</strong></p>
+<p>蓝色是冷色，但是色温高；红色是暖色，但是色温低。</p>
+<p>日光的色温大概是5500K。白纸放到日光下就是白色的。</p>
+<p><strong>白平衡</strong></p>
+<p>白平衡是相机机内处理的结果。说白了就是相机自己的后期。所以如果你拍摄RAW格式照片的话，可以在计算机中重新定义白平衡，重新调节。理论上是没有画质损失的（尽管实际可能有，但是也非常小，可忽略）。</p>
+<blockquote>
+<p>所以AWB+RAW拍摄，是一个既方便，又保险的组合。</p>
 </blockquote>
-<h4 id="1-ABA-问题"><a href="#1-ABA-问题" class="headerlink" title="1 ABA 问题"></a>1 ABA 问题</h4><p>如果一个变量V初次读取的时候是A值，并且在准备赋值的时候检查到它仍然是A值，那我们就能说明它的值没有被其他线程修改过了吗？很明显是不能的，因为在这段时间它的值可能被改为其他值，然后又改回A，那CAS操作就会误认为它从来没有被修改过。这个问题被称为CAS操作的 <strong>“ABA”问题。</strong></p>
-<p>JDK 1.5 以后的 <code>AtomicStampedReference 类</code>就提供了此种能力，其中的 <code>compareAndSet 方法</code>就是首先检查当前引用是否等于预期引用，并且当前标志是否等于预期标志，如果全部相等，则以原子方式将该引用和该标志的值设置为给定的更新值。</p>
-<h4 id="2-循环时间长开销大"><a href="#2-循环时间长开销大" class="headerlink" title="2 循环时间长开销大"></a>2 循环时间长开销大</h4><p><strong>自旋CAS（也就是不成功就一直循环执行直到成功）如果长时间不成功，会给CPU带来非常大的执行开销。</strong> 如果JVM能支持处理器提供的pause指令那么效率会有一定的提升，pause指令有两个作用，第一它可以延迟流水线执行指令（de-pipeline）,使CPU不会消耗过多的执行资源，延迟的时间取决于具体实现的版本，在一些处理器上延迟时间是零。第二它可以避免在退出循环的时候因内存顺序冲突（memory order violation）而引起CPU流水线被清空（CPU pipeline flush），从而提高CPU的执行效率。</p>
-<h4 id="3-只能保证一个共享变量的原子操作"><a href="#3-只能保证一个共享变量的原子操作" class="headerlink" title="3 只能保证一个共享变量的原子操作"></a>3 只能保证一个共享变量的原子操作</h4><p>CAS 只对单个共享变量有效，当操作涉及跨多个共享变量时 CAS 无效。但是从 JDK 1.5开始，提供了<code>AtomicReference类</code>来保证引用对象之间的原子性，你可以把多个变量放在一个对象里来进行 CAS 操作.所以我们可以使用锁或者利用<code>AtomicReference类</code>把多个共享变量合并成一个共享变量来操作。</p>
-<h3 id="CAS与synchronized的使用情景"><a href="#CAS与synchronized的使用情景" class="headerlink" title="CAS与synchronized的使用情景"></a>CAS与synchronized的使用情景</h3><blockquote>
-<p><strong>简单的来说CAS适用于写比较少的情况下（多读场景，冲突一般较少），synchronized适用于写比较多的情况下（多写场景，冲突一般较多）</strong></p>
-</blockquote>
-<ol>
-<li>对于资源竞争较少（线程冲突较轻）的情况，使用synchronized同步锁进行线程阻塞和唤醒切换以及用户态内核态间的切换操作额外浪费消耗cpu资源；而CAS基于硬件实现，不需要进入内核，不需要切换线程，操作自旋几率较少，因此可以获得更高的性能。</li>
-<li>对于资源竞争严重（线程冲突严重）的情况，CAS自旋的概率会比较大，从而浪费更多的CPU资源，效率低于synchronized。</li>
-</ol>
-<p>补充： Java并发编程这个领域中synchronized关键字一直都是元老级的角色，很久之前很多人都会称它为 <strong>“重量级锁”</strong> 。但是，在JavaSE 1.6之后进行了主要包括为了减少获得锁和释放锁带来的性能消耗而引入的 <strong>偏向锁</strong> 和 <strong>轻量级锁</strong> 以及其它<strong>各种优化</strong>之后变得在某些情况下并不是那么重了。synchronized的底层实现主要依靠 <strong>Lock-Free</strong> 的队列，基本思路是 <strong>自旋后阻塞</strong>，<strong>竞争切换后继续竞争锁</strong>，<strong>稍微牺牲了公平性，但获得了高吞吐量</strong>。在线程冲突较少的情况下，可以获得和CAS类似的性能；而线程冲突严重的情况下，性能远高于CAS。</p>
-<h1 id="5-总结："><a href="#5-总结：" class="headerlink" title="5.总结："></a>5.总结：</h1><p>主要讨论了并发场景读写一致性问题，对于长耗时请求问题，还是不懂怎么解决。</p>
+<h3 id="第2节-布光方法"><a href="#第2节-布光方法" class="headerlink" title="第2节 布光方法"></a>第2节 布光方法</h3><img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202202050444659.png" alt="image-20220205044427503" style="zoom:50%;" />
+
+<p><strong>伦勃朗布光法</strong>有几个特点：</p>
+<p>1．四分之三面部对着相机。让人物面向相机，缓慢变换角度，直到看不到一侧的耳朵为止。</p>
+<p>2．架设主灯，强度要能使人面部正确曝光，方向为与人物面部方向同一侧45°左右。注意，要在人物面部形成三角形光区（以鼻子阴影、面颊阴影、下眼线为边长，围成的三角形亮区）。</p>
+<p>3．架设辅灯。将面部阴影处柔化，并表现出细节。一般会使用4:1或者3:1的光比。</p>
+<p>4．架设背景灯，打亮背景。如果有可能从人物斜后方放置一束比较集中的光，打在人物轮廓上，形成轮廓光。如下图所示：</p>
+<img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202202050446673.png" alt="image-20220205044609555" style="zoom:50%;" />
+
+
+
+<p>伦勃朗布光法是适用于男性的。那么再提供一个适用于女性摄影的布光法——<strong>蝶形布光法</strong>。</p>
+<p><strong>蝶形布光法</strong>的名字来源于布光法中的一个特点。类似于伦勃朗布光法中要找三角形光区，蝶形布光法就是要找这个蝶形。使用蝶形布光法的时候，主灯放置在人物正前方，但是处于比较高的位置。这与顶光不同。蝶形布光法的主灯是从上斜射下来的。这样在人物的鼻子下方就会形成一个阴影。随着主灯高度变化，阴影会在鼻子下面形成一个蝴蝶的形状。这时主灯的位置就可以确定了。</p>
+<h2 id="07-摄影中的虚实"><a href="#07-摄影中的虚实" class="headerlink" title="07 摄影中的虚实"></a>07 摄影中的虚实</h2><p><strong>前帘同步闪光</strong>就是：</p>
+<p>前帘开启之后（也是曝光的开始），就闪光，闪完了之后等曝光时间一到后帘关闭（曝光结束）。这样就是一辆车移动，你拍摄车。开启快门就闪光了，车被闪光灯定在了画面中，然后长曝光继续曝，车往前走拉车线。这样就变成了车在后面，车线在前面的奇葩照片。</p>
+<img src="C:/Users/Yoon/AppData/Roaming/Typora/typora-user-images/image-20220205045502246.png" alt="image-20220205045502246" style="zoom:25%;" />
+
+
+
+<p><strong>后帘同步闪光</strong>就是：</p>
+<p>前帘开启之后（也是曝光的开始），先踏踏实实曝着光。然后闪光灯闪了一下，定格画面，随即后帘关闭（曝光结束）。这样一辆车移动，你拍摄车。开启快门，先拉车线，然后马上快门关闭了，闪光灯突然把车定格住。就变成了车在前面，车线在后面的好画面了。</p>
+<img src="C:/Users/Yoon/AppData/Roaming/Typora/typora-user-images/image-20220205045429391.png" alt="image-20220205045429391" style="zoom:25%;" />
+
+<h2 id="08-构图"><a href="#08-构图" class="headerlink" title="08 构图"></a>08 构图</h2><p><strong>居中构图</strong></p>
+<p><strong>三分法构图</strong></p>
+<p><strong>重复法</strong></p>
+<p><strong>引导线</strong></p>
+<img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202202050457311.png" alt="image-20220205045729070" style="zoom:25%;" />
+
+<p><strong>三角构图</strong></p>
 ]]></content>
       <categories>
-        <category>学习</category>
-        <category>Java</category>
+        <category>兴趣</category>
+        <category>读书</category>
       </categories>
       <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>计算广告 - 在线广告概览</title>
-    <url>/2022/03/06/%E8%AE%A1%E7%AE%97%E5%B9%BF%E5%91%8A%20(2)/</url>
-    <content><![CDATA[<h3 id="1-模型"><a href="#1-模型" class="headerlink" title="1.模型"></a>1.模型</h3><p><img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202203061001702.png" alt="image-20220306100052375"></p>
-<span id="more"></span>
-
-<h3 id="11-3-1-在线分配问题"><a href="#11-3-1-在线分配问题" class="headerlink" title="11.3.1 在线分配问题"></a>11.3.1 在线分配问题</h3><p><img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202203061117646.png" alt="image-20220306111720187"></p>
-]]></content>
-      <categories>
-        <category>学习</category>
-        <category>智慧营销</category>
-      </categories>
-      <tags>
-        <tag>智慧营销</tag>
+        <tag>读书笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -1059,17 +1059,59 @@
 <li> 想要启动多线程，必须调用start方法。 </li>
 <li> 一个线程对象只能调用一次start()方法启动，如果重复调用了，则将抛出以上 的异常“IllegalThreadStateException”。</li>
 </ol>
-<h4 id="实现-runnable-、callable-接口"><a href="#实现-runnable-、callable-接口" class="headerlink" title="实现 runnable 、callable 接口"></a>实现 runnable 、callable 接口</h4><p>1）</p>
-<h4 id="创建线程池"><a href="#创建线程池" class="headerlink" title="创建线程池"></a>创建线程池</h4><h3 id="2-线程池的创建方式"><a href="#2-线程池的创建方式" class="headerlink" title="2.线程池的创建方式"></a>2.线程池的创建方式</h3><ul>
-<li>通过 ExcutorService 创建</li>
-</ul>
-<p>JDK提供了线程池的顶级接口，ExcutorService,通过这个接口可以创建构造器，以此创建线程池</p>
+<h4 id="实现-runnable-、callable-接口"><a href="#实现-runnable-、callable-接口" class="headerlink" title="实现 runnable 、callable 接口"></a>实现 runnable 、callable 接口</h4><ol>
+<li><p>定义子类，实现Runnable接口。</p>
+</li>
+<li><p>子类中重写Runnable接口中的run方法。</p>
+</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestRunnable</span> <span class="keyword">implements</span> <span class="title">Runnable</span></span>&#123;</span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span></span>&#123;&#125;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li><p><strong>通过Thread类含参构造器创建线程对象。</strong> </p>
+</li>
+<li><p>将Runnable接口的子类对象作为实际参数传递给Thread类的构造器中。 </p>
+</li>
+<li><p>调用Thread类的start方法：开启线程，调用Runnable子类接口的run方法。</p>
+</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">TestRunnable test = <span class="keyword">new</span> TestRunnable();</span><br><span class="line"><span class="comment">//含参构造器,开启线程</span></span><br><span class="line">Thread(test.<span class="string">&quot;threadName&quot;</span>).start();</span><br></pre></td></tr></table></figure>
+
+
+
+<h5 id="-通过实现方式创建线程的好处"><a href="#-通过实现方式创建线程的好处" class="headerlink" title="** 通过实现方式创建线程的好处 **"></a>** 通过实现方式创建线程的好处 **</h5><p>​        避免了单继承的局限性 </p>
+<p>​        多个线程可以共享同一个接口实现类的对象，非常适合多个相同线 程来处理同一份资源。</p>
+<h5 id="-runnable和callable的区别"><a href="#-runnable和callable的区别" class="headerlink" title="** runnable和callable的区别 **"></a>** runnable和callable的区别 **</h5><p>与使用Runnable相比， Callable功能更强大些 </p>
 <ul>
-<li>通过 Excutors 创建</li>
+<li><p>相比run()方法，可以借助FutureTask类，比如获取返回结果</p>
+</li>
+<li><p>方法可以抛出异常 </p>
+</li>
+<li><p>支持泛型的返回值 </p>
+</li>
 </ul>
+<h4 id="创建线程池"><a href="#创建线程池" class="headerlink" title="创建线程池"></a>创建线程池</h4><p> 背景：<strong>经常创建和销毁、使用</strong>量特别大的资源，比如并发情况下的线程， <strong>对性能影响很大</strong>。 </p>
+<p> 思路：提前创建好多个线程，放入线程池中，使用时直接获取，使用完放回池中。可以避免频繁创建销毁、实现重复利用。</p>
+<p> 好处： </p>
+<p>​         提高响应速度（减少了创建新线程的时间） </p>
+<p>​         降低资源消耗（重复利用线程池中线程，不需要每次都创建） </p>
+<p>​         便于线程管理 ，参数如下：</p>
+<p>​                 corePoolSize：核心池的大小 </p>
+<p>​                 maximumPoolSize：最大线程数 </p>
+<p>​                 keepAliveTime：线程没有任务时最多保持多长时间后会终止</p>
+<h3 id="2-线程池的创建方式"><a href="#2-线程池的创建方式" class="headerlink" title="2.线程池的创建方式"></a>2.线程池的创建方式</h3><p> 通过 ExcutorService 创建</p>
+<p>​    JDK提供了线程池的顶级接口，ExcutorService,通过这个接口可以创建构造器，以此创建线程池</p>
+<p> 通过 Excutors 创建</p>
 <p>两种方式的异同：</p>
 <h3 id=""><a href="#" class="headerlink" title=""></a></h3><p>Synchronized和RetrenLock的区别</p>
 <p>如何解决CAS的ABA问题</p>
+<h3 id="3-线程的分类"><a href="#3-线程的分类" class="headerlink" title="3.线程的分类"></a>3.线程的分类</h3><p>java中的线程分为两类，一个是<strong>守护线程</strong>，一个是<strong>用户线程</strong>。</p>
+<ul>
+<li>守护线程是用来服务用户线程的，通过在调用start()前，设置**thread.setDaemon(true)**，可以将用户线程转化为守护线程</li>
+<li>java的垃圾回收线程就是一个典型的守护线程。</li>
+<li>若jvm中都是守护线程，则当前jvm将退出。</li>
+</ul>
+<h3 id="4-多个线程结束后再执行下一步"><a href="#4-多个线程结束后再执行下一步" class="headerlink" title="4.多个线程结束后再执行下一步"></a>4.多个线程结束后再执行下一步</h3><p>​                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  </p>
 <h3 id="指令重排序："><a href="#指令重排序：" class="headerlink" title="指令重排序："></a>指令重排序：</h3><p><strong>简单来说，就是指你在程序中写的代码，在执行时并不一定按照写的顺序。</strong></p>
 <p>在Java中，JVM能够根据处理器特性（CPU多级缓存系统、多核处理器等）适当对机器指令进行重排序，最大限度发挥机器性能。</p>
 <p>参考链接： <a href="https://zhuanlan.zhihu.com/p/138819184">https://zhuanlan.zhihu.com/p/138819184</a></p>
