@@ -183,6 +183,131 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://yoon286.github.io/2022/01/18/%E9%9D%A2%E8%AF%95/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="尹 丹">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="yoon">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/01/18/%E9%9D%A2%E8%AF%95/" class="post-title-link" itemprop="url">中间件</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-01-18 23:27:31" itemprop="dateCreated datePublished" datetime="2022-01-18T23:27:31+08:00">2022-01-18</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">学习</span></a>
+                </span>
+                  >
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0/Java/" itemprop="url" rel="index"><span itemprop="name">Java</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="主要使用到的技术包括："><a href="#主要使用到的技术包括：" class="headerlink" title="主要使用到的技术包括："></a>主要使用到的技术包括：</h3><h4 id="springboot-spring-cloud-mybatis-redis-ehcache-rabbit-mq-AWS-S3-mysql"><a href="#springboot-spring-cloud-mybatis-redis-ehcache-rabbit-mq-AWS-S3-mysql" class="headerlink" title="springboot + spring cloud + mybatis + redis + ehcache + rabbit mq + AWS S3 + mysql"></a>springboot + spring cloud + mybatis + redis + ehcache + rabbit mq + AWS S3 + mysql</h4><h3 id="ehcache"><a href="#ehcache" class="headerlink" title="ehcache"></a><strong>ehcache</strong></h3><p>EhCache直接在JVM中进行缓存，速度快，效率高。与Redis相比，操作简单、易用、高效，虽然EhCache也提供有缓存共享的方案，但对分布式集群的支持不太好，缓存共享实现麻烦。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">@Cacheable(value &#x3D; &quot;serviceNameCache&quot;, key &#x3D; &quot;targetClass+methodName+#p0&quot;)</span><br><span class="line">@CachePut 用于新增</span><br><span class="line">@CacheEvict 用于删除</span><br><span class="line">@Caching 用于组合条件</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="redis-缓存、分布式锁、事务、持久化存储"><a href="#redis-缓存、分布式锁、事务、持久化存储" class="headerlink" title="redis:缓存、分布式锁、事务、持久化存储"></a>redis:缓存、分布式锁、事务、持久化存储</h3><p>redis单线程为什么这么快 ？</p>
+<p>redis 常见数据结构以及使用场景分析 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">1. String：key-value类型 常规key-value缓存应用； 常规计数：微博数，粉丝数等。 </span><br><span class="line"></span><br><span class="line">2. Hash 是一个 string 类型的 field 和 value 的映射表。</span><br><span class="line">   hash 特别适合用于存储对象，后续操作的时候，可以直接仅仅修改这个对象中的某个字段的值。</span><br><span class="line">   比如存储用户信息，商品信息等等</span><br><span class="line"></span><br><span class="line">3. List 的实现为一个双向链表，即可以支持反向查找和遍历，更方便操作</span><br><span class="line">   微博的关注列表，粉丝列表， 消息列表等功能都可以用Redis的 list 结构来实现。</span><br><span class="line"></span><br><span class="line">4. Set 是可以自动排重的。</span><br><span class="line">   Redis可以非常方便的实现如共同关注、共同粉丝、共同喜好等功能。这个过程也就是求交集的过程</span><br><span class="line"></span><br><span class="line">5. Sorted Set 增加了一个权重参数score，使得集合中的元素能够按score进行有序排列。 </span><br><span class="line">   举例： 在直播系统中，实时排行信息包含直播间在线用户列表，各种礼物排行榜</span><br></pre></td></tr></table></figure>
+
+<p>删除机制</p>
+<p>哨兵机制</p>
+<p>缓存穿透 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">简介：</span><br><span class="line">一般是黑客故意去请求缓存中不存在的数据，导致所有的请求都落到数据库上，造成数据库短时间内承受大量</span><br><span class="line">请求而崩掉。</span><br><span class="line"></span><br><span class="line">解决办法：</span><br><span class="line">最常见的是采用布隆过滤器，将所有可能存在的数据哈希到一个足够大的bitmap中，一个一定不存在的数据会被这个bitmap拦截掉，从而避免了对底层存储系统的查询压力。</span><br><span class="line">另外也有一个更为简单粗暴的方法（我们采用的就是这种），如果一个查询返回的数据为空（不管是数据不存在，还是系统故障），我们仍然把这个空结果进行缓存，但它的过期时间会很短，最长不超过五分钟。</span><br></pre></td></tr></table></figure>
+
+<p>缓存雪崩 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">简介：缓存同一时间大面积的失效，所以，后面的请求都会落到数据库上，造成数据库短时间内承受大量请求而崩掉。 解决办法：</span><br><span class="line"></span><br><span class="line">事前：尽量保证整个 redis 集群的高可用性，发现机器宕机尽快补上。选择合适的内存淘汰策略。 </span><br><span class="line"></span><br><span class="line">事中：本地ehcache缓存 + hystrix限流&amp;降级，避免MySQL崩掉 </span><br><span class="line"></span><br><span class="line">事后：利用 redis 持久化机制保存的数据尽快恢复缓存</span><br></pre></td></tr></table></figure>
+
+
+
+<p>extends WebSecurityConfigurerAdapter</p>
+<p>implements Filter</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">User</span> <span class="keyword">implements</span> <span class="title">BaseEntity</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> Long id;</span><br><span class="line">    <span class="keyword">private</span> Group group;</span><br><span class="line">    <span class="keyword">private</span> String role;</span><br><span class="line">    <span class="keyword">private</span> Long creatorId;</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">    <span class="keyword">private</span> String email;</span><br><span class="line">    <span class="keyword">private</span> String password;</span><br><span class="line">    <span class="keyword">private</span> Status status;</span><br><span class="line">    <span class="keyword">private</span> Date createTime;</span><br><span class="line">    <span class="keyword">private</span> Date updateTime;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@EnableWebSecurity</span></span><br><span class="line"><span class="meta">@Configuration</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">WebSecurityConfig</span> <span class="keyword">extends</span> <span class="title">WebSecurityConfigurerAdapter</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">        System.arraycopy(baseUrls, <span class="number">0</span>, urls, excludeUrls.size(), baseUrls.length);</span><br><span class="line">        http.csrf().disable()</span><br><span class="line">            .authorizeRequests()</span><br><span class="line">            .antMatchers(urls).permitAll()</span><br><span class="line">            .antMatchers(<span class="string">&quot;/api/admin/users&quot;</span>).hasAnyRole(<span class="string">&quot;ADMIN&quot;</span>)</span><br><span class="line">            .anyRequest()</span><br><span class="line">            .authenticated();</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 登录和权限校验失败处理</span></span><br><span class="line">        http.exceptionHandling()</span><br><span class="line">            .authenticationEntryPoint((request, response, authException)</span><br><span class="line">                -&gt; &#123;</span><br><span class="line">                Map&lt;String, String&gt; message = <span class="keyword">new</span> HashMap&lt;&gt;(<span class="number">4</span>);</span><br><span class="line">                message.put(<span class="string">&quot;message&quot;</span>, I18nContext.getMessage(<span class="string">&quot;AUTH_ERROR_403&quot;</span>));</span><br><span class="line">                message.put(<span class="string">&quot;url&quot;</span>, ContextConfig.getConf(<span class="string">&quot;WEB_OAUTH_LOGIN_URL&quot;</span>));</span><br><span class="line">                response.setStatus(HttpStatus.UNAUTHORIZED.value());</span><br><span class="line">                MessageUtils.respMsg(response, message);</span><br><span class="line">            &#125;)</span><br><span class="line">            .accessDeniedHandler((request, response, accessDeniedException)</span><br><span class="line">                -&gt; MessageUtils.respStringMsg(HttpStatus.FORBIDDEN));</span><br><span class="line"></span><br><span class="line">        <span class="comment">//add filter</span></span><br><span class="line">        http.addFilterBefore(<span class="keyword">new</span> OauthLoginFilter(sysUserService),</span><br><span class="line">            UsernamePasswordAuthenticationFilter.class);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+<h3 id="rabbit-mq"><a href="#rabbit-mq" class="headerlink" title="rabbit-mq"></a>rabbit-mq</h3><p>模式</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Direct exchange:routingkey完全匹配</span><br><span class="line">Fanout exchange：订阅模式，exchange绑定的所有队列</span><br><span class="line">Topic exchange：routingkey通配</span><br><span class="line">Headers exchange：不通过routingkey,通过请求头信息</span><br></pre></td></tr></table></figure>
+
+
+
+<p>死信队列</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">DLX，全称为Dead-Letter-Exchange , 可以称之为死信交换机。当消息在一个队列中变成死信(dead message)之后，它能被重新发送到另一个交换机中，这个交换机就是DLX ，绑定DLX的队列就称之为死信队列。</span><br><span class="line"></span><br><span class="line">消息变成死信，可能是由于以下的原因：</span><br><span class="line"></span><br><span class="line">- 消息被拒绝</span><br><span class="line">- 消息过期</span><br><span class="line">- 队列达到最大长度</span><br><span class="line"></span><br><span class="line">DLX也是一个正常的交换机，和一般的交换机没有区别，它能在任何的队列上被指定，实际上就是设置某一个队列的属性。当这个队列中存在死信时，Rabbitmq就会自动地将这个消息重新发布到设置的DLX上去，进而被路由到另一个队列，即死信队列。</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Target(ElementType.METHOD)</span></span><br><span class="line"><span class="meta">@Retention(RetentionPolicy.RUNTIME)</span></span><br><span class="line"><span class="keyword">public</span> <span class="meta">@interface</span> LogOperation &#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 模块信息</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function">String <span class="title">module</span><span class="params">()</span></span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 操作内容</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function">String <span class="title">operation</span><span class="params">()</span> <span class="keyword">default</span> &quot;&quot;</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 哪些字段需要被操作日志锁记录</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    String[] fields();</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 哪些字段需要联合判断，如时间字段:begin-end</span></span><br><span class="line"><span class="comment">     * 当其中一个字段发生变化即认为两者都发生变化。</span></span><br><span class="line"><span class="comment">     * 说明:unionFields中字段不要在fields中存在。</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    String [] unionFields() <span class="keyword">default</span> &#123;&#125;;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 操作日志中的操作（） 中的字段</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function">String <span class="title">operationField</span><span class="params">()</span></span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 操作者,SpEL表达式，默认从权限工具类获取。</span></span><br><span class="line"><span class="comment">     * hoa-log 可以不用依赖hoa-security模块</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function">String <span class="title">operator</span><span class="params">()</span> <span class="keyword">default</span> &quot;@userServiceImpl.<span class="title">getCurrentUser</span><span class="params">()</span>.<span class="title">getId</span><span class="params">()</span>&quot;</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 操作前的值,使用 SPEL 表达式，参考如下：</span></span><br><span class="line"><span class="comment">     * #this.getDao().findOne(#p0.id)</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function">String <span class="title">originExpression</span><span class="params">()</span> <span class="keyword">default</span> &quot;&quot;</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 操作后的值，使用 SPEL 表达式，参考如下：</span></span><br><span class="line"><span class="comment">     * #p0</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function">String <span class="title">currentExpression</span><span class="params">()</span> <span class="keyword">default</span> &quot;&quot;</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 使用 SPEL 表达式判断在什么情况下记录本次的操作日志</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function">String <span class="title">condition</span><span class="params">()</span> <span class="keyword">default</span> &quot;<span class="keyword">true</span>&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="定时任务"><a href="#定时任务" class="headerlink" title="定时任务"></a>定时任务</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Scheduled(cron = &quot;$&#123;app.monitor.task.day&#125;&quot;)</span></span><br><span class="line"><span class="meta">@SchedulerLock(name = &quot;SERVICENAME_SUBSCRIPTION_DAY&quot;, lockAtLeastFor = 30000, lockAtMostFor = 60000)</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="k8s"><a href="#k8s" class="headerlink" title="k8s"></a>k8s</h3><h3 id="openfeign"><a href="#openfeign" class="headerlink" title="openfeign"></a>openfeign</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> *  <span class="doctag">@FeignClient</span>:</span></span><br><span class="line"><span class="comment"> *  name/value属性: 这两个的作用是一样的,指定的是调用服务的微服务名称</span></span><br><span class="line"><span class="comment"> *  url : 指定调用服务的全路径,经常用于本地测试</span></span><br><span class="line"><span class="comment"> *  如果同时指定name和url属性: 则以url属性为准,name属性指定的值便当做客户端的名称</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line"><span class="meta">@FeignClient(name = &quot;$&#123;openfeign.serviceName.accountClient&#125;&quot;, url = &quot;$&#123;openfeign.serviceName.accountDomain&#125;&quot;,</span></span><br><span class="line"><span class="meta">        fallbackFactory = FeignHacBackService.class, configuration = FeignConfiguration.class)</span></span><br><span class="line"><span class="meta">@Service</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">FeignHacService</span> </span>&#123;</span><br><span class="line">    <span class="meta">@RequestMapping(value = &quot;$&#123;openfeign.serviceName.userApi&#125;&quot;, method = RequestMethod.GET)</span></span><br><span class="line">    <span class="function">HacMessage&lt;HacUser&gt; <span class="title">syncUsers</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br><span class="line">             </span><br></pre></td></tr></table></figure>
+
+<h3 id="spring-cloud"><a href="#spring-cloud" class="headerlink" title="spring cloud"></a>spring cloud</h3>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://yoon286.github.io/2021/08/03/%E5%AE%9E%E4%B9%A0%E6%95%B4%E7%90%86/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -825,18 +950,18 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">17</span>
+          <span class="site-state-item-count">18</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
-        <span class="site-state-item-count">9</span>
+        <span class="site-state-item-count">10</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
-        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-count">9</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
