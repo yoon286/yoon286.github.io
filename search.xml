@@ -1264,7 +1264,21 @@
 <h3 id="11-session和cookie的区别"><a href="#11-session和cookie的区别" class="headerlink" title="11.session和cookie的区别"></a>11.session和cookie的区别</h3><p>cookie是客户端的，session是服务端的。</p>
 <p>cookie存储于客户端，记录web服务器的信息，每次上网时都会先查看对应的cookie信息，比如购物时，使用cookie记录购物车信息。 </p>
 <p>session是记录客户机的信息，SessionID是session的唯一标识，使用session可以记录客户端的请求等。</p>
-<h2 id="四、IO流"><a href="#四、IO流" class="headerlink" title="四、IO流"></a>四、IO流</h2><h2 id="五、JVM"><a href="#五、JVM" class="headerlink" title="五、JVM"></a>五、JVM</h2><h2 id="二、Spring"><a href="#二、Spring" class="headerlink" title="二、Spring"></a>二、Spring</h2><h3 id="１-Bean的生命周期"><a href="#１-Bean的生命周期" class="headerlink" title="１.Bean的生命周期"></a>１.Bean的生命周期</h3><p>创建、</p>
+<h2 id="四、IO流"><a href="#四、IO流" class="headerlink" title="四、IO流"></a>四、IO流</h2><h2 id="五、JVM"><a href="#五、JVM" class="headerlink" title="五、JVM"></a>五、JVM</h2><p>主要分为六大块：</p>
+<p><strong>①Java内存区域、②JVM内存管理、③虚拟机垃圾收集器、④虚拟机垃圾算法、⑤JVM调优、⑥Java类加载机制</strong></p>
+<h3 id="Java内存区域常见问题"><a href="#Java内存区域常见问题" class="headerlink" title="Java内存区域常见问题:"></a>Java内存区域常见问题:</h3><p>介绍下 Java 内存区域（运行时数据区）</p>
+<p> Java 对象的创建过程（五步，建议能默写出来并且要知道每一步虚拟机做了什么） </p>
+<p>对象的访问定位的两种方式（句柄和直接指针两种方式） </p>
+<p>拓展问题: String类和常量池 </p>
+<p>8种基本类型的包装类和常量池 </p>
+<h3 id="JVM垃圾回收常见问题"><a href="#JVM垃圾回收常见问题" class="headerlink" title="JVM垃圾回收常见问题:"></a>JVM垃圾回收常见问题:</h3><p>如何判断对象是否死亡（两种方法）。 </p>
+<p>简单的介绍一下强引用、软引用、弱引用、虚引用（虚引用与软引用和弱引用的区别、使用软引用能带来的好 处）。 </p>
+<p>如何判断一个常量是废弃常量 </p>
+<p>如何判断一个类是无用的类 </p>
+<h3 id="垃圾收集有哪些算法，各自的特点？"><a href="#垃圾收集有哪些算法，各自的特点？" class="headerlink" title="垃圾收集有哪些算法，各自的特点？"></a>垃圾收集有哪些算法，各自的特点？</h3><p> HotSpot为什么要分为新生代和老年代？ </p>
+<h3 id="常见的垃圾回收器有那些？"><a href="#常见的垃圾回收器有那些？" class="headerlink" title="常见的垃圾回收器有那些？"></a>常见的垃圾回收器有那些？</h3><p>介绍一下CMS,G1收集器。 </p>
+<p>Minor Gc和Full GC 有什么不同呢？</p>
+<h2 id="二、Spring"><a href="#二、Spring" class="headerlink" title="二、Spring"></a>二、Spring</h2><h3 id="１-Bean的生命周期"><a href="#１-Bean的生命周期" class="headerlink" title="１.Bean的生命周期"></a>１.Bean的生命周期</h3><p>创建、</p>
 <p>IOC注入、</p>
 <p>getBeanName、</p>
 <p>BeanNameFactory、</p>
