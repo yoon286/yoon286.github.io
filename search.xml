@@ -1295,12 +1295,22 @@
 <td>这个线程接收发送到 JVM 的信号并调用适当的 JVM 方法处理。</td>
 </tr>
 </tbody></table>
-<h3 id="内存区域"><a href="#内存区域" class="headerlink" title="内存区域"></a>内存区域</h3><p>介绍下 Java 内存区域（运行时数据区）</p>
-<p> Java 对象的创建过程（五步，建议能默写出来并且要知道每一步虚拟机做了什么） </p>
-<p>对象的访问定位的两种方式（句柄和直接指针两种方式） </p>
-<p>拓展问题: String类和常量池 </p>
-<p>8种基本类型的包装类和常量池 </p>
-<h3 id="垃圾回收"><a href="#垃圾回收" class="headerlink" title="垃圾回收"></a>垃圾回收</h3><p>如何判断对象是否死亡（两种方法）。 </p>
+<h3 id="内存区域"><a href="#内存区域" class="headerlink" title="内存区域"></a>内存区域</h3><p>JVM 内存区域主要分为</p>
+<ul>
+<li><p>线程私有区域：<code>程序计数器</code>、<code>虚拟机栈</code>、<code>本地方法栈</code></p>
+</li>
+<li><p>线程共享区域：<code>JAVA 堆</code>、<code>方法区</code></p>
+</li>
+<li><p>直接内存：<code>不受JVM GC管理</code></p>
+</li>
+</ul>
+<p><strong>线程私有数据区域</strong> 生命周期与线程相同, <font color=#bbbb>依赖用户线程的启动/结束，而创建/销毁(在 Hotspot VM 内</font>, 每个线程都与操作系统的本地线程直接映射, 因此这部分内存区域的存/否跟随本地线程的 生/死对应)。</p>
+<p><strong>线程共享区域</strong> <font color=#bbbb>随虚拟机的启动/关闭而创建/销毁。</font></p>
+<p><strong>直接内存</strong> <font color=#bbbb>并不是 JVM 运行时数据区的一部分</font>, 但也会被频繁的使用: 例如 NIO 提 供了基于 Channel 与 Buffer 的 IO 方式, 它可以<font color=#bbbb>使用 Native 函数库直接分配堆外内存</font>, 然后使用 DirectByteBuffer 对象作为这块内存的引用进行操作, 这样就避免了在 Java 堆和 Native 堆中来回复制数据, 因此在一些场景中可以显著提高性能。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202204182259266.png" alt="image-20220418225937866"></p>
+<h4 id="程序计数器-线程私有"><a href="#程序计数器-线程私有" class="headerlink" title="程序计数器(线程私有)"></a>程序计数器(线程私有)</h4><p>一块较小的内存空间, <font color=#bbbb>是当前线程所执行的字节码的行号指示器</font>，每条线程都要有一个独立的程序计数器，这类内存也称为“线程私有”的内存。 </p>
+<p>正在执行 java 方法的话，计数器记录的是虚拟机字节码指令的地址（当前指令的地址）。如果还是 Native 方法，则为空。 这个内存区域是唯一一个在虚拟机中没有规定任何 OutOfMemoryError 情况的区域。</p>
+<h3 id="Java-对象的创建过程（五步，建议能默写出来并且要知道每一步虚拟机做了什么）"><a href="#Java-对象的创建过程（五步，建议能默写出来并且要知道每一步虚拟机做了什么）" class="headerlink" title="Java 对象的创建过程（五步，建议能默写出来并且要知道每一步虚拟机做了什么）"></a>Java 对象的创建过程（五步，建议能默写出来并且要知道每一步虚拟机做了什么）</h3><h3 id="对象的访问定位的两种方式（句柄和直接指针两种方式）"><a href="#对象的访问定位的两种方式（句柄和直接指针两种方式）" class="headerlink" title="对象的访问定位的两种方式（句柄和直接指针两种方式）"></a>对象的访问定位的两种方式（句柄和直接指针两种方式）</h3><h3 id="拓展问题-String类和常量池"><a href="#拓展问题-String类和常量池" class="headerlink" title="拓展问题: String类和常量池"></a>拓展问题: String类和常量池</h3><h3 id="8种基本类型的包装类和常量池"><a href="#8种基本类型的包装类和常量池" class="headerlink" title="8种基本类型的包装类和常量池"></a>8种基本类型的包装类和常量池</h3><h3 id="垃圾回收"><a href="#垃圾回收" class="headerlink" title="垃圾回收"></a>垃圾回收</h3><p>如何判断对象是否死亡（两种方法）。 </p>
 <p>简单的介绍一下强引用、软引用、弱引用、虚引用（虚引用与软引用和弱引用的区别、使用软引用能带来的好 处）。 </p>
 <p>如何判断一个常量是废弃常量 </p>
 <p>如何判断一个类是无用的类 </p>
