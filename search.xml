@@ -1310,7 +1310,26 @@
 <p><img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202204182259266.png" alt="image-20220418225937866"></p>
 <h4 id="程序计数器-线程私有"><a href="#程序计数器-线程私有" class="headerlink" title="程序计数器(线程私有)"></a>程序计数器(线程私有)</h4><p>一块较小的内存空间, <font color=#bbbb>是当前线程所执行的字节码的行号指示器</font>，每条线程都要有一个独立的程序计数器，这类内存也称为“线程私有”的内存。 </p>
 <p>正在执行 java 方法的话，计数器记录的是虚拟机字节码指令的地址（当前指令的地址）。如果还是 Native 方法，则为空。 这个内存区域是唯一一个在虚拟机中没有规定任何 OutOfMemoryError 情况的区域。</p>
-<h3 id="Java-对象的创建过程（五步，建议能默写出来并且要知道每一步虚拟机做了什么）"><a href="#Java-对象的创建过程（五步，建议能默写出来并且要知道每一步虚拟机做了什么）" class="headerlink" title="Java 对象的创建过程（五步，建议能默写出来并且要知道每一步虚拟机做了什么）"></a>Java 对象的创建过程（五步，建议能默写出来并且要知道每一步虚拟机做了什么）</h3><h3 id="对象的访问定位的两种方式（句柄和直接指针两种方式）"><a href="#对象的访问定位的两种方式（句柄和直接指针两种方式）" class="headerlink" title="对象的访问定位的两种方式（句柄和直接指针两种方式）"></a>对象的访问定位的两种方式（句柄和直接指针两种方式）</h3><h3 id="拓展问题-String类和常量池"><a href="#拓展问题-String类和常量池" class="headerlink" title="拓展问题: String类和常量池"></a>拓展问题: String类和常量池</h3><h3 id="8种基本类型的包装类和常量池"><a href="#8种基本类型的包装类和常量池" class="headerlink" title="8种基本类型的包装类和常量池"></a>8种基本类型的包装类和常量池</h3><h3 id="垃圾回收"><a href="#垃圾回收" class="headerlink" title="垃圾回收"></a>垃圾回收</h3><p>如何判断对象是否死亡（两种方法）。 </p>
+<h4 id="虚拟机栈-线程私有"><a href="#虚拟机栈-线程私有" class="headerlink" title="虚拟机栈(线程私有)"></a>虚拟机栈(线程私有)</h4><p>是描述java方法执行的内存模型，每个方法在执行的同时都会创建一个栈帧（Stack Frame） 用于存储局部变量表、操作数栈、动态链接、方法出口等信息。每一个方法从调用直至执行完成 的过程，就对应着一个栈帧在虚拟机栈中入栈到出栈的过程。</p>
+<img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202204192159839.png" alt="image-20220419215913693" style="zoom:75%;" />
+
+<h4 id="本地方法栈-线程私有"><a href="#本地方法栈-线程私有" class="headerlink" title="本地方法栈(线程私有)"></a>本地方法栈(线程私有)</h4><blockquote>
+<p>Native本地方法：</p>
+<p>1.JVM的实现，为了与操作系统底层进行交互，就使用了本地方法。<br>2.JVM自己的代码，有一部分使用C实现的，这些代码的使用也需要使用本地方法。</p>
+</blockquote>
+<p>本地方法区和 Java Stack 作用类似, 区别是虚拟机栈为执行 Java 方法服务, 而本地方法栈则为 Native 方法服务, 如果一个 VM 实现使用 C-linkage 模型来支持 Native 调用, 那么该栈将会是一个 C 栈，但 HotSpot VM 直接就把本地方法栈和虚拟机栈合二为一。</p>
+<h4 id="堆（Heap-线程共享）"><a href="#堆（Heap-线程共享）" class="headerlink" title="堆（Heap-线程共享）"></a>堆（Heap-线程共享）</h4><p><strong>又称运行时数据区。</strong>是被线程共享的一块内存区域，创建的对象和数组都保存在 Java 堆内存中，也是垃圾收集器进行 垃圾收集的最重要的内存区域。由于现代 VM 采用分代收集算法, 因此 Java 堆从 GC 的角度还可以 细分为: <font color=#bbbb>新生代【Eden 区、From Survivor 区、 To Survivor 区】和老年代。</font></p>
+<h4 id="方法区-永久代（线程共享）"><a href="#方法区-永久代（线程共享）" class="headerlink" title="方法区/永久代（线程共享）"></a>方法区/永久代（线程共享）</h4><p>即我们常说的永久代(Permanent Generation), 用于存储被 JVM 加载的类信息、常量、静 态变量、即时编译器编译后的代码等数据. </p>
+<p><font color=#bbbb>HotSpot VM把GC分代收集扩展至方法区, 即使用Java 堆的永久代来实现方法区</font>, 这样 HotSpot 的垃圾收集器就可以像管理 Java 堆一样管理这部分内存, 而不必为方法区开发专门的内存管理器(永久代的内存回收的主要目标是针对常量池的回收和类型 的卸载, 因此收益一般很小)。 </p>
+<p>运行时常量池（Runtime Constant Pool）是方法区的一部分。Class 文件中除了有类的版 本、字段、方法、接口等描述等信息外，还有一项信息是常量池 ，用于存放编译期生成的各种字面量和符号引用，这部分内容将在类加 载后存放到方法区的运行时常量池中。</p>
+<p> Java 虚拟机对 Class 文件的每一部分（自然也包括常量 池）的格式都有严格的规定，每一个字节用于存储哪种数据都必须符合规范上的要求，这样才会 被虚拟机认可、装载和执行。</p>
+<h3 id="运行时内存"><a href="#运行时内存" class="headerlink" title="运行时内存"></a>运行时内存</h3><p>Java 堆从 GC 的角度还可以细分为: 新生代【Eden 区、From Survivor 区、 To Survivor 区】和老年 代。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202204192353112.png" alt="image-20220419235356742"></p>
+<h4 id="新生代"><a href="#新生代" class="headerlink" title="新生代"></a>新生代</h4><p>是用来存放新生的对象。一般占据堆的 1/3 空间。由于频繁创建对象，所以新生代会频繁触发 MinorGC 进行垃圾回收。</p>
+<p><strong>Eden区：</strong></p>
+<p><strong>FromSurviror区：</strong> </p>
+<p><strong>ToSurvivor区</strong> </p>
+<h4 id="老年代"><a href="#老年代" class="headerlink" title="老年代"></a>老年代</h4><h3 id="Java-对象的创建过程（五步，建议能默写出来并且要知道每一步虚拟机做了什么）"><a href="#Java-对象的创建过程（五步，建议能默写出来并且要知道每一步虚拟机做了什么）" class="headerlink" title="Java 对象的创建过程（五步，建议能默写出来并且要知道每一步虚拟机做了什么）"></a>Java 对象的创建过程（五步，建议能默写出来并且要知道每一步虚拟机做了什么）</h3><h3 id="对象的访问定位的两种方式（句柄和直接指针两种方式）"><a href="#对象的访问定位的两种方式（句柄和直接指针两种方式）" class="headerlink" title="对象的访问定位的两种方式（句柄和直接指针两种方式）"></a>对象的访问定位的两种方式（句柄和直接指针两种方式）</h3><h3 id="拓展问题-String类和常量池"><a href="#拓展问题-String类和常量池" class="headerlink" title="拓展问题: String类和常量池"></a>拓展问题: String类和常量池</h3><h3 id="8种基本类型的包装类和常量池"><a href="#8种基本类型的包装类和常量池" class="headerlink" title="8种基本类型的包装类和常量池"></a>8种基本类型的包装类和常量池</h3><h3 id="垃圾回收"><a href="#垃圾回收" class="headerlink" title="垃圾回收"></a>垃圾回收</h3><p>如何判断对象是否死亡（两种方法）。 </p>
 <p>简单的介绍一下强引用、软引用、弱引用、虚引用（虚引用与软引用和弱引用的区别、使用软引用能带来的好 处）。 </p>
 <p>如何判断一个常量是废弃常量 </p>
 <p>如何判断一个类是无用的类 </p>
