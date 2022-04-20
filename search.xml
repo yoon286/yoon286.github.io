@@ -1326,9 +1326,21 @@
 <h3 id="运行时内存"><a href="#运行时内存" class="headerlink" title="运行时内存"></a>运行时内存</h3><p>Java 堆从 GC 的角度还可以细分为: 新生代【Eden 区、From Survivor 区、 To Survivor 区】和老年 代。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202204192353112.png" alt="image-20220419235356742"></p>
 <h4 id="新生代"><a href="#新生代" class="headerlink" title="新生代"></a>新生代</h4><p>是用来存放新生的对象。一般占据堆的 1/3 空间。由于频繁创建对象，所以新生代会频繁触发 MinorGC 进行垃圾回收。</p>
-<p><strong>Eden区：</strong></p>
-<p><strong>FromSurviror区：</strong> </p>
-<p><strong>ToSurvivor区</strong> </p>
+<p> <strong>- 伊甸园（Eden）：</strong>这是对象最初诞生的区域，并且对大多数对象来说，这里是它们唯一存在过的区域。 </p>
+<p> <strong>- 幸存者乐园（SurvivorFrom）：</strong>伊甸园幸存对象会被挪到这里。 上一次 GC 的幸存者，作为这一次 GC 的被扫描者。</p>
+<p> <strong>- 幸存者乐园（SurvivorTo）：</strong>保留了一次 MinorGC 过程中的幸存者。</p>
+<hr>
+<h4 id="MinorGC-的过程（复制-gt-清空-gt-互换）"><a href="#MinorGC-的过程（复制-gt-清空-gt-互换）" class="headerlink" title="MinorGC 的过程（复制-&gt;清空-&gt;互换）"></a><strong>MinorGC 的过程（复制-&gt;清空-&gt;互换）</strong></h4><p> MinorGC 采用复制算法。</p>
+<p><strong>1：Eden、SurvivorFrom 复制到 SurvivorTo，年龄+1</strong> </p>
+<p>首先，把 Eden 和 SurvivorFrom 区域中存活的对象复制到 SurvivorTo 区域（如果有对象的年 龄以及达到了老年的标准，则赋值到老年代区），同时把这些对象的年龄+1（如果 SurvivorTo 不 够位置了就放到老年区）；</p>
+<p><strong>2：清空 Eden、SurvivorFrom</strong> </p>
+<p>然后，清空 Eden 和 SurvivorFrom 中的对象； </p>
+<p><strong>3：SurvivorTo 和 SurvivorFrom互换</strong> </p>
+<p>最后，SurvivorTo 和 SurvivorFrom互换，原 SurvivorTo 成为下一次 GC 时的 SurvivorFrom区。</p>
+<blockquote>
+<p> 从年轻代空间（包括 Eden 和 Survivor 区域）回收内存被称为 Minor GC。 Major GC 是清理永久代。Full GC 是清理整个堆空间—包括年轻代和永久代。</p>
+</blockquote>
+<hr>
 <h4 id="老年代"><a href="#老年代" class="headerlink" title="老年代"></a>老年代</h4><h3 id="Java-对象的创建过程（五步，建议能默写出来并且要知道每一步虚拟机做了什么）"><a href="#Java-对象的创建过程（五步，建议能默写出来并且要知道每一步虚拟机做了什么）" class="headerlink" title="Java 对象的创建过程（五步，建议能默写出来并且要知道每一步虚拟机做了什么）"></a>Java 对象的创建过程（五步，建议能默写出来并且要知道每一步虚拟机做了什么）</h3><h3 id="对象的访问定位的两种方式（句柄和直接指针两种方式）"><a href="#对象的访问定位的两种方式（句柄和直接指针两种方式）" class="headerlink" title="对象的访问定位的两种方式（句柄和直接指针两种方式）"></a>对象的访问定位的两种方式（句柄和直接指针两种方式）</h3><h3 id="拓展问题-String类和常量池"><a href="#拓展问题-String类和常量池" class="headerlink" title="拓展问题: String类和常量池"></a>拓展问题: String类和常量池</h3><h3 id="8种基本类型的包装类和常量池"><a href="#8种基本类型的包装类和常量池" class="headerlink" title="8种基本类型的包装类和常量池"></a>8种基本类型的包装类和常量池</h3><h3 id="垃圾回收"><a href="#垃圾回收" class="headerlink" title="垃圾回收"></a>垃圾回收</h3><p>如何判断对象是否死亡（两种方法）。 </p>
 <p>简单的介绍一下强引用、软引用、弱引用、虚引用（虚引用与软引用和弱引用的区别、使用软引用能带来的好 处）。 </p>
 <p>如何判断一个常量是废弃常量 </p>
