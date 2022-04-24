@@ -416,7 +416,7 @@
 <td align="left"></td>
 </tr>
 </tbody></table>
-<h4 id="幻读"><a href="#幻读" class="headerlink" title="幻读"></a>幻读</h4><p>Transaction T1 reads a set of data items satisfying some . Transaction T2 then creates data items that satisfy T1’s  and commits. If T1 then repeats its read with the same , it gets a set of data items different from the first read.</p>
+<h4 id="幻读"><a href="#幻读" class="headerlink" title="幻读"></a>幻读</h4><p>Transaction T1 reads a set of data items satisfying some. Transaction T2 then creates data items that satisfy T1s and commits. If T1 then repeats its read with the same , it gets a set of data items different from the first read.</p>
 <table>
 <thead>
 <tr>
@@ -487,6 +487,7 @@
 <p>总结：没有任何一致性保证的隔离保证并不是特别有用，分布式系统中需要 两者结合共同保证数据库状态的正确性</p>
 <p><img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202204232154703.png" alt="image-20220423215407034"></p>
 <hr>
+<p>更多实践内容参考 <a target="_blank" rel="noopener" href="https://tech.meituan.com/2014/08/20/innodb-lock.html">https://tech.meituan.com/2014/08/20/innodb-lock.html</a></p>
 
       
     </div>

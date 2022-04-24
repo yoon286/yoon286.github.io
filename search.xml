@@ -1359,7 +1359,10 @@
 <p>如何判断一个类是无用的类 </p>
 <h4 id="常见的垃圾回收器有那些？"><a href="#常见的垃圾回收器有那些？" class="headerlink" title="常见的垃圾回收器有那些？"></a>常见的垃圾回收器有那些？</h4><p>介绍一下CMS,G1收集器。 </p>
 <p>Minor GC 和 Full GC 有什么不同呢？</p>
-<h3 id="Java-对象的创建过程（五步，建议能默写出来并且要知道每一步虚拟机做了什么）"><a href="#Java-对象的创建过程（五步，建议能默写出来并且要知道每一步虚拟机做了什么）" class="headerlink" title="Java 对象的创建过程（五步，建议能默写出来并且要知道每一步虚拟机做了什么）"></a>Java 对象的创建过程（五步，建议能默写出来并且要知道每一步虚拟机做了什么）</h3><h3 id="对象的访问定位的两种方式（句柄和直接指针两种方式）"><a href="#对象的访问定位的两种方式（句柄和直接指针两种方式）" class="headerlink" title="对象的访问定位的两种方式（句柄和直接指针两种方式）"></a>对象的访问定位的两种方式（句柄和直接指针两种方式）</h3><h3 id="拓展问题-String类和常量池"><a href="#拓展问题-String类和常量池" class="headerlink" title="拓展问题: String类和常量池"></a>拓展问题: String类和常量池</h3><h3 id="8种基本类型的包装类和常量池"><a href="#8种基本类型的包装类和常量池" class="headerlink" title="8种基本类型的包装类和常量池"></a>8种基本类型的包装类和常量池</h3><p> HotSpot为什么要分为新生代和老年代？ </p>
+<h3 id="Java-对象的创建过程"><a href="#Java-对象的创建过程" class="headerlink" title="Java 对象的创建过程"></a>Java 对象的创建过程</h3><p>五步，建议能默写出来并且要知道每一步虚拟机做了什么</p>
+<p><img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202204242116345.png" alt="image-20220424211620812"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202204242118004.png" alt="image-20220424211820839"></p>
+<h3 id="对象的访问定位的两种方式（句柄和直接指针两种方式）"><a href="#对象的访问定位的两种方式（句柄和直接指针两种方式）" class="headerlink" title="对象的访问定位的两种方式（句柄和直接指针两种方式）"></a>对象的访问定位的两种方式（句柄和直接指针两种方式）</h3><h3 id="拓展问题-String类和常量池"><a href="#拓展问题-String类和常量池" class="headerlink" title="拓展问题: String类和常量池"></a>拓展问题: String类和常量池</h3><h3 id="8种基本类型的包装类和常量池"><a href="#8种基本类型的包装类和常量池" class="headerlink" title="8种基本类型的包装类和常量池"></a>8种基本类型的包装类和常量池</h3><p> HotSpot为什么要分为新生代和老年代？ </p>
 <h3 id="java类加载机制"><a href="#java类加载机制" class="headerlink" title="java类加载机制"></a>java类加载机制</h3><h2 id="二、Spring"><a href="#二、Spring" class="headerlink" title="二、Spring"></a>二、Spring</h2><h3 id="１-Bean的生命周期"><a href="#１-Bean的生命周期" class="headerlink" title="１.Bean的生命周期"></a>１.Bean的生命周期</h3><p>创建、</p>
 <p>IOC注入、</p>
 <p>getBeanName、</p>
@@ -1841,7 +1844,7 @@
 <td align="left"></td>
 </tr>
 </tbody></table>
-<h4 id="幻读"><a href="#幻读" class="headerlink" title="幻读"></a>幻读</h4><p>Transaction T1 reads a set of data items satisfying some . Transaction T2 then creates data items that satisfy T1’s  and commits. If T1 then repeats its read with the same , it gets a set of data items different from the first read.</p>
+<h4 id="幻读"><a href="#幻读" class="headerlink" title="幻读"></a>幻读</h4><p>Transaction T1 reads a set of data items satisfying some. Transaction T2 then creates data items that satisfy T1s and commits. If T1 then repeats its read with the same , it gets a set of data items different from the first read.</p>
 <table>
 <thead>
 <tr>
@@ -1912,6 +1915,7 @@
 <p>总结：没有任何一致性保证的隔离保证并不是特别有用，分布式系统中需要 两者结合共同保证数据库状态的正确性</p>
 <p><img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202204232154703.png" alt="image-20220423215407034"></p>
 <hr>
+<p>更多实践内容参考 <a href="https://tech.meituan.com/2014/08/20/innodb-lock.html">https://tech.meituan.com/2014/08/20/innodb-lock.html</a></p>
 ]]></content>
       <categories>
         <category>学习</category>
