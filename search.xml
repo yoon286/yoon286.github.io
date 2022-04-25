@@ -1354,10 +1354,40 @@
 <p> 要注意的是，不可达对象不等价于可回收对象，不可达对象变为可回收对象至少要经过两次标记 过程。两次标记后仍然是可回收对象，则将面临回收。</p>
 </li>
 </ul>
-<h4 id="垃圾收集算法"><a href="#垃圾收集算法" class="headerlink" title="垃圾收集算法"></a>垃圾收集算法</h4><p>简单的介绍一下强引用、软引用、弱引用、虚引用（虚引用与软引用和弱引用的区别、使用软引用能带来的好 处）。 </p>
+<hr>
+<h4 id="垃圾收集算法"><a href="#垃圾收集算法" class="headerlink" title="垃圾收集算法"></a>垃圾收集算法</h4><h5 id="标记清除算法（Mark-Sweep）"><a href="#标记清除算法（Mark-Sweep）" class="headerlink" title="标记清除算法（Mark-Sweep）"></a>标记清除算法（Mark-Sweep）</h5><p>最基础的垃圾回收算法，分为两个阶段，标注和清除。</p>
+<p><font color=#bbbb>标记阶段</font>标记出所有需要回收的对象，<font color=#bbbb>清除阶段</font>回收被标记的对象所占用的空间。如图 </p>
+<p><img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202204252315734.png" alt="image-20220425231546970"></p>
+<p>从图中我们就可以发现，该算法最大的问题是<font color=#bbbb>内存碎片化严重</font>，后续可能发生大对象不能找到可利用空间的问题。</p>
+<hr>
+<h5 id="复制算法（copying）"><a href="#复制算法（copying）" class="headerlink" title="复制算法（copying）"></a>复制算法（copying）</h5><p>为了解决 Mark-Sweep 算法内存碎片化的缺陷而被提出的算法。按内存容量将内存划分为等大小 的两块。每次只使用其中一块，当这一块内存满后将尚存活的对象复制到另一块上去，把已使用 的内存清掉，如图：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202204252326499.png" alt="image-20220425232619309"></p>
+<p>这种算法虽然实现简单，内存效率高，不易产生碎片，但是最大的问题是可用内存被压缩到了原 本的一半。且存活对象增多的话，Copying 算法的效率会大大降低。</p>
+<hr>
+<h5 id="标记整理算法-Mark-Compact"><a href="#标记整理算法-Mark-Compact" class="headerlink" title="标记整理算法(Mark-Compact)"></a>标记整理算法(Mark-Compact)</h5><p>结合了以上两个算法，为了避免缺陷而提出。标记阶段和 Mark-Sweep 算法相同，标记后不是清理对象，而是将存活对象移向内存的一端。然后清除端边界外的对象。如图：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202204252346612.png" alt="image-20220425234615442"></p>
+<hr>
+<h5 id="分代收集算法"><a href="#分代收集算法" class="headerlink" title="分代收集算法"></a>分代收集算法</h5><p>分代收集法是目前大部分 JVM 所采用的方法，其核心思想是根据对象存活的不同生命周期将内存 划分为不同的域，一般情况下将 GC 堆划分为老生代(Tenured/Old Generation)和新生代(Young Generation)。老生代的特点是每次垃圾回收时只有少量对象需要被回收，新生代的特点是每次垃 圾回收时都有大量垃圾需要被回收，因此可以根据不同区域选择不同的算法。</p>
+<h6 id="新生代与复制算法"><a href="#新生代与复制算法" class="headerlink" title="新生代与复制算法"></a>新生代与复制算法</h6><p>每次垃圾收集都能发现大批对象已死, 只有少量存活. 因此选用复制算法, 只需要付出少量 存活对象的复制成本就可以完成收集.</p>
+<p>但通常并不是按照 1：1 来划分新生代。一般将新生代 划分为一块较大的 Eden 空间和两个较小的 Survivor 空间(From Space, To Space)，每次使用 Eden 空间和其中的一块 Survivor 空间，当进行回收时，将该两块空间中还存活的对象复制到另 一块 Survivor 空间中。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202204252348919.png" alt="image-20220425234855761"></p>
+<h6 id="老年代与标记复制算法"><a href="#老年代与标记复制算法" class="headerlink" title="老年代与标记复制算法"></a>老年代与标记复制算法</h6><p>因为对象存活率高、没有额外空间对它进行分配担保, 就必须采用“标记—清理”或“标 记—整理”算法来进行回收, 不必进行内存复制, 且直接腾出空闲内存.</p>
+<ol>
+<li>JAVA 虚拟机提到过的处于方法区的永生代(Permanet Generation)，它用来存储 class 类， 常量，方法描述等。对永生代的回收主要包括废弃常量和无用的类。 </li>
+<li>对象的内存分配主要在新生代的 Eden Space 和 Survivor Space 的 From Space(Survivor 目 前存放对象的那一块)，少数情况会直接分配到老生代。 </li>
+<li>当新生代的 Eden Space 和 From Space 空间不足时就会发生一次 GC，进行 GC 后，Eden Space 和 From Space 区的存活对象会被挪到 To Space，然后将 Eden Space 和 From Space 进行清理。</li>
+<li>如果 To Space 无法足够存储某个对象，则将这个对象存储到老生代。 </li>
+<li>在进行 GC 后，使用的便是 Eden Space 和 To Space 了，如此反复循环。 </li>
+<li>当对象在 Survivor 区躲过一次 GC 后，其年龄就会+1。<font color=#bbbb>默认情况下年龄到达 15 的对象会被 移到老生代中。</font></li>
+</ol>
+<hr>
+<h5 id="分区收集算法"><a href="#分区收集算法" class="headerlink" title="分区收集算法"></a>分区收集算法</h5><p>分区算法则将整个堆空间划分为连续的不同小区间, 每个小区间独立使用, 独立回收. 这样做的 好处是可以控制一次回收多少个小区间 , 根据目标停顿时间, 每次合理地回收若干个小区间(而不是 整个堆), 从而减少一次 GC 所产生的停顿。</p>
+<hr>
+<h4 id="常见的垃圾回收器有那些？"><a href="#常见的垃圾回收器有那些？" class="headerlink" title="常见的垃圾回收器有那些？"></a>常见的垃圾回收器有那些？</h4><hr>
+<p>强引用、软引用、弱引用、虚引用</p>
 <p>如何判断一个常量是废弃常量 </p>
 <p>如何判断一个类是无用的类 </p>
-<h4 id="常见的垃圾回收器有那些？"><a href="#常见的垃圾回收器有那些？" class="headerlink" title="常见的垃圾回收器有那些？"></a>常见的垃圾回收器有那些？</h4><p>介绍一下CMS,G1收集器。 </p>
+<h4 id=""><a href="#" class="headerlink" title=""></a></h4><p>介绍一下CMS,G1收集器。 </p>
 <p>Minor GC 和 Full GC 有什么不同呢？</p>
 <h3 id="Java-对象的创建过程"><a href="#Java-对象的创建过程" class="headerlink" title="Java 对象的创建过程"></a>Java 对象的创建过程</h3><p>五步，建议能默写出来并且要知道每一步虚拟机做了什么</p>
 <p><img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202204242116345.png" alt="image-20220424211620812"></p>
