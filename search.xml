@@ -1396,6 +1396,8 @@
 <li>在 JDK1.5 之前版本中与新生代的 Parallel Scavenge 收集器搭配使用。 </li>
 <li>作为年老代中使用 CMS 收集器的后备垃圾收集方案。</li>
 </ol>
+<h5 id="Parallel-Old-收集器"><a href="#Parallel-Old-收集器" class="headerlink" title="Parallel Old 收集器"></a>Parallel Old 收集器</h5><p>（多线程标记整理算法） </p>
+<p>Parallel Old 收集器是Parallel Scavenge的年老代版本，使用多线程的标记-整理算法，在 JDK1.6 才开始提供。 在 JDK1.6 之前，新生代使用 Parallel Scavenge 收集器只能搭配年老代的 Serial Old 收集器，只 能保证新生代的吞吐量优先，无法保证整体的吞吐量，Parallel Old 正是为了在年老代同样提供吞 吐量优先的垃圾收集器，如果系统对吞吐量要求比较高，可以优先考虑新生代 Parallel Scavenge 和年老代 Parallel Old 收集器的搭配策略。</p>
 <hr>
 <p>强引用、软引用、弱引用、虚引用</p>
 <p>如何判断一个常量是废弃常量 </p>
