@@ -97,7 +97,7 @@
   </entry>
   <entry>
     <title>Linux入门</title>
-    <url>/2021/05/15/Linux%E5%85%A5%E9%97%A8/</url>
+    <url>/2022/05/15/Linux%E5%85%A5%E9%97%A8/</url>
     <content><![CDATA[<h2 id="1-Linux-Manual"><a href="#1-Linux-Manual" class="headerlink" title="1.Linux Manual"></a>1.Linux Manual</h2><h4 id="gt-command-–help"><a href="#gt-command-–help" class="headerlink" title="&gt; command  –help"></a>&gt; command  –help</h4><p>to see the  usage of the command.</p>
 <p>PS : <code>man command </code> is more specific.</p>
 <p>EX:  <code>date  --help</code>  、<code>man  date</code></p>
