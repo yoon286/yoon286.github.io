@@ -2150,4 +2150,39 @@
         <tag>Java</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Spring Batch</title>
+    <url>/2022/05/17/SpringBatch/</url>
+    <content><![CDATA[<p><strong>There are two types of steps provided by Spring Batch.</strong></p>
+<ul>
+<li>Tasklet Step</li>
+<li>Chunk-Oriented Step</li>
+</ul>
+<p>There are different options we can launch our job. We can use REST API to trigger job and we can use Spring Scheduler to schedule Spring Batch Job. Also we can stop Job using REST API.</p>
+<p><strong>There are different Item Readers provided by Spring Batch.</strong></p>
+<ul>
+<li>CSV Item Reader</li>
+<li>JSON Item Reader</li>
+<li>XML Item Reader</li>
+<li>JDBC Item Reader</li>
+<li>REST API Item Reader</li>
+</ul>
+<p><strong>There are different Item Writers provided by Spring Batch.</strong></p>
+<ul>
+<li>CSV Item Writer</li>
+<li>JSON Item Writer</li>
+<li>XML Item Writer</li>
+<li>JDBC Item Writer</li>
+<li>REST API Item Writer</li>
+</ul>
+<p>Spring Batch Provides Item Processor to process data. Item Processor is in between Item Reader &amp; Item Writer.</p>
+]]></content>
+      <categories>
+        <category>学习</category>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
 </search>
