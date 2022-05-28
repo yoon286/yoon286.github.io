@@ -27,11 +27,13 @@
 <meta property="og:site_name" content="yoon">
 <meta property="og:description" content="There are two types of steps provided by Spring Batch.  Tasklet Step Chunk-Oriented Step  There are different options we can launch our job. We can use REST API to trigger job and we can use Spring Sc">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202205172306783.png">
 <meta property="article:published_time" content="2022-05-17T10:34:12.000Z">
-<meta property="article:modified_time" content="2022-05-17T14:34:11.953Z">
+<meta property="article:modified_time" content="2022-05-17T15:10:12.680Z">
 <meta property="article:author" content="尹 丹">
 <meta property="article:tag" content="Java">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202205172306783.png">
 
 <link rel="canonical" href="https://yoon286.github.io/2022/05/17/SpringBatch/">
 
@@ -245,6 +247,8 @@
 <li>Chunk-Oriented Step</li>
 </ul>
 <p>There are different options we can launch our job. We can use REST API to trigger job and we can use Spring Scheduler to schedule Spring Batch Job. Also we can stop Job using REST API.</p>
+<span id="more"></span>
+
 <p><strong>There are different Item Readers provided by Spring Batch.</strong></p>
 <ul>
 <li>CSV Item Reader</li>
@@ -262,6 +266,15 @@
 <li>REST API Item Writer</li>
 </ul>
 <p>Spring Batch Provides Item Processor to process data. Item Processor is in between Item Reader &amp; Item Writer.</p>
+<p><img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202205172306783.png" alt="image-20220517230657681"></p>
+<h2 id="1-Demo-Project"><a href="#1-Demo-Project" class="headerlink" title="1.Demo Project"></a>1.Demo Project</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Configuration</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SampleJob</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="meta">@Autowired</span></span><br><span class="line">	<span class="keyword">private</span> JobBuilderFactory jobBuilderFactory;</span><br><span class="line"></span><br><span class="line">	<span class="meta">@Autowired</span></span><br><span class="line">	<span class="keyword">private</span> StepBuilderFactory stepBuilderFactory;</span><br><span class="line">	</span><br><span class="line">	<span class="meta">@Autowired</span></span><br><span class="line">	<span class="keyword">private</span> SecondTasklet secondTasklet;</span><br><span class="line"></span><br><span class="line">	<span class="meta">@Bean</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> Job <span class="title">firstJob</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> jobBuilderFactory.get(<span class="string">&quot;First Job&quot;</span>)</span><br><span class="line">				.start(firstStep())</span><br><span class="line">				.next(secondStep())</span><br><span class="line">				.build();</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">private</span> Step <span class="title">firstStep</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> stepBuilderFactory.get(<span class="string">&quot;First Step&quot;</span>)</span><br><span class="line">				.tasklet(firstTask())</span><br><span class="line">				.build();</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">private</span> Tasklet <span class="title">firstTask</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="keyword">new</span> Tasklet() &#123;</span><br><span class="line"></span><br><span class="line">			<span class="meta">@Override</span></span><br><span class="line">			<span class="function"><span class="keyword">public</span> RepeatStatus <span class="title">execute</span><span class="params">(StepContribution contribution, ChunkContext chunkContext)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">				System.out.println(<span class="string">&quot;This is first tasklet step&quot;</span>);</span><br><span class="line">				<span class="keyword">return</span> RepeatStatus.FINISHED;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">private</span> Step <span class="title">secondStep</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> stepBuilderFactory.get(<span class="string">&quot;Second Step&quot;</span>)</span><br><span class="line">				.tasklet(secondTasklet)</span><br><span class="line">				.build();</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Service</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SecondTasklet</span> <span class="keyword">implements</span> <span class="title">Tasklet</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> RepeatStatus <span class="title">execute</span><span class="params">(StepContribution contribution, ChunkContext chunkContext)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">		System.out.println(<span class="string">&quot;This is second tasklet step&quot;</span>);</span><br><span class="line">		<span class="keyword">return</span> RepeatStatus.FINISHED;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
 
     </div>
 
@@ -284,7 +297,10 @@
     <a href="/2022/05/15/Linux%E5%85%A5%E9%97%A8/" rel="prev" title="Linux入门">
       <i class="fa fa-chevron-left"></i> Linux入门
     </a></div>
-      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2022/05/25/shell%E7%BC%96%E7%A8%8B/" rel="next" title="shell编程">
+      shell编程 <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -343,6 +359,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-Demo-Project"><span class="nav-number">1.</span> <span class="nav-text">1.Demo Project</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -357,7 +374,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">22</span>
+          <span class="site-state-item-count">23</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>

@@ -2159,6 +2159,8 @@
 <li>Chunk-Oriented Step</li>
 </ul>
 <p>There are different options we can launch our job. We can use REST API to trigger job and we can use Spring Scheduler to schedule Spring Batch Job. Also we can stop Job using REST API.</p>
+<span id="more"></span>
+
 <p><strong>There are different Item Readers provided by Spring Batch.</strong></p>
 <ul>
 <li>CSV Item Reader</li>
@@ -2176,6 +2178,15 @@
 <li>REST API Item Writer</li>
 </ul>
 <p>Spring Batch Provides Item Processor to process data. Item Processor is in between Item Reader &amp; Item Writer.</p>
+<p><img src="https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/202205172306783.png" alt="image-20220517230657681"></p>
+<h2 id="1-Demo-Project"><a href="#1-Demo-Project" class="headerlink" title="1.Demo Project"></a>1.Demo Project</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Configuration</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SampleJob</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="meta">@Autowired</span></span><br><span class="line">	<span class="keyword">private</span> JobBuilderFactory jobBuilderFactory;</span><br><span class="line"></span><br><span class="line">	<span class="meta">@Autowired</span></span><br><span class="line">	<span class="keyword">private</span> StepBuilderFactory stepBuilderFactory;</span><br><span class="line">	</span><br><span class="line">	<span class="meta">@Autowired</span></span><br><span class="line">	<span class="keyword">private</span> SecondTasklet secondTasklet;</span><br><span class="line"></span><br><span class="line">	<span class="meta">@Bean</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> Job <span class="title">firstJob</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> jobBuilderFactory.get(<span class="string">&quot;First Job&quot;</span>)</span><br><span class="line">				.start(firstStep())</span><br><span class="line">				.next(secondStep())</span><br><span class="line">				.build();</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">private</span> Step <span class="title">firstStep</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> stepBuilderFactory.get(<span class="string">&quot;First Step&quot;</span>)</span><br><span class="line">				.tasklet(firstTask())</span><br><span class="line">				.build();</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">private</span> Tasklet <span class="title">firstTask</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="keyword">new</span> Tasklet() &#123;</span><br><span class="line"></span><br><span class="line">			<span class="meta">@Override</span></span><br><span class="line">			<span class="function"><span class="keyword">public</span> RepeatStatus <span class="title">execute</span><span class="params">(StepContribution contribution, ChunkContext chunkContext)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">				System.out.println(<span class="string">&quot;This is first tasklet step&quot;</span>);</span><br><span class="line">				<span class="keyword">return</span> RepeatStatus.FINISHED;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">private</span> Step <span class="title">secondStep</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> stepBuilderFactory.get(<span class="string">&quot;Second Step&quot;</span>)</span><br><span class="line">				.tasklet(secondTasklet)</span><br><span class="line">				.build();</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Service</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SecondTasklet</span> <span class="keyword">implements</span> <span class="title">Tasklet</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> RepeatStatus <span class="title">execute</span><span class="params">(StepContribution contribution, ChunkContext chunkContext)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">		System.out.println(<span class="string">&quot;This is second tasklet step&quot;</span>);</span><br><span class="line">		<span class="keyword">return</span> RepeatStatus.FINISHED;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
 ]]></content>
       <categories>
         <category>学习</category>
@@ -2183,6 +2194,23 @@
       </categories>
       <tags>
         <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>shell编程</title>
+    <url>/2022/05/25/shell%E7%BC%96%E7%A8%8B/</url>
+    <content><![CDATA[<h4 id="if-eq-0-该语句是什么含义"><a href="#if-eq-0-该语句是什么含义" class="headerlink" title="if [ $# -eq 0 ]该语句是什么含义?"></a>if [ $# -eq 0 ]该语句是什么含义?</h4><h4 id="1-commands含义"><a href="#1-commands含义" class="headerlink" title="1.commands含义"></a>1.commands含义</h4><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash">0: shell或shell脚本的名字</span></span><br><span class="line"><span class="meta">$</span><span class="bash">*: 以一对双引号给出参数列表</span></span><br><span class="line"><span class="meta">$</span><span class="bash">@: 将各个参数分别加双引号返回</span></span><br><span class="line"><span class="meta">$</span><span class="bash"><span class="comment">#: 参数的个数</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash">_: 代表上一个命令的最后一个参数</span></span><br><span class="line"><span class="meta">$</span><span class="bash">$: 代表所在命令的PID</span></span><br><span class="line"><span class="meta">$</span><span class="bash">!: 代表最后执行的后台命令的PID</span></span><br><span class="line"><span class="meta">$</span><span class="bash">?: 代表上一个命令执行后的退出状态</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="2-options含义"><a href="#2-options含义" class="headerlink" title="2.options含义"></a>2.options含义</h4><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">-eq //equals等于</span><br><span class="line">-ne //no equals不等于</span><br><span class="line">-gt //greater than 大于</span><br><span class="line">-lt //less than小于</span><br><span class="line">-ge //greater equals大于等于</span><br><span class="line">-le //less equals小于等于</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>学习</category>
+        <category>操作系统</category>
+      </categories>
+      <tags>
+        <tag>操作系统</tag>
+        <tag>Linux</tag>
       </tags>
   </entry>
 </search>
