@@ -2214,7 +2214,7 @@
       </tags>
   </entry>
   <entry>
-    <title>计算广告 - 在线广告概览</title>
+    <title>Spark SQL 执行优化</title>
     <url>/2023/11/05/20231105_%E8%AE%BA%E6%96%87%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</url>
     <content><![CDATA[<p><strong>Spark SQL 的执行流程：</strong></p>
 <pre><code>    1.提交SparkSQL代码
