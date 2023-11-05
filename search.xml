@@ -2214,8 +2214,8 @@
       </tags>
   </entry>
   <entry>
-    <title>Spark SQL 基础知识</title>
-    <url>/2022/03/06/%E8%AE%BA%E6%96%87%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</url>
+    <title>计算广告 - 在线广告概览</title>
+    <url>/2023/11/05/20231105_%E8%AE%BA%E6%96%87%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</url>
     <content><![CDATA[<p><strong>Spark SQL 的执行流程：</strong></p>
 <pre><code>    1.提交SparkSQL代码
 
@@ -2244,7 +2244,7 @@
 <p>基于规则优化是一种经验式的、启发式的优化思路，主要依赖于过往所总结出来的优化规则，简单易行且能覆盖到大多数优化逻辑。例如，对两表进行join，是使用BroadcastHashJoin还是SortMergeJoin？在基于规则优化场景下，将通过手工设定参数来确定：如果一个表的数据量小于特定值，则使用BroadcastHashJoin。无疑，面对复杂的 join 操作, 这种方法显得很不灵活，而且力不从心。</p>
 <p>基于代价优化就是为了解决这类问题，它会针对每个join，评估当前两张表在使用不同join策略下的代价，根据代价估算出最优策略。在Spark中，这些优化都是通过Catalyst实现的。</p>
 <p><strong>Catalyst优化器流程</strong></p>
-<p><img src="https://img-blog.csdnimg.cn/b12ce7c189c24f2c8e8fd6328cc14eed.png"></p>
+<p><img src="https://img-blog.csdnimg.cn/b12ce7c189c24f2c8e8fd6328cc14eed.png" alt="img"></p>
 <pre><code>    Step 1：解析SQL，并且生成AST（抽象语法树，如下图，从下往上读）
 </code></pre>
 <p><img src="https://img-blog.csdnimg.cn/a94d0a9fc5494092baffcd8295e0f863.png" alt="img"></p>
