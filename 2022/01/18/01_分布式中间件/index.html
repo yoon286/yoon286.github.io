@@ -20,20 +20,21 @@
     var CONFIG = {"hostname":"yoon286.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":-1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="主要使用到的技术包括：springboot + spring cloud + mybatis + redis + ehcache + rabbit mq + AWS S3 + mysqlehcacheEhCache直接在JVM中进行缓存，速度快，效率高。与Redis相比，操作简单、易用、高效，虽然EhCache也提供有缓存共享的方案，但对分布式集群的支持不太好，缓存共享实现麻烦。 1234@Cac">
+  <meta name="description" content="技术栈：https:&#x2F;&#x2F;share.note.youdao.com&#x2F;s&#x2F;LKfdB11d 主要使用到的技术包括：springboot + spring cloud + mybatis + redis + ehcache + rabbit mq + AWS S3 + mysql">
 <meta property="og:type" content="article">
-<meta property="og:title" content="中间件">
-<meta property="og:url" content="https://yoon286.github.io/2022/01/18/%E9%9D%A2%E8%AF%95/index.html">
+<meta property="og:title" content="分布式中间件">
+<meta property="og:url" content="https://yoon286.github.io/2022/01/18/01_%E5%88%86%E5%B8%83%E5%BC%8F%E4%B8%AD%E9%97%B4%E4%BB%B6/index.html">
 <meta property="og:site_name" content="yoon">
-<meta property="og:description" content="主要使用到的技术包括：springboot + spring cloud + mybatis + redis + ehcache + rabbit mq + AWS S3 + mysqlehcacheEhCache直接在JVM中进行缓存，速度快，效率高。与Redis相比，操作简单、易用、高效，虽然EhCache也提供有缓存共享的方案，但对分布式集群的支持不太好，缓存共享实现麻烦。 1234@Cac">
+<meta property="og:description" content="技术栈：https:&#x2F;&#x2F;share.note.youdao.com&#x2F;s&#x2F;LKfdB11d 主要使用到的技术包括：springboot + spring cloud + mybatis + redis + ehcache + rabbit mq + AWS S3 + mysql">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-01-18T15:27:31.000Z">
-<meta property="article:modified_time" content="2022-03-30T16:05:39.921Z">
+<meta property="article:modified_time" content="2025-07-12T09:56:59.444Z">
 <meta property="article:author" content="尹 丹">
 <meta property="article:tag" content="Java">
+<meta property="article:tag" content="分布式中间件">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://yoon286.github.io/2022/01/18/%E9%9D%A2%E8%AF%95/">
+<link rel="canonical" href="https://yoon286.github.io/2022/01/18/01_%E5%88%86%E5%B8%83%E5%BC%8F%E4%B8%AD%E9%97%B4%E4%BB%B6/">
 
 
 <script id="page-configurations">
@@ -46,7 +47,7 @@
   };
 </script>
 
-  <title>中间件 | yoon</title>
+  <title>分布式中间件 | yoon</title>
   
 
 
@@ -189,7 +190,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://yoon286.github.io/2022/01/18/%E9%9D%A2%E8%AF%95/">
+    <link itemprop="mainEntityOfPage" href="https://yoon286.github.io/2022/01/18/01_%E5%88%86%E5%B8%83%E5%BC%8F%E4%B8%AD%E9%97%B4%E4%BB%B6/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -202,7 +203,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          中间件
+          分布式中间件
         </h1>
 
         <div class="post-meta">
@@ -226,6 +227,10 @@
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/%E5%AD%A6%E4%B9%A0/Java/" itemprop="url" rel="index"><span itemprop="name">Java</span></a>
                 </span>
+                  >
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0/Java/%E5%88%86%E5%B8%83%E5%BC%8F%E4%B8%AD%E9%97%B4%E4%BB%B6/" itemprop="url" rel="index"><span itemprop="name">分布式中间件</span></a>
+                </span>
             </span>
 
           
@@ -239,12 +244,17 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h3 id="主要使用到的技术包括："><a href="#主要使用到的技术包括：" class="headerlink" title="主要使用到的技术包括："></a>主要使用到的技术包括：</h3><h4 id="springboot-spring-cloud-mybatis-redis-ehcache-rabbit-mq-AWS-S3-mysql"><a href="#springboot-spring-cloud-mybatis-redis-ehcache-rabbit-mq-AWS-S3-mysql" class="headerlink" title="springboot + spring cloud + mybatis + redis + ehcache + rabbit mq + AWS S3 + mysql"></a>springboot + spring cloud + mybatis + redis + ehcache + rabbit mq + AWS S3 + mysql</h4><h3 id="ehcache"><a href="#ehcache" class="headerlink" title="ehcache"></a><strong>ehcache</strong></h3><p>EhCache直接在JVM中进行缓存，速度快，效率高。与Redis相比，操作简单、易用、高效，虽然EhCache也提供有缓存共享的方案，但对分布式集群的支持不太好，缓存共享实现麻烦。</p>
+        <h3 id="技术栈："><a href="#技术栈：" class="headerlink" title="技术栈："></a>技术栈：</h3><p><a target="_blank" rel="noopener" href="https://share.note.youdao.com/s/LKfdB11d">https://share.note.youdao.com/s/LKfdB11d</a></p>
+<h3 id="主要使用到的技术包括："><a href="#主要使用到的技术包括：" class="headerlink" title="主要使用到的技术包括："></a>主要使用到的技术包括：</h3><p>springboot + spring cloud + mybatis + redis + ehcache + rabbit mq + AWS S3 + mysql</p>
+<span id="more"></span>
+
+<h3 id="ehcache"><a href="#ehcache" class="headerlink" title="ehcache"></a><strong>ehcache</strong></h3><p>EhCache直接在JVM中进行缓存，速度快，效率高。与Redis相比，操作简单、易用、高效，虽然EhCache也提供有缓存共享的方案，但对分布式集群的支持不太好，缓存共享实现麻烦。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">@Cacheable(value &#x3D; &quot;serviceNameCache&quot;, key &#x3D; &quot;targetClass+methodName+#p0&quot;)</span><br><span class="line">@CachePut 用于新增</span><br><span class="line">@CacheEvict 用于删除</span><br><span class="line">@Caching 用于组合条件</span><br></pre></td></tr></table></figure>
 
 
 
-<h3 id="redis-缓存、分布式锁、事务、持久化存储"><a href="#redis-缓存、分布式锁、事务、持久化存储" class="headerlink" title="redis:缓存、分布式锁、事务、持久化存储"></a>redis:缓存、分布式锁、事务、持久化存储</h3><p>redis单线程为什么这么快 ？</p>
+<h3 id="redis"><a href="#redis" class="headerlink" title="redis:"></a>redis:</h3><p>缓存、分布式锁、事务、持久化存储</p>
+<p>redis单线程为什么这么快 ？</p>
 <p>redis 常见数据结构以及使用场景分析 </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">1. String：key-value类型 常规key-value缓存应用； 常规计数：微博数，粉丝数等。 </span><br><span class="line"></span><br><span class="line">2. Hash 是一个 string 类型的 field 和 value 的映射表。</span><br><span class="line">   hash 特别适合用于存储对象，后续操作的时候，可以直接仅仅修改这个对象中的某个字段的值。</span><br><span class="line">   比如存储用户信息，商品信息等等</span><br><span class="line"></span><br><span class="line">3. List 的实现为一个双向链表，即可以支持反向查找和遍历，更方便操作</span><br><span class="line">   微博的关注列表，粉丝列表， 消息列表等功能都可以用Redis的 list 结构来实现。</span><br><span class="line"></span><br><span class="line">4. Set 是可以自动排重的。</span><br><span class="line">   Redis可以非常方便的实现如共同关注、共同粉丝、共同喜好等功能。这个过程也就是求交集的过程</span><br><span class="line"></span><br><span class="line">5. Sorted Set 增加了一个权重参数score，使得集合中的元素能够按score进行有序排列。 </span><br><span class="line">   举例： 在直播系统中，实时排行信息包含直播间在线用户列表，各种礼物排行榜</span><br></pre></td></tr></table></figure>
 
@@ -305,6 +315,7 @@
           
           <div class="post-tags">
               <a href="/tags/Java/" rel="tag"><i class="fa fa-tag"></i> Java</a>
+              <a href="/tags/%E5%88%86%E5%B8%83%E5%BC%8F%E4%B8%AD%E9%97%B4%E4%BB%B6/" rel="tag"><i class="fa fa-tag"></i> 分布式中间件</a>
           </div>
 
         
@@ -313,12 +324,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2021/08/03/%E5%AE%9E%E4%B9%A0%E6%95%B4%E7%90%86/" rel="prev" title="实践知识整理">
-      <i class="fa fa-chevron-left"></i> 实践知识整理
+    <a href="/2022/01/18/04_AI%20Agent/" rel="prev" title="AI Agent学习路线">
+      <i class="fa fa-chevron-left"></i> AI Agent学习路线
     </a></div>
       <div class="post-nav-item">
-    <a href="/2022/01/19/java%E5%85%AB%E8%82%A1%E6%96%87-%E5%9F%BA%E7%A1%80/" rel="next" title="基础语法">
-      基础语法 <i class="fa fa-chevron-right"></i>
+    <a href="/2022/01/18/05_%E5%A4%A7%E6%A8%A1%E5%9E%8B%E7%AB%9E%E8%B5%9B/" rel="next" title="AI Agent实践竞赛">
+      AI Agent实践竞赛 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -378,7 +389,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%BB%E8%A6%81%E4%BD%BF%E7%94%A8%E5%88%B0%E7%9A%84%E6%8A%80%E6%9C%AF%E5%8C%85%E6%8B%AC%EF%BC%9A"><span class="nav-number">1.</span> <span class="nav-text">主要使用到的技术包括：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#springboot-spring-cloud-mybatis-redis-ehcache-rabbit-mq-AWS-S3-mysql"><span class="nav-number">1.1.</span> <span class="nav-text">springboot + spring cloud + mybatis + redis + ehcache + rabbit mq + AWS S3 + mysql</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ehcache"><span class="nav-number">2.</span> <span class="nav-text">ehcache</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#redis-%E7%BC%93%E5%AD%98%E3%80%81%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81%E3%80%81%E4%BA%8B%E5%8A%A1%E3%80%81%E6%8C%81%E4%B9%85%E5%8C%96%E5%AD%98%E5%82%A8"><span class="nav-number">3.</span> <span class="nav-text">redis:缓存、分布式锁、事务、持久化存储</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#rabbit-mq"><span class="nav-number">4.</span> <span class="nav-text">rabbit-mq</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1"><span class="nav-number">5.</span> <span class="nav-text">定时任务</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#k8s"><span class="nav-number">6.</span> <span class="nav-text">k8s</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#openfeign"><span class="nav-number">7.</span> <span class="nav-text">openfeign</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#spring-cloud"><span class="nav-number">8.</span> <span class="nav-text">spring cloud</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8A%80%E6%9C%AF%E6%A0%88%EF%BC%9A"><span class="nav-number">1.</span> <span class="nav-text">技术栈：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%BB%E8%A6%81%E4%BD%BF%E7%94%A8%E5%88%B0%E7%9A%84%E6%8A%80%E6%9C%AF%E5%8C%85%E6%8B%AC%EF%BC%9A"><span class="nav-number">2.</span> <span class="nav-text">主要使用到的技术包括：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ehcache"><span class="nav-number">3.</span> <span class="nav-text">ehcache</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#redis"><span class="nav-number">4.</span> <span class="nav-text">redis:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#rabbit-mq"><span class="nav-number">5.</span> <span class="nav-text">rabbit-mq</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1"><span class="nav-number">6.</span> <span class="nav-text">定时任务</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#k8s"><span class="nav-number">7.</span> <span class="nav-text">k8s</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#openfeign"><span class="nav-number">8.</span> <span class="nav-text">openfeign</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#spring-cloud"><span class="nav-number">9.</span> <span class="nav-text">spring cloud</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -393,18 +404,18 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">24</span>
+          <span class="site-state-item-count">29</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
-        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-count">16</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
-        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-count">14</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
