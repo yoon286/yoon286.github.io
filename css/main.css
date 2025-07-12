@@ -1168,7 +1168,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ff1362;
+  background: #3cffff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2661,5 +2661,140 @@ ul.breadcrumb li + li:last-child {
   }
   .pagination {
     margin: 8px 0 0;
+  }
+}
+/* 表单容器样式 */
+form {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 25px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  border: 1px solid #eaeef2;
+/* 标题样式 */
+/* 表单组样式 */
+/* 输入框样式 */
+/* 提交按钮样式 */
+/* 表单底部信息 */
+}
+form h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #2c3e50;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 15px;
+}
+form h2:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #3498db, #9b59b6);
+  border-radius: 3px;
+}
+form .form-group {
+  margin-bottom: 20px;
+}
+form .form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #34495e;
+  font-size: 0.95rem;
+}
+form .form-group label .required {
+  color: #e74c3c;
+  margin-left: 3px;
+}
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 14px 15px;
+  border: 2px solid #e0e6ed;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #f8fafc;
+  transition: all 0.3s ease;
+}
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+  border-color: #3498db;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(52,152,219,0.2);
+  background-color: #fff;
+}
+form input[type="text"]::placeholder,
+form input[type="email"]::placeholder,
+form textarea::placeholder {
+  color: #a0aec0;
+  opacity: 0.7;
+}
+form textarea {
+  min-height: 150px;
+  resize: vertical;
+  line-height: 1.6;
+}
+form button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  background: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+  box-shadow: 0 4px 10px rgba(52,152,219,0.25);
+}
+form button[type="submit"]:hover {
+  background: #2980b9;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(52,152,219,0.35);
+}
+form button[type="submit"]:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 5px rgba(52,152,219,0.25);
+}
+form .form-footer {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #edf2f7;
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+form .form-footer a {
+  color: #3498db;
+  text-decoration: none;
+}
+form .form-footer a:hover {
+  text-decoration: underline;
+}
+/* 响应式调整 */
+@media (max-width: 768px) {
+  form {
+    padding: 20px;
+    margin: 20px 15px;
+  }
+  form h2 {
+    font-size: 1.4rem;
+  }
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+    padding: 12px;
+  }
+  form button[type="submit"] {
+    padding: 13px;
   }
 }
