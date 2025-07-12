@@ -611,7 +611,7 @@
   <entry>
     <title>摘抄--3月24日</title>
     <url>/2021/03/24/%E6%91%98%E6%8A%84--3%E6%9C%8824%E6%97%A5/</url>
-    <content><![CDATA[<p>过去的每一天都不曾消失，它们闪烁在未来的天幕上，成为个人的群星，构成属于你自己的浩瀚银河。</p>
+    <content><![CDATA[<p>1.过去的每一天都不曾消失，它们闪烁在未来的天幕上，成为个人的群星，构成属于你自己的浩瀚银河。</p>
 <p>然后，在某一刻，哗啦一声，向你奔涌而来。</p>
 <p>我相信，每个人心中，都存在对浩瀚的体验。</p>
 ]]></content>
@@ -2284,7 +2284,7 @@ catalyst的各种优化细节非常多，大方面的优化点有2个：
 <p><strong>BloomFilter</strong>: <a href="https://juejin.cn/post/7293786247655129129?utm_source=gold_browser_extension">https://juejin.cn/post/7293786247655129129?utm_source=gold_browser_extension</a></p>
 <pre><code>                   不要求精准的话, 直接HyperLogLog就好了,12k内存 几乎可以忽略不计
 </code></pre>
-<p>**BitMap     ** </p>
+<p>**BitMap ** </p>
 <p><strong>RoaringBitMap</strong></p>
 <p><strong>HyperLogLog</strong> ：<a href="https://www.yuque.com/abser/blog/mrv5ke">https://www.yuque.com/abser/blog/mrv5ke</a></p>
 <p><strong>数据倾斜 ：</strong></p>
