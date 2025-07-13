@@ -725,84 +725,6 @@ catalyst的各种优化细节非常多，大方面的优化点有2个：
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://yoon286.github.io/2022/04/16/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E4%B8%8E%E5%88%86%E6%9E%90(2)/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="尹 丹">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Carol">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/04/16/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E4%B8%8E%E5%88%86%E6%9E%90(2)/" class="post-title-link" itemprop="url">数据管理与分析 - 事务</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2022-04-16 14:27:31" itemprop="dateCreated datePublished" datetime="2022-04-16T14:27:31+08:00">2022-04-16</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">学习</span></a>
-                </span>
-                  >
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%AD%A6%E4%B9%A0/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E4%B8%8E%E5%88%86%E6%9E%90/" itemprop="url" rel="index"><span itemprop="name">数据管理与分析</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h1><h3 id="OLTP-vs-OLAP"><a href="#OLTP-vs-OLAP" class="headerlink" title="OLTP vs OLAP"></a>OLTP vs OLAP</h3><p><strong>1、基本含义不同：</strong><font color=#bbbb>OLTP，即联机事务处理（on-line transaction processing）是传统的关系型数据库的主要应用</font>，主要是基本的、日常的事务处理，记录即时的增、删、改、查，比如在银行存取一笔款，就是一个事务交易。<font color=#bbbb>OLAP，即联机分析处理（On-Line Analytical Processing），是数据仓库的核心部心</font>，支持复杂的分析操作，侧重决策支持，并且提供直观易懂的查询结果。典型的应用就是复杂的动态报表系统。<br><strong>2、实时性要求不同：</strong>OLTP实时性要求高，OLTP 数据库旨在使事务应用程序仅写入所需的数据，以便尽快处理单个事务。OLAP的实时性要求不是很高，很多应用顶多是每天更新一下数据。<br><strong>3、数据量不同：</strong>OLTP数据量不是很大，一般只读/写数十条记录，处理简单的事务。OLAP数据量大，因为OLAP支持的是动态查询，所以用户也许要通过将很多数据的统计后才能得到想要知道的信息，例如时间序列分析等等，所以处理的数据量很大。<br><strong>4、用户和系统的面向性不同：</strong>OLTP是面向顾客的,用于事务和查询处理。OLAP是面向市场的,用于数据分析。<br><strong>5、数据库设计不同：</strong>OLTP采用实体-联系ER模型和面向应用的数据库设计。OLAP采用星型或雪花模型和面向主题的数据库设计。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2022/04/16/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E4%B8%8E%E5%88%86%E6%9E%90(2)/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://yoon286.github.io/2022/04/16/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E4%B8%8E%E5%88%86%E6%9E%90(3)/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1031,6 +953,84 @@ catalyst的各种优化细节非常多，大方面的优化点有2个：
 <hr>
 <p>更多实践内容参考 <a target="_blank" rel="noopener" href="https://tech.meituan.com/2014/08/20/innodb-lock.html">https://tech.meituan.com/2014/08/20/innodb-lock.html</a></p>
 
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://yoon286.github.io/2022/04/16/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E4%B8%8E%E5%88%86%E6%9E%90(2)/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="尹 丹">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Carol">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/04/16/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E4%B8%8E%E5%88%86%E6%9E%90(2)/" class="post-title-link" itemprop="url">数据管理与分析 - 事务</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-04-16 14:27:31" itemprop="dateCreated datePublished" datetime="2022-04-16T14:27:31+08:00">2022-04-16</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">学习</span></a>
+                </span>
+                  >
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E4%B8%8E%E5%88%86%E6%9E%90/" itemprop="url" rel="index"><span itemprop="name">数据管理与分析</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h1><h3 id="OLTP-vs-OLAP"><a href="#OLTP-vs-OLAP" class="headerlink" title="OLTP vs OLAP"></a>OLTP vs OLAP</h3><p><strong>1、基本含义不同：</strong><font color=#bbbb>OLTP，即联机事务处理（on-line transaction processing）是传统的关系型数据库的主要应用</font>，主要是基本的、日常的事务处理，记录即时的增、删、改、查，比如在银行存取一笔款，就是一个事务交易。<font color=#bbbb>OLAP，即联机分析处理（On-Line Analytical Processing），是数据仓库的核心部心</font>，支持复杂的分析操作，侧重决策支持，并且提供直观易懂的查询结果。典型的应用就是复杂的动态报表系统。<br><strong>2、实时性要求不同：</strong>OLTP实时性要求高，OLTP 数据库旨在使事务应用程序仅写入所需的数据，以便尽快处理单个事务。OLAP的实时性要求不是很高，很多应用顶多是每天更新一下数据。<br><strong>3、数据量不同：</strong>OLTP数据量不是很大，一般只读/写数十条记录，处理简单的事务。OLAP数据量大，因为OLAP支持的是动态查询，所以用户也许要通过将很多数据的统计后才能得到想要知道的信息，例如时间序列分析等等，所以处理的数据量很大。<br><strong>4、用户和系统的面向性不同：</strong>OLTP是面向顾客的,用于事务和查询处理。OLAP是面向市场的,用于数据分析。<br><strong>5、数据库设计不同：</strong>OLTP采用实体-联系ER模型和面向应用的数据库设计。OLAP采用星型或雪花模型和面向主题的数据库设计。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2022/04/16/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E4%B8%8E%E5%88%86%E6%9E%90(2)/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
