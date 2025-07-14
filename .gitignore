@@ -18,3 +18,7 @@ source/tags
 source/CNAME
 source/README.md
 themes
+/.idea/
+/
+/.pub
+/_config.landscape.yml
