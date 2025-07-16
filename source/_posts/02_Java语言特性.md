@@ -89,23 +89,27 @@ Comparator来自于java.utils包，排序方法是comparator(Object a, Object b)
 
 **行为型模式：**类和对象如何交互，及划分责任和算法。
 
+参考视频：https://www.bilibili.com/video/BV1vNN4zaEo7?spm_id_from=333.788.videopod.episodes&vd_source=5c14f766fdfaa0f3c9f5b3c4857d0bd2&p=8
+
 ![img](https://cdn.jsdelivr.net/gh/yoon286/Pic@main/img/401339-20170928225241215-295252070.png)
 
 | 模式       | 核心用途     | 典型场景               |
 | :--------- | :----------- | :--------------------- |
 | 单例模式   | 全局唯一实例 | 配置管理、连接池       |
 | 工厂模式   | 解耦对象创建 | 支付系统、日志记录器   |
+|            |              |                        |
 | 观察者模式 | 状态变更通知 | 事件系统、消息订阅     |
-| 装饰器模式 | 动态扩展功能 | I/O流、UI组件增强      |
 | 策略模式   | 灵活切换算法 | 排序、支付策略         |
+|            |              |                        |
 | 适配器模式 | 兼容旧接口   | 系统集成、第三方库适配 |
+| 装饰器模式 | 动态扩展功能 | I/O流、UI组件增强      |
 
 #### 1. 单例模式（Singleton）
 
 **目的**：确保一个类只有一个实例。
 **示例**：数据库连接池
 
-```
+```java
 public class DatabaseConnection {
     private static DatabaseConnection instance;
     
@@ -126,10 +130,10 @@ DatabaseConnection db = DatabaseConnection.getInstance();
 
 #### 2. 工厂模式（Factory）
 
-**目的**：将对象创建逻辑封装起来。
+**目的**：将对象创建逻辑封装起来。实际是利用了面向对象的多态，创建同一父类的不同子类对象。
 **示例**：支付方式工厂
 
-```
+```java
 public interface Payment {
     void pay(int amount);
 }
@@ -249,10 +253,10 @@ System.out.println(coffee.getDescription() + " 价格: $" + coffee.getCost());
 
 #### 5. 策略模式（Strategy）
 
-**目的**：封装可互换的算法。
+**目的**：封装可互换的算法。可以看成是包装后的工厂模式，将对象的创建放在上下文中，隐藏了工厂模式中通过Factory创建对象的申明，使用成本更小。
 **示例**：排序算法切换
 
-```
+```java
 interface SortStrategy {
     void sort(int[] array);
 }
